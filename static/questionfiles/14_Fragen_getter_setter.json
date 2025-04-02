@@ -1,0 +1,18 @@
+{
+  "title": "Getter und Setter",
+  "introduction": "",
+  "questions": [
+    {
+      "question": "Was ist der Zweck von Getter- und Setter-Methoden?",
+      "answer": "Getter- und Setter-Methoden werden verwendet, um den Zugriff auf Attribute einer Klasse zu kontrollieren. Sie ermöglichen es, bestimmte Regeln oder Logik anzuwenden, bevor ein Attribut geändert wird oder darauf zugegriffen wird. Zum Beispiel können Setter-Methoden sicherstellen, dass ein Attribut immer einen gültigen Wert hat, und Getter-Methoden erlauben es, einen Attributswert sicher zurückzugeben."
+    },
+    {
+      "question": "Wie verhindern Getter- und Setter-Methoden ungültige Eingaben?",
+      "answer": "Durch die Verwendung von Setter-Methoden können wir Eingaben validieren, bevor sie als Attributswert gespeichert werden. Beispielsweise könnte ein Setter sicherstellen, dass ein Alter nicht negativ ist, indem er nur Werte ab einer bestimmten Schwelle akzeptiert. Auf diese Weise wird verhindert, dass ungültige Daten in die Klasse aufgenommen werden."
+    },
+    {
+      "question": "Wie wird der @property-Dekorator verwendet und was bewirkt er?",
+      "answer": "Der @property-Dekorator wird verwendet, um eine Methode als Getter für ein Attribut zu kennzeichnen. Der @x.setter-Dekorator wird verwendet, um die zugehörige Setter-Methode zu definieren. Dadurch können Sie Attribute direkt wie normale Variablen nutzen, während die zugrunde liegende Logik für das Setzen und Abrufen von Werten über die dekorierten Methoden verwaltet wird.\nBeispiel:\nclass Person:\n    def __init__(self, age):\n        self.age = age\n\n    @property\n    def age(self):\n        return self.__age\n\n    @age.setter\n    def age(self, age):\n        self.__age = max(age, 0)\n\n\np = Person(-30)\nprint(f\"Die Person ist {p.age} Jahre alt.\")"
+    }
+  ]
+}

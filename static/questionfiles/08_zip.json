@@ -1,0 +1,46 @@
+{
+    "title": "Python - Zip",
+    "introduction": "Die zip-Funktion in Python ist ein integriertes Werkzeug, das es ermöglicht, zwei oder mehr iterierbare Objekte (wie Listen, Tupel, Sets) positionsweise zu kombinieren. Sie erzeugt einen Iterator, der Tupel aus den entsprechenden Elementen der iterierbaren Objekte zurückgibt. Wenn die übergebenen iterierbaren Objekte unterschiedliche Längen haben, endet die Iteration, sobald das kürzeste Objekt aufgebraucht ist.",
+    "questions": [
+        {
+            "question": "Was ist die zip-Funktion in Python?",
+            "answer": "Die zip-Funktion kombiniert mehrere iterierbare Objekte (wie Listen oder Tupel) paarweise zu einer Liste von Tupeln."
+        },
+        {
+            "question": "Wie funktioniert die zip-Funktion mit zwei Listen gleicher Länge? list1 = [1, 2, 3] list2 = ['a', 'b', 'c']",
+            "answer": "result = list(zip(list1, list2))"
+        },
+        {
+            "question": "Was passiert, wenn die Listen, die an zip übergeben werden, unterschiedlich lang sind?",
+            "answer": "zip beendet die Paarung, sobald die kürzeste Liste abgearbeitet ist."
+        },
+        {
+            "question": "Kann man mehr als zwei Listen mit zip kombinieren?",
+            "answer": "Ja, zip kann mehrere iterierbare Objekte kombinieren."
+        },
+        {
+            "question": "Was ist das Ergebnis von zip mit einer einzelnen Liste?",
+            "answer": "Das Ergebnis ist eine Liste von 1-Tupeln."
+        },
+        {
+            "question": "Wie entpackt man die Ergebnisse der zip-Funktion?",
+            "answer": "Man kann zip(*zipped_list) verwenden, um die Listen zu entpacken: list1, list2 = zip(*zipped_list)"
+        },
+        {
+            "question": "Kann man zip mit nicht-sequentiellen Datentypen wie Sets oder Dictionaries verwenden?",
+            "answer": "Ja, zip kann mit jedem iterierbaren Objekt verwendet werden, einschließlich Sets und Dictionary-Keys."
+        },
+        {
+            "question": "Wie verwendet man zip, um zwei Wörter zeichenweise zu kombinieren? word1 = 'hello' word2 = 'world'",
+            "answer": "result = list(zip(word1, word2))"
+        },
+        {
+            "question": "Kann zip mit einem for-Schleifen verwendet werden?",
+            "answer": "Ja, man kann zip direkt in einer Schleife verwenden, um die Elemente paarweise zu durchlaufen: z.B. [print(num, char) for num, char in zip(list1, list2)]"
+        },
+        {
+            "question": "Wie verwendet man zip, um zwei Listen in ein Dictionary zu verwandeln? keys = ['one', 'two', 'three'] values = [1, 2, 3]",
+            "answer": "dictionary = dict(zip(keys, values))"
+        }
+    ]
+}

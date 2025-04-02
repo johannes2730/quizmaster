@@ -1,0 +1,26 @@
+{
+  "title": "Args - Kwargs",
+  "introduction": "In Python gibt es zwei wichtige Konzepte im Zusammenhang mit Funktionen, nämlich *args und **kwargs. Diese ermöglichen es, Funktionen flexibler zu gestalten und mit variabler Anzahl von Argumenten umzugehen.",
+  "questions": [
+    {
+      "question": "*Was macht args in einer Funktion?",
+      "answer": "´*args´ erlaubt es, eine Funktion so zu schreiben, dass sie eine variable Anzahl von positionalen Argumenten akzeptiert. Diese werden als Tupel in der Funktion behandelt. Beispiel: def multiply(*faktors):"
+    },
+    {
+      "question": "Was macht kwargs in einer Funktion?",
+      "answer": "´**kwargs´ ermöglicht es, eine Funktion zu schreiben, die eine variable Anzahl von Keyword-Argumenten akzeptiert. Diese werden als Wörterbuch (Dictionary) in der Funktion behandelt."
+    },
+    {
+      "question": "Warum benutzt man args?",
+      "answer": "*args wird verwendet, um eine Funktion flexibel zu gestalten, sodass sie mit unterschiedlich vielen Argumenten aufgerufen werden kann, ohne dass man für jede mögliche Anzahl eine separate Funktion schreiben muss."
+    },
+    {
+      "question": "Wie entpackt man eine Liste in einzelne Argumente?",
+      "answer": "Man kann eine Liste in einzelne Argumente entpacken, indem man das Sternchen * vor die Liste setzt. Das sorgt dafür, dass jedes Listenelement als separates Argument behandelt wird, z.B. *meine_liste."
+    },
+    {
+      "question": "Was bedeutet es, wenn eine Funktion *args und **kwargs hat?",
+      "answer": "Eine Funktion mit *args und **kwargs kann sowohl eine beliebige Anzahl von positionalen als auch von Keyword-Argumenten entgegennehmen. Dies macht die Funktion extrem flexibel und anpassbar an verschiedene Situationen."
+    }
+  ]
+}

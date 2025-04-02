@@ -1,0 +1,70 @@
+{
+    "title": "Python Bytecode - Wissensfragen",
+    "questions":[
+    {
+        "question": "Was ist Maschinencode?",
+        "answer": "Maschinencode ist die niedrigste Ebene der Code-Darstellung, die direkt von der CPU eines Computers verstanden und ausgeführt werden kann."
+    },
+    {
+        "question": "Wie übersetzt ein Compiler Programmcode zu Maschinencode?",
+        "answer": "Ein Compiler übersetzt Quellcode schrittweise in Maschinencode, indem er den Code zunächst in Tokens zerlegt, seine Syntax und Semantik überprüft und eine optimierte Zwischenrepräsentation erstellt.\n Diese wird schließlich in den Maschinencode der Zielarchitektur umgewandelt, der direkt ausgeführt werden kann."
+    },
+    {
+        "question": "Wie interpretiert ein Interpreter Programmcode zu Maschinencode?",
+        "answer": "Ein Interpreter liest den Quellcode Zeile für Zeile ein, analysiert jede Anweisung und führt sie direkt aus, ohne den gesamten Code im Voraus in Maschinencode zu übersetzen.\n Dabei interpretiert er die Anweisungen zur Laufzeit und ruft die entsprechenden Maschinenbefehle sofort auf."
+    },
+    {
+        "question": "Was sind die Vorteile der Verwendung eines Compilers?",
+        "answer": "Der Code wird einmal übersetzt und kann dann schneller ausgeführt werden, da die Übersetzung nicht bei jeder Ausführung stattfinden muss."
+    },
+    {
+        "question": "Was sind die Nachteile der Verwendung eines Compilers?",
+        "answer": "Die Übersetzung des gesamten Programms vor der Ausführung kann zeitaufwendig sein, und Fehler werden erst nach der Kompilierung entdeckt."
+    },
+    {
+        "question": "Was sind die Vorteile der Verwendung eines Interpreters?",
+        "answer": "Der Quellcode kann direkt ausgeführt werden, was die Fehlersuche und -behebung erleichtert."
+    },
+    {
+        "question": "Was sind die Nachteile der Verwendung eines Interpreters?",
+        "answer": "Der Code wird langsamer ausgeführt, da die Übersetzung bei jeder Ausführung stattfindet."
+    },
+    {
+        "question": "Wie wird Python-Quellcode in Maschinencode übersetzt?",
+        "answer": "Python-Quellcode wird zuerst von einem Compiler in Bytecode übersetzt, dann wird der Bytecode von einem Interpreter in der Python Virtual Machine (PVM) in Maschinencode übersetzt."
+    },
+    {
+        "question": "Was ist Bytecode in Python?",
+        "answer": "Bytecode ist eine niedrigstufigere, abstraktere Darstellung des Python-Quellcodes, der von der PVM interpretiert wird."
+    },
+    {
+        "question": "Was ist die Python Virtual Machine (PVM)?",
+        "answer": "Die PVM ist ein Programm, das Bytecode interpretiert und in Maschinencode übersetzt, der auf der jeweiligen Hardware ausgeführt werden kann."
+    },
+    {
+        "question": "Warum ist Python plattformunabhängig?",
+        "answer": "Weil der Bytecode von der PVM und nicht direkt von der Hardware ausgeführt wird, kann der gleiche Python-Code auf verschiedenen Betriebssystemen laufen, solange eine passende PVM vorhanden ist."
+    },
+    {
+        "question": "Wie kann man den Bytecode eines Python-Programms anzeigen?",
+        "answer": "Mit dem dis-Modul in Python kann man den Bytecode eines Programms anzeigen."
+    },
+    {
+        "question": "Was zeigt der Befehl dis.dis(add) an?",
+        "answer": "Er zeigt den Bytecode des add-Programms an, einschließlich der Adressen, Anweisungen und Parameter.\n beispiel\n  3           0 RESUME                   0\n\n  4           2 LOAD_FAST                0 (a)\n              4 LOAD_FAST                1 (b)\n              6 BINARY_OP                0 (+)\n             10 RETURN_VALUE",
+        "code": "import dis\n\ndef add(a,b):\n    return a+b\n\ndis.dis(add)"
+    },
+    {
+        "question": "Welche Bedeutung hat der Befehl LOAD_FAST im Bytecode?",
+        "answer": "LOAD_FAST lädt eine lokale Variable schnell in den Interpreter."
+    },
+    {
+        "question": "Wie kann man herausfinden, welchen Python-Interpreter man aktuell benutzt?",
+        "answer": "Man kann den Befehl 'import sys' und dann 'print(sys.executable)' verwenden, um den Pfad des aktuellen Interpreters anzuzeigen."
+    },
+    {
+        "question": "Was passiert, wenn du dis.dis() nach einem NameError ausführst?",
+        "answer": "Der dis-Befehl zeigt den Bytecode bis zu der Stelle an, an der der NameError aufgetreten ist, und gibt Aufschluss über den Fehler im Code."
+    }
+]
+}

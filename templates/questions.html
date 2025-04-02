@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <a href="{{ url_for('static',filename = "/") }}">main_page</a>
+    {% for i, item in items %}
+    <h2>{{ item["question"] }}</h2>
+    {%if item['code']:%}
+    <pre><code class="python">{{item['code']}}</code></pre>
+    {%endif%}
+    <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="lösungen hier notieren"></textarea>
+    <button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('{{i}}') .style.display=='none') {document.getElementById('{{i}}') .style.display=''}else{document.getElementById('{{i}}') .style.display='none'}">Antwort</button>
+    <div id="{{i}}" style="display:none" >
+      <pre><code class="python">
+          {{item["answer"]}}
+        </code></pre>
+    </div>
+    {% endfor %}
+  </body>
+</html>

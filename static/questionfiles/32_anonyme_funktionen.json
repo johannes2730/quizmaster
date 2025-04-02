@@ -1,0 +1,72 @@
+{"title": "anonyme_funktionen",
+    "questions": [
+      {
+        "question": "Wie kann man eine Funktion, die den Quadratwert einer Zahl berechnet, in einen Lambda-Ausdruck umwandeln? Schreiben Sie den entsprechenden Lambda-Ausdruck auf.",
+        "answer": "Der Lambda-Ausdruck lautet: `lambda x: x ** 2`"
+      },
+      {
+        "question": "Was gibt der folgende Code aus und warum?",
+        "code": "my_list = [2, 3, 4]\nsquared = list(map(lambda x: x ** 2, my_list))\nprint(squared)",
+        "answer": "Der Code gibt `[4, 9, 16]` aus, da die Funktion `lambda x: x ** 2` auf jedes Element der Liste angewendet wird, um das Quadrat jedes Elements zu berechnen."
+      },
+      {
+        "question": "Erstellen Sie einen Lambda-Ausdruck, der überprüft, ob eine Zahl ungerade ist.",
+        "answer": "Der Lambda-Ausdruck lautet: `lambda x: x % 2 != 0`"
+      },
+      {
+        "question": "Was macht der folgende Code und was wird ausgegeben?",
+        "code": "nums = [1, 2, 3, 4, 5, 6]\neven_nums = list(filter(lambda x: x % 2 == 0, nums))\nprint(even_nums)",
+        "answer": "Der Code filtert die Liste `nums`, um nur die geraden Zahlen zu behalten, und gibt `[2, 4, 6]` aus."
+      },
+      {
+        "question": "Schreiben Sie einen Lambda-Ausdruck, der zwei Zahlen multipliziert und das Ergebnis um 5 erhöht.",
+        "answer": "Der Lambda-Ausdruck lautet: `lambda x, y: x * y + 5`"
+      },
+      {
+        "question": "Was gibt der folgende Code aus und warum?",
+        "code": "pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]\npairs.sort(key=lambda pair: pair[1])\nprint(pairs)",
+        "answer": "Der Code sortiert die Liste `pairs` nach dem zweiten Element in jedem Tupel, also den Strings. Die Ausgabe ist: `[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]`."
+      },
+      {
+        "question": "Erstellen Sie einen Lambda-Ausdruck, der den längsten String in einer Liste von Strings findet.",
+        "answer": "Der Lambda-Ausdruck lautet: `max(strings, key=lambda s: len(s))`, wobei `strings` eine Liste von Strings ist."
+      },
+      {
+        "question": "Was macht der folgende Code und was wird ausgegeben?",
+        "code": "names = ['John', 'Jane', 'Doe']\ncapitalized_names = list(map(lambda name: name.upper(), names))\nprint(capitalized_names)",
+        "answer": "Der Code konvertiert jeden Namen in der Liste `names` in Großbuchstaben und gibt `['JOHN', 'JANE', 'DOE']` aus."
+      },
+      {
+        "question": "Schreiben Sie einen Lambda-Ausdruck, der das Produkt aller Zahlen in einer Liste berechnet.",
+        "answer": "Der Lambda-Ausdruck in Kombination mit `reduce` lautet: `reduce(lambda x, y: x * y, nums)`, wobei `nums` eine Liste von Zahlen ist."
+      },
+      {
+        "question": "Was passiert in folgendem Code und was wird ausgegeben?",
+        "code": "letters = ['a', 'b', 'c']\nindexed_letters = list(map(lambda x: (x[0], x[1]), enumerate(letters, start=1)))\nprint(indexed_letters)",
+        "answer": "Der Code fügt jedem Buchstaben aus der Liste `letters` eine laufende Nummer hinzu, beginnend mit 1. Die Ausgabe ist: `[(1, 'a'), (2, 'b'), (3, 'c')]`."
+      },
+      {
+        "question": "Schreiben Sie einen Lambda-Ausdruck, der den ersten Buchstaben eines Strings zurückgibt.",
+        "answer": "Der Lambda-Ausdruck lautet: `lambda s: s[0]`"
+      },
+      {
+        "question": "Was macht der folgende Code und was wird ausgegeben?",
+        "code": "list_of_tuples = [(1, 2), (3, 4), (5, 6)]\nsums = list(map(lambda x: x[0] + x[1], list_of_tuples))\nprint(sums)",
+        "answer": "Der Code berechnet die Summe der Elemente in jedem Tupel der Liste `list_of_tuples` und gibt `[3, 7, 11]` aus."
+      },
+      {
+        "question": "Schreiben Sie einen Lambda-Ausdruck, der die Differenz zwischen zwei Zahlen berechnet, aber nur dann, wenn die erste Zahl größer ist als die zweite. Wenn nicht, soll 0 zurückgegeben werden.",
+        "answer": "Der Lambda-Ausdruck lautet: `lambda x, y: x - y if x > y else 0`"
+      },
+      {
+        "question": "Was wird durch den folgenden Code ausgegeben und warum?",
+        "code": "nums = [5, 10, 15, 20]\nnew_nums = list(map(lambda x: x // 2, nums))\nprint(new_nums)",
+        "answer": "Der Code teilt jedes Element in der Liste `nums` durch 2 und gibt die ganzzahligen Ergebnisse zurück. Die Ausgabe ist: `[2, 5, 7, 10]`."
+      },
+      {
+        "question": "Erstellen Sie einen Lambda-Ausdruck, der überprüft, ob ein String ein Palindrom ist (ein Wort, das vorwärts und rückwärts gleich gelesen wird).",
+        "answer": "Der Lambda-Ausdruck lautet: `lambda s: s == s[::-1]`"
+      }
+    ]
+  }
+  

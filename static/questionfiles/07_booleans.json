@@ -1,0 +1,65 @@
+{
+    "title": "Python Booleans - Wissensfragen",
+    "questions":[
+    {
+        "question": "Was ist der boolesche Datentyp in Python?",
+        "answer": "Ein Datentyp, der genau zwei Instanzen hat: True und False."
+    },
+    {
+        "question": "Welche Operatoren verwendet man, um boolesche Werte zu verknüpfen?",
+        "answer": "Die Operatoren and, or und not."
+    },
+    {
+        "question": "Was ist das Ergebnis von 'True and False'?",
+        "answer": "False"
+    },
+    {
+        "question": "Was ist das Ergebnis von 'True or False'?",
+        "answer": "True"
+    },
+    {
+        "question": "Was ist das Ergebnis von 'not False'?",
+        "answer": "True"
+    },
+    {
+        "question": "Wie drückt man den Satz von De Morgan in Python aus?",
+        "answer": "not (A or B) ist gleich not A and not B; not (A and B) ist gleich not A or not B."
+    },
+    {
+        "question": "Wie kann man überprüfen, ob eine Liste leer ist, ohne die Funktion 'len()' zu verwenden?",
+        "answer": "Indem man einfach die Liste in der Bedingung verwendet: 'if my_list:'."
+    },
+    {
+        "question": "Zu welchem booleschen Wert wird eine leere Liste in Python ausgewertet?",
+        "answer": "False"
+    },
+    {
+        "question": "Zu welchem booleschen Wert wird eine nicht-leere Liste in Python ausgewertet?",
+        "answer": "True"
+    },
+    {
+        "question": "Zu welchem booleschen Wert wird die Zahl 0 ausgewertet?",
+        "answer": "False"
+    },
+    {
+        "question": "Wie kann man eine if-Bedingung für eine gerade Zahl kürzen?",
+        "answer": "Indem man 'if zahl % 2 == 0:' durch 'if not zahl % 2:' ersetzt."
+    },
+    {
+        "question": "Wie kann man eine if-Bedingung für einen True-Wert kürzen?",
+        "answer": "Indem man 'if value == True:' durch 'if value:' ersetzt."
+    },
+    {
+        "question": "Was ist die Ausgabe von 'print(True + 3)'?",
+        "answer": "4"
+    },
+    {
+        "question": "Wie wird der ternäre Operator in Python verwendet?",
+        "answer": "Mit der Syntax 'value_if_true if condition else value_if_false'."
+    },
+    {
+        "question": "Wie lautet der ternäre Ausdruck für die folgende if-else-Bedingung: 'if goals > 5: comment = \"Wow\" else: comment = \"Okay\"'?",
+        "answer": "\"Wow\" if goals > 5 else \"Okay\""
+    }
+]
+}

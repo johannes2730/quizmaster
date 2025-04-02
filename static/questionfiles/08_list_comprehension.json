@@ -1,0 +1,82 @@
+{
+    "title": "Python - List Comprehension",
+    "introduction": "List Comprehension in Python ist eine kompakte und elegante Methode, um neue Listen basierend auf bestehenden Listen oder anderen iterierbaren Objekten zu erstellen. Sie ermöglicht es, eine Schleife und eine Bedingung in einer einzigen Zeile zu kombinieren, was den Code kürzer und oft leichter lesbar macht.",
+    "questions": [
+        {
+            "question": "Was ist List Comprehension in Python?",
+            "answer": "List Comprehension ist eine kompakte Möglichkeit, eine Liste basierend auf einer existierenden Liste oder einem anderen iterierbaren Objekt zu erstellen. Es kombiniert eine Schleife und optional eine Bedingung in einer einzigen Zeile."
+        },
+        {
+            "question": "Wie erstellt man eine einfache Liste von Quadraten der Zahlen von 0 bis 9 mit List Comprehension?",
+            "answer": "[x ** 2 for x in range(10)]"
+        },
+        {
+            "question": "Wie kann man mit List Comprehension nur die geraden Zahlen von 0 bis 9 in eine Liste aufnehmen?",
+            "answer": "[x for x in range(10) if x % 2 == 0]"
+        },
+        {
+            "question": "Kann man List Comprehension mit if-else verwenden?",
+            "answer": "['even' if x % 2 == 0 else 'odd' for x in range(10)]"
+        },
+        {
+            "question": "Wie erstellt man eine Liste von Tupeln, die aus Zahlen und ihren Quadraten bestehen, für Zahlen von 0 bis 4?",
+            "answer": "[(x, x ** 2) for x in range(5)]"
+        },
+        {
+            "question": "Kann man mehrere Schleifen in einer List Comprehension verschachteln?",
+            "answer": "Ja, man kann mehrere Schleifen verschachteln. Beispiel: [(x, y) for x in range(3) for y in range(3)]"
+        },
+        {
+            "question": "Wie erstellt man eine Liste, die nur Wörter mit mehr als drei Buchstaben aus einer gegebenen Liste enthält? words = ['apple', 'cat', 'banana', 'dog']",
+            "answer": "[word for word in words if len(word) > 3]"
+        },
+        {
+            "question": "Kann List Comprehension auch mit Sets verwendet werden?",
+            "answer": "Ja, die Syntax ist fast identisch: unique_squares = {x**2 for x in range(10)}"
+        },
+        {
+            "question": "Wie erstellt man eine Liste von Zeichen aus einem String mit List Comprehension?",
+            "answer": "[char for char in 'hello']"
+        },
+        {
+            "question": "Kann man List Comprehension verwenden, um ein Dictionary zu erstellen?",
+            "answer": "Ja, das ist möglich: {x: x**2 for x in range(5)}"
+        },
+        {
+            "question": "Wie kann man eine List Comprehension verwenden, um negative Werte in einer Liste in positive Werte umzuwandeln? numbers = [-1, 2, -3, 4, -5]",
+            "answer": "[abs(x) for x in numbers]"
+        },
+        {
+            "question": "Wie kann man mit List Comprehension nur Zahlen, die durch 3 teilbar sind, aus einer Liste filtern? numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]",
+            "answer": "[x for x in numbers if x % 3 == 0]"
+        },
+        {
+            "question": "Wie kann man eine Liste von Zeichenketten in Großbuchstaben umwandeln? words = ['apple', 'banana', 'cherry']",
+            "answer": "[word.upper() for word in words]"
+        },
+        {
+            "question": "Wie erstellt man eine Liste von Zeichenketten, die aus den ersten Buchstaben jeder Zeichenkette einer gegebenen Liste bestehen? words = ['apple', 'banana', 'cherry']",
+            "answer": "[word[0] for word in words]"
+        },
+        {
+            "question": "Wie kann man die Summe von Quadraten der Zahlen von 0 bis 4 mit List Comprehension berechnen?",
+            "answer": "sum([x**2 for x in range(5)])"
+        },
+        {
+            "question": "Wie kann man eine Liste von Tupeln erstellen, die jede Kombination von zwei Listen enthält? list1 = [1, 2] list2 = ['a', 'b']",
+            "answer": "[(x, y) for x in list1 for y in list2]"
+        },
+        {
+            "question": "Wie kann man List Comprehension verwenden, um die Länge jeder Zeichenkette in einer Liste zu berechnen? words = ['apple', 'banana', 'cherry']",
+            "answer": "[len(word) for word in words]"
+        },
+        {
+            "question": "Wie erstellt man eine Liste von Zeichen, die keine Vokale enthalten, aus einem String? string = 'comprehension'",
+            "answer": "[char for char in string if char not in 'aeiou']"
+        },
+        {
+            "question": "Kann man List Comprehension verwenden, um eine Liste von Listen zu erstellen?",
+            "answer": "Ja, man kann: [[x, x**2] for x in range(5)]"
+        }
+    ]
+}

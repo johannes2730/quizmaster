@@ -1,0 +1,14 @@
+{
+  "title": "MongoDB - Wissensfragen",
+  "questions": [
+    {
+      "question": "1. Was ist eine MongoDB? Nenne die wesentlichen Eigenschaften und Anwendungsfälle",
+      "answer": "Mongo DB ist eine dokumentenorientierte NoSQL-Datenbank, die auf hohe Flexibilität und Skalierbarkeit ausgelegt ist. Sie speichert Daten in einem flexiblen, JSON-ähnlichen Format namens BSON (Binary JSON). Sie ist frei von Schemaanforderungen, dennoch gelten die ACID-Eigenschaften. Es eignet sich für Anwendungsfälle mit unstrukturierten, stark variierenden Daten, wie Contnent-Management-Systeme, Echtzeitanwendungen und Big-Data-Anwendungen"
+    },
+    {
+      "question": "2. Was ist BSON? Wofür wurde es entwickelt und was unterscheidet es von JSON",
+      "answer": "BSON (Binary JSON) ist ein Binärformat, das zur Serialisierung von JSON-ähnlichen Dokumenten verwendet wird. Es wurde speziell für MongoDB entwickelt und ermöglicht die effiziente Speicherung und Übertragung von Daten in MongoDB Dokumenten. Im Vergleich zu JSON unterstützt es nicht nur Text, sondern auch andere Datentypen wie Datum/Uhrzeit, Binärdaten und reguläre Ausdrücke. Damit ist es effizienter für Speicherung und Übertragung von Daten. Weiterhin können BSON-Dokumente komprimiert werden."
+    }
+  ],
+  "conclusion": "Diese Fragen sollen dir helfen, dein Verständnis zu MongoDB zu vertiefen. Übe, indem du die Antworten auf diese Fragen in eigenen Worten erklärst."
+}

@@ -1,0 +1,57 @@
+{
+    "title": "Python Funktionen - Wissensfragen",
+    "questions": [
+    {
+        "question": "Was ist eine Funktion in Python?",
+        "answer": "Eine selbstständige, wiederverwendbare Codeeinheit, die dazu dient, eine bestimmte Aufgabe zu erledigen."
+    },
+    {
+        "question": "Wie definiert man eine Funktion in Python?",
+        "answer": "Mit dem Schlüsselwort 'def' gefolgt vom Funktionsnamen und Klammern."
+    },
+    {
+        "question": "Wie ruft man eine Funktion ohne Parameter auf?",
+        "answer": "Indem man den Funktionsnamen gefolgt von leeren Klammern schreibt, z.B.\n funktionsname()."
+    },
+    {
+        "question": "Wie kann eine Funktion Parameter akzeptieren?",
+        "answer": "Indem man die Parameternamen in die Klammern nach dem Funktionsnamen schreibt, z.B. \ndef funktionsname(parameter1, parameter2):."
+    },
+    {
+        "question": "Was ist ein Rückgabewert in einer Funktion?",
+        "answer": "Ein Wert, der von einer Funktion zurückgegeben wird und durch das Schlüsselwort 'return' angegeben wird."
+    },
+    {
+        "question": "Wie gibt man mehrere Werte aus einer Funktion zurück?",
+        "answer": "Indem man die Werte mit einem Komma getrennt nach dem 'return'-Schlüsselwort auflistet.\n def drei_zahlen():\nreturn 1,2,3\neigentlich erhällt man dann ein tuple mit drei zahlen zurück da es immer nur ein rückgabe wert geben darf"
+    },
+    {
+        "question": "Was ist der Unterschied zwischen Parametern und Argumenten?",
+        "answer": "Parameter sind die Variablen in der Funktionsdefinition, während Argumente die tatsächlichen Werte sind, die bei einem Funktionsaufruf übergeben werden."
+    },
+    {
+        "question": "Was sind Default-Parameter in Python?",
+        "answer": "Parameter, die in der Funktionsdefinition bereits einen Standardwert zugewiesen bekommen haben.\ndef drei_zahlen(zahl1=1, zahl2=2, zahl3=3):"
+    },
+    {
+        "question": "Was passiert, wenn eine Funktion aufgerufen wird?",
+        "answer": "Der Kontrollfluss springt zur Funktionsdefinition, führt den Funktionskörper aus und kehrt dann zum Aufrufort zurück."
+    },
+    {
+        "question": "Was sind Funktionen als First Class Citizens?",
+        "answer": "Funktionen, die als Objekte behandelt werden können und als Argumente an andere Funktionen übergeben oder von anderen Funktionen zurückgegeben werden können.\ndef add(a, b):\n    return a + b\n\ndef subtract(a, b):\n    return a - b\n\ndef apply_operation(func, x, y):\n    return func(x, y)\n\noperation = add  # Zuweisung einer Funktion zu einer Variablen\nprint(apply_operation(operation, 10, 5))  # 15\n\noperation = subtract  # Zuweisung einer anderen Funktion\nprint(apply_operation(operation, 10, 5))  # 5"
+    },
+    {
+        "question": "Wie erstellt man eine Funktion, die eine Liste von Zahlen als Parameter akzeptiert und die Summe der positiven Zahlen zurückgibt?",
+        "answer": "def sum_of_positive(liste:list[int,]=[]) -> int:\nreturn sum(i for i in liste if i > 0)"
+    },
+    {
+        "question": "Was passiert, wenn eine 'return'-Anweisung in einer Funktion ausgeführt wird?",
+        "answer": "Die Ausführung der Funktion wird sofort beendet und der angegebene Wert wird zurückgegeben."
+    },
+    {
+        "question": "Wie kann man den Callstack beim Debuggen in einer IDE einsehen?",
+        "answer": "Indem man einen Breakpoint setzt und den Debugger startet, der den Callstack der aufgerufenen Funktionen anzeigt."
+    }
+]
+}

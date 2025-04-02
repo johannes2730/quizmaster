@@ -1,0 +1,81 @@
+{
+  "title": "Robotik",
+  "questions": [
+    {
+      "question": "Welche Aufgaben übernehmen Roboter in der Automobilproduktion?",
+      "answer": "Roboter übernehmen in der Automobilproduktion Aufgaben wie Schweißen, Lackieren, Montage von Kleinteilen und Qualitätskontrolle."
+    },
+    {
+      "question": "Wie tragen Roboter zur Verbesserung der Effizienz und Sicherheit in der Automobilindustrie bei?",
+      "answer": "Roboter steigern die Effizienz durch präzises Arbeiten und reduzieren menschliche Fehler. Sie verbessern die Sicherheit, indem sie gefährliche oder körperlich belastende Aufgaben übernehmen."
+    },
+    {
+      "question": "Warum sind Robotersimulatoren in der Automobilindustrie wichtig?",
+      "answer": "Robotersimulatoren sind wichtig, weil sie es ermöglichen, Robotersysteme zu entwerfen, zu testen und zu optimieren, bevor sie in der realen Produktionsumgebung eingesetzt werden. Dies spart Zeit und Ressourcen und verbessert die Effizienz und Sicherheit."
+    },
+    {
+      "question": "Welche drei Robotersimulatoren wurden im Skript erwähnt?",
+      "answer": "Die drei erwähnten Robotersimulatoren sind CoppeliaSim, Gazebo und Webots."
+    },
+    {
+      "question": "Welche Arten von Robotern und Simulationsmodellen sind in Webots verfügbar?",
+      "answer": "In Webots sind sowohl Roboter mit Rädern als auch mit Beinen verfügbar. Neben Robotern können auch andere Simulationsmodelle wie Hindernisse, Beleuchtungsquellen und komplexe Umgebungen simuliert werden."
+    },
+    {
+      "question": "Wie kann man die Kameraansicht in Webots steuern?",
+      "answer": "Die Kameraansicht in Webots kann durch Klicken und Ziehen mit der Maus gesteuert werden. Man kann die Ansicht drehen, zoomen und verschieben, um verschiedene Perspektiven zu erhalten."
+    },
+    {
+      "question": "Welche Firmen und Forschungseinrichtungen nutzen Webots?",
+      "answer": "Bekannte Firmen und Forschungseinrichtungen, die Webots nutzen, sind zum Beispiel Google, NASA, MIT, und viele Universitäten weltweit."
+    },
+    {
+      "question": "Was sind die grundlegenden Arten von Roboterkontrollarchitekturen und wie unterscheiden sie sich?",
+      "answer": "Die grundlegenden Arten sind reaktive, deliberative und hybride Architekturen. Reaktive Architekturen reagieren direkt auf Umweltstimuli, deliberative Architekturen nutzen interne Modelle und Planung, während hybride Architekturen beide Ansätze kombinieren."
+    },
+    {
+      "question": "Was ist eine reaktive Architektur und wie funktioniert sie?",
+      "answer": "Eine reaktive Architektur basiert auf dem direkten Reagieren auf Umweltstimuli ohne komplexe Verarbeitung oder interne Modelle. Sie ist schnell und robust gegenüber Veränderungen in der Umgebung."
+    },
+    {
+      "question": "Was ist eine deliberative Architektur und welche Vorteile bietet sie?",
+      "answer": "Eine deliberative Architektur verwendet interne Modelle der Welt und führt komplexe Planungen durch, bevor sie handelt. Sie ist geeignet für Aufgaben, die detaillierte Analyse und Langzeitplanung erfordern."
+    },
+    {
+      "question": "Was ist eine hybride Architektur und in welchen Situationen ist sie nützlich?",
+      "answer": "Eine hybride Architektur kombiniert Elemente aus reaktiven und deliberativen Ansätzen. Sie ist nützlich, wenn sowohl schnelle Reaktionen als auch komplexe Planungen erforderlich sind, wie in dynamischen oder unsicheren Umgebungen."
+    },
+    {
+      "question": "Was sind Braitenberg Vehicle und wie funktionieren sie?",
+      "answer": "Braitenberg Vehikel sind einfache Roboter, die auf Umweltreize reagieren. Sie haben Sensoren, die direkt mit Motoren verbunden sind, sodass ihre Bewegungen unmittelbar durch die Sensorreize gesteuert werden."
+    },
+    {
+      "question": "Handelt es sich bei Braitenberg Vehicle um eine reaktive, deliberative oder hybride Roboterkontrollarchitektur?",
+      "answer": "Braitenberg Vehikel sind Beispiele für eine reaktive Roboterkontrollarchitektur, da sie direkt auf Umweltreize reagieren ohne interne Modellbildung oder komplexe Planung."
+    },
+    {
+      "question": "Welche Vorteile bieten Simulatoren wie Webots bei der Entwicklung von Fahrerassistenzsystemen (FAS)?",
+      "answer": "Simulatoren bieten sichere, kosteneffiziente und vielseitige Plattformen für das Testen von FAS. Sie ermöglichen die Simulation gefährlicher Szenarien, sparen Kosten für physische Tests und bieten reproduzierbare Testbedingungen."
+    },
+    {
+      "question": "Welche spezifischen Anwendungen und Tests können in Webots für Fahrerassistenzsysteme durchgeführt werden?",
+      "answer": "In Webots können Algorithmen für FAS entwickelt und optimiert, Sensoren simuliert, virtuelle Crashtests durchgeführt und KI-Systeme trainiert werden. Diese Tests umfassen Szenarien wie adaptive Geschwindigkeitsregelung und Notbremsassistenten."
+    },
+    {
+      "question": "Welche Rolle spielen Robotersimulatoren beim Design und der Planung von Robotersystemen?",
+      "answer": "Simulatoren ermöglichen es Ingenieuren, komplexe Robotersysteme zu entwerfen und zu planen, ohne physische Prototypen zu benötigen. Sie helfen, Zeit und Ressourcen zu sparen."
+    },
+    {
+      "question": "Was ist das .wbt-Dateiformat und welche Rolle spielt es in Webots?",
+      "answer": "Das .wbt-Dateiformat ist eine Textdatei, die die Elemente einer Simulation in Webots beschreibt. Es definiert, wie die virtuelle Welt und die darin agierenden Roboter aussehen und funktionieren."
+    },
+    {
+      "question": "Welche Kriterien können zur Klassifizierung von Roboterkontrollarchitekturen herangezogen werden?",
+      "answer": "Die Kriterien zur Klassifizierung von Roboterkontrollarchitekturen umfassen Reaktionsschnelligkeit, Planungsfähigkeit, Lernfähigkeit, Flexibilität und Robustheit."
+    },
+    {
+      "question": "Wie kann Webots zur Entwicklung und Optimierung von Algorithmen für Fahrerassistenzsysteme genutzt werden?",
+      "answer": "Webots ermöglicht die schnelle Iteration und Optimierung von Algorithmen unter verschiedenen Bedingungen, ohne reale Fahrzeuge modifizieren zu müssen. Dies beinhaltet das Testen und Verfeinern von Algorithmen für die Erkennung von Hindernissen, Spurführung und andere FAS-Funktionen."
+    }
+  ]
+}

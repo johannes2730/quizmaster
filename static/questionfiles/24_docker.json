@@ -1,0 +1,86 @@
+{
+  "title": "Docker - Wissensfragen",
+  "introduction": "Docker ist eine Open-Source-Plattform, die die Entwicklung, den Versand und die Ausführung von Anwendungen vereinfacht. Docker ermöglicht, Anwendungen in sogenannten Containern zu verpacken. Diese Container sind leichtgewichtig, tragbar und bieten eine konsistente Umgebung, unabhängig davon, wo die Anwendung ausgeführt wird.",
+  "questions": [
+    {
+      "question": "1. Was ist ein Docker Container?",
+      "answer": "Ein Container ist eine isolierte Umgebung, die alle Abhängigkeiten und Konfigurationen enthält, die für die Ausführung der Anwendung erforderlich sind. Über eine App kann also nur auf den Container, nicht aber auf den gesamten Server zugegriffen werden."
+    },
+    {
+      "question": "2. Was sind Docker Images? Und welche Bestandteile beinhalten sie?",
+      "answer": "Docker Images sind schreibgeschützte Vorlagen, die die Anweisungen zur Erstellung eines Docker-Containers enthalten. Ein Docker-Image beinhaltet alles, was für das Ausführen einer Anwendung benötigt wird – den Code, eine Laufzeitumgebung, Bibliotheken, Umgebungsvariablen und Konfigurationsdateien. Wenn ein Container gestartet wird, wird das Docker-Image als Basis verwendet, um eine laufende Instanz – den Container – zu erstellen. Das ist in etwa so zu verstehen, als würde eine Instanz aus einer Klasse erstellt werden. Einmal erstellt, wird ein Image nicht mehr verändert. Änderungen erfolgen durch Erstellen eines neuen Images, das auf dem bestehenden Image basiert. Docker-Images können auf jedem System ausgeführt werden, das Docker unterstützt, unabhängig von der zugrunde liegenden Infrastruktur. Dies gewährleistet Konsistenz über verschiedene Umgebungen hinweg."
+    },
+    {
+      "question": "3. Bonus: Was ist der Unterschied zwischen Image und Container?",
+      "answer": "Wenn ein Container gestartet wird, wird das Docker-Image als Basis verwendet, um eine laufende Instanz – den Container – zu erstellen. Das ist in etwa so zu verstehen, als würde eine Instanz aus einer Klasse erstellt werden."
+    },
+    {
+      "question": "4. Wie unterscheiden sich Docker-Container von virtuellen Maschinen?",
+      "answer": "Docker-Container sind isoliert, teilen sich jedoch den Kernel des Host-Betriebssystems, was zu einem geringeren Ressourcenverbrauch und schnelleren Startzeiten im Vergleich zu virtuellen Maschinen führt. Container sind hochportabel und können auf jedem System ausgeführt werden, das Docker unterstützt. Sie bieten eine konsistente Laufzeitumgebung, unabhängig vom zugrunde liegenden Betriebssystem."
+    },
+    {
+      "question": "5. Was ist ein Dockerfile?",
+      "answer": "Ein Dockerfile ist eine Textdatei, die eine Reihe von Anweisungen enthält, die beschreiben, wie das Image aufgebaut werden soll. Diese Anweisungen können das Hinzufügen von Dateien, das Ausführen von Befehlen und das Setzen von Umgebungsvariablen umfassen. Ein Dockerfile besteht aus Anweisungen, die jeweils in einer eigenen Zeile stehen. Diese Anweisungen werden von oben nach unten ausgeführt. Der Dateiname ist dockerfile ohne Endung. Die Datei liegt im Arbeitsverzeichnis der Anwendung."
+    },
+    {
+      "question": "6. Was ist der erste Befehl in einem Dockerfile und wofür wird er verwendet?",
+      "answer": "FROM: Gibt das Basis-Image an, auf dem das neue Image aufgebaut wird. Dies ist normalerweise die erste Anweisung in einem Dockerfile."
+    },
+    {
+      "question": "7. Was ist der Unterschied zwischen den Befehlen COPY und ADD?",
+      "answer": "Der Hauptunterschied zwischen COPY und ADD in Docker besteht darin, dass ADD zusätzliche Funktionen bietet, die COPY nicht hat, insbesondere das Verarbeiten von URLs und das automatische Extrahieren von Archiven."
+    },
+    {
+      "question": "8. Was ist der Unterschied zwischen den Befehlen CMD und ENTRYPOINT?",
+      "answer": "ENTRYPOINT: Das ist der Hauptbefehl, der immer ausgeführt wird, wenn der Container startet. Es ist quasi der 'Was soll dieser Container tun?'-Befehl.\n\nCMD: Dieser Befehl ist flexibler. Wenn ein ENTRYPOINT festgelegt ist, liefert CMD die Standardargumente dafür. Ohne ENTRYPOINT wird CMD zum Hauptbefehl, der beim Start des Containers ausgeführt wird. Es ist also entweder 'Was soll dieser Container standardmäßig tun?' oder 'Welche zusätzlichen Anweisungen gebe ich dem ENTRYPOINT?'.\n\nWichtiger Punkt: Du kannst sowohl CMD als auch ENTRYPOINT beim Ausführen von docker run überschreiben, aber zusammen bestimmen sie das Standardverhalten des Containers."
+    },
+    {
+      "question": "9. Mit welchem Befehl wird aus einem Docker Image ein Docker Container instanziiert?",
+      "answer": "docker run"
+    },
+    {
+      "question": "10. Mit welchem Befehl wird ein Docker Image gelöscht?",
+      "answer": "docker rm"
+    },
+    {
+      "question": "11. Was ist der Unterschied zwischen Docker Volumes und Bind Mounts?",
+      "answer": "Docker-Volumes sind von Docker verwaltete Speicherorte, die unabhängig vom Lebenszyklus eines Containers existieren. Sie bieten eine klare Trennung und Isolation vom Host-System, was bedeutet, dass sie außerhalb des Containers verwaltet werden und nicht direkt an das Dateisystem des Hosts gebunden sind. Bind Mounts hingegen sind direkt mit einem bestimmten Pfad auf dem Host-System verbunden und bieten keine solche Isolation. Sie erfordern, dass der Benutzer den Pfad und die Daten selbst verwaltet. Denken Sie an Volumes wie an eine externe Festplatte, die von Docker verwaltet wird, und an Bind Mounts wie an einen USB-Stick, den Sie direkt in Ihren Computer und Container stecken. In beiden Fällen ermöglichen sie, dass Daten persistent und sicher gespeichert werden, unabhängig vom Lebenszyklus des Containers."
+    },
+    {
+      "question": "12. Wie erstellt man auf Basis eines Dockerfiles ein Image?",
+      "answer": "docker build -t meine_python_app:latest ."
+    },
+    {
+      "question": "13. Was bedeutet -t in dem Befehl: docker build -t meine_python_app:latest .",
+      "answer": "Ohne das `-t` Flag würde das Image nur eine generierte ID erhalten und keinen benutzerfreundlichen Namen."
+    },
+    {
+      "question": "14. Was ist Docker Compose?",
+      "answer": "Docker Compose ist ein Tool zur Definition und Ausführung von Multi-Container Docker-Anwendungen. Mit einer YAML-Datei können Sie Dienste, Netzwerke und Volumes definieren."
+    },
+    {
+      "question": "15. Wofür wird der Befehl docker compose up verwendet?",
+      "answer": "Startet die Container, die in der docker-compose.yml-Datei definiert sind. Mit der Option -d werden die Container im Hintergrund gestartet."
+    },
+    {
+      "question": "16. Welcher Befehl wird verwendet, um einen Container zu bauen und ihn danach zu starten?",
+      "answer": "docker compose up --build"
+    },
+    {
+      "question": "17. Wofür wird der Befehl docker compose down verwendet?",
+      "answer": "Der Befehl docker compose down wird verwendet, um alle Container, Netzwerke, Volumes und Images, die durch docker compose up erstellt wurden, zu stoppen und zu entfernen."
+    },
+    {
+      "question": "18. Was ist der Unterschied zwischen docker compose down und docker compose stop?",
+      "answer": "docker compose down: Stoppt und entfernt die Container sowie Netzwerke und, wenn gewünscht, Volumes. Dies ist nützlich, wenn du ein komplettes Bereinigen und Zurücksetzen deiner Docker Compose-Anwendung durchführen möchtest.\ndocker compose stop: Stoppt die Container, lässt sie aber bestehen, sowie die Netzwerke und Volumes. Dies ist nützlich, wenn du die Container nur vorübergehend anhalten möchtest und später wieder darauf zugreifen möchtest."
+    },
+    {
+      "question": "19. Wann wird docker compose pull verwendet?",
+      "answer": "docker compose pull ist nützlich, um sicherzustellen, dass die neuesten Versionen der Images vorhanden sind, bevor du die Container startest. Es ist ein vorbereitender Schritt, um die Images auf den neuesten Stand zu bringen."
+    },
+    {
+      "question": "20. Was ist ein Union File System?",
+      "answer": "Union File Systems (UnionFS) werden von Docker verwendet, um die verschiedenen Layer eines Images zu organisieren. Ein UnionFS ermöglicht es, mehrere Dateisysteme zu überlagern und sie als ein einziges kohärentes Dateisystem zu präsentieren. In Docker repräsentiert jeder Layer eine Änderung im Dateisystem (wie das Hinzufügen, Ändern oder Löschen von Dateien). Die Layer sind schreibgeschützt, und wenn ein Container gestartet wird, fügt Docker einen beschreibbaren Layer oben auf die bestehenden schreibgeschützten Layer hinzu, um Änderungen während der Laufzeit zu speichern. Diese Layer sind unveränderlich und werden durch eine eindeutige ID identifiziert, die auf dem Inhalt des Layers basiert."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+    "title": "Python - Try Except",
+    "introduction": "Der try-except Block in Python ist ein Mechanismus zur Fehlerbehandlung, der es ermöglicht, den normalen Ablauf eines Programms fortzusetzen, selbst wenn ein Fehler (auch als Ausnahme bekannt) auftritt.",
+    "questions": [
+        {
+            "question": "Was ist der Zweck von try-except in Python?",
+            "answer": "Der Zweck von try-except in Python ist es, Fehler (Ausnahmen) abzufangen und zu behandeln, um den normalen Ablauf des Programms trotz auftretender Fehler fortzusetzen."
+        },
+        {
+            "question": "Wie definiert man einen einfachen try-except Block in Python?",
+            "answer": "try: except: finally: (optional) else: (optional)"
+        },
+        {
+            "question": "Was passiert, wenn im try Block kein Fehler auftritt?",
+            "answer": "Wenn im try Block kein Fehler auftritt, wird der except Block übersprungen, und das Programm läuft normal weiter."
+        },
+        {
+            "question": "Was passiert, wenn im try Block ein Fehler auftritt?",
+            "answer": "Wenn im try Block ein Fehler auftritt, wird der except Block ausgeführt, und der Fehler wird dort behandelt. Der restliche Code im try Block wird nicht weiter ausgeführt."
+        },
+        {
+            "question": "Kann man mehrere except-Blöcke für verschiedene Fehlerarten verwenden?",
+            "answer": "Ja, man kann mehrere except-Blöcke verwenden, um verschiedene Arten von Fehlern spezifisch zu behandeln."
+        },
+        {
+            "question": "Wie fängt man einen spezifischen Fehler, wie ZeroDivisionError, ab?",
+            "answer": "except ZeroDivisionError:"
+        },
+        {
+            "question": "Was passiert, wenn ein Fehler auftritt, für den kein entsprechender except-Block vorhanden ist?",
+            "answer": "Wenn kein entsprechender except-Block vorhanden ist, wird der Fehler weitergereicht und das Programm kann abstürzen, wenn der Fehler nicht anderswo behandelt wird."
+        },
+        {
+            "question": "Kann man einen generischen(allgemeinen) except-Block verwenden, um alle Fehler zu fangen?",
+            "answer": "except Exception as e:"
+        },
+        {
+            "question": "Was ist der Zweck des finally-Blocks in einem try-except Block?",
+            "answer": "Der finally-Block wird verwendet, um Code auszuführen, der unabhängig davon ausgeführt werden soll, ob eine Ausnahme auftritt oder nicht. Er dient oft zum Aufräumen oder Freigeben von Ressourcen."
+        },
+        {
+            "question": "Wird der finally-Block ausgeführt, wenn ein Fehler auftritt?",
+            "answer": "Ja, der finally-Block wird immer ausgeführt, egal ob eine Ausnahme aufgetreten ist oder nicht."
+        },
+        {
+            "question": "Was ist die Syntax, um mehrere Fehler in einem except-Block zu behandeln?",
+            "answer": "except (TypeError, ValueError):"
+        },
+        {
+            "question": "Wie kann man mit else im try-except Block arbeiten und was ist der Zweck?",
+            "answer": "Der else-Block wird ausgeführt, wenn der try-Block erfolgreich ohne Ausnahme abgeschlossen wurde: try: except: else:"
+        },
+        {
+            "question": "Was passiert, wenn der try-Block einen return-Befehl enthält und ein Fehler auftritt?",
+            "answer": "Wenn der try-Block einen return-Befehl enthält und ein Fehler auftritt, wird der except-Block ausgeführt, und der return-Befehl wird nicht ausgeführt."
+        },
+        {
+            "question": "Kann man try-except Blöcke verschachteln?",
+            "answer": "Ja, try-except Blöcke können verschachtelt werden, um verschiedene Fehler in unterschiedlichen Codeabschnitten zu behandeln."
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "title": "Dekoratoren",
+    "questions": [
+      {
+        "question": "Was macht der folgende Dekorator, und wie kann er nützlich sein?",
+        "code": "def ensure_positive_result(func):\n    def wrapper(*args, **kwargs):\n        result = func(*args, **kwargs)\n        if result < 0:\n            return 0\n        return result\n    return wrapper\n\n@ensure_positive_result\ndef subtract(a, b):\n    return a - b\n\nprint(subtract(3, 5))\nprint(subtract(10, 4))",
+        "answer": "Der Dekorator `ensure_positive_result` überprüft das Ergebnis der Funktion und stellt sicher, dass es nicht negativ ist. Wenn das Ergebnis negativ ist, wird 0 zurückgegeben. Dies kann nützlich sein, um sicherzustellen, dass Ergebnisse in Kontexten, in denen nur positive Werte sinnvoll sind, nicht negativ werden. Die Ausgabe ist:\n```\n0\n6\n```"
+      },
+      {
+        "question": "Wie kann man einen Dekorator schreiben, der die Anzahl der Aufrufe einer Funktion zählt? Schreiben Sie den entsprechenden Code.",
+        "answer": "Ein Dekorator, der die Anzahl der Funktionsaufrufe zählt, könnte folgendermaßen aussehen:\n```python\nfrom functools import wraps\n\ndef count_calls(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        wrapper.calls += 1\n        print(f'{func.__name__} wurde {wrapper.calls} Mal aufgerufen')\n        return func(*args, **kwargs)\n    wrapper.calls = 0\n    return wrapper\n\n@count_calls\ndef greet(name):\n    print(f'Hello, {name}!')\n\n# Testen des Dekorators\ngreet('Alice')\ngreet('Bob')\ngreet('Charlie')\n```"
+      },
+      {
+        "question": "Was tut der folgende Dekorator, und wie kann er in einem Web-Framework nützlich sein?",
+        "code": "def require_auth(func):\n    def wrapper(user, *args, **kwargs):\n        if not user['authenticated']:\n            raise PermissionError('User is not authenticated')\n        return func(user, *args, **kwargs)\n    return wrapper\n\n@require_auth\ndef get_data(user):\n    return 'Sensitive data'\n\n# Testen mit einem nicht authentifizierten Benutzer\nuser = {'authenticated': False}\ntry:\n    print(get_data(user))\nexcept PermissionError as e:\n    print(e)\n\n# Testen mit einem authentifizierten Benutzer\nuser['authenticated'] = True\nprint(get_data(user))",
+        "answer": "Der Dekorator `require_auth` überprüft, ob der Benutzer authentifiziert ist, bevor die Funktion ausgeführt wird.\n In einem Web-Framework könnte dies verwendet werden, um sicherzustellen, dass nur authentifizierte Benutzer Zugriff auf bestimmte Daten oder Funktionen haben. Die Ausgabe ist:\n```\nUser is not authenticated\nSensitive data\n```"
+      },
+      {
+        "question": "Erstellen Sie einen Dekorator, der die Argumente und den Rückgabewert einer Funktion in einer Datei protokolliert. Schreiben Sie den entsprechenden Code.",
+        "answer": "Ein Dekorator, der Argumente und Rückgabewerte protokolliert, könnte folgendermaßen aussehen:\n```python\nimport logging\n\nlogging.basicConfig(filename='function_logs.txt', level=logging.INFO)\n\ndef log_to_file(func):\n    def wrapper(*args, **kwargs):\n        logging.info(f'Called {func.__name__} with args: {args}, kwargs: {kwargs}')\n        result = func(*args, **kwargs)\n        logging.info(f'{func.__name__} returned {result}')\n        return result\n    return wrapper\n\n@log_to_file\ndef multiply(a, b):\n    return a * b\n\n# Testen des Dekorators\nmultiply(3, 4)\nmultiply(7, 5)\n```"
+      },
+      {
+        "question": "Was wird durch den folgenden Code ausgegeben und warum?",
+        "code": "def repeat_three_times(func):\n    def wrapper(*args, **kwargs):\n        for _ in range(3):\n            func(*args, **kwargs)\n    return wrapper\n\n@repeat_three_times\ndef say_hello():\n    print('Hello!')\n\nsay_hello()",
+        "answer": "Der Dekorator `repeat_three_times` führt die Funktion dreimal aus, unabhängig von den Argumenten oder Rückgabewerten. Die Ausgabe ist:\n```\nHello!\nHello!\nHello!\n```"
+      },
+      {
+        "question": "Schreiben Sie einen Dekorator, der eine Funktion nur einmal ausführt und bei allen folgenden Aufrufen den gespeicherten Rückgabewert zurückgibt. Schreiben Sie den entsprechenden Code.",
+        "answer": "Ein Dekorator, der eine Funktion nur einmal ausführt, könnte folgendermaßen aussehen:\n```python\nfrom functools import wraps\n\ndef once(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        if not wrapper.has_run:\n            wrapper.result = func(*args, **kwargs)\n            wrapper.has_run = True\n        return wrapper.result\n    wrapper.has_run = False\n    return wrapper\n\n@once\ndef initialize():\n    print('Initializing...')\n    return 'Initialized'\n\n# Testen des Dekorators\nprint(initialize())\nprint(initialize())\nprint(initialize())\n```"
+      },
+      {
+        "question": "Was wird durch den folgenden Code ausgegeben und warum?",
+        "code": "import time\n\ndef slow_down(func):\n    def wrapper(*args, **kwargs):\n        time.sleep(1)\n        return func(*args, **kwargs)\n    return wrapper\n\n@slow_down\ndef countdown(n):\n    if n < 1:\n        print('Liftoff!')\n    else:\n        print(n)\n        countdown(n-1)\n\ncountdown(3)",
+        "answer": "Der Dekorator `slow_down` verzögert die Ausführung der Funktion um eine Sekunde. Dies führt dazu, dass der Countdown langsamer läuft. Die Ausgabe erfolgt mit einer Sekunde Verzögerung zwischen den Zahlen und lautet:\n```\n3\n2\n1\nLiftoff!\n```"
+      },
+      {
+        "question": "Erstellen Sie einen Dekorator, der das Ergebnis einer Funktion in einem Cache speichert, um bei wiederholten Aufrufen die Berechnungszeit zu sparen. Schreiben Sie den entsprechenden Code.",
+        "answer": "Ein Dekorator mit Cache könnte folgendermaßen aussehen:\n```python\nfrom functools import wraps\n\ndef cache(func):\n    cached_results = {}\n\n    @wraps(func)\n    def wrapper(*args):\n        if args in cached_results:\n            return cached_results[args]\n        result = func(*args)\n        cached_results[args] = result\n        return result\n\n    return wrapper\n\n@cache\ndef fibonacci(n):\n    if n < 2:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)\n\n# Testen des Dekorators\nprint(fibonacci(10))\nprint(fibonacci(20))\n```"
+      },
+      {
+        "question": "Was wird durch den folgenden Code ausgegeben und warum?",
+        "code": "def print_args(func):\n    def wrapper(*args, **kwargs):\n        print(f'Arguments: {args}, {kwargs}')\n        return func(*args, **kwargs)\n    return wrapper\n\n@print_args\ndef calculate_area(length, width):\n    return length * width\n\nprint(calculate_area(5, 3))",
+        "answer": "Der Dekorator `print_args` gibt die Argumente aus, mit denen die Funktion aufgerufen wird. Danach wird die Funktion ausgeführt und das Ergebnis zurückgegeben. Die Ausgabe ist:\n```\nArguments: (5, 3), {}\n15\n```"
+      },
+      {
+        "question": "Schreiben Sie einen Dekorator, der die Ausführung einer Funktion um eine bestimmte Anzahl von Sekunden verzögert. Schreiben Sie den entsprechenden Code.",
+        "answer": "Ein Dekorator, der eine Verzögerung einfügt, könnte folgendermaßen aussehen:\n```python\nimport time\n\ndef delay(seconds):\n    def decorator(func):\n        def wrapper(*args, **kwargs):\n            print(f'Waiting for {seconds} seconds before executing {func.__name__}')\n            time.sleep(seconds)\n            return func(*args, **kwargs)\n        return wrapper\n    return decorator\n\n@delay(2)\ndef greet(name):\n    print(f'Hello, {name}!')\n\n# Testen des Dekorators\ngreet('Alice')\n```"
+      }
+    ]
+  }
+  

@@ -1,0 +1,48 @@
+{
+    "title": "Python Schleifen - Wissensfragen",
+    "introduction": "Schleifen sind ein grundlegendes Konzept in der Programmierung, das es ermöglicht, einen bestimmten Block von Anweisungen wiederholt auszuführen. In Python gibt es hauptsächlich zwei Arten von Schleifen: `for`-Schleifen und `while`-Schleifen. Die folgenden Fragen testen dein Verständnis der verschiedenen Aspekte von Schleifen in Python.",
+    "questions": [
+      {
+        "question": "1. Wie unterscheidet sich eine `for`-Schleife von einer `while`-Schleife in Python?",
+        "answer": "Eine `for`-Schleife wird verwendet, um über eine Sequenz (wie eine Liste, ein Tupel oder eine Zeichenkette) zu iterieren und den Codeblock für jedes Element in der Sequenz auszuführen. Eine `while`-Schleife wird ausgeführt, solange eine angegebene Bedingung wahr ist und wird verwendet, wenn die Anzahl der Schleifendurchläufe im Voraus nicht bekannt ist."
+      },
+      {
+        "question": "2. Was ist der Zweck der `range`-Funktion in einer `for`-Schleife?",
+        "answer": "Die `range`-Funktion erzeugt eine Sequenz von Zahlen, die in einer `for`-Schleife verwendet werden können, um über einen festen Zahlenbereich zu iterieren. Sie kann mit einem, zwei oder drei Argumenten aufgerufen werden, um verschiedene Zahlenbereiche und Schrittweiten zu spezifizieren."
+      },
+      {
+        "question": "3. Wie kann man eine Schleife vorzeitig abbrechen und welche Schlüsselwörter sind dafür notwendig?",
+        "answer": "Man kann eine Schleife vorzeitig abbrechen, indem man das Schlüsselwort `break` verwendet, um die Schleife vollständig zu verlassen. Um nur den aktuellen Durchlauf der Schleife zu überspringen und mit dem nächsten fortzufahren, verwendet man das Schlüsselwort `continue`."
+      },
+      {
+        "question": "4. Was ist der Unterschied zwischen einer `for`-Schleife und einer verschachtelten Schleife?",
+        "answer": "Eine `for`-Schleife iteriert über eine Sequenz, während eine verschachtelte Schleife eine Schleife innerhalb einer anderen Schleife ist. Verschachtelte Schleifen werden oft verwendet, um über mehrdimensionale Datenstrukturen wie Listen von Listen zu iterieren."
+      },
+      {
+        "question": "5. Was passiert, wenn man eine Schleife ohne Abbruchbedingung (`while True:`) schreibt?",
+        "answer": "Eine Schleife ohne Abbruchbedingung, wie `while True:`, wird eine Endlosschleife erzeugen, die theoretisch unendlich lange läuft. Diese Schleifen müssen durch ein `break`-Statement oder eine andere Bedingung im Schleifenrumpf abgebrochen werden, um eine Endlosschleife zu vermeiden."
+      },
+      {
+        "question": "6. Was ist der Zweck eines `else`-Zweigs in einer Schleife?",
+        "answer": "Ein `else`-Zweig in einer Schleife wird ausgeführt, wenn die Schleife auf normale Weise beendet wird, also nicht durch ein `break`-Statement unterbrochen wird. Es kann verwendet werden, um abschließende Aktionen auszuführen, wenn die Schleife vollständig durchlaufen wurde."
+      },
+      {
+        "question": "7. Wie kann man den größten Namen in einer Liste von Namen mit einer `for`-Schleife finden?",
+        "answer": "Man kann eine `for`-Schleife verwenden, um durch die Liste von Namen zu iterieren und dabei die Länge jedes Namens zu überprüfen. Der längste Name kann durch Vergleichen der Längen während der Iteration gefunden werden und in einer Variablen gespeichert werden."
+      },
+      {
+        "question": "8. Wie berechnet man die Summe der ersten n natürlichen Zahlen mit einer `for`-Schleife?",
+        "answer": "Man kann eine `for`-Schleife verwenden, um durch die Zahlen von 1 bis n zu iterieren und eine laufende Summe zu berechnen. Dies kann durch Hinzufügen jedes aktuellen Schleifenwerts zu einer Summenvariablen innerhalb der Schleife erreicht werden."
+      },
+      {
+        "question": "9. Was ist der Vorteil der Verwendung von `range` gegenüber einer Liste mit festen Zahlen?",
+        "answer": "Der Vorteil der Verwendung von `range` liegt darin, dass sie speichereffizient ist, da die Zahlen in der Range nicht alle gleichzeitig im Speicher gespeichert werden. Stattdessen werden sie bei Bedarf erzeugt, was insbesondere bei großen Zahlenbereichen vorteilhaft ist."
+      },
+      {
+        "question": "10. Wie kann man eine Schleife nutzen, um die Fakultät einer Zahl zu berechnen?",
+        "answer": "Man kann eine `for`-Schleife verwenden, um die Fakultät einer Zahl n zu berechnen, indem man von 1 bis n iteriert und das Produkt aller Zahlen in diesem Bereich berechnet. Eine laufende Produktvariable wird dabei innerhalb der Schleife aktualisiert."
+      }
+    ],
+    "conclusion": "Diese Fragen sollen dir helfen, dein Verständnis der Schleifen in Python zu vertiefen. Übe, indem du die Antworten auf diese Fragen in eigenen Worten erklärst und die beschriebenen Konzepte in kleinen Programmen umsetzt."
+  }
+  

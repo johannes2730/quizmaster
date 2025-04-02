@@ -1,0 +1,67 @@
+{
+  "title": "Azure",
+  "introduction": "Microsoft Azure ist eine umfassende Cloud-Computing-Plattform, die eine Vielzahl von Diensten wie virtuelle Maschinen, Datenbanken und Netzwerkressourcen bereitstellt. Die folgenden Fragen und Antworten bieten einen Überblick über wichtige Konzepte und Dienste in Azure.",
+  "questions": [
+    {
+      "question": "1. Welche Ressourcen können über das Azure Portal verwaltet werden?",
+      "answer": "Über das Azure Portal können verschiedene Ressourcen wie virtuelle Maschinen, Datenbanken, Netzwerke und Speicherressourcen verwaltet werden."
+    },
+    {
+      "question": "2. Wie helfen Resource Groups in Azure bei der Organisation von Ressourcen?",
+      "answer": "Resource Groups dienen als Container, um verwandte Azure-Ressourcen zu gruppieren. Dies erleichtert die Organisation, Verwaltung und Abrechnung von Ressourcen, indem beispielsweise alle Ressourcen für eine bestimmte Anwendung zusammengefasst werden."
+    },
+    {
+      "question": "3. Was ist eine Azure-Subscription und welche Rolle spielt sie?",
+      "answer": "Eine Azure-Subscription ist die Grundlage für die Nutzung von Azure-Diensten. Sie stellt ein Vertragsverhältnis mit Microsoft dar und regelt den Zugriff auf Cloud-Dienste, die Abrechnung und die Zugriffsrechte."
+    },
+    {
+      "question": "4. Wie funktionieren Resource Groups in Azure und warum sind sie wichtig?",
+      "answer": "Resource Groups dienen als Container, um verwandte Azure-Ressourcen zu gruppieren. Sie erleichtern die Organisation, Verwaltung und Abrechnung von Ressourcen, indem sie beispielsweise alle Komponenten einer Anwendung zusammenfassen."
+    },
+    {
+      "question": "5. Wofür wird Azure Policy verwendet?",
+      "answer": "Azure Policy ermöglicht die Erstellung und Durchsetzung regelbasierter Richtlinien für Azure-Subscriptions. Dies hilft bei der Einhaltung von Compliance-Standards und der Verwaltung von Sicherheitsrisiken."
+    },
+    {
+      "question": "6. Wie unterstützen Azure Management Groups größere Organisationen?",
+      "answer": "Azure Management Groups erlauben die Verwaltung von Zugriffsrechten und Richtlinien über mehrere Azure-Subscriptions hinweg. Sie sind besonders nützlich für große Organisationen mit komplexen Ressourcenverwaltungsanforderungen."
+    },
+    {
+      "question": "7. Was sind virtuelle Maschinen (VMs) in Azure und wofür werden sie verwendet?",
+      "answer": "Virtuelle Maschinen (VMs) in Azure sind emulierte Computer, die in der Cloud laufen. Sie bieten Flexibilität für das Ausführen verschiedener Anwendungen, wie Webserver, Datenbanken, Entwicklungsumgebungen und Produktionsanwendungen."
+    },
+    {
+      "question": "8. Was bestimmt die Region beim Erstellen einer Azure VM?",
+      "answer": "Die Region legt den geografischen Standort fest, an dem die VM gehostet wird. Dies kann die Latenz, Verfügbarkeit und Compliance beeinflussen. Es ist oft ratsam, eine Region in der Nähe der Endbenutzer zu wählen."
+    },
+    {
+      "question": "9. Wie unterstützt Azure Kubernetes Service (AKS) die Anwendungsbereitstellung?",
+      "answer": "Azure Kubernetes Service (AKS) ist ein verwalteter Kubernetes-Dienst, der die Bereitstellung, Verwaltung und Skalierung von Container-Anwendungen erleichtert. Er unterstützt Microservices und Anwendungen mit hohen Skalierungsanforderungen."
+    },
+    {
+      "question": "10. Welche Vorteile bietet Azure Cosmos DB für globale Anwendungen?",
+      "answer": "Azure Cosmos DB ist eine global verteilte, multimodale Datenbank, die niedrige Latenz und hohe Verfügbarkeit bietet. Sie eignet sich für Web- und Mobilanwendungen, globale Vertriebssysteme und IoT-Anwendungen."
+    },
+    {
+      "question": "11. Was ermöglicht Azure Active Directory (AAD) in Bezug auf Sicherheit?",
+      "answer": "Azure Active Directory (AAD) bietet umfassende Cloud-Identitätsdienste, einschließlich Identitäts- und Zugriffsmanagement, Single Sign-On (SSO) und Multi-Faktor-Authentifizierung, um die Sicherheit von Anwendungen und Daten zu gewährleisten."
+    },
+    {
+      "question": "12. Was ist der Azure Static Web App Service und wofür wird er verwendet?",
+      "answer": "Der Azure Static Web App Service ist ein Hosting-Dienst speziell für statische Webseiten. Er vereinfacht das Hosting und die Verwaltung statischer Inhalte wie HTML, CSS und JavaScript und integriert sich mit modernen Frameworks."
+    },
+    {
+      "question": "13. Was ist die Azure CLI und wofür wird sie verwendet?",
+      "answer": "Die Azure Command Line Interface (CLI) ist ein Befehlszeilen-Tool, das eine schnelle, textbasierte Schnittstelle zur Ausführung und Verwaltung von Azure-Diensten und -Operationen bietet."
+    },
+    {
+      "question": "14. Welche Arten von Datenbankdiensten bietet Azure an?",
+      "answer": "Azure bietet verschiedene Datenbankdienste wie Azure SQL Database (relationale Datenbank), Cosmos DB (NoSQL) und Azure Database for MySQL (verwaltete MySQL-Datenbank)."
+    },
+    {
+      "question": "15. Wie unterscheidet sich Cosmos DB von anderen Datenbankdiensten in Azure?",
+      "answer": "Cosmos DB ist eine global verteilte, multimodale Datenbank, die niedrige Latenz und hohe Verfügbarkeit bietet und verschiedene Datenmodelle wie Dokument-, Schlüssel-Wert-, Graph- und Spaltenfamilie unterstützt."
+    }
+  ],
+  "conclusion": "Diese Fragen bieten einen umfassenden Überblick über die wichtigsten Dienste und Konzepte in Azure. Sie dienen als Grundlage für ein tieferes Verständnis und die praktische Anwendung von Azure in verschiedenen Szenarien."
+}

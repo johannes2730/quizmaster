@@ -1,0 +1,48 @@
+{
+    "title": "Python Sets - Wissensfragen",
+    "introduction": "Ein Set ist eine Datenstruktur, die für die Speicherung einer ungeordneten Sammlung von einzigartigen Elementen verwendet wird. Das heißt, dass sich die Elemente in einem Set nicht wiederholen. Sets bieten folgende Eigenschaften: Ungeordnet, Einzigartige Elemente, Unveränderliche Elemente und Veränderlich. Diese Fragen sollen dein Verständnis der Sets in Python vertiefen.",
+    "questions": [
+      {
+        "question": "1. Welche Hauptmerkmale haben Sets in Python?",
+        "answer": "Sets in Python sind ungeordnet, enthalten einzigartige Elemente, und die Elemente müssen unveränderlich sein. Sets selbst sind jedoch veränderlich."
+      },
+      {
+        "question": "2. Wie kann man ein Set in Python erstellen?",
+        "answer": "Ein Set kann mit geschweiften Klammern {} oder der set()-Funktion erstellt werden. Beispiel: unique_numbers = {1, 2, 3} oder unique_numbers = set([1, 2, 3])."
+      },
+      {
+        "question": "3. Wie entfernt man Duplikate aus einer Liste mithilfe eines Sets?",
+        "answer": "Man konvertiert die Liste in ein Set, da Sets nur einzigartige Elemente enthalten. Beispiel: unique_elements = set([1, 2, 2, 3, 4, 5, 5, 6])."
+      },
+      {
+        "question": "4. Wie fügt man ein Element zu einem Set hinzu und entfernt ein Element daraus?",
+        "answer": "Man verwendet die Methode add(), um ein Element hinzuzufügen, und die Methode remove() oder discard(), um ein Element zu entfernen. Beispiel: set1.add(5) und set1.remove(5)."
+      },
+      {
+        "question": "5. Wie findet man die Vereinigung von zwei Sets?",
+        "answer": "Man verwendet die Methode union() oder den Operator |. Beispiel: set3 = set1.union(set2) oder set3 = set1 | set2."
+      },
+      {
+        "question": "6. Was ist die Schnittmenge von zwei Sets und wie berechnet man sie?",
+        "answer": "Die Schnittmenge enthält nur die Elemente, die in beiden Sets vorhanden sind. Man verwendet die Methode intersection() oder den Operator &. Beispiel: set3 = set1.intersection(set2) oder set3 = set1 & set2."
+      },
+      {
+        "question": "7. Wie unterscheidet sich die Methode discard() von der Methode remove() bei Sets?",
+        "answer": "Die Methode discard() entfernt ein Element aus dem Set, ohne einen Fehler zu werfen, wenn das Element nicht vorhanden ist. Die Methode remove() wirft einen Fehler, wenn das Element nicht im Set vorhanden ist."
+      },
+      {
+        "question": "8. Was ist eine symmetrische Differenz und wie berechnet man sie zwischen zwei Sets?",
+        "answer": "Die symmetrische Differenz enthält Elemente, die in einem der beiden Sets, aber nicht in beiden vorhanden sind. Man verwendet die Methode symmetric_difference() oder den Operator ^. Beispiel: set3 = set1.symmetric_difference(set2) oder set3 = set1 ^ set2."
+      },
+      {
+        "question": "9. Wie überprüft man, ob ein Set eine Teilmenge oder eine Obermenge eines anderen Sets ist?",
+        "answer": "Man verwendet die Methoden issubset() und issuperset(). Beispiel: set1.issubset(set2) überprüft, ob set1 eine Teilmenge von set2 ist, und set1.issuperset(set2) überprüft, ob set1 eine Obermenge von set2 ist."
+      },
+      {
+        "question": "10. Was ist ein frozenset und wie unterscheidet es sich von einem normalen Set?",
+        "answer": "Ein frozenset ist ein unveränderliches Set. Es kann nach der Erstellung nicht mehr verändert werden. Man verwendet frozenset(), um ein frozenset zu erstellen. Beispiel: S = frozenset({'red', 'green', 'blue'})."
+      }
+    ],
+    "conclusion": "Diese Fragen sollen dir helfen, dein Verständnis der Sets in Python zu vertiefen. Übe, indem du die Antworten auf diese Fragen in eigenen Worten erklärst und die beschriebenen Konzepte in kleinen Programmen umsetzt."
+  }
+  

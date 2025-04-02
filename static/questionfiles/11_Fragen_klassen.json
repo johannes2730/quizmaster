@@ -1,0 +1,84 @@
+{
+  "title": "Klassen",
+  "introduction": "Die objektorientierte Programmierung (OOP) ist ein mächtiges Programmierparadigma, das auf dem Konzept von \"Objekten\" basiert. Im Gegensatz zu prozeduralen Programmieransätzen, bei denen der Code als eine Abfolge von Aufgaben organisiert ist, legt die OOP den Fokus auf die Modellierung von reellen Entitäten und ihren Interaktionen.",
+  "questions": [
+    {
+      "question": "Was ist eine Klasse in Python?",
+      "answer": "Eine Klasse ist eine Vorlage oder Blaupause, die beschreibt, wie Objekte (Instanzen) gestaltet sind.\n Sie wird mit dem Schlüsselwort class definiert."
+    },
+    {
+      "question": "Wie erstellt man Instanzen einer Klasse??",
+      "answer": "Eine Instanz wird erzeugt, indem man den Klassennamen wie eine Funktion aufruft. Beispiel: x = Roboter(). \nHierbei wird ein neues Objekt der Klasse Roboter erstellt und die Referenz darauf in der Variablen x gespeichert."
+    },
+    {
+      "question": "Was ist eine Referenz in Bezug auf Instanzen?",
+      "answer": "Eine Referenz ist wie eine Adresse im Speicher, die darauf hinweist, wo die Instanz gespeichert ist.\n Variablen speichern diese Referenz und nicht die Instanz selbst"
+    },
+    {
+      "question": "Was passiert, wenn man zwei Variablen dieselbe Instanzreferenz zuweist?",
+      "answer": "Wenn zwei Variablen dieselbe Referenz zu einer Instanz speichern, verweisen sie beide auf dasselbe Objekt im Speicher.\n Ändert sich die Instanz, sehen beide Variablen diese Änderung."
+    },
+    {
+      "question": "Was sind Attribute in Python?",
+      "answer": "Attribute sind Eigenschaften oder Daten, die einer Instanz einer Klasse zugeordnet werden.\n Sie beschreiben, was eine Instanz hat, zum Beispiel `name` oder `baujahr` für eine Instanz von `Roboter`."
+    },
+    {
+      "question": "Was sind dynamische Attribute in Python?",
+      "answer": "Attribute, die nach der Erstellung einer Instanz hinzugefügt werden, nennt man dynamische Attribute."
+    },
+    {
+      "question": "Wie können alle Attribute einer Instanz angezeigt werden",
+      "answer": "Mit x.__dict__ können alle Attribute einer Instanz als Wörterbuch angezeigt werden."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Instanzattributen und Klassenattributen?",
+      "answer": " Instanzattribute gehören zu einer bestimmten Instanz und sind nur für diese Instanz sichtbar.\n Klassenattribute gehören zur Klasse selbst und sind für alle Instanzen der Klasse gleich. Instanzattribute werden normalerweise dynamisch hinzugefügt, während Klassenattribute in der Klassendefinition festgelegt werden können."
+    },
+    {
+      "question": "Was sind Methoden in Python?",
+      "answer": "Methoden sind Funktionen, die innerhalb einer Klasse definiert sind und auf Instanzen dieser Klasse zugreifen.\n Sie können verwendet werden, um Verhalten oder Aktionen der Instanzen zu beschreiben."
+    },
+    {
+      "question": "Was ist die Methode __init__ und wie funktioniert sie?",
+      "answer": "Die Methode __init__ wird aufgerufen, wenn eine neue Instanz einer Klasse erstellt wird. Sie wird verwendet, um die Attribute der neuen Instanz festzulegen.\n Die Methode __init__ wird nach der Instanziierung durch eine andere Methode namens __new__ ausgeführt, die die Instanz erstellt."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen __new__ und __init__?",
+      "answer": "__new__ ist verantwortlich für die Erstellung einer neuen Instanz einer Klasse,\n während __init__ für die Initialisierung der gerade erstellten Instanz zuständig ist. __init__ wird nach __new__ aufgerufen."
+    },
+    {
+      "question": "Was ist Vererbung in der objektorientierten Programmierung?",
+      "answer": "Vererbung ist ein Konzept, bei dem eine Klasse (Unterklasse) von einer anderen Klasse (Oberklasse) erbt.\n Dadurch kann die Unterklasse die Attribute und Methoden der Oberklasse wiederverwenden und erweitern."
+    },
+    {
+      "question": "Warum ist es sinnvoll, super() in der Unterklasse zu verwenden?",
+      "answer": "super() hilft dabei, Methoden der Oberklasse einfach aufzurufen, ohne dass du den Namen der Oberklasse direkt verwenden musst.\n Es macht den Code flexibler und leichter zu ändern, weil du die Oberklasse nicht explizit benennen musst. Das ist besonders nützlich, wenn sich die Oberklasse ändern könnte oder bei komplexeren Vererbungsstrukturen."
+    },
+    {
+      "question": "Was ist der Vorteil der Vererbung bei der Wiederverwendbarkeit von Code?",
+      "answer": "Vererbung ermöglicht es, bereits bestehenden Code wiederzuverwenden und anzupassen, ohne ihn neu schreiben zu müssen.\n Das spart Zeit und reduziert Fehler, da gemeinsame Funktionalitäten zentral verwaltet werden können."
+    },
+    {
+      "question": "Was passiert, wenn die Methode __init__ der Oberklasse nicht in der Unterklasse verwendet wird?",
+      "answer": "Wenn du die __init__-Methode der Oberklasse nicht in der Unterklasse verwendest, musst du alle notwendigen Attribute selbst in der Unterklasse definieren.\n Das kann zu Fehlern führen und bedeutet, dass du mehr Code schreiben musst, der vielleicht bereits in der Oberklasse vorhanden ist."
+    },
+    {
+      "question": "Wie kann man die Methode __init__ der Oberklasse in der Unterklasse aufrufen?",
+      "answer": "Du kannst die Methode __init__ der Oberklasse aufrufen, indem du entweder den Namen der Oberklasse direkt verwendest oder super() nutzt.\n super() ist oft einfacher und sicherer, weil es automatisch die richtige Oberklasse findet und aufruft, besonders wenn es mehrere Ebenen der Vererbung gibt.\n Beispiel: super().__init__(parameter_a,parameter_b) "
+    },
+    {
+      "question": "Was sind Magic Methods?",
+      "answer": "Magic Methods sind spezielle Methoden in Python-Klassen, die durch doppelte Unterstriche (__) am Anfang und Ende ihres Namens gekennzeichnet sind.\n Sie definieren, wie Klassen mit Python-Operatoren und eingebauten Funktionen interagieren. Magic-Methods zu definieren sind nur den Python-Entwicklern vorbehalten"
+    },
+    {
+      "question": "Was macht die __str__- Methoden in Python-Klassen?",
+      "answer": "Die Methode __str__ wird verwendet, um zu definieren, wie ein Objekt in einem String-Kontext dargestellt wird.\n Dies ermöglicht eine benutzerdefinierte Ausgabe des Objekts, wenn es in f-Strings oder beim Drucken verwendet wird.",
+      "code": "def __str__(self):\n        return f\"({self.x}, {self.y})\""
+    },
+    {
+      "question": "Was macht die __add__- Methode in Python-Klassen?",
+      "answer": "Wenn die Methode __add__ definiert ist, kann man den + Operator verwenden, um zwei Objekte der Klasse zu addieren.\n Das bedeutet, dass das Verhalten des + Operators für diese Objekte festgelegt wird, wie z.B. das Addieren der Koordinaten von zwei Punkten.",
+      "code": " def __add__(self, other):\n        if isinstance(other, Punkt):\n            return Punkt(self.x + other.x, self.y + other.y)"
+    }
+  ]
+}

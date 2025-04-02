@@ -1,0 +1,41 @@
+{
+  "title": "SQL-Alchemy / SQ-Lite - Wissensfragen",
+  "questions": [
+    {
+      "question": "Welche 2 Konzepte hinsichtlich der Kommunikation mit der Datenbank werden von SQL Alchemy unterstützt?",
+      "answer": "1.ORM (Object-Relational Mapping): SQLAlchemy's ORM erlaubt es, Datenbanktabellen als Python-Klassen zu definieren und die dazugehörigen Zeilen als Instanzen dieser Klassen.\n2. SQL-Expression Language: Für Fälle, in denen mehr Kontrolle oder eine direktere Interaktion mit der Datenbank erforderlich ist, bietet SQLAlchemy eine SQL-Expression Language."
+    },
+    {
+      "question": "Was sind Vorteile des ORM-Konzepts in SQL-Alchemy?",
+      "answer": "Niedrigere Abstraktion durch Verwendung von Python-Klassen\nWartbarkeit: Code ist übersichtlicher\nPortabilität: Code ist datenbankunabhängig"
+    },
+    {
+      "question": "Wie baut man in SQL Alchemy eine Verbindung zu einer sqlite-Datenbank auf?",
+      "answer": "from sqlalchemy import create_engine\nengine = create_engine('sqlite:///mydatabase.db')"
+    },
+    {
+      "question": "Wie sollte man mit Benutzerdaten & Passwörter für die Verbindung mit der Datenbank umgehen?",
+      "answer": "Verwenden von Umgebungsvariablen -> os.getenv('DB_PASSWORD)\nVerwenden von speziellen Konfigurationdateien (.env) "
+    },
+    {
+      "question": "Formuliere für SQL Alchemy eine Beispielabfrage an eine Datenbank um das 'Alter' aller Personen aus der Tabelle 'User' mit dem 'Beruf' Softwareentwickler zu erhalten. Vorrausgesetzt die Session wurde bereits erstellt.",
+      "answer": "session.query(User.Alter).filter(User.Beruf == 'Softwareentwickler').all()"
+    },
+    {
+      "question": "Formuliere für SQL Alchemy eine Abfrage im das Durschnittsalter (Spaltenname = 'age') aller Personen aus der Tabelle 'User' zu erhalten.",
+      "answer": "Möglichkeit 1: avg_age = session.query(func.avg(User.age)).scalar()\nMöglichkeit 2: ages = session.query(User.age).all()\n avg_age = sum(user.age for user in ages) / len(ages)"
+    },
+    {
+      "question": "Wie baut man mit der sqlite3 Bibliothek eine Verbindung zu einer Datenbank auf?",
+      "answer": "import sqlite3\nconnection = sqlite3.connect('example.db')"
+    },
+    {
+      "question": "Was benötigt man in der sqlite3 Bibliothek um mit der Datenbank zu kommunizieren?",
+      "answer": "Verbindung & Cursor Objekt\ncursor = connection.cursor()"
+    },
+    {
+      "question": "Formuliere eine Beispielabfrage in der Bibliothek sqlite3 um alle Daten aus einer Tabelle mit dem Namen 'Mitarbeiter' zu erhalten, die Datenbank heißt 'personal.db'",
+      "answer": "import sqlite3\nconnection = sqlite3.connect('personal.db')\ncursor = connection.cursor()\ncursor.execute('SELECT * FROM Mitarbeiter)"
+    }
+  ]
+}

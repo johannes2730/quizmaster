@@ -1,0 +1,23 @@
+{
+  "title": "statische Methoden und Klassenmethoden",
+  "introduction": "In Python gibt es zwei besondere Arten von Methoden, die direkt einer Klasse zugeordnet sind: statische Methoden und Klassenmethoden. Diese Methoden haben spezielle Verwendungszwecke und werden mit den Dekoratoren @staticmethod und @classmethod definiert",
+  "questions": [
+    {
+      "question": "Wann sollte man eine statische Methode verwenden und wie wird sie definiert?",
+      "answer": "Eine statische Methode sollte verwendet werden, wenn die Methode keine Instanz- oder Klasseninformationen\n   benötigt und rein auf Klassenebene operieren muss. Sie wird mit dem Dekorator `@staticmethod` definiert und benötigt\n   keinen `self`- oder `cls`-Parameter. Sie eignet sich gut für Utility-Funktionen, die in den Kontext der Klasse passen,\n   aber keine Daten der Klasse selbst benötigen, z.b für Methoden die Celsuis in Fahrenheit."
+    },
+    {
+      "question": "Was ist eine statische Methode in Python?",
+      "answer": "Eine statische Methode gehört zur Klasse, nicht zu einer Instanz. Sie hat keinen Zugriff auf Instanzattribute oder self und wird mit dem Dekorator @staticmethod definiert.\n"
+    },
+    {
+      "question": "Wann benutzt man @staticmethod?",
+      "answer": "Man benutzt @staticmethod, wenn eine Methode keine Informationen über das spezifische Objekt (Instanz) benötigt und nur auf Klassenebene arbeitet. Ein Beispiel wäre eine Methode, die Berechnungen durchführt oder Daten umwandelt."
+    },
+    {
+      "question": "Was macht eine Klassenmethode aus?",
+      "answer": "Eine Klassenmethode hat Zugriff auf die Klasse selbst (nicht auf Instanzen) und wird mit dem Dekorator @classmethod definiert. Der erste Parameter ist cls, was die Klasse selbst repräsentiert. Beispiel: Das Hochzählen von Instanzen die erstellt werden."
+    }
+  ]
+}
+

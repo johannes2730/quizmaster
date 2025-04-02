@@ -1,0 +1,67 @@
+{
+    "title": "Generatoren und Iteratoren",
+    "questions": [
+      {
+        "question": "Was ist ein Iterator in Python und wie wird er definiert?",
+        "answer": "Ein Iterator in Python ist ein Objekt, das die Methode __next__() implementiert. Ein Iterator ermöglicht es, die Elemente eines iterierbaren Objekts nacheinander zu durchlaufen."
+      },
+      {
+        "question": "Wie kann man Elemente einer Liste mithilfe eines Iterators durchlaufen?",
+        "answer": "Man kann einen Iterator erstellen, indem man iter() auf die Liste aufruft, und dann die Elemente mit next() durchlaufen, bis StopIteration geworfen wird."
+      },
+      {
+        "question": "Was passiert, wenn die Methode __iter__() in einer Klasse nicht definiert wird?",
+        "answer": "Wenn __iter__() nicht definiert wird, ist die Klasse nicht iterierbar und kann nicht in einer for-Schleife oder mit iter() verwendet werden."
+      },
+      {
+        "question": "Was passiert, wenn ein Iterator keine StopIteration-Ausnahme wirft?",
+        "answer": "Wenn ein Iterator keine StopIteration-Ausnahme wirft, würde eine Schleife, die den Iterator durchläuft, niemals enden, was zu einem Endlosloop führt."
+      },
+      {
+        "question": "Wie funktioniert eine for-Schleife im Hintergrund in Bezug auf Iteratoren?",
+        "answer": "Eine for-Schleife ruft __iter__() auf dem iterierbaren Objekt auf, um einen Iterator zu erhalten. Dann ruft sie wiederholt next() auf dem Iterator auf, bis StopIteration geworfen wird."
+      },
+      {
+        "question": "Was macht ein Objekt zu einem Iterator in Python?",
+        "answer": "Ein Objekt wird zu einem Iterator, indem es die Methode __next__() implementiert, die das nächste Element zurückgibt oder StopIteration wirft, wenn keine Elemente mehr vorhanden sind."
+      },
+      {
+        "question": "Welchen Rückgabetyp hat der Aufruf einer Funktion, die yield verwendet?",
+        "answer": "Der Rückgabetyp ist ein Generator-Objekt."
+      },
+      {
+        "question": "Was passiert, wenn man mehrere Iteratoren von derselben Generatorfunktion erstellt und sie unabhängig voneinander verwendet?",
+        "answer": "Jeder Iterator hat seinen eigenen Zustand und durchläuft die Werte unabhängig voneinander. Änderungen in einem Iterator beeinflussen die anderen nicht."
+      },
+      {
+        "question": "Was ist eine Generator Comprehension in Python und wie funktioniert sie?",
+        "answer": "Eine Generator Comprehension ist eine Syntax zum Erstellen von Generatoren in einer ähnlichen Weise wie Listen-Comprehensions, aber sie verwendet runde Klammern. Sie erzeugt ein Generator-Objekt, das iterierbar ist.",
+        "code": "meine_liste = [1,2,3,4,5]\ngencomp = (item for item in meine_liste if item > 3)\nfor item in gencomp:\n    print(item)"
+      },
+      {
+        "question": "Was passiert im folgenden Code und warum?",
+        "answer": "Der Code erzeugt einen Generator, der nacheinander die Zahlen 1, 2 und 3 zurückgibt. In der for-Schleife werden diese Zahlen ausgegeben.",
+        "code": "def get123():\n    yield 1\n    yield 2\n    yield 3\n\nfor x in get123():\n    print(x)"
+      },
+      {
+        "question": "Was passiert in folgendem Code und was wird ausgegeben?",
+        "code": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\ncount = countdown(5)\nprint(next(count))\nprint(next(count))\nprint(list(count))",
+        "answer": "Der Code gibt zuerst `5` und dann `4` aus. Danach wird der Generator vollständig durchlaufen, und die restlichen Werte `[3, 2, 1]` werden als Liste ausgegeben. Die Gesamt-Ausgabe lautet:\n```\n5\n4\n[3, 2, 1]\n```"
+      },
+      {
+        "question": "Was wird durch den folgenden Code ausgegeben und warum?",
+        "code": "nums = [1, 2, 3, 4, 5]\nsquared_even = (x * x for x in nums if x % 2 == 0)\nprint(list(squared_even))",
+        "answer": "Der Code verwendet eine Generator Comprehension, um die Quadrate der geraden Zahlen aus der Liste `nums` zu berechnen. Die Ausgabe lautet: `[4, 16]`."
+      },
+      {
+        "question": "Schreiben Sie einen Generator, der die Quadratzahlen von 1 bis n erzeugt. Schreiben Sie den entsprechenden Code.",
+        "answer": "Man kann einen Generator für Quadratzahlen mit `yield` erstellen:\n```python\ndef squares(n):\n    for i in range(1, n + 1):\n        yield i * i\n\n# Verwendung:\nfor square in squares(5):\n    print(square)\n```"
+      },
+      {
+        "question": "Was passiert in folgendem Code und was wird ausgegeben?",
+        "code": "def reverse_string(s):\n    for char in reversed(s):\n        yield char\n\nrev = reverse_string('Python')\nprint(''.join(rev))",
+        "answer": "Der Code erzeugt einen Generator, der die Zeichen des Strings `s` in umgekehrter Reihenfolge liefert. Der Aufruf von `''.join(rev)` konvertiert die Generatorausgabe in einen String, der den umgekehrten String `'nohtyP'` darstellt."
+      }
+    ]
+  }
+  

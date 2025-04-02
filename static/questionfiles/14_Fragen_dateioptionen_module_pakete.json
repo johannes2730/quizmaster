@@ -1,0 +1,74 @@
+{
+  "title": "Dateioptionen, Module, Pakete",
+  "introduction": "",
+  "questions": [
+    {
+      "question": "Wie öffnet und schließt man Dateien manuell in Python?",
+      "answer": "Man öffnet eine Datei mit `open(\"dateiname.txt\")`, liest den Inhalt mit `read()` aus, und schließt die Datei schließlich mit `close()`. Dies erfordert manuelles Schließen der Datei, was fehleranfällig sein kann, wenn während des Lesevorgangs ein Fehler auftritt."
+    },
+    {
+      "question": "Warum sollte man Dateien mit with open öffnen?",
+      "answer": "`with open` ist eine sicherere Methode, um Dateien zu öffnen, da es sicherstellt, dass die Datei auch dann geschlossen wird, wenn ein Fehler auftritt. Dadurch wird das Risiko von Datei-Leaks vermieden."
+    },
+    {
+      "question": "Was ist eine CSV-Datei?",
+      "answer": "Eine CSV-Datei speichert tabellarische Daten, wobei jede Zeile in der Datei einer Tabellenzeile entspricht. Die Einträge in einer Zeile sind durch Kommas getrennt. Sie wird häufig für den Austausch von Daten zwischen verschiedenen Anwendungen verwendet."
+    },
+    {
+      "question": "Wie liest man eine CSV-Datei in Python?",
+      "answer": "Mit dem csv-Modul und der Funktion csv.reader kann man eine CSV-Datei Zeile für Zeile einlesen. Dies ermöglicht es, die Daten in einer CSV-Datei einfach zu verarbeiten."
+    },
+    {
+      "question": "Wie schreibt man Daten in eine CSV-Datei?",
+      "answer": "Um Daten in eine CSV-Datei zu schreiben, nutzt man das csv-Modul und csv.writer. Die Methode writerow() ermöglicht es, jede Zeile der Daten in die CSV-Datei zu schreiben."
+    },
+    {
+      "question": "Was ist ein Modul in Python?",
+      "answer": "Ein Modul ist eine einzelne .py-Datei, die Python-Code, wie Funktionen, Variablen und Klassen, enthält. Diese Module können in anderen Python-Dateien wiederverwendet werden, um den Code besser zu organisieren und die Lesbarkeit zu erhöhen."
+    },
+    {
+      "question": "Wie kann man ein Modul in Python verwenden?",
+      "answer": "Man kann ein Modul mit dem import-Befehl in eine andere Python-Datei einbinden. Zum Beispiel importierst du das Modul `greetings.py` in `main.py und kannst dann die darin enthaltenen Funktionen nutzen."
+    },
+    {
+      "question": "Wie verwendet man einen Alias für ein Modul?",
+      "answer": "Ein Alias kann verwendet werden, um den Import eines Moduls zu vereinfachen und den Code kompakter zu gestalten. Anstatt `import greetings`, kannst du `import greetings as gr` schreiben und dann mit `gr.greet()` arbeiten."
+    },
+    {
+      "question": "Wie kann man einzelne Funktionen aus einem Modul importieren?",
+      "answer": "Anstatt das ganze Modul zu importieren, kannst du nur bestimmte Funktionen importieren, z.B. from greetings import greet. So wird nur die Funktion greet geladen.\n"
+    },
+    {
+      "question": "Was ist der Vorteil des selektiven Imports von Funktionen aus einem Modul?",
+      "answer": "Der selektive Import hilft, Namenskonflikte zu vermeiden, da nur die benötigten Funktionen oder Variablen importiert werden. So bleibt der Code übersichtlich und es wird vermieden, dass gleichnamige Funktionen aus verschiedenen Modulen miteinander in Konflikt geraten."
+    },
+    {
+      "question": "Was sind Pakete in Python?",
+      "answer": "Pakete sind Verzeichnisse, die Module und möglicherweise Unterpakete enthalten. Sie helfen dabei, den Code zu organisieren und modularer zu gestalten."
+    },
+    {
+      "question": "Wofür sind Pakete nützlich?",
+      "answer": "Pakete ermöglichen es, zusammengehörige Module und Unterpakete zu bündeln, was die Struktur des Codes verbessert. Sie sind auch die Grundlage für Pakete, die auf PyPI veröffentlicht werden können, einem Online-Repository für öffentliche Python-Pakete."
+    },
+    {
+      "question": "Was ist die Bedeutung der __init__.py Datei in einem Paket?",
+      "answer": "Die __init__.py-Datei zeigt an, dass ein Verzeichnis als Python-Paket behandelt wird. Sie ermöglicht es, Module aus diesem Verzeichnis zu importieren und kann auch Initialisierungscode enthalten."
+    },
+    {
+      "question": "Was ist `if __name__ == \"__main__\": und warum wird es verwendet?",
+      "answer": "if __name__ == \"__main__\": ist eine Bedingung, die dafür sorgt, dass Code nur ausgeführt wird, wenn das Skript direkt gestartet wird, nicht aber, wenn es als Modul importiert wird. Dies ist nützlich, um sicherzustellen, dass bestimmte Codeblöcke nur in bestimmten Kontexten ausgeführt werden. Ansonsten kann auch der Code aus dem importierten Modul abgespielt werden  "
+    },
+    {
+      "question": "Wie verhält sich ein Python-Skript, wenn es direkt ausgeführt wird im Vergleich zu einem Import als Modul?",
+      "answer": "Wenn ein Python-Skript direkt ausgeführt wird, hat die Variable __name__ den Wert \"__main__\", und der Code innerhalb der if __name__ == \"__main__\":-Bedingung wird ausgeführt. Wird das Skript jedoch als Modul importiert, hat __name__ den Wert des Modulnamens, und der Code innerhalb dieser Bedingung wird nicht ausgeführt."
+    },
+    {
+      "question": "Was ist ein Virtual Environment (venv) in Python?",
+      "answer": "Ein venv ist eine isolierte Umgebung, in der Python-Pakete installiert werden können, ohne das Gesamtsystem zu beeinflussen. Es ermöglicht, jedes Projekt mit seinen eigenen Abhängigkeiten zu betreiben."
+    },
+    {
+      "question": "Warum sind venvs wichtig?",
+      "answer": "Isolierung: Sie verhindern Abhängigkeitskonflikte zwischen verschiedenen Projekten, indem jedes Projekt in seiner eigenen Umgebung läuft.\nKonsistenz: Sie sorgen dafür, dass alle Teammitglieder mit denselben Paketversionen arbeiten, wodurch typische Probleme vermieden werden, die durch unterschiedliche Setups entstehen.\nEinfache Verwaltung: venvs ermöglichen es, Pakete leicht zu aktualisieren oder zurückzustufen, ohne andere Projekte oder das Gesamtsystem zu beeinträchtigen."
+    }
+  ]
+}

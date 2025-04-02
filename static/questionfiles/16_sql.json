@@ -1,0 +1,37 @@
+{
+  "title": "SQL Datenbanken - Wissensfragen",
+  "questions": [
+    {
+      "question": "Welche CRUD-Operationen gibt es und wofür stehen sie?",
+      "answer": "CRUD steht für Create, Read, Update und Delete. Diese Operationen sind grundlegend für die Arbeit mit Datenbanken:\n\nCreate: Einfügen neuer Daten (INSERT INTO)\nRead: Abfragen und Lesen von Daten (SELECT)\nUpdate: Aktualisieren bestehender Daten (UPDATE)\nDelete: Löschen von Daten (DELETE)"
+    },
+    {
+      "question": "Was sind Primärschlüssel in Datenbanken?",
+      "answer": "Ein Primärschlüssel ist eine eindeutige Kennung für jeden Datensatz in einer Tabelle."
+    },
+    {
+      "question": "Was sind Fremdschlüssel in relationalen Datenbanken?",
+      "answer": "Ein Fremdschlüssel ist ein Feld in einer Tabelle, das einen Primärschlüssel aus einer anderen Tabelle referenziert und so Beziehungen zwischen den Tabellen herstellt."
+    },
+    {
+      "question": "Was sind Indizes in SQL-Datenbanken und warum sind sie wichtig?",
+      "answer": "Indizes werden genutzt um Suchen in einer Datenbank zu beschleunigen. Indizes sind Kopien der Daten, die in Suchbäumen organisiert sind. Bei Datenbanken haben sich B-Bäume etabliert. Indizes können auf einem oder mehreren Feldern einer Tabelle erstellt werden."
+    },
+    {
+      "question": "Formuliere eine Beispielabfrage an eine Datenbank um den 'vornamen' aller Personen aus der Tabelle 'users' mit dem 'beruf' Softwareentwickler zu erhalten",
+      "answer": "SELECT vorname FROM users WHERE beruf = 'Softwareentwickler';"
+    },
+    {
+      "question": "Was versteht man unter Normalisierung?",
+      "answer": "Wiederholungen von Daten ausschließen und trotzdem die Zusammenhänge zwischen den Daten sicherstellen. Dadurch werden größere Tabellen in kleinere Tabellen aufgeteilt und durch Schlüssel verbunden."
+    },
+    {
+      "question": "Wie unterscheidet sich ein INNER JOIN von einem LEFT JOIN?",
+      "answer": "Ein INNER JOIN gibt nur die Datensätze zurück, bei denen die verbundenen Felder in beiden Tabellen übereinstimmen. Ein LEFT JOIN hingegen gibt alle Datensätze aus der linken Tabelle und die übereinstimmenden Datensätze aus der rechten Tabelle zurück. Wenn keine Übereinstimmung in der rechten Tabelle gefunden wird, werden dennoch alle Datensätze der linken Tabelle angezeigt, wobei die fehlenden Werte als NULL dargestellt werden Beispiel für die Syntax eines LEFT JOINs:\nSELECT *FROM wunschliste w LEFT JOIN lagerbestand l ON l.name = w.name."
+    },
+    {
+      "question": "Was versteht man unter dem Konzept 'referential integrity?",
+      "answer": "Dieses Konzept stellt sicher, dass ein Fremdschlüsselwert immer auf einen existierenden, gültigen Datensatz im Primärschlüssel der referenzierten Tabelle verweist. Dies verhindert, dass „verwaiste“ Datensätze (Datensätze, auf die von einem Fremdschlüssel verwiesen wird, aber die in der referenzierten Tabelle nicht existieren) entstehen."
+    }
+  ]
+}

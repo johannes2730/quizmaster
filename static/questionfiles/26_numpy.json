@@ -1,0 +1,45 @@
+{
+    "title": "Numpy",
+    "questions": [
+        {
+            "question": "Was ist NumPy und warum ist es im Python-Ökosystem wichtig?",
+            "answer": "NumPy (Numerical Python) ist eine wesentliche Bibliothek für wissenschaftliche und numerische Berechnungen in Python. Es bietet effiziente Operationen auf großen Datenmengen und ist die Grundlage für viele andere Bibliotheken wie Pandas und scikit-learn."
+        },
+        {
+            "question": "Welche Vorteile bieten NumPy-Arrays gegenüber Standard-Python-Listen?",
+            "answer": "NumPy-Arrays bieten bessere Performance, geringeren Speicherbedarf und unterstützen Vektoroperationen, wodurch Schleifenoperationen vermieden werden können."
+        },
+        {
+            "question": "Wie können Sie mit Slicing in NumPy auf eine bestimmte Spalte eines Arrays zugreifen?",
+            "answer": "Durch Verwendung von Slicing: array[:, column_index]."
+        },
+        {
+            "question": "Erklären Sie das Konzept des Broadcastings in NumPy.",
+            "answer": "Broadcasting ermöglicht arithmetische Operationen zwischen Arrays unterschiedlicher Größe, indem das kleinere Array automatisch erweitert wird, um die Dimensionen des größeren Arrays zu erfüllen."
+        },
+        {
+            "question": "Welche Regeln gelten für die Kompatibilität von Arrays beim Broadcasting?",
+            "answer": "Wenn Arrays unterschiedliche Dimensionen haben, wird dem kürzeren Array Einsen vorangestellt. Achsen der Länge 1 können wiederholt werden, um der Länge des anderen Arrays zu entsprechen. Alle anderen Achsen müssen übereinstimmende Längen aufweisen."
+        },
+        {
+            "question": "Was sind boolesche Arrays und wie werden sie erzeugt?",
+            "answer": "Boolesche Arrays enthalten nur die Werte True oder False und werden durch Anwendung boolescher Operationen auf NumPy-Arrays erzeugt, z.B. array > 0."
+        },
+        {
+            "question": "Nennen Sie drei mathematische Funktionen in NumPy und deren Anwendung.",
+            "answer": "np.sum(), np.mean(), np.max(), np.min(), np.sqrt(), np.exp(), np.log(), np.sin(), np.cos(), np.tan()"
+        },
+        {
+            "question": "Erklären Sie, wie Sie eine Submatrix aus einer gegebenen Matrix mit Slicing extrahieren können.",
+            "answer": "Durch Angabe der gewünschten Zeilen- und Spaltenbereiche: matrix[row_start:row_end, col_start:col_end]."
+        },
+        {
+            "question": "Wie führen Sie eine Matrizenmultiplikation in NumPy durch?",
+            "answer": "Mit np.dot(array1, array2) oder array1 @ array2."
+        },
+        {
+            "question": "Was ist der Unterschied zwischen elementweisen Operationen und Skalar-Operationen in NumPy?",
+            "answer": "Elementweise Operationen werden zwischen den Elementen zweier Arrays durchgeführt. Skalar-Operationen werden zwischen einem Array und einem Skalar durchgeführt und auf jedes Element des Arrays angewendet."
+        }
+    ]
+}

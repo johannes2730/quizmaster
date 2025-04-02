@@ -1,0 +1,130 @@
+{
+  "title": "Pandas - Wissensquiz",
+  "questions": [
+    {
+      "question": "Wofür wird Pandas verwendet?",
+      "answer": "Pandas wird für Datenverarbeitung und Datenanalyse verwendet."
+    },
+    {
+      "question": "Was ist ein DataFrame?",
+      "answer": "Ein DataFrame ist eine zweidimensionale, tabellarische Datenstruktur mit beschrifteten Achsen (Zeilen und Spalten)."
+    },
+    {
+      "question": "Was gibt die Konsole bei diesem Code aus?",
+      "code": "import pandas as pd\ndf = pd.DataFrame({'Name': ['Anna', 'Bernd', 'Charlie'],'Alter': [28, 42, 25]})\nprint(df.iloc[2,1])",
+      "answer": 25
+    },
+    {
+      "question": "Welche Datenformate kann Pandas auslesen? Nenne mindestens 3!",
+      "answer": ["csv", "json", "html", "xml", "pickle", "sql"]
+    },
+    {
+      "question": "Wie lautet der Befehl um 2 Dataframes names df1 und df2 zu einem Dataframe zu kombinieren?",
+      "code": "import pandas as pd",
+      "answer": "pd.concat([df1, df2])"
+    },
+    {
+      "question": "Du hast einen Dataframe (df) mit den Spaltennamen 'Bauteilnummer', 'Menge', 'Kosten', 'Anzahl Defekte'.\nWie lautet der Code um aus diesem Dataframe ein neues zu generieren, \nwelches nur die Kosten und die Anzahl der Defekte beinhaltet?",
+      "answer": "df[['Kosten', 'Anzahl Defekte']]"
+    },
+    {
+      "question": "Ein Dataframe (df) besitzt eine Spalte die 'Name' und eine weitere die 'Alter' als Überschrift hat.\nWie lautet der Befehl um ein neues Dataframe zu bekommen,\nwo nur Personen die mindestens 18 Jahre alt sind stehen?",
+      "answer": "df.query('Alter >= 18')"
+    },
+    {
+      "question": "Wie lautet der Pandas-Befehl um aus einem Dataframe (df) 5 zufällige Zeilen auszuwählen?",
+      "answer": "df.sample(n=5)"
+    },
+    {
+      "question": "Was macht der Befehl ?",
+      "code": "df.head(10)",
+      "answer": "Die ersten 10 Zeilen eines Dataframes werden ausgewählt."
+    },
+    {
+      "question": "Was macht der Befehl ?",
+      "code": "df.tail(10)",
+      "answer": "Die letzten 10 Zeilen eines Dataframes werden ausgewählt."
+    },
+    {
+      "question": "Was macht der Befehl ?",
+      "code": "df.nsmallest(5, 'Anzahl Defekte')",
+      "answer": "Basierend auf der Spalte 'Anzahl Defekte' werden die Zeilen mit den geringsten Werten in aufsteigender Reihenfolge ausgewählt."
+    },
+    {
+      "question": "Was macht der Befehl ?",
+      "code": "df.nlargest(5, 'Kosten')",
+      "answer": "Basierend auf der Spalte 'Kosten' werden die Zeilen mit den höchsten Werten in absteigender Reihenfolge ausgewählt."
+    },
+    {
+      "question": "Was macht der Befehl ?",
+      "code": "df.query('Temperatur > 30 and Gruppe == Python')",
+      "answer": "Es werden die Zeilen im Dataframe ausgewählt, wo die Werte in der Spalte Temperatur über 30 sind \nund die Werte in der Spalte Gruppe gleich Python sind."
+    },
+    {
+      "question": "Gegeben ist ein Dataframe (df) mit den Spalten 'Name', 'Programmiersprache' und 'Anzahl Krankheitstage'.\nWie lautet der Code um basierend auf die Programmiersprache die durchschnittliche Anzahl der Krankheitstage zu erhalten?",
+      "answer": "df.groupby('Programmiersprache')['Anzahl Krankheitstage'].mean()"
+    },
+    {
+      "question": "Was macht der Befehl ?",
+      "code": "df.groupby('Stockwerk')['Temperatur'].agg(['max', 'min'])",
+      "answer": "Das Dataframe wird nach Stockwerken gruppiert und pro Stockwerk die maximale und minimale Temperatur ermittelt."
+    },
+    {
+      "question": "Was macht der Befehl ?",
+      "code": "df.isnull()",
+      "answer": "Der Befehl liefert einen bool'schen Dataframe wo alle validen Einträge mit False \nund alle null-artigen Einträge mit False dargestellt werden."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen df.dropna() und df.dropna(axis=1) ?",
+      "answer": "dropna() löscht alle Zeilen mit mindestens einen null-artigen Wert, dropna(axis=1) wiederum für alle Spalten."
+    },
+    {
+      "question": "Was ist eine Imputation?",
+      "answer": "Eine Imputation ist das ersetzen fehlender Werte durch eine Schätzung."
+    },
+    {
+      "question": "Ein Dataframe hat fehlende Werte.\nWie lautet der Befehl, um die fehlenden Werte mit 0 zu ersetzen?",
+      "answer": "df.fillna(0)"
+    },
+    {
+      "question": "Ein Dataframe hat fehlende Werte.\nWie lautet der Befehl, um die fehlenden Werte mit dem Durchschnittwert der jeweiligen Spalte zu ersetzen?",
+      "answer": "df.fillna(df.mean())"
+    },
+    {
+      "question": "Welchen Vorteil hat ein Median gegenüber dem Mittelwert?",
+      "answer": "Der Median ist robuster gegenüber Anomalien im Datensatz."
+    },
+    {
+      "question": "Was macht der Befehl ?",
+      "code": "df.dropna(thresh=3)",
+      "answer": "Der Befehl entfernt alle Zeilen, die weniger als 3 valide Werte haben."
+    },
+    {
+      "question": "Was macht der Befehl ?",
+      "code": "df.sort_values('Score', ascending=False)",
+      "answer": "Die Zeilen im Dataframe werden nach den Werten in der Spalte 'Score' in absteigender Reihenfolge sortiert."
+    },
+    {
+      "question": "Sortiere ein Dataframe (df) anhand der Spalte 'Name' in aufsteigender Reihenfolge",
+      "answer": "df.sort_values('Name') oder df.sort_values('Name', ascending=True)"
+    },
+    {
+      "question": "Von einem Dataframe (df) soll die Spalte 'Wohnort' und 'Email' entfernt werden.\nWie lautet der Befehl dafür?",
+      "answer": "df.drop(columns=['Wohnort', 'Email'])"
+    },
+    {
+      "question": "Bei einem wissenschaftlichen Dataframe (df) sollen die Werte aus der Spalte 'v' quadiert \nund in eine neue Spalte namens 'v^2' gespeichert werden.\nSchreibe den Code dafür!",
+      "answer": "df['v^2'] = df['v'] ** 2"
+    },
+    {
+      "question": "Was macht der folgende Code ?",
+      "code": "df.loc[1:4]",
+      "answer": "Es werden nur die Zeilen 1, 2, 3 und 4 ausgewählt."
+    },
+    {
+      "question": "Was macht der folgende Code ?",
+      "code": "df.iloc[:, :1]",
+      "answer": "Es werden von allen Zeilen nur die ersten 2 Spalten ausgewählt."
+    }
+  ]
+}

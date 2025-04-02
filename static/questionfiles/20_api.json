@@ -1,0 +1,100 @@
+{"title": "API",
+"questions": [
+        {
+            "question": "Was bedeutet die Abkürzung API?",
+            "answer": "Application Programming Interface"
+        },
+        {
+            "question": "Wie funktioniert eine API?",
+            "answer": "Sie ermöglicht verschiedenen Softwareanwendungen miteinander zu kommunizieren und definiert, wie sie miteinander interagieren. Sie stellt eine Sammlung von Funktionen, Protokollen und Werkzeugen bereit, um bestimmte Funktionen oder Daten von einem Programm zu nutzen."
+        },
+        {
+            "question": "Welche zwei Haupttypen von URIs (Uniform Resource Identifier) gibt es?",
+            "answer": "URL (Uniform Resource Locator) und URN (Uniform Resource Name)"
+        },
+        {
+            "question": "Was zeichnet eine RESTful-API aus?",
+            "answer": "Sie verwendet standardisierte HTTP-Methoden und ist zustandslos."
+        },
+        {
+            "question": "Was zeichnet WebSockets aus?",
+            "answer": "Anders als bei REST und GraphQL bieten Websockets eine dauerhafte Verbindung und ermöglichen Echtzeitdatenübertragung."
+        },
+        {
+            "question": "Was ist der Hauptvorteil von GraphQL gegenüber REST?",
+            "answer": "GraphQL ermöglicht es, genau die Daten abzufragen, die benötigt werden, und keine zusätzlichen Daten zu erhalten."
+        },
+        {
+            "question": "Wie wird eine Anfrage an einen bestimmten Endpunkt einer API genannt?",
+            "answer": "Eine Anfrage an einen Endpunkt wird oft als API-Request bezeichnet."
+        },
+        {
+            "question": "Wie heißt die bekannteste Bibliothek in Python, um API's zu nutzen?",
+            "answer": "requests."
+        },
+        {
+            "question": "Was sind Query-Parameter?",
+            "answer": "Sie sind bei GET Anfragen wichtig, um Abfragedaten zu spezifizieren. Sie können mit einem Fragezeichen an die URL gehängt werden oder bei Python-Requests als params-Parameter übergeben werden."
+        },
+        {
+            "question": "Was ist der 'Data Payload' (auch Request Body)?",
+            "answer": "Data Payloads transportieren die erforderlichen Informationen, um eine Aktion auf dem Server auszuführen, wie z.B. das Hinzufügen eines neuen Benutzers oder das Aktualisieren eines Produkts. Spielt insbesonder bei POST und PUT eine Rolle."
+        },
+        {
+            "question": "Nenne zwei häufige Methode zur Autorisierung von API-Anfragen?",
+            "answer": "Basic Authentication und Bearer Authentication."
+        },
+        {
+            "question": "Wofür werden Headers bei einer API benötigt?",
+            "answer": "Simple Key-Value-Paare, die wichtige Informationen über die Anfrage oder Antwort liefern. Headers können eine Vielzahl von Daten, wie Metadaten, Authentifizierungsinformationen und Informationen über Codierung, Sprache und Authentifizierung enthalten."
+        },
+        {
+            "question": "Welche HTTP-Methoden werden üblicherweise verwendet, um Daten von einem Server zu aktualisieren?",
+            "answer": "PUT (Vollständige Ressource ersetzen) oder PATCH (Ressource teilweise ersetzen)"
+        },
+        {
+            "question": "Wie können Abfrageparameter in einem HTTP-GET-Request mit der Python-Bibliothek 'requests' übergeben werden?",
+            "answer": "Abfrageparameter können als Dictionary über das 'params'-Argument übergeben werden."
+        },
+        {
+            "question": "Was bedeutet es, wenn eine API 'zustandslos' (stateless) ist?",
+            "answer": "Eine zustandslose API speichert keine Informationen über frühere Anfragen; jede Anfrage muss alle notwendigen Informationen enthalten."
+        },
+        {
+            "question": "Was ist bei dem Entwurf einer API wichtig?",
+            "answer": "Klarheit und Einfachheit, Konsistenz, Ressourcenorientierung"
+        },
+        {
+            "question": "Was ist Flask?",
+            "answer": "Mikro-Framework für Python, entworfen für kleine bis mittelgroße Anwendungen und einfache Web-Dienste. Wenig eingebaute Funktionalität, hohe Anpassungsfähigkeit, breite Palette an Erweiterungen und einfache Routengestaltung mit Dekoratoren."
+        },
+        {
+            "question": "Wie plane ich eine RESTful API in Flask?",
+            "answer": "Schritt 1: Zieldefinition und Funktionsumfang, Schritt 2: Datenmodellierung (Datenstruktur, Datenmodelle, Datenbankintegration), Schritt 3: Endpoint-Strukturierung."
+        },
+        {
+            "question": "Was sind Statuscodes?",
+            "answer": "Sie informieren den Client über den Erfolg oder Misserfolg der Anfrage und geben zusätzliche Informationen über den Status der angeforderten Ressource."
+        },
+        {
+            "question": "Welche 5 Kategorien gibt es bei Statuscodes?",
+            "answer": "1xx: Informativ, 2xx: Erfolg, 3xx: Umleitung, 4xx: Client-Fehler und 5xx: Server-Fehler."
+        },
+        {
+            "question": "Wofür steht JSON und was zeichnet das Format aus?",
+            "answer": "Es ist leicht lesbar und zu schreiben und wird heutzutage für fast alle APIs verwendet."
+        },
+        {
+            "question": "Wofür steht XML und was zeichnet das Format aus?",
+            "answer": "XML ist strenger strukturiert als JSON und enthält meist konkrete Informationen zu Dateitypen. Es eignet sich deshalb gut für komplexe und tief verschachtelte Datenstrukturen."
+        },
+        {
+            "question": "Nenne eine Tool, um eine Dokumentation für eine API zu erstellen.",
+            "answer": "Swagger, MkDocs oder Sphinx."
+        },
+        {
+            "question": "Was ist eine HTTP-Response und welche Informationen enthält sie typischerweise?",
+            "answer": "Eine HTTP-Response ist die Antwort eines Servers auf eine HTTP-Anfrage und enthält typischerweise einen Statuscode, Header-Informationen und einen Body mit den angeforderten Daten oder Fehlermeldungen."
+        }
+    ]
+}

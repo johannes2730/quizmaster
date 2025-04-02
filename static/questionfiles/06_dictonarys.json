@@ -1,0 +1,68 @@
+{
+    "title": "Python Dictionaries - Wissensfragen",
+    "introduction": "Dictionaries sind ein Datentyp in Python, mit dem wir Schlüssel-Wert-Paare beschreiben können. Sie ermöglichen uns, Werte mithilfe von Schlüsseln zu speichern und abzurufen, ähnlich wie ein echtes Wörterbuch. Diese Fragen sollen dein Verständnis der Dictionaries in Python vertiefen.",
+    "questions": [
+      {
+        "question": "1. Was sind die Hauptmerkmale eines Dictionaries in Python?",
+        "answer": "Ein Dictionary besteht aus Schlüssel-Wert-Paaren, hat einzigartige Schlüssel, ist veränderbar, unordered, und seine Größe kann sich dynamisch ändern."
+      },
+      {
+        "question": "2. Wie greift man auf einen Wert in einem Dictionary zu?",
+        "answer": "Man greift auf einen Wert zu, indem man den Schlüssel in eckigen Klammern angibt. Beispiel: mein_dict['Name']."
+      },
+      {
+        "question": "3. Wie erstellt man ein Dictionary in Python?",
+        "answer": "Man kann ein Dictionary auf verschiedene Arten erstellen, z.B. mit geschweiften Klammern oder der dict()-Funktion. Beispiel: mein_dict = {'Name': 'Max', 'Alter': 25}."
+      },
+      {
+        "question": "4. Wie kann man einen neuen Eintrag in ein Dictionary hinzufügen oder einen bestehenden ändern?",
+        "answer": "Man fügt einen neuen Eintrag hinzu oder ändert einen bestehenden, indem man einem Schlüssel einen Wert zuweist. Beispiel: mein_dict['Beruf'] = 'Ingenieur'."
+      },
+      {
+        "question": "5. Welche Methode verwendet man, um sicher auf einen Wert in einem Dictionary zuzugreifen, ohne einen Fehler zu riskieren, falls der Schlüssel nicht existiert?",
+        "answer": "Man verwendet die Methode get(), die None zurückgibt, wenn der Schlüssel nicht existiert. Beispiel: wert = mein_dict.get('schluessel')."
+      },
+      {
+        "question": "6. Wie entfernt man einen Eintrag aus einem Dictionary?",
+        "answer": "Man entfernt einen Eintrag mit dem Befehl del. Beispiel: del mein_dict['Stadt']."
+      },
+      {
+        "question": "7. Wie durchläuft man alle Schlüssel und Werte eines Dictionaries?",
+        "answer": "Man durchläuft ein Dictionary mit einer for-Schleife und der Methode items(). Beispiel: for key, value in mein_dict.items(): print(key, value)."
+      },
+      {
+        "question": "8. Welche Methode verwendet man, um alle Schlüssel eines Dictionaries zu erhalten?",
+        "answer": "Man verwendet die Methode keys(), um alle Schlüssel eines Dictionaries zu erhalten. Beispiel: schluessel = mein_dict.keys()."
+      },
+      {
+        "question": "9. Wie überprüft man, ob ein bestimmter Schlüssel in einem Dictionary existiert?",
+        "answer": "Man verwendet den in-Operator, um zu überprüfen, ob ein Schlüssel in einem Dictionary existiert. Beispiel: 'Name' in mein_dict."
+      },
+      {
+        "question": "10. Wie erstellt man eine flache Kopie eines Dictionaries?",
+        "answer": "Man erstellt eine flache Kopie eines Dictionaries mit der Methode copy(). Beispiel: neues_dict = mein_dict.copy()."
+      },
+      {
+        "question": "11. Wie kann man alle Einträge in einem Dictionary auf einmal entfernen?",
+        "answer": "Man entfernt alle Einträge aus einem Dictionary mit der Methode clear(). Beispiel: mein_dict.clear()."
+      },
+      {
+        "question": "12. Was ist ein Nested Dictionary und wie greift man auf ein Element darin zu?",
+        "answer": "Ein Nested Dictionary ist ein Dictionary innerhalb eines anderen Dictionaries. Man greift auf ein Element zu, indem man die Schlüssel nacheinander angibt. Beispiel: studenten = {'Anna': {'Mathe': 1}}, note = studenten['Anna']['Mathe']."
+      },
+      {
+        "question": "13. Wie aktualisiert man ein Dictionary mit Schlüssel-Wert-Paaren aus einem anderen Dictionary?",
+        "answer": "Man verwendet die Methode update(), um ein Dictionary mit Schlüssel-Wert-Paaren aus einem anderen Dictionary zu aktualisieren. Beispiel: mein_dict.update(anderes_dict)."
+      },
+      {
+        "question": "14. Wie entfernt und gibt man ein zufälliges Schlüssel-Wert-Paar aus einem Dictionary zurück?",
+        "answer": "Man verwendet die Methode popitem(), um ein zufälliges Schlüssel-Wert-Paar zu entfernen und zurückzugeben. Beispiel: schluessel, wert = mein_dict.popitem()."
+      },
+      {
+        "question": "15. Wie kann man die Werte eines Dictionaries als Liste zurückgeben?",
+        "answer": "Man verwendet die Methode values(), um die Werte eines Dictionaries als Liste zurückzugeben. Beispiel: werte = list(mein_dict.values())."
+      }
+    ],
+    "conclusion": "Diese Fragen sollen dir helfen, dein Verständnis der Dictionaries in Python zu vertiefen. Übe, indem du die Antworten auf diese Fragen in eigenen Worten erklärst und die beschriebenen Konzepte in kleinen Programmen umsetzt."
+  }
+  

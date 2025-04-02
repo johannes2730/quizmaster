@@ -1,0 +1,30 @@
+{
+  "title": "Pymongo - Wissensfragen",
+  "questions": [
+    {
+      "question": "1. Was sind Collections in Pymongo? Gib den Quellcode für die Erstellung einer Collection an.",
+      "answer": "Bei Collections handelt es sich um die \"Datenbanktabellen\"/\"Datensammlung\" innerhalb einer einer Mongo-Datenbank.\nBeispielcode:\nimport pymongo\n\n# Verbindung zur Datenbank herstellen\nclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\ndatabase = client[\"meineDatenbank\"]\ncollection = database[\"meineCollection\"]"
+    },
+    {
+      "question": "2. Mit welchen pymongo-Befehlen können die CRUD-Operationen auf einer Mongo DB ausgeführt werden? Nenne jeweils mindestens einen Befehl",
+      "answer": "Zunächst muss eine Verbindung zu einem Mongoserver hergestellt werden, anschließend muss die Verbindung zu einer Datenbank auf dem Server hergestellt werden. Anschließend wird eine Verb Verbindung zu einer Collection hergestellt. Auf dieser können dann die CRUD-Befehle ausgeführt werden:\nCreate: collection.insert_one({...}); collection.insert_many([{...},...]\nRead: collection.find({ \"preis\": { \"$gt\": 50 } }), collection.find_one()\nUpdate: collection.update_one(\n  { \"name\": 'Beispiel' },\n  {\"$set\": { \"name\": 'Neuer Name' } }\n)\nDelete: collection.delete_one({...})"
+    },
+    {
+      "question": "3. Welche Befehle ermöglichen das sortieren, limitieren und überspringen von Abfrageergebnissen? Wie können die Dokumente in einer Collection gezählt werden?",
+      "answer": "sortieren: collection.find().sort({...})\nlimitieren: collection.find().limit(5)\nüberspringen: collection.find().skip(5)"
+    },
+    {
+      "question": "4. Was sind Indexes in Pymongo?",
+      "answer": "Indizes in MongoDB sind spezielle Datenstrukturen, welche die Abfrageleistung verbessern, indem sie den Zugriff auf Daten beschleunigen.  Sie ermöglichen höhere Abfragegeschwindigkeiten beim suchen, sortieren und Join Operationen. MongoDB nutzt B-Baum-Indizes. Indizes können auf einzelnen Feldern oder mehreren Feldern erstellt werden. Automatisch werden Indizes auf dem _id Feld erstellt. Sie werden mit Collection.createIndex erstellt, z.B.  Collection.createIndex({name: 1, age: -1})"
+    },
+    {
+      "question": "5. Gegeben ist folgender Code:\nfrom pymongo import MongoClient\n# Connect to the MongoDB server\nclient = MongoClient()\n# Access the \"produkte\" collection\ndb = client[\"produkte\"]\nErstelle den Befehl um alle Produkte zu finden deren Preis günstiger als 20 ist.",
+      "answer": "documents = db.find({ \"preis\": { \"$lt\": 50 } })"
+    },
+    {
+      "question": "6. Was bedeuten 1 und -1 in folgendem Code:\ndb.meineCollection.createIndex({ name: 1, age: -1 })",
+      "answer": "1 sortiert aufsteigend, -1 sortiert absteigend innerhalb des erstellten Suchbaums / Indizes"
+    }
+  ],
+  "conclusion": "Diese Fragen sollen dir helfen, dein Verständnis zu pymongo zu vertiefen. Übe, indem du die Antworten auf diese Fragen in eigenen Worten erklärst und selbst Codebeispiele erstellst!"
+}

@@ -1,0 +1,184 @@
+{"title": "Web",
+"questions": [
+        {
+            "question": "Was ist HTML?",
+            "answer": "Hypertext Markup Language. Sie ist das Grundgerüst jeder Webseite. Es ist die grundlegende Markupsprache für Webseiten. Hierbei definiert sie die Struktur und den Inhalt der Seite mittels Tags."
+        },
+        {
+            "question": "Was ist CSS?",
+            "answer": "Cascading Style Sheets. Es ist die Sprache, die für das Styling und das Layout von Webseiten verwendet wird. CSS ermöglicht damit ein sauberes Trennen von Inhalt (HTML) und Design."
+        },
+        {
+            "question": "Wofür wird JavaScript bei Webseiten verwendet?",
+            "answer": "JavaScript ist eine mächtige Skriptsprache, die verwendet wird, um Webseiten dynamisch und interaktiv zu gestalten."
+        },
+        {
+            "question": "Was ist das DOM?",
+            "answer": "Dokument Objekt Model. Es bietet eine strukturierte Darstellung der Inhalte einer Webseite und ermöglicht es Skriptsprachen wie JavaScript, den Inhalt, die Struktur und das Design einer Webseite dynamisch zu ändern. Es modelliert eine HTML- oder XML-Seite als Baumstruktur."
+        },
+        {
+            "question": "Was sind Cookies?",
+            "answer": "Sie werden vom Webbrowser bereitgestellt, um Daten lokal auf dem Client-Rechner zu speichern. Sie werden hauptsächlich verwendet, um Sitzungsinformationen zu speichern (z.B. Anmeldedaten). Sie haben standardmäßig eine begrenzte Lebensdauer."
+        },
+        {
+            "question": "Was ist der LocalStorage?",
+            "answer": "Sie werden vom Webbrowser bereitgestellt, um Daten lokal auf dem Client-Rechner zu speichern. Sie werden hauptsächlich zur Speicherung von Daten verwendet, die zwischen Sitzungen persistent bleiben sollen. Sie haben keine Ablaufzeit und bleiben gespeichert, bis sie explizit gelöscht werden. LocalStorage ist nur von der Client-Seite über die Web Storage API (window.localStorage) zugänglich."
+        },
+        {
+            "question": "Welche Tags werden in dem Grundgerüst einer HTML benötigt?",
+            "answer": "<!DOCTYPE html> , <html>, <head> und <body>."
+        },
+        {
+            "question": "Mit welchem Tag wird ein Hyperlink in HTML definiert?",
+            "answer": "<a>."
+        },
+        {
+            "question": "Wie kann CSS in HTML eingebunden werden?",
+            "answer": "Inline-Styles: CSS wird direkt im Style-Attribut eines HTML-Elements definiert, interne Stylesheets: CSS wird im head-Bereich eines HTML-Dokuments in einem <style>-Tag definiert und externe Stylesheets: CSS wird in einer separaten .css-Datei gespeichert und mit einem <link>-Tag im HTML-Dokument verknüpft.>"
+        },
+        {
+            "question": "Wie ist der Code, um eine externe CSS Datei in HTML einzubinden.",
+            "answer": "<link rel='stylesheet' href='styles.css'>"
+        },
+        {
+            "question": "Was ist der Unterschied zwischen einer Klasse und einer ID in CSS?",
+            "answer": "Klassen werden verwendet, um mehrere Elemente mit denselben Stilen zu versehen. Sie werden mit einem Punkt (.) im CSS referenziert. IDs sind einzigartig innerhalb einer Seite und werden verwendet, um ein einzelnes Element zu stylen. Sie werden mit einem Hash (#) im CSS referenziert.>"
+        },
+        {
+            "question": "Wie funktioniert das Box-Modell in CSS?",
+            "answer": "Das Box-Modell beschreibt die Struktur eines Elements mit vier Bereichen: Content, Padding, Border und Margin.>"
+        },
+        {
+            "question": "Wie kann man Elemente in CSS positionieren?",
+            "answer": "static: Standard-Positionierung, relative: Positioniert ein Element relativ zu seiner ursprünglichen Position, absolute: Positioniert ein Element absolut innerhalb eines relativ positionierten Elternelements, fixed: Positioniert ein Element relativ zum Viewport, sticky: Eine Mischung aus relativer und fester Positionierung (es verhält sich wie relative bis zu einem bestimmten Punkt, ab dem es sich wie fixed verhält)."
+        },
+        {
+            "question": "Was sind CSS-Selektoren?",
+            "answer": "Selektoren sind Muster, mit denen Elemente in einem HTML-Dokument ausgewählt werden, um ihnen Stile zuzuweisen. Beispiele: p {}, .example {}, etc."
+        },
+        {
+            "question": "Was sind Kombinatoren bei CSS?",
+            "answer": "Kombinatoren definieren Beziehungen zwischen Selektoren. Nachfahren-Selektor ( ), Kind-Selektor (>), Nachbar-Selektor (+) und Geschwister-Selektor (~)"
+        },
+        {
+            "question": "Was ist Flexbox und wofür wird es verwendet?",
+            "answer": "Flexbox ist ein eindimensionales Layoutmodell, das effiziente Möglichkeiten bietet, Elemente innerhalb eines Containers auszurichten und zu verteilen."
+        },
+        {
+            "question": "Was ist ein Grid-Layout?",
+            "answer": "Moderne CSS-Grid-Layouts ermöglichen komplexe, mehrspaltige Anordnungen, die sich dynamisch an die Bildschirmgröße anpassen."
+        },
+        {
+            "question": "Was sind Media Queries?",
+            "answer": "Media Queries ermöglichen es, CSS-Regeln basierend auf bestimmten Bedingungen wie Bildschirmgröße, Auflösung oder Seitenverhältnis anzuwenden."
+        },
+        {
+            "question": "Was ist Responsive CSS?",
+            "answer": "Responsive CSS ist der Ansatz, Webseiten so zu gestalten, dass sie auf verschiedenen Geräten und Bildschirmgrößen gut aussehen und funktionieren."
+        },
+        {
+            "question": "Wofür wird Bootstrap verwendet?",
+            "answer": "Mit Bootstrap können responsive Layouts und Komponenten einfach implementiert werden. Es bietet eine Sammlung von fertigen CSS- und JavaScript-Komponenten."
+        },
+        {
+            "question": "Welche Variablen gibt es in JS?",
+            "answer": "const: Konstante, var: Variable mit Function-Scope, let: Variable mit Block-Scope. In modernen JavaScript-Projekten wird empfohlen, let (und const für unveränderliche Variablen) zu verwenden."
+        },
+        {
+            "question": "Wie ist der JS Code, um einem Button einen Eventlistener für ein 'click' hinzuzufügen?",
+            "answer": "document.querySelector('button').addEventListener('click', function() {});"
+        },
+        {
+            "question": "Welche beiden Methoden gibt es in JS, um Elemente auszuwählen?",
+            "answer": "Basierend auf ID: document.getElementById('meinElement'), Auswahl mit CSS-Selektoren: document.querySelector('.meineKlasse')"
+        },
+        {
+            "question": "Was sind Events in JavaScript?",
+            "answer": "Events sind Aktionen oder Vorkommnisse, die im Browser stattfinden und von JavaScript erkannt werden können. Diese können Benutzerinteraktionen wie Klicks, Mausbewegungen, Tastendrücke oder auch Systemereignisse wie das Laden einer Seite sein."
+        },
+        {
+            "question": "Ist JS eine dynamisch oder statisch typisierte Sprache?",
+            "answer": "JS ist eine dynamisch typisierte Sprache."
+        },
+        {
+            "question": "Wie ist der Syntax für eine For-Schleife in JavaScript?",
+            "answer": "for (initialization; condition; increment) {}. Beispiel: for (let i = 0; i < 5; i++) {console.log(i);}"
+        },
+        {
+            "question": "Wie ist der Syntax für eine If-Verzweigung in JavaScript?",
+            "answer": "if (alter > 18) {console.log('Volljährig');} else {console.log('Minderjährig');}."
+        },
+        {
+            "question": "Wie ist das Keyword um eine Funktion in JS zu schreiben?",
+            "answer": "function"
+        },
+        {
+            "question": "Was ist der wesentliche Unterschied von requests in Python zur Fetch API in JS?",
+            "answer": "Ein wesentlicher Unterschied zwischen Python und JavaScript ist, dass requests in Python synchron ist, während die Fetch API in JavaScript asynchron arbeitet."
+        },
+        {
+            "question": "Warum sind asynchrone Anfragen in JS wichtig?",
+            "answer": "Asynchrone Anfragen sind wichtig, um Daten im Hintergrund zu laden, ohne die Benutzeroberfläche zu blockieren."
+        },
+        {
+            "question": "Was ist eine Callback-Funktion in JS?",
+            "answer": "Eine Callback-Funktion ist eine Funktion, die als Argument an eine andere Funktion übergeben wird und dort aufgerufen wird, wenn eine bestimmte Aufgabe abgeschlossen ist oder ein bestimmtes Ereignis eintritt."
+        },
+        {
+            "question": "Wozu wird das Promise Object in JS verwendet?",
+            "answer": "Promises sind die Grundlage der asynchronen Programmierung in modernem JavaScript. Ein Promise ist ein Objekt, das von einer asynchronen Funktion zurückgegeben wird und den aktuellen Status der Operation darstellt. Zum Zeitpunkt der Rückgabe des Promises an den Aufrufer ist die Operation oft noch nicht abgeschlossen, aber das Promise-Objekt bietet Methoden, um den späteren Erfolg oder Misserfolg der Operation zu behandeln."
+        },
+        {
+            "question": "Wofür wird die then() Methode in JS verwendet?",
+            "answer": "then() wird verwendet, um eine Callback-Funkton zu regristieren, wenn ein Promise erfüllt oder abgelehnt wird. promise.then((result) => console.log(result), (error) => console.error(error));"
+        },
+        {
+            "question": "Wofür wird die catch() Methode in JS verwendet?",
+            "answer": "Sie wird aufgerufen, wenn das Promise abgelehnt wird und fängt alle Fehler ab, die in der Promise-Kette auftreten. ...catch((error) => console.error('Error:', error));"
+        },
+        {
+            "question": "Wofür wird async/await in JS verwendet?",
+            "answer": "Wenn du async verwendest, wird die Funktion immer ein Promise zurückgeben, und innerhalb der Funktion kannst du await verwenden, um auf andere Promises zu warten. Das ermöglicht eine einfachere Handhabung von asynchronem Code."
+        },
+        {
+            "question": "Ist JS eine synchrone oder asynchrone Programmierung?",
+            "answer": "Obwohl JavaScript synchron ist, kann es asynchrone Operationen durch Mechanismen wie Callbacks, Promises und async/await handhaben. Diese Mechanismen ermöglichen es dem Code, bestimmte Aufgaben wie Netzwerkanfragen oder zeitgesteuerte Aufgaben asynchron auszuführen, ohne den Haupt-Thread zu blockieren."
+        },
+        {
+            "question": "Wie wird ein GET-Request mit der Fetch API von JS gemacht?",
+            "answer": "fetch('https://api.example.com/data').then(data => console.log('Geladene Daten:', data)).catch(error => console.error('Fehler:', error));."
+        },
+        {
+            "question": "Nenne zwei beliebte JS Bibliotheken.",
+            "answer": "jQuery: Vereinfacht Interaktion mit dem DOM. Moment.js: Verarbeitung und Formatierung von Datums- und Zeitangaben."
+        },
+        {
+            "question": "Wie wird externes JS in HTML eingebunden?",
+            "answer": "<script type='text/javascript' src='main.js'></script>. Internes JS kann einfach als Code zwischen die <script> Tags geschrieben werden."
+        },
+        {
+            "question": "Was ist der Unterschied zwischen einer statischen und dynamischen Webseite?",
+            "answer": "Der Inhalt einer statischen Webseite ist fest und ändert sich nicht, es sei denn, der Entwickler ändert den Code der Webseite selbst. Jeder Benutzer, der die Seite besucht, sieht denselben Inhalt. Dynamische Webseiten erstellen und liefern Inhalte auf der Grundlage von Benutzereingaben, Datenbankabfragen oder anderen Faktoren."
+        },
+        {
+            "question": "Was sind Web-API's? Nenne bitte zwei Beispiele.",
+            "answer": "Web-APIs bieten Schnittstellen zwischen JavaScript und Browserfunktionen bzw. Hardware. Geolocation API, Canvas API, Web Storage API, WebRTC, Service Workers und Web Audio API."
+        },
+        {
+            "question": "Nenne zwei moderne JS-Frameworks.",
+            "answer": "React und Vue."
+        },
+        {
+            "question": "Was ist Node.js?",
+            "answer": "Node.js ist eine Laufzeitumgebung für JavaScript, die es ermöglicht, JavaScript-Code außerhalb des Browsers auszuführen, also z.B. auf dem Server. Vergleichbar mit Flask in Python, ermöglicht die Kombination von Node.js und Express (Web-Framework für Node.js) das Erstellen von serverseitigen Anwendungen."
+        },
+        {
+            "question": "Wofür steht NPM?",
+            "answer": "Node Package Manager. NPM ist ein zentrales Repository für Node.js-Pakete welche das Hinzufügen, Aktualisieren und Verwalten von Bibliotheken und Tools deutlich vereinfacht."
+        },
+        {
+            "question": "Was ist der Unterschied zwischen Client-Side und Server-Side Rendering?",
+            "answer": "Client-Side: Die Inhalte der Webseite werden im Browser des Benutzers durch JavaScript generiert. Nur das Grundgerüst der Seite wird vom Server geladen. Client-Side: Die gesamte Webseite inklusive aller Inhalte wird auf dem Server generiert und als fertige HTML-Seite an den Browser gesendet."
+        }
+    ]
+}
