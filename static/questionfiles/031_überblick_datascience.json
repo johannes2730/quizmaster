@@ -1,0 +1,22 @@
+{
+    "title": "Überblick Data Science",
+    "questions": [
+      {
+        "question": "Inwiefern unterscheiden sich Künstliche Intelligenz (KI), Maschinelles Lernen (ML) und Deep Learning voneinander?",
+        "answer": "Künstliche Intelligenz (KI) ist der Oberbegriff für Systeme, die menschenähnliches Denken und Handeln nachahmen. Maschinelles Lernen (ML) ist ein Teilbereich der KI, der Algorithmen verwendet, um aus Daten zu lernen. Deep Learning ist eine spezialisierte Form des ML, die tiefe neuronale Netze mit mehreren Schichten nutzt."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen einem Data Scientist, einem Data Engineer?",
+        "answer": "Ein Data Scientist analysiert und modelliert Daten, kombiniert Statistik, Programmierung und Domänenwissen. Ein Data Engineer entwickelt und pflegt Datenpipelines sowie die Infrastruktur zur Verarbeitung großer Datenmengen."
+      },
+      {
+        "question": "Was ist das Hauptziel von Data Science?",
+        "answer": "Generieren von Wissen aus Daten, um Entscheidungsprozesse zu verbessern."
+      },
+      {
+        "question": "Beschreibe einen kompletten Data Science Prozess.",
+        "answer": "Problemdefinition -> Datenbeschaffung -> Datenaufbereitung -> Modellierung -> Validierung -> (Deployment)"
+      }
+    ]
+  }
+  

@@ -1,0 +1,29 @@
+{
+  "title": "Die vier arten der Datenanalyse",
+  "questions": [
+    {
+      "question": "Bitte nenne die vier Arten der Datenanalyse.",
+      "answer": "1. Deskriptive Analyse \n2. Diagnostitische Analyse \n3. Prädiktive Analyse \n4. Präskriptive Analyse\n"
+    },
+    {
+      "question": "Beschreibe  die Deskriptive Analyse.",
+      "answer": "Die deskriptive Analyse stellt die Daten so dar, wie sie sind, und beantwortet grundlegende Fragen wie „Was ist passiert?“. \nSie wird häufig als erster Schritt verwendet, um Muster, Trends und Verteilungen zu verstehen. \nHierbei kommen statistische Kennzahlen wie Mittelwerte, Häufigkeiten und Standardabweichungen zum Einsatz, um ein klares Bild der Daten zu gewinnen."
+    },
+    {
+      "question": "Beschreibe die Diagnostische Analyse",
+      "answer": "Die diagnostische Analyse geht tiefer und versucht zu erklären, „Warum ist etwas passiert?“. \nSie analysiert Zusammenhänge und identifiziert Muster, die auf Ursachen für bestimmte Beobachtungen hinweisen. \nMit Methoden wie Hypothesentests und Regressionsanalysen lassen sich Korrelationen und Abhängigkeiten aufzeigen, die helfen, den Hintergrund eines Phänomens zu verstehen."
+    },
+    {
+      "question": "Beschreibe die Prädiktive Analyse",
+      "answer": "Die prädiktive Analyse richtet den Blick in die Zukunft und versucht zu prognostizieren, „Was wird wahrscheinlich passieren?“. \nDurch die Analyse historischer Daten und das Erkennen von Mustern lassen sich Modelle entwickeln, die Vorhersagen ermöglichen. \nHäufige Werkzeuge sind hier maschinelle Lernverfahren wie Regression, Entscheidungsbäume und Zeitreihenanalysen, die bei der Ermittlung zukünftiger Trends und Entwicklungen unterstützen."
+    },
+    {
+      "question": "Beschreibe die Präskriptive Analyse",
+      "answer": "Die präskriptive Analyse baut auf den Erkenntnissen der prädiktiven Analyse auf und stellt die Frage „Was sollte getan werden?“. \nSie nutzt die erlangten Einsichten, um Handlungsempfehlungen zu geben und optimale Entscheidungen zu treffen. \nTypische Methoden umfassen Optimierungsalgorithmen und Entscheidungsmodelle, die konkrete Vorschläge zur Vorgehensweise bieten."
+    },
+    {
+      "question": "Beschreibe wie die vier Arten der Datenanalyse zusammenspielen",
+      "answer": "Diese vier Analysearten bilden den Rahmen der Datenanalyse und stehen oft miteinander in Verbindung: \nDeskriptive und diagnostische Analysen geben Einblick in bestehende Daten, \nwährend prädiktive und präskriptive Analysen darauf abzielen, zukünftige Ergebnisse vorherzusagen und zu beeinflussen. \nGemeinsam ermöglichen sie eine umfassende Datenanalyse und eröffnen wertvolle Perspektiven für datenbasierte Entscheidungen."
+    }
+  ]
+}

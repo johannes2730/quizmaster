@@ -1,0 +1,46 @@
+{
+    "title": "Normalisierung von Daten in Python",
+    "questions": [
+      {
+        "question": "Warum ist die Normalisierung von Daten wichtig?",
+        "answer": "Die Normalisierung hilft,\nVerzerrungen in den Daten zu reduzieren und sorgt dafür,\ndass alle Features auf einer vergleichbaren Skala liegen,\nwas die Leistung von Machine Learning-Modellen verbessern kann."
+      },
+      {
+        "question": "Nenne zwei Normalisierungsmethoden?",
+        "answer": "Die Min-Max-Normalisierung und die Z-Score-Normalisierung."
+      },
+      {
+        "question": "Wie funktioniert die Min-Max-Normalisierung?",
+        "answer": "Sie skaliert die Werte eines Features auf einen Bereich von 0 bis 1, \nindem die Formel \n(X - min(X)) / (max(X) - min(X))\nverwendet wird."
+      },
+      {
+        "question": "Wie kann man die Min-Max-Normalisierung in Python mit \nscikit-learn\numsetzen? Schreiben Sie den entsprechenden Code auf.",
+        "answer": "\nfrom sklearn.preprocessing import MinMaxScaler\nimport numpy as np\ntemperatures = np.array([10, 15, 22, 30, 25]).reshape(-1, 1)\nscaler = MinMaxScaler()\nnormalized_temperatures = scaler.fit_transform(temperatures)\nprint(normalized_temperatures.flatten())\n"
+      },
+      {
+        "question": "Wie funktioniert die Z-Score-Normalisierung?",
+        "answer": "Sie standardisiert die Werte,\nindem sie den Mittelwert subtrahiert und durch die Standardabweichung teilt: \n(X - mean(X)) / std(X)\n"
+      },
+      {
+        "question": "Wie kann man die Z-Score-Normalisierung in Python mit \nscikit-learn\numsetzen? Schreiben Sie den entsprechenden Code auf.",
+        "answer": "\nfrom sklearn.preprocessing import StandardScaler\nimport numpy as np\ntemperatures = np.array([10, 15, 22, 30, 25]).reshape(-1, 1)\nscaler = StandardScaler()\nstandardized_temperatures = scaler.fit_transform(temperatures)\nprint(standardized_temperatures.flatten())\n"
+      },
+      {
+        "question": "Wie kann man die Min-Max-Normalisierung mit \npandas\nberechnen? Schreiben Sie den entsprechenden Code auf.",
+        "answer": "\nimport pandas as pd\ndata = pd.DataFrame({'Temperatur': [10, 15, 22, 30, 25]})\ndata['MinMax_Norm'] = (data['Temperatur'] - data['Temperatur'].min()) / (data['Temperatur'].max() - data['Temperatur'].min())\nprint(data)\n"
+      },
+      {
+        "question": "Wie kann man die Z-Score-Normalisierung mit \npandas\nberechnen? Schreiben Sie den entsprechenden Code auf.",
+        "answer": "\nimport pandas as pd\ndata = pd.DataFrame({'Temperatur': [10, 15, 22, 30, 25]})\ndata['ZScore_Norm'] = (data['Temperatur'] - data['Temperatur'].mean()) / data['Temperatur'].std(ddof=0)\nprint(data)\n"
+      },
+      {
+        "question": "Wann sollte man die Min-Max-Normalisierung anstelle der Z-Score-Normalisierung verwenden?",
+        "answer": "Die Min-Max-Normalisierung eignet sich besonders, \nwenn die Daten in einem festen Bereich liegen\nund keine extremen Ausreißer enthalten sind."
+      },
+      {
+        "question": "Wann sollte man die Z-Score-Normalisierung anstelle der Min-Max-Normalisierung verwenden?",
+        "answer": "Die Z-Score-Normalisierung ist sinnvoll, \nwenn die Daten eine Normalverteilung haben\noder wenn Ausreißer vorhanden sind, \nda sie diese weniger stark beeinflusst als die Min-Max-Normalisierung."
+      }
+    ]
+  }
+  

@@ -1,0 +1,21 @@
+{
+  "title": "Anomalieerkennung - Autoencoder",
+  "questions": [
+    {
+      "question": "Wie ist ein Autoencoder aufgebaut?",
+      "answer": "1. Decoder: Lernt die Eingabedaten auf eine niedrige Dimension abzubilden. \n2. Decoder: Lernt die niedrigdimensinale Darstellung der Daten in ihre urpsrüngliche Form zu rekonstruieren."
+    },
+    {
+      "question": "Wie eignet sich ein Autoencoder für die Erkennung von Anomalien in Daten?",
+      "answer": "Der Autoencoder wird mit normalen Datenpunkten trainiert und kann diese somit gut rekonstruieren. Erhält das Modell nun Daten mit Anomalien, kann der Decoder diese nicht gut rekonstruieren und es entsteht ein Rekonstruktionsfehler. "
+    },
+    {
+      "question": "Was sind Vor- und Nachteile von Autoencodern in der Anomalieerkennung?",
+      "answer": "Vorteile:\n- Modellierung von komplexen, nicht linearen Mustern\n- eignen sich gut für hochdimensionale Daten, wie Bilder\nNachteile:\n- effektives Training erfordert große Datenmengen\n- hoher Rechenaufwand"
+    },
+    {
+      "question": "Welche 3 Architekturen von Autoencoder gibt es, und wofür sind sie geignet?",
+      "answer": "1. Fully Connected: Tabellarische Daten mit dicht besetzten Merkmalen\n2. Convolutional: Bilddaten\n3. LSTM: Zeitreihen/Sequientielle Daten"
+    }
+  ]
+}
