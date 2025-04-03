@@ -219,6 +219,14 @@
     margin-top: 2rem;
     font-size: 0.9rem;
   }
+
+  /* LineBreak; WordWrap if Text Too Long  */
+  .answer-content pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
   
   /* Media Queries for responsiveness */
   @media (max-width: 768px) {
@@ -257,3 +265,4 @@
       min-height: 80px;
     }
   }
+

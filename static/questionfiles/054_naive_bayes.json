@@ -23,23 +23,23 @@
       },
       {
         "question": "Wie importiert man die Gaussian Naive Bayes Klasse aus `sklearn` und erstellt ein Modell?",
-        "answer": "```python\nfrom sklearn.naive_bayes import GaussianNB\nmodel = GaussianNB()\n```"
+        "answer": "from sklearn.naive_bayes import GaussianNB\nmodel = GaussianNB()\n"
       },
       {
         "question": "Wie kann man ein Naive Bayes Modell auf Trainingsdaten mit `fit` trainieren?",
-        "answer": "```python\nmodel.fit(X_train, y_train)\n```"
+        "answer": "model.fit(X_train, y_train)\n"
       },
       {
         "question": "Wie kann man mit einem trainierten Naive Bayes Modell Vorhersagen für neue Daten treffen?",
-        "answer": "```python\ny_pred = model.predict(X_test)\n```"
+        "answer": "y_pred = model.predict(X_test)\n"
       },
       {
         "question": "Wie kann man die Genauigkeit eines Naive Bayes Klassifikators mit `sklearn` berechnen?",
-        "answer": "```python\nfrom sklearn.metrics import accuracy_score\naccuracy = accuracy_score(y_test, y_pred)\n```"
+        "answer": "from sklearn.metrics import accuracy_score\naccuracy = accuracy_score(y_test, y_pred)\n"
       },
       {
         "question": "Wie kann man Wahrscheinlichkeiten für jede Klasse anstelle von reinen Vorhersagen erhalten?",
-        "answer": "```python\nprobabilities = model.predict_proba(X_test)\n```"
+        "answer": "probabilities = model.predict_proba(X_test)\n"
       }
     ]
   }
