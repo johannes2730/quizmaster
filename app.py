@@ -51,8 +51,14 @@ def random_questions_route():
 
 @app.route('/style.css')
 def style():
-    return send_from_directory(path.join(app.root_path, 'static'),
-                               'css/style.css', mimetype='text/css')
+    return send_from_directory(path.join(app.root_path, 'static','css'),
+                               'style.css', mimetype='text/css')
+
+
+@app.route('/quiz_icon.png')
+def icon_quiz():
+    return send_from_directory(path.join(app.root_path, 'static', 'icon'),
+                               'quiz_icon.png', mimetype='image/png')
 
 
 if __name__ == "__main__":
