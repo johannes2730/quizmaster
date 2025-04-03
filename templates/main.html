@@ -24,7 +24,7 @@
             {% for item in items %}
             <li>
                 <a href="{{ url_for('kapitel_route', kapitel=item) }}">
-                    {{item.split('.')[0].replace('_', ' ').title()}}
+                    {{item.split('.')[0].replace('_', ' ')}}
                 </a>
             </li>
             {% endfor %}
