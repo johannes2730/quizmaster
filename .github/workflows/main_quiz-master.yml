@@ -69,3 +69,5 @@ jobs:
           app-name: 'quiz-master'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6B2086DA2FA14862B10135C7F93AF4DC }}
+      - name: Start Backend Server
+        run: nohup python app.py &  
