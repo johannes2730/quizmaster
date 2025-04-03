@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='icon/quiz_icon.png') }}" type="image/png">
-    <title>Quizmaster</title>
 </head>
 <body>
-    {% for item in items %}
-    <p><a href="{{ url_for('static',filename = "q",kapitel=item) }}">{{item.split('.')[0]}}</a></p>
+    <header>
+        <div class="container">
+            <h1>Quiz Master</h1>
+        </div>
+    </header>
     
-    {% endfor %}
+    <main class="container">
+        <div class="nav-links">
+            <a href="{{ url_for('random_questions_route', size=10) }}">Random (10)</a>
+            <a href="{{ url_for('random_questions_route', size=15) }}">Random (15)</a>
+        </div>
+        
+        <h2>Available Topics</h2>
+        <ul class="topics-list">
+            {% for item in items %}
+            <li>
+                <a href="{{ url_for('kapitel_route', kapitel=item) }}">
+                    {{item.split('.')[0].replace('_', ' ').title()}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Quiz Master - Your Learning Companion</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Quizmaster</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | Quiz Master</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='icon/quiz_icon.png') }}" type="image/png">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-  </head>
-  <body>
-    <h1>{{title}}</h1>
-    <a href="{{ url_for('static',filename = "/") }}">main_page</a>
-    {% for i, item in items %}
-    <h2>{{ item["question"] }}</h2>
-    {%if item['code']:%}
-    <pre><code class="python">{{item['code']}}</code></pre>
-    {%endif%}
-    <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="lösungen hier notieren"></textarea>
-    <button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('{{i}}') .style.display=='none') {document.getElementById('{{i}}') .style.display=''}else{document.getElementById('{{i}}') .style.display='none'}">Antwort</button>
-    <div id="{{i}}" style="display:none" >
-      <pre><code class="python">
-          {{item["answer"]}}
-        </code></pre>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{{ title.replace('_', ' ').title() }}</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="nav-links">
+            <a href="{{ url_for('main_route') }}">Back to Topics</a>
+        </div>
+        
+        {% for i, item in items %}
+        <div class="question-card">
+            <div class="question-title">
+                {{ item["question"] }}
+            </div>
+            
+            {% if item.get('code') %}
+            <pre><code class="python">{{ item['code'] }}</code></pre>
+            {% endif %}
+            
+            <div class="answer-section">
+                <textarea 
+                    placeholder="Write your answer here..." 
+                    rows="4"
+                ></textarea>
+                
+                <button 
+                    onclick="toggleAnswer('answer-{{ i }}')"
+                >Show Answer</button>
+                
+                <div id="answer-{{ i }}" class="answer-content" style="display:none">
+                    <pre><code class="python">{{ item["answer"] }}</code></pre>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        
+        <div class="nav-links bottom-nav">
+            <a href="{{ url_for('main_route') }}">Back to Topics</a>
+        </div>
     </div>
-    {% endfor %}
-  </body>
+    
+    <footer>
+        <div class="container">
+            <p>Quiz Master - Your Learning Companion</p>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
 </html>
