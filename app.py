@@ -44,8 +44,9 @@ def kapitel_route():
 
 @app.route('/r', methods=['GET'])
 def random_questions_route():
-    size = int(request.args.get("size")) if request.args.get(
-        "size").isnumeric() else 15
+    size=15
+    if request.args.get("size") is not None and request.args.get("size").isnumeric():
+        size = int(request.args.get("size"))
     return render_template('questions.html', items=list(enumerate(get_random(size))), title="random_questions")
 
 
