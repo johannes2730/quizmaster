@@ -1,0 +1,33 @@
+{
+  "title": "Encoder",
+  "questions": [
+    {
+      "question": "Was sind Encoder und was ist deren Aufgabe?",
+      "answer": "Encoder sind zentrale Komponenten in der Datenvorverarbeitung, insbesondere im maschinellen Lernen und in der natürlichen Sprachverarbeitung. Ihre Hauptaufgabe besteht darin, kategoriale Daten in ein Format zu transformieren, das von Maschinenlernalgorithmen verarbeitet werden kann. Kategoriale Daten sind Daten, die in qualitative Gruppen unterteilt sind, beispielsweise durch Kategorien oder Labels. Ein Encoder übersetzt diese Kategorien in numerische Werte, wodurch ermöglicht wird, dass Algorithmen zum maschinellen Lernen, die mit Zahlen effizient arbeiten, die Daten nutzen können. Es gibt verschiedene Arten von Encodern, die jeweils für unterschiedliche Anwendungsfälle geeignet sind, darunter der OneHotEncoder, der LabelEncoder und der OrdinalEncoder."
+    },
+    {
+      "question": "Erkläre die Funktionsweise eines One Hot Encoders, sowie seine typischen Einsatzgebiete!",
+      "answer": "Der One Hot Encoder wandelt kategoriale Daten um, in dem er für jede Kategorie eine separate Binärspalte (0 oder 1) um. Er ist besonders für nominale Daten geeignet, bei denen keine natürliche Reihenfolge besteht."
+    },
+    {
+      "question": "Erkläre die Funktionsweise eines Label Encoders, sowie seine typischen Einsatzgebiete!",
+      "answer": "Der Label Encoder wandelt kategoriale Labels in ganzzahlige Werte um. Das ist vor allem dann nützlich, wenn ordinal-kategoriale Daten vorliegen, bei denen eine natürliche Ordnung exisitert (z.B. klein, mittel, groß)."
+    },
+    {
+      "question": "Erkläre die Funktionsweise eines Ordinal Encoders, sowie seine typischen Einsatzgebiete!",
+      "answer": "Der Ordinal Encoder kann Kategorien in eine natürliche Reihenfolge umwandeln. Ihm kann dafür die Ordnung der Daten übergeben werden. Er eignet sich damit besonders gut für die Codierung ordinal kategorialer Daten, die eine bestimmte Reihenfolge vorliegt, z.B. schlecht, gut, ausgezeichnet."
+    },
+    {
+      "question": "Erkläre die Funktionsweise eines Target Encoders, sowie seine typischen Einsatzgebiete!",
+      "answer": "Der Target Encoder wandelt kategorische Variablen in numerische Werte um, indem er für jede Kategorie den Durchschnitt des Zielwertes verwendet. Dies ist besonders nützlich bei Regressionsproblemen."
+    },
+    {
+      "question": "Erkläre die Funktionsweise eines Binary Encoders, sowie seine typischen Einsatzgebiete!",
+      "answer": "Der Binary Encoder wandelt die Kategorien in binäre Codes um, um die Dimensionalität zu reduzieren. Dazu wird zuerst eine Zahl zugewiesen, welche anschließend in einen binären Code umgewandelt wird. Er eignet sich somit für Daten, welche viele verschiedene Werte enthalten, indem er hier die Dimensionalität bzw. die Anzahl der Features reduziert."
+    },
+    {
+      "question": "Erkläre die Funktionsweise eines Count Encoders, sowie seine typischen Einsatzgebiete!",
+      "answer": "Der Count Encoder wandelt kategorische Werte in Zähler um, welche angeben, wie oft jede Kategorie in den Daten vorkommt. Er kann vor allem große Datenmengen effizient verarbeiten."
+    }
+  ]
+}
