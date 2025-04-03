@@ -50,4 +50,5 @@ def style():
     return send_from_directory(path.join(app.root_path, 'static'),
                                'css/style.css', mimetype='text/css')
 
-app.run(debug= True, port= 3000, host="0.0.0.0")
+if __name__ == "__main__":
+    app.run()
