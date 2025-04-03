@@ -1,0 +1,46 @@
+{
+    "title": "uebersicht_neuronale_netze",
+    "questions": [
+      {
+        "question": "Welche Hauptvorteile bieten Transformers gegenüber traditionellen Recurrent Neural Networks (RNNs) bei der Verarbeitung von sequentiellen Daten?",
+        "answer": "Transformers nutzen Self-Attention, um verschiedene Teile der Eingabesequenz parallel zu gewichten, während RNNs sequentiell arbeiten und daher langsamer sind. Zudem können Transformers langfristige Abhängigkeiten besser erfassen, während RNNs unter dem Vanishing Gradient Problem leiden."
+      },
+      {
+        "question": "Warum sind Gated Recurrent Units (GRUs) effizienter als Long Short-Term Memory Networks (LSTMs), und in welchen Anwendungsfällen könnte man GRUs bevorzugen?",
+        "answer": "GRUs haben weniger Parameter als LSTMs, da sie nur zwei statt drei Gatter verwenden, was die Berechnung schneller macht. Sie werden bevorzugt, wenn die Rechenleistung begrenzt ist oder wenn die Trainingsdaten nicht ausreichend groß sind, um die zusätzlichen Parameter eines LSTM zu rechtfertigen."
+      },
+      {
+        "question": "Wie unterscheiden sich Autoencoder und Variational Autoencoder (VAEs) in Bezug auf ihre Funktionsweise und ihren Anwendungsbereich?",
+        "answer": "Autoencoder komprimieren Eingabedaten in eine niedrigdimensionale Darstellung und rekonstruieren sie anschließend. VAEs gehen einen Schritt weiter und modellieren die latenten Variablen probabilistisch, was eine kontrollierte Generierung neuer Datenproben ermöglicht."
+      },
+      {
+        "question": "Welche spezifischen Eigenschaften machen Convolutional Neural Networks (CNNs) besonders gut für die Verarbeitung von Bilddaten geeignet?",
+        "answer": "CNNs nutzen Faltungsschichten, um lokal relevante Merkmale in Bildern zu extrahieren. Sie verwenden auch Pooling-Schichten zur Reduktion der Dimensionen und zur Verbesserung der Robustheit gegenüber Verschiebungen und Verzerrungen."
+      },
+      {
+        "question": "Wie funktioniert das Zusammenspiel zwischen Generator und Diskriminator in einem Generative Adversarial Network (GAN), und was ist das Ziel dieses Netzwerks?",
+        "answer": "Der Generator erzeugt neue Datenproben, während der Diskriminator versucht, zwischen echten und generierten Daten zu unterscheiden. Das Ziel ist es, den Generator so zu verbessern, dass er realistische Daten erzeugt, die der Diskriminator nicht von echten Daten unterscheiden kann."
+      },
+      {
+        "question": "Welche Rolle spielen Multi-Head Attention Mechanismen in Transformer-Modellen und warum sind sie so wichtig?",
+        "answer": "Multi-Head Attention ermöglicht es dem Modell, Informationen aus verschiedenen Teilen der Sequenz gleichzeitig zu verarbeiten. Dadurch kann das Modell verschiedene Bedeutungen oder Abhängigkeiten innerhalb eines Textes besser erfassen."
+      },
+      {
+        "question": "Wie helfen Residual Connections (Skip Connections) in tiefen neuronalen Netzwerken, das Problem des verschwindenden Gradienten zu lösen?",
+        "answer": "Residual Connections ermöglichen es, Gradienten in tiefen Netzwerken über viele Schichten hinweg besser weiterzugeben, indem sie das ursprüngliche Signal durch direkten Pfad weiterleiten. Dies verbessert das Training und stabilisiert tiefe Netzwerke."
+      },
+      {
+        "question": "Warum sind Graph Neural Networks (GNNs) besonders gut für Sozialnetzwerkanalysen geeignet?",
+        "answer": "GNNs können Beziehungen zwischen Knoten in Graphen direkt verarbeiten und lernen, wie sich Informationen innerhalb des Netzwerks ausbreiten. Dadurch können sie Muster und Gemeinschaftsstrukturen in sozialen Netzwerken erkennen."
+      },
+      {
+        "question": "In welchen Fällen wäre ein Feedforward Neural Network (FNN) einer komplexeren Architektur vorzuziehen?",
+        "answer": "FNNs eignen sich gut für Aufgaben, bei denen keine sequenziellen oder räumlichen Abhängigkeiten bestehen, z. B. einfache Klassifikationen oder Regressionen, da sie einfacher zu trainieren und zu interpretieren sind."
+      },
+      {
+        "question": "Welche Hauptunterschiede gibt es zwischen Clustering, Klassifikation und Regression in Bezug auf neuronale Netze?",
+        "answer": "Klassifikation ordnet Eingaben diskreten Klassen zu, Regression sagt kontinuierliche Werte voraus, und Clustering gruppiert Datenpunkte basierend auf Ähnlichkeiten, meist ohne vorherige Labels."
+      }
+    ]
+  }
+  

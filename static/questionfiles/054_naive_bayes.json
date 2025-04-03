@@ -1,0 +1,46 @@
+{
+    "title": "klassifikation_naive_bayes",
+    "questions": [
+      {
+        "question": "Warum wird der Naive Bayes Klassifikator trotz der oft unrealistischen Annahme der bedingten Unabhängigkeit der Merkmale in der Praxis erfolgreich eingesetzt?",
+        "answer": "Obwohl die Annahme der bedingten Unabhängigkeit oft nicht zutrifft, liefert der Naive Bayes Klassifikator dennoch gute Ergebnisse, da er die Wahrscheinlichkeiten für jede Klasse gut abschätzen kann. Zudem ist er recheneffizient und funktioniert gut bei hochdimensionalen Daten."
+      },
+      {
+        "question": "Welche Probleme können auftreten, wenn eine Feature-Wahrscheinlichkeit in den Trainingsdaten nicht beobachtet wurde (d. h. null ist), und wie kann dieses Problem gelöst werden?",
+        "answer": "Wenn eine Feature-Wahrscheinlichkeit null ist, führt dies dazu, dass die gesamte Klassifikationswahrscheinlichkeit null wird. Dieses Problem kann mit Laplace-Smoothing gelöst werden, indem zu jedem Zähler ein kleiner Wert (z. B. 1) addiert und der Nenner entsprechend angepasst wird."
+      },
+      {
+        "question": "Welche Varianten des Naive Bayes Klassifikators gibt es, und in welchen Anwendungsfällen werden sie eingesetzt?",
+        "answer": "Es gibt drei Hauptvarianten: 1) Gaussian Naive Bayes für kontinuierliche Daten (z. B. normalverteilte Merkmale), 2) Multinomial Naive Bayes für diskrete Häufigkeitsmerkmale (z. B. Textklassifikation), und 3) Bernoulli Naive Bayes für binäre Merkmale (z. B. Spam-Filter)."
+      },
+      {
+        "question": "Warum ist der Naive Bayes Klassifikator besonders gut für Textklassifikation geeignet?",
+        "answer": "Textklassifikation erfordert oft eine Verarbeitung von hochdimensionalen, spärlichen Daten (z. B. Vektoren mit Wortfrequenzen). Da Naive Bayes effizient mit unabhängigen Features arbeitet und einfach zu berechnen ist, eignet er sich gut für Textklassifikationsaufgaben."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen der Berechnung der Posterior-Wahrscheinlichkeit in einem Naive Bayes Klassifikator und in einem allgemeinen Bayes-Klassifikator?",
+        "answer": "Im Naive Bayes Klassifikator wird angenommen, dass die Features unabhängig sind, sodass die bedingten Wahrscheinlichkeiten einfach multipliziert werden können. Ein allgemeiner Bayes-Klassifikator berücksichtigt jedoch die Abhängigkeiten zwischen den Features und erfordert komplexere Berechnungen."
+      },
+      {
+        "question": "Wie importiert man die Gaussian Naive Bayes Klasse aus `sklearn` und erstellt ein Modell?",
+        "answer": "```python\nfrom sklearn.naive_bayes import GaussianNB\nmodel = GaussianNB()\n```"
+      },
+      {
+        "question": "Wie kann man ein Naive Bayes Modell auf Trainingsdaten mit `fit` trainieren?",
+        "answer": "```python\nmodel.fit(X_train, y_train)\n```"
+      },
+      {
+        "question": "Wie kann man mit einem trainierten Naive Bayes Modell Vorhersagen für neue Daten treffen?",
+        "answer": "```python\ny_pred = model.predict(X_test)\n```"
+      },
+      {
+        "question": "Wie kann man die Genauigkeit eines Naive Bayes Klassifikators mit `sklearn` berechnen?",
+        "answer": "```python\nfrom sklearn.metrics import accuracy_score\naccuracy = accuracy_score(y_test, y_pred)\n```"
+      },
+      {
+        "question": "Wie kann man Wahrscheinlichkeiten für jede Klasse anstelle von reinen Vorhersagen erhalten?",
+        "answer": "```python\nprobabilities = model.predict_proba(X_test)\n```"
+      }
+    ]
+  }
+  
