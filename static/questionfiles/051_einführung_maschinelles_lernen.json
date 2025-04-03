@@ -2,44 +2,44 @@
     "title": "Unser erstes Modell trainieren",
     "questions": [
       {
-        "question": "Welche Schritte sind notwendig, um ein Modell zu trainieren? Listen Sie sie in der richtigen Reihenfolge auf.",
+        "question": "Welche Schritte sind notwendig,\num ein Modell zu trainieren? Listen Sie sie in der richtigen Reihenfolge auf.",
         "answer": "1. Daten laden\n2. Daten vorbereiten\n3. Daten aufteilen\n4. Modell erstellen\n5. Modell trainieren\n6. Modell evaluieren\n7. Modell anwenden"
       },
       {
-        "question": "Warum ist es wichtig, die Daten in Trainings- und Testdaten aufzuteilen?",
-        "answer": "Damit wir wissen, ob unser Modell gut funktioniert. Die Trainingsdaten werden zum Trainieren des Modells verwendet, während die Testdaten zur Evaluierung der Modellleistung genutzt werden."
+        "question": "Warum ist es wichtig,\ndie Daten in Trainings- und Testdaten aufzuteilen?",
+        "answer": "Damit wir wissen,\nob unser Modell gut funktioniert.\nDie Trainingsdaten werden zum Trainieren des Modells verwendet,\nwährend die Testdaten zur Evaluierung der Modellleistung genutzt werden."
       },
       {
         "question": "Welches Modul in Python bietet eine Funktion zum Aufteilen der Daten in Trainings- und Testdaten? Schreiben Sie den entsprechenden Code auf.",
-        "answer": "Das Modul `sklearn.model_selection` bietet die Funktion `train_test_split`. Der Code lautet:\n\n```python\nfrom sklearn.model_selection import train_test_split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n```"
+        "answer": "Das Modul `sklearn.model_selection`\nbietet die Funktion\n`train_test_split`. Der Code lautet:\n\n\nfrom sklearn.model_selection import train_test_split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n"
       },
       {
-        "question": "Welche Parameter kann man bei `train_test_split` anpassen, und was bewirken sie?",
+        "question": "Welche Parameter kann man bei `train_test_split` anpassen,\nund was bewirken sie?",
         "answer": "- `X`: Die Features der Daten\n- `y`: Die Zielvariable\n- `test_size`: Der Anteil der Testdaten (z. B. 0.2 für 20%)\n- `random_state`: Eine Zahl zur Reproduzierbarkeit der Datenaufteilung"
       },
       {
-        "question": "Welches Modell wird in diesem Beispiel verwendet, um eine Klassifikation durchzuführen?",
+        "question": "Welches Modell wird in diesem Beispiel verwendet,\num eine Klassifikation durchzuführen?",
         "answer": "Der Gaussian Naive Bayes Klassifikator (`GaussianNB`) wird verwendet."
       },
       {
         "question": "Wie kann man den Gaussian Naive Bayes Klassifikator in Python erstellen? Schreiben Sie den entsprechenden Code auf.",
-        "answer": "```python\nfrom sklearn.naive_bayes import GaussianNB\nmodel = GaussianNB()\n```"
+        "answer": "from sklearn.naive_bayes import GaussianNB\nmodel = GaussianNB()\n"
       },
       {
         "question": "Wie trainiert man das Modell mit den Trainingsdaten? Schreiben Sie den entsprechenden Code auf.",
-        "answer": "```python\nmodel.fit(X_train, y_train)\n```"
+        "answer": "model.fit(X_train,\ny_train)\n"
       },
       {
         "question": "Wie kann man das trainierte Modell evaluieren? Schreiben Sie den entsprechenden Code auf.",
-        "answer": "```python\nfrom sklearn.metrics import accuracy_score\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(f'Genauigkeit: {accuracy}')\n```"
+        "answer": "from sklearn.metrics import accuracy_score\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(f'Genauigkeit: {accuracy}')\n"
       },
       {
         "question": "Was gibt die Metrik `accuracy_score` an?",
-        "answer": "Die Genauigkeit (Accuracy) gibt den Anteil der korrekt vorhergesagten Instanzen an der Gesamtzahl der Instanzen an. Ein Wert von 1 entspricht 100% Genauigkeit."
+        "answer": "Die Genauigkeit (Accuracy) gibt den Anteil der\nkorrekt vorhergesagten Instanzen\nan der Gesamtzahl der Instanzen an.\nEin Wert von 1 entspricht 100% Genauigkeit."
       },
       {
         "question": "Welche Faktoren können das Verhältnis von Trainings- zu Testdaten beeinflussen?",
-        "answer": "- Die Größe des Datensets\n- Die Verteilung der Samples\n- Die Anforderungen an das Modell (z. B. mehr Trainingsdaten für komplexe Modelle)"
+        "answer": "- Die Größe des Datensets\n- Die Verteilung der Samples\n- Die Anforderungen an das Modell\n(z. B. mehr Trainingsdaten für komplexe Modelle)"
       }
     ]
   }
