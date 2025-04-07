@@ -1,0 +1,72 @@
+{
+  "title": "Natural Language Processing (NLP)",
+  "questions": [
+    {
+      "question": "Was ist Natural Language Processing (NLP) und wofür wird es verwendet?",
+      "answer": "NLP ist ein Teilbereich der Künstlichen Intelligenz, der sich mit der automatisierten Verarbeitung menschlicher Sprache befasst. Es wird eingesetzt in Suchmaschinen, Sprachassistenten, Übersetzungsdiensten, Textklassifikation, Sentiment-Analyse und vielem mehr."
+    },
+    {
+      "question": "Was ist Tokenisierung und warum ist sie wichtig?",
+      "answer": "Tokenisierung zerlegt Texte in kleinere Einheiten wie Wörter oder Satzzeichen (Tokens). Sie ist ein grundlegender Schritt, um Sprache algorithmisch verarbeiten zu können."
+    },
+    {
+      "question": "Warum entfernt man Satzzeichen und Stoppwörter bei der Textverarbeitung?",
+      "answer": "Satzzeichen und häufige Wörter wie 'und' oder 'der' tragen oft wenig Bedeutung. Ihre Entfernung reduziert die Datenmenge und fokussiert die Analyse auf relevante Begriffe."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Stemming und Lemmatisierung?",
+      "answer": "Stemming kürzt Wörter auf ihre Wurzel, oft ohne Rücksicht auf die korrekte Form. Lemmatisierung verwendet linguistisches Wissen, um grammatikalisch korrekte Grundformen zu finden."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Bag-of-Words und TF-IDF?",
+      "answer": "Bag-of-Words zählt, wie oft ein Wort vorkommt. TF-IDF gewichtet Wörter zusätzlich nach ihrer Bedeutung, indem häufige, aber wenig aussagekräftige Wörter abgewertet werden."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen CountVectorizer und TfidfVectorizer?",
+      "answer": "Beide wandeln Texte in numerische Vektoren um. CountVectorizer zählt Wortvorkommen, während TfidfVectorizer zusätzlich berücksichtigt, wie selten ein Wort im Gesamtkorpus ist."
+    },
+    {
+      "question": "Was macht folgender Code zur Textbereinigung?",
+      "code": "text_list_lemmatized = [token.lemma_.lower() for token in doc if token.text not in punctuation and token.lemma_.lower() not in stopwords]",
+      "answer": "Der Code erstellt eine Liste lemmatisierter, kleingeschriebener Wörter aus einem spaCy-Dokument und filtert dabei Satzzeichen und Stoppwörter aus."
+    },
+    {
+      "question": "Welche Schritte umfasst die Textvorbereitung in NLP?",
+      "answer": "Typische Schritte sind Tokenisierung, Kleinschreibung, Entfernen von Satzzeichen/Stoppwörtern, Lemmatisierung und ggf. Stemming oder Normalisierung."
+    },
+    {
+      "question": "Was sind Word Embeddings und warum sind sie nützlich?",
+      "answer": "Word Embeddings wie Word2Vec oder GloVe wandeln Wörter in Vektoren um, die semantische Beziehungen abbilden. Ähnliche Wörter erhalten ähnliche Vektoren."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen statischen und kontextuellen Word Embeddings?",
+      "answer": "Statische Embeddings (z. B. Word2Vec) ordnen jedem Wort einen festen Vektor zu. Kontextuelle Embeddings (z. B. BERT) passen die Darstellung je nach Kontext dynamisch an."
+    },
+    {
+      "question": "Was ist der Vorteil von Transformer-Modellen wie BERT?",
+      "answer": "Transformermodelle wie BERT nutzen Attention-Mechanismen, um den Kontext eines Wortes vollständig zu erfassen. Sie verarbeiten Texte parallel und sind besonders gut für längere oder komplexe Eingaben geeignet. Attention gewichtet Wörter je nach Kontext unterschiedlich stark, wodurch Modelle z. B. erkennen, dass 'nicht schlecht' positiv gemeint ist – trotz des Wortes 'schlecht'."
+    },
+    {
+      "question": "Was ist VADER, wie funktioniert es und wo sind die Granzen?",
+      "answer": "VADER ist ein regelbasierter Sentiment-Analyzer für kurze Texte. Es erkennt auch Verstärker, Großschreibung, Satzzeichen und Emojis. VADER funktioniert gut bei kurzen englischen Texten, erkennt jedoch keine komplexe Ironie oder Sarkasmus."
+    },
+    {
+      "question": "Was ist POS-Tagging und wie wird es in NLP verwendet?",
+      "answer": "Beim POS-Tagging wird jedem Wort seine grammatische Kategorie zugewiesen (z. B. Nomen, Verb, Adjektiv). Dies hilft bei der Analyse von Satzstruktur und Bedeutung."
+    },
+    {
+      "question": "Wie funktioniert GloVe im Vergleich zu Word2Vec?",
+      "answer": "GloVe nutzt globale Kookkurrenzstatistiken von Wörtern in einem Korpus. Word2Vec basiert auf lokalen Kontextfenstern. Beide erzeugen semantisch sinnvolle Wortvektoren."
+    },
+    {
+      "question": "Was ist falsch an diesem Code zur Stoppwort-Entfernung?",
+      "code": "from nltk.corpus import stopwords\ntext = 'Das Produkt ist fantastisch und sehr nützlich.'\nstop_words = stopwords.words('english')\nfiltered_text = [word for word in text.split() if word not in stop_words]\nprint(filtered_text)",
+      "answer": "Der Code verwendet die englische Stoppwortliste (`stopwords.words('english')`), obwohl der Text auf Deutsch ist. Dadurch werden keine deutschen Stoppwörter entfernt."
+    },
+    {
+      "question": "Was macht folgender Code zur Tokenisierung?",
+      "code": "import nltk\ntext = 'Das ist ein NLP-Beispiel.'\ntokens = nltk.word_tokenize(text)\nprint(tokens)",
+      "answer": "Der Code zerlegt den angegebenen Text in Tokens (Wörter und Satzzeichen) und gibt sie als Liste aus."
+    }
+  ]
+}

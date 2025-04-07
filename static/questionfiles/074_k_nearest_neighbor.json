@@ -1,0 +1,30 @@
+{
+    "title": "k_nearest_neighbors",
+    "questions": [
+      {
+        "question": "Was ist das Grundprinzip des KNN-Algorithmus und für welche Aufgaben kann er verwendet werden?",
+        "answer": "K-Nearest Neighbors ist ein instanzbasierter Lernalgorithmus, der für Klassifikation und Regression verwendet werden kann. Er basiert auf dem Prinzip: Ein neuer Datenpunkt wird anhand seiner 'k' nächsten Nachbarn im Merkmalsraum klassifiziert oder erhält bei der Regression den Durchschnitt der Zielwerte seiner Nachbarn."
+      },
+      {
+        "question": "Warum ist die Wahl des Parameters 'k' so entscheidend und welche Auswirkungen hat ein zu kleiner oder zu großer Wert?",
+        "answer": "Ein kleiner Wert für 'k' führt zu einem Modell mit hoher Varianz (anfällig für Ausreißer), während ein großer Wert den Bias erhöht (das Modell wird träger). Die Wahl von 'k' beeinflusst direkt die Genauigkeit und Robustheit des Algorithmus."
+      },
+      {
+        "question": "Warum ist die Feature-Skalierung beim Einsatz von KNN besonders wichtig?",
+        "answer": "KNN basiert auf Distanzberechnungen – Merkmale mit größeren Wertebereichen dominieren ohne Skalierung die Distanz. Durch Standardisierung (z.B. Z-Score) oder Min-Max-Skalierung werden alle Merkmale gleich gewichtet."
+      },
+      {
+        "question": "Welche Distanzmetriken werden typischerweise im KNN verwendet und wann ist welche sinnvoll?",
+        "answer": "Typische Metriken sind: Euklidische Distanz (für kontinuierliche, normalverteilte Daten), Manhattan-Distanz (bei Gittern oder wenn absolute Abweichungen wichtig sind) und Minkowski-Distanz (verallgemeinerte Form, anpassbar über p-Wert)."
+      },
+      {
+        "question": "Was macht der folgende Code und was gibt er aus?",
+        "code": "import numpy as np\nfrom collections import Counter\n\nX_train = np.array([[1, 2], [3, 4], [5, 6]])\ny_train = np.array(['A', 'A', 'B'])\n\nX_test = np.array([[3, 3]])\n\nknn = SimpleKNN(k=3)\nknn.fit(X_train, y_train)\nprint(knn.predict(X_test))",
+        "answer": "Der Code implementiert eine KNN-Klassifikation mit k=3. Der Testpunkt [3, 3] hat als nächste Nachbarn zwei Punkte der Klasse 'A' und einen Punkt der Klasse 'B'. Das Ergebnis ist also: `['A']`."
+      },
+      {
+        "question": "Welche Rolle spielt die Distanzgewichtung im KNN und wie funktioniert sie?",
+        "answer": "Bei der Distanzgewichtung haben nähere Nachbarn einen größeren Einfluss. Typische Gewichtungen sind `1/d` oder `1/d²`. So wird vermieden, dass weit entfernte Nachbarn gleich stark zählen wie nahe Nachbarn."
+      }
+    ]
+  }

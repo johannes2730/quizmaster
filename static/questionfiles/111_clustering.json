@@ -1,0 +1,54 @@
+{
+    "title": "Clustering",
+    "questions": [
+        {
+            "question": "Was ist Clustering und wie unterscheidet es sich von überwachten Lernmethoden?",
+            "answer": "Clustering ist ein unüberwachtes Lernverfahren, bei dem Datenpunkte in Gruppen oder Cluster unterteilt werden, ohne dass diese explizit mit Labels versehen sind. Im Gegensatz dazu werden bei überwachten Lernmethoden Modelle mit gelabelten Daten trainiert, um Vorhersagen oder Klassifikationen zu treffen."
+        },
+        {
+            "question": "Nennen Sie mindestens drei Anwendungsbereiche von Clustering und erläutern Sie diese.",
+            "answer": "Marktforschung: Segmentierung von Kunden basierend auf ihrem Kaufverhalten, um gezielte Marketingstrategien zu entwickeln.\nBildverarbeitung: Gruppierung ähnlicher Bilder oder Kategorien basierend auf Merkmalen wie Farben oder Formen.\nAnomalieerkennung: Identifikation von ungewöhnlichen Verhaltensmustern in Daten, wie in der Cyber-Sicherheit."
+        },
+        {
+            "question": "Nenne die zwei im Skript genannten Clustering-Typen.",
+            "answer": "Partition Clustering, Hierarchisches Clustering"
+        },
+        {
+            "question": "Erläutere Partition Clustering.",
+            "answer": "Partition Clustering Methoden unterteilen eine Datenmenge in k Cluster, wobei jeder Datenpunkt zu genau einem Cluster gehört. Ein bekanntes Beispiel hierfür ist der K-Means Algorithmus. Die Hauptmerkmale umfassen:\nFeste Anzahl an Clustern (k)\nJeder Punkt gehört zu genau einem Cluster"
+        },
+        {
+            "question": "Erläutere hierarchisches Clustering.",
+            "answer": "Hierarchisches Clustering baut eine Baumstruktur (Dendrogramm) auf, die die Gruppen von Clustern zeigt. Die beiden Hauptansätze sind:\nAgglomerativ: Beginnt mit einzelnen Punkten und fusioniert diese schrittweise zu Clustern.\nDivisiv: Beginnt mit einem großen Cluster und teilt diesen in kleinere Cluster."
+        },
+        {
+          "question": "Erkläre Schritt für Schritt wie der KMeans Algorithmus funktioniert.",
+          "answer": "Wähle zufällig k Punkte als Cluster-Zentren.\nWeisen Sie jeden Datenpunkt dem nächstgelegenen Cluster-Zentrum zu.\nAktualisieren Sie die Position der Cluster-Zentren als Durchschnitt der zugehörigen Punkte.\nWiederholen Sie die Schritte 2 und 3, bis sich die Cluster-Zentren nicht mehr ändern."  
+        },
+        {
+            "question": "Was ist der Hauptvorteil von DBScan im Vergleich zu K-Means?",
+            "answer": "DBScan (Density-Based Spatial Clustering of Applications with Noise) ist dichtebasiert und kann Cluster beliebiger Form erkennen. Im Gegensatz zu K-Means ist DBScan robust gegenüber Ausreißern, da es diese als 'Rauschen' behandelt und nicht zwingend in Cluster einordnet."
+        },
+        {
+            "question": "Was sind häufig verwendete Metriken beim Clustering?",
+            "answer": "Inertia, Silhouette Score, Davies-Bouldin Score"
+        },
+        {
+            "question": "Erläutere kurz die Inertia-Metrik.",
+            "answer": "Inertia ist die Summe der quadratischen Abstände der Punkte zu ihren jeweiligen Cluster-Zentren. Eine niedrigere Inertia deutet auf eine Dichtere Gruppierung von Datenpunkten hin."
+        },
+        {
+            "question": "Erläutere kurz den Silhouette Score.",
+            "answer": "Der Silhouette Score misst die Ähnlichkeit eines Datenpunkts mit seinem eigenen Cluster im Vergleich zu anderen Clustern. Er reicht von -1 bis 1; ein höherer Wert bedeutet, dass der Punkt gut in sein Cluster passt."
+        },
+        {
+            "question": "Erläutere kurz den Davies-Bouldin Score.",
+            "answer": "Der Davies-Bouldin Score ist ein Maß für die Cluster-Trennbarkeit. Ein niedriger Wert weist auf eine bessere Trennung der Cluster hin."
+        },
+        {
+            "question": "Welche Herausforderungen können beim Clustering auftreten?",
+            "answer": "Bestimmung der richtigen Anzahl von Clustern: Vor allem bei Algorithmen wie K-Means muss die Anzahl der Cluster (k) vorab festgelegt werden, was eine Herausforderung darstellen kann.\nSkalierbarkeit: Bei großen Datensätzen können einige Clustering-Algorithmen wie K-Means sehr ressourcenintensiv sein.\nEmpfindlichkeit gegenüber Ausreißern: Einige Algorithmen, wie K-Means, sind empfindlich gegenüber Ausreißern, was die Clusterbildung negativ beeinflussen kann.\nForm der Cluster: Algorithmen wie K-Means gehen davon aus, dass die Cluster kugelförmig sind, was bei komplexeren Datenstrukturen problematisch sein kann."
+        }
+    
+    ]
+}

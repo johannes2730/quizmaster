@@ -1,0 +1,37 @@
+{
+    "title": "EDA Schritte",
+    "questions": [
+        {
+            "question": "Warum ist es wichtig, den Kontext und die Quelle eines Datensatzes zu kennen?\na) Um die Daten schneller laden zu können\nb) Um bessere Diagramme zu erstellen\nc) Um Verzerrungen zu erkennen und den Zweck der Daten zu verstehen\nd) Um das Datenformat zu bestimmen",
+            "answer": "C"
+        },
+        {
+            "question": "Welche Maßnahme gehört zur Datenvorverarbeitung?\na) Erstellung einer Korrelationsmatrix\nb) Interpretation der Boxplots\nc) Entfernung von Duplikaten\nd) Formulierung von Hypothesen",
+            "answer": "c) Entfernung von Duplikaten"
+        },
+        {   
+            "question": "Welches der folgenden Verfahren dient der Visualisierung der Verteilung einer einzelnen numerischen Variable?\na) Scatterplot\nb) Boxplot\nc) Korrelationsmatrix\nd) Paarplot",
+            "answer": "b) Boxplot"
+        },
+        {
+            "question": "4. Was ist der Zweck einer One-Hot-Codierung?\na) Daten zu normalisieren\nb) Zeitreihen zu konvertieren\nc) Kategorien in numerische Werte umzuwandeln\nd) Ausreißer zu erkennen",
+            "answer": "c) Kategoriale Variablen in numerische umzuwandeln"
+        },
+        {
+            "question": "Sortiere die Schritte des EDA in der richtigen Reihenfolge (Univariate Analyse (Einzelne Variablen), Datenbereinigung und Vorverarbeitung, Einblicke und Schlussfolgerungen ziehen,Verstehen der Datenstruktur, Bivariate und multivariate Analyse (Zusammenhänge))",
+            "answer": "Schritt 1: Verstehen der Datenstruktur\nSchritt 2: Datenbereinigung und Vorverarbeitung\nSchritt 3: Univariate Analyse (Einzelne Variablen)\nSchritt 4: Bivariate und multivariate Analyse (Zusammenhänge)\nSchritt 5: Einblicke und Schlussfolgerungen ziehen"
+        },
+        {
+            "question": "Was ist das Ziel der explorativen Datenanalyse (EDA), bevor ein Modell gebaut wird?",
+            "answer": "Ziel ist es, die Daten zu verstehen, Muster zu erkennen, Hypothesen zu formulieren und sicherzustellen, dass die Daten für Modellbildung geeignet sind."
+        },
+        {   
+            "question": "Nenne zwei Methoden, mit denen man Ausreißer erkennen kann.",
+            "answer": "Boxplots (grafisch), Z-Scores (statistisch). Beide helfen dabei, ungewöhnlich hohe oder niedrige Werte zu identifizieren."
+        },
+        {
+            "question": "7. Was versteht man unter Normalisierung im Kontext der Datenvorverarbeitung?",
+            "answer": "Numerische Daten werden auf einen gemeinsamen Wertebereich (z.B. zwischen 0 und 1) skaliert. Ziel ist es, unterschiedlich skalierte Merkmale vergleichbar zu machen, damit sie gleiche Bedeutung in Analysen oder Modellen haben."
+        }
+    ]
+}

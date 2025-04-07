@@ -1,0 +1,21 @@
+{
+    "title": "Einführung Dashboards",
+    "questions": [
+        {
+            "question": "Erläutere kurz, was Dashboards sind.",
+            "answer": "Dashboards sind zentrale Werkzeuge zur Visualisierung von Daten. Sie ermöglichen es, Informationen interaktiv und übersichtlich darzustellen und erleichtern datenbasierte Entscheidungen, indem sie komplexe Informationen in Echtzeit aufbereiten und zugänglich machen."
+        },
+        {
+            "question": "Nenne zwei bekannte Frameworks zur Erstellung von Dashboards.",
+            "answer": "Streamlit und Dash."
+        },
+        {
+            "question": "Welche Eigenschaften hat Streamlit?",
+            "answer": "Streamlit ermöglicht eine schnelle und unkomplizierte Erstellung von Dashboards mit minimalem Aufwand. Es ist ideal für Prototypen und kleinere Projekte."
+        },
+        {
+            "question": "Welche Eigenschaften hat Dash?",
+            "answer": "Dash eignet sich für umfassendere und anpassbare Anwendungen, die spezifische Anforderungen erfüllen müssen. Es ist besonders geeignet für den produktiven Einsatz."
+        }
+    ]
+}

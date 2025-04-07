@@ -1,0 +1,92 @@
+{
+    "title": "Streamlit",
+    "questions": [
+        {
+            "question": "Nenne vier Funktionen von Streamlit.",
+            "answer": "Widgets: Fügen Sie interaktive Widgets wie Schieberegler, Dropdown-Menüs und Textfelder hinzu.\nLayouts: Organisieren Sie Ihre App mit Spalten, Registerkarten und Seitenleisten.\nVisualisierungen: Integrieren Sie Plotly, Matplotlib, Altair und andere Bibliotheken für beeindruckende Visualisierungen.\nDatenanzeige: Zeigen Sie Datenrahmen und Tabellen direkt in Ihrer App an."
+        },
+        {
+            "question": "Wie heißt der Befehl um eine Streamlit App zu starten?",
+            "answer": "streamlit run your_script.py"
+        },
+        {
+            "question": "Wann wird eine Streamlit App automatisch neu ausgeführt?",
+            "answer": "Wenn der Quellcode geändert wird. Wenn Nutzer mit Widgets interagieren. Bei Nutzung von Callbacks."
+        },
+        {
+            "question": "Welche Bibliotheken für Visualisierungen sind in Streamlit integriert?",
+            "answer": "Matplotlib, Seaborn, Plotly, Altair, Bokeh"
+        },
+        {
+            "question": "Wie erleichtern Magic Commands die Arbeit mit Streamlit?",
+            "answer": "Magic Commands in Streamlit erlauben es, Texte, DataFrames oder andere Inhalte direkt auszugeben, ohne st.write() oder st.dataframe() explizit zu verwenden. Das macht den Code kürzer und lesbarer."
+        },
+        {
+            "question":"Was ist der Unterschied zwischen st.pyplot(fig) und st.write(fig) in Bezug auf die Darstellung von Diagrammen?",
+            "answer": "st.pyplot(fig) wird verwendet, um ein Matplotlib-Diagramm korrekt in Streamlit anzuzeigen. st.write(fig) kann zwar ebenfalls Diagramme ausgeben, ist aber nicht für Matplotlib optimiert. Es wird meist für allgemeine Objekte genutzt und funktioniert besser mit Plotly oder Altair."
+        },
+        {
+            "question": "Wie kann man in Streamlit eine Seite in mehrere Spalten aufteilen?\n a) Durch die Verwendung von st.sidebar()\n b) Durch die Verwendung von st.columns()\n c) Durch die Funktion st.multiselect()\n d) Durch das Einfügen von HTML-Tags",
+            "answer": "b"
+        },
+        {
+            "question": "Welche Aussagen zur Nutzung der Sidebar in Streamlit sind korrekt?\n a) Die Sidebar kann nur mit der with st.sidebar:-Schreibweise verwendet werden.\n b) Mit st.sidebar.selectbox() kann man ein Auswahlmenü direkt in der Sidebar anzeigen.\n c) Im with st.sidebar:-Block können mehrere Elemente gruppiert in der Sidebar definiert werden.\n d) st.radio() kann nur im Hauptbereich und nicht in der Sidebar verwendet werden.",
+            "answer": "b und c"
+            
+        },
+        {
+            "question": "Warum ist das direkte Anzeigen von Daten mit st.dataframe(df) in einem Dashboard nützlich?",
+            "answer": "Weil es Nutzern ermöglicht, Daten direkt und interaktiv zu sehen – mit Scrollen, Sortieren und ggf. Filtern. So lassen sich Informationen übersichtlich darstellen, ohne zusätzlichen Code für Formatierung schreiben zu müssen."
+        },
+        {
+            "question": "Kann eine Streamlit-App Daten per SQL-Abfrage aus einer Datenbank abrufen und anzeigen?",
+            "answer": "Ja"
+        },
+        {
+            "question": "Wie wird Interaktivität und Zustandsverwaltung (z. B. für Zähler oder Eingaben) typischerweise in Streamlit umgesetzt?\n a) Durch ständiges Neuladen der Seite und manuelles Abspeichern von Daten\n b) Durch sogenannte Callbacks wie in Flask oder React\n c) Durch die Verwendung von Session-Zuständen, die zwischen Interaktionen erhalten bleiben\n d) Indem man Variablen außerhalb des Skripts speichert, z. B. in einer Textdatei",
+            "answer": "c"
+        },
+        {
+            "question": "Nenne die zwei Arten von Caching die Streamlit anbietet",
+            "answer": "Daten-Caching, Objekt-Caching"
+        },
+        {
+            "question": "Wofür wird das Daten-Caching in Streamlit verwendet?",
+            "answer": "Diese Methode speichert Ergebnisse von Funktionen, die Daten laden oder verarbeiten. Sie ist besonders nützlich für Operationen wie das Laden von großen CSV-Dateien oder API-Anfragen."
+        },
+        {
+            "question": "Wofür wird das Objekt-Caching in Streamlit verwendet?",
+            "answer": "Diese Methode wird für Objekte genutzt, die instanziiert werden müssen, wie Datenbankverbindungen oder Modelle."
+        },
+        {
+            "question": "Was sind die Grundprinzipien des Cachings (Streamlit) ?",
+            "answer": "Determinismus: Der Output einer gecachten Funktion muss bei gleichen Input-Werten immer gleich sein.\n Eingabewerte: Streamlit verwendet die Parameter der Funktion, um zu entscheiden, ob eine gecachte Version wiederverwendet wird.\n Unveränderbarkeit: Objekte, die an gecachte Funktionen übergeben werden, sollten nicht verändert werden, da dies zu unerwartetem Verhalten führen kann."
+        },
+        {
+            "question": "Wann werden Cache-Inhalte in einer Streamlit-App aktualisiert?",
+            "answer": "Änderungen am Quellcode.\n Änderungen der Funktionseingaben.\n Explizites Leeren des Caches über st.cache_data.clear() oder st.cache_resource.clear()."
+        },
+        {
+            "question": "Wie erstellt man in Streamlit eine Multipage-App?",
+            "answer": "Lege ein Verzeichnis namens pages im gleichen Verzeichnis wie dein Hauptskript an.\n Füge Python-Dateien in den pages-Ordner ein, jede Datei entspricht einer eigenen Seite."
+        },
+        {
+            "question": "In welchem Dateiformat wird die Secrets Datei in Streamlit gespeichert?",
+            "answer": "TOML"
+        },
+        {
+            "question": "Was gehört in die Lücken?",
+            "code": "[database]\nhost = 'localhost'\nuser = 'user'\npassword = 'password'\n###################\nimport streamlit as st\ndb_host = st.secrets['...']['...']\ndb_user = st.secrets['...']['...']\ndb_password = st.secrets['...']['...']",
+            "answer": "import streamlit as st\ndb_host = st.secrets['database']['host']\ndb_user = st.secrets['database']['user']\ndb_password = st.secrets['database']['password']"
+        },
+        {
+            "question": "Nenne Vorteile des Secrets Managements in Streamlit.",
+            "answer": "Sicherheit: Keine sensiblen Daten im Quellcode.\nNachvollziehbarkeit: Eine klare Trennung zwischen Code und geheimen Informationen.\nEinfache Handhabung: Sicherer Zugriff auf vertrauliche Daten ohne zusätzliche Setup-Schritte."
+        },
+        {
+            "question": "Welche der folgenden Aussagen trifft auf die Anzeige interaktiver Karten in Streamlit zu?\na) Streamlit kann Karten nur als statische Bilder anzeigen, ohne Interaktivität.\nb) Man kann in Streamlit interaktive Karten mit Geokoordinaten anzeigen, z.B. mithilfe von st.map().\nc) Interaktive Karten können in Streamlit nur durch die Nutzung externer APIs wie Google Maps erstellt werden.\nd) Streamlit bietet keine Möglichkeit, Karten darzustellen.",
+            "answer": "b"
+        }
+    
+    ]
+}
