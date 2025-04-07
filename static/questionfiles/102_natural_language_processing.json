@@ -1,0 +1,30 @@
+{
+    "title": "Natural Language Processing",
+    "questions": [
+      {
+        "question": "Beschreibe kurz, womit sich NLP befasst.",
+        "answer": "NLP ist ein Bereich der künstlichen Intelligenz, der sich mit der automatischen Verarbeitung, Analyse, Interpretation und Generierung menschlicher Sprache durch Maschinen beschäftigt."
+      },
+      {
+        "question": "Was bedeutet Part of Speech Tagging (POS) im Bezug auf NLP?",
+        "answer": "Part-of-Speech Tagging (POS) bedeutet, jedem Wort in einem Satz eine grammatikalische Rolle wie Nomen, Verb oder Adjektiv zuzuweisen."
+      },
+      {
+        "question": "Was bedeutet Tokenization?",
+        "answer": "Tokenization bedeutet, einen Text in kleinere Einheiten (Tokens) wie Wörter, Sätze oder Zeichen zu zerlegen, um sie besser analysieren zu können."
+      },
+      {
+        "question": "Was macht Bag of Words (BoW)?",
+        "answer": "BoW wandelt Texte in numerische Vektoren um, indem es ein Vokabular aller Wörter erstellt und zählt, wie oft jedes Wort in einem Dokument vorkommt – ohne Reihenfolge oder Kontext zu berücksichtigen."
+      },
+      {
+        "question": "Nenne Vorteile und Nachteile bei der Anwendung von Bag of Words (BoW).",
+        "answer": "Vorteile: Einfach zu implementieren, gute Basis für viele Modelle. Nachteile: Ignoriert Wortreihenfolge, Kontext und Bedeutung; kann sehr große, spärliche Vektoren erzeugen."
+      },
+      {
+        "question": "Was sind Word Embeddings?",
+        "answer": "Word Embeddings sind dichte, mehrdimensionale Vektoren, die semantische Beziehungen zwischen Wörtern abbilden. Ähnliche Wörter liegen näher im Vektorraum beieinander."
+      }
+    ]
+  }
+  

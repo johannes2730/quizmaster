@@ -1,0 +1,17 @@
+{
+  "title": "K-means",
+  "questions": [
+    {
+      "question": "Was ist K-Means und was ist die Grundidee hinter diesem Algorithmus?",
+      "answer": "K-Means ist ein Clustering-Algorithmus im Bereich des unbewachten Lernens. Die Grundidee besteht darin, Datenpunkte in k vordefinierte Gruppen zu gruppieren, wobei innerhalb jedes Clusters die Differenzen minimiert und gleichzeitig die Abstände zwischen den Clustern maximiert werden."
+    },
+    {
+      "question": "In welchen Anwendungsbereichen kann K-Means beispielsweise eingesetzt werden?",
+      "answer": "K-Means wird unter anderem in der Marktforschung (Segmentierung von Kunden auf Grundlage ihrer Einkaufsgewohnheiten) \nder Bildkompression (Reduktion der Farbanzahl durch Gruppierung ähnlicher Farbtöne)\nder Genomik (Gruppierung von Genen mit ähnlichen Expressionsmustern) eingesetzt."
+    },
+    {
+      "question": "Nenne jeweils 2 Vor- und Nachteile von K-Means",
+      "answer": "Vorteile: \n1. Einfachheit: K-Means ist einfach zu verstehen und zu implementieren \n2. Skalierbarkeit: der Algorithmus ist auch auf großen Datensätzen effizient. \n\nNachteile: \n1. Die Wahl der Anfangsclusterzentren kann das Ergebnis beeinflussen \n2. Anfällig für Ausreißer: Außreißer  können die Qualität der Clusterung beeinträchtigen."
+    }
+  ]
+}

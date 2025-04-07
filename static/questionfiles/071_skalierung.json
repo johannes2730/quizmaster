@@ -1,0 +1,68 @@
+{"title": "Skalierung",
+    "questions": [
+      {
+        "question": "Warum skaliert man numerische Daten?",
+        "answer": "Wenn numerische Features stark unterschiedliche Wertebereiche haben (z.B. Alter 20–80 vs. Einkommen 10.000–200.000), kann das Modell verzerrte Gewichtungen lernen. Durch Skalierung werden alle Features vergleichbar, sodass kein Feature andere dominiert."
+      },
+      {
+        "question": "Was stellt die Skalierung numerischer Daten sicher?",
+        "answer": "Durch die Skalierung werden numerische Daten auf denselben Wertebereich gebracht. Das sorgt für Vergleichbarkeit der Features und verhindert Verzerrungen im Modell."
+      },
+      {
+        "question": "Wie transformiert der StandardScaler die Daten?",
+        "answer": "Der Standardscaler zieht den Mittelwert von jedem Wert ab und teilt durch die Standardabweichung. So haben die transformierten Daten einen Mittelwert von 0 und eine Standardabweichung von 1"
+      },
+      {
+        "question": "Nenne Vorteile des Standardscalers?",
+        "answer": "1. Robust gegen Ausreißer. 2. Erhält die Form der Verteilung. 3. Sehr gut für Normalverteilte Daten."
+      },
+      {
+        "question": "Was sind Nachteile des Standardscalers?",
+        "answer": "1. Es gibt keine garantierten Min/Max Grenzen. 2. Kann schwerer interpretierbar sein."
+      },
+      {
+        "question": "Wie transformiert der MinMaxScaler die Daten und warum ist das wichtig?",
+        "answer": "Der MinMaxScaler skaliert die Daten, indem er sie auf einen Bereich zwischen 0 und 1 (oder einen anderen definierten Bereich) transformiert."
+      },
+      {
+        "question": "Nenne Vorteile des MinMaxScaler?",
+        "answer": "1. Fester Wertebereich 2. Gut interpretierbar"
+      },
+      {
+        "question": "Was sind Nachteile des MinMaxScaler?",
+        "answer": "1. Empfindlich gegenüber Ausreißern und schiefen Verteilungen, wodurch die Form der Verteilung verändert werden kann."
+      },
+      {
+        "question": "Wie transformiert der RobustScaler die Daten und warum ist das wichtig",
+        "answer": "Der RobustScaler transformiert die Daten, indem er den Median von den Werten abzieht und sie durch den Interquartilsabstand (IQR = 75. Perzentil – 25. Perzentil) teilt."
+      },
+      {
+        "question": "Nenne Vorteile des RobustScaler?",
+        "answer": "1. Sehr robust gegenüber Ausreißern. 2. Gut für schiefe Verteilungen."
+      },
+      {
+        "question": "Was sind Nachteile des RobustScaler?",
+        "answer": "1. Keine garantierten Grenzen"
+      },
+      {
+        "question": "Warum skaliert man nur die Trainingsdaten und nicht die Testdaten?",
+        "answer": "Weil sonst Informationen aus den Testdaten (z.B. Min-/Max-Werte) in den Trainingsprozess einfließen würden. Das führt zu einem sogenannten Datenleck ('Data Leakage') und verfälscht die Modellbewertung."
+      },
+      {
+        "question": "Warum ist es wichtig, Test- und Validierungsdaten mit denselben Skalierungsparametern wie die Trainingsdaten zu transformieren?",
+        "answer": "Wenn die Skalierung separat für die Testdaten durchgeführt wird, können sich Mittelwert und Standardabweichung ändern. Dadurch entstehen Verzerrungen, die die Vergleichbarkeit der Daten beeinträchtigen und zu schlechterer Modellperformance führen."
+      },
+      {
+        "question": "Warum ist es wichtig, bei Updates oder neuen Daten die Skalierungsparameter wiederzuverwenden?",
+        "answer": "Damit neue Daten konsistent mit den bisherigen Daten transformiert werden. Nur so kann das Modell auf neuen Daten korrekt arbeiten."
+      },
+      {
+        "question": "Warum sollte die Skalierung der Daten vor bestimmten Feature-Engineering-Methoden wie PCA oder Clustering erfolgen?",
+        "answer": "1. PCA berechnet Kovarianzen: Skalenverzerrung ohne vorherige Standardisierung. 2. Clustering arbeitet mit Distanzmaßen: Features mit großen Wertebreichen dominieren die Berechnung."
+      },
+      {
+        "question": "Wann sollte man welchen Scaler verwenden (StandardScaler, MinMaxScaler, RobustScaler)?",
+        "answer": "StandardScaler: Bei normalverteilten Daten. MinMaxScaler: Wenn die Daten in einen festen Bereich transformiert werden sollen. RobustScaler: Bei Ausreißern oder schiefen Verteilungen, da er auf Median und IQR basiert."
+      }
+    ]
+  }  

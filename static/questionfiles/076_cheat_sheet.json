@@ -1,0 +1,16 @@
+{"title": "Cheet sheet für SMOTE und PCA",
+    "questions": [
+      {
+        "question": "Du hast einen Datensatz in dem drei Klassen vertreten sind, wobei Klasse 1 & 2 zusammen über 99% der Daten ausmachen. Ist der Einsatz von Smote hier sinnvoll?",
+        "answer": "Smote kann bei so einer Minderheitsklasse keine sinnvollen synthetischen Beispiele generieren."
+      },
+      {
+        "question": "Wie identifizierst du ob du Smote anwenden kannst und wie führst du es durch?",
+        "answer": "1. Klassenverteilung ansehen und mögliches starkes Ungleichgewicht identifizieren. 2. Minderheitsklassen (unter 1%) entfernen/behandeln 3. NaN-values behandeln 4. In numerische Werte überführen 5. Aufteilen in Test & Trainingsdaten (stratify nutzen) 6. Smote auf Trainingsdaten anwenden (X_train, y_train)"
+      },
+      {
+        "question": "Wie wendest du PCA an?",
+        "answer": "1. NaN-values behandeln 2. In numerische Werte wandeln 3. Werte Skalieren/Normalisieren 4. Aufteilen in Test & Trainingsdaten 5. PCA mit `fit()` auf X_train anwenden. 6. Dann `transform()` auf X_train und X_test anwenden 7. Anzahl der Komponenten wählen" 
+      }
+    ]
+  }  

@@ -1,0 +1,49 @@
+{
+  "title": "Grundlagen neuronaler Netze",
+  "questions": [
+    {
+      "question": "Welche drei Hauptanwendungsmöglichkeiten bieten neuronale Netze und was wird jeweils damit gemacht?",
+      "answer": "1. Klassifikation: Neuronale Netze teilen Daten in vordefinierte Kategorien ein, z.B. die Unterscheidung von Bildern von Katzen und Hunden. \n2. Regression: Neuronale Netze sagen kontinuierliche Werte vorher, z.B. die Vorhersage von Immobilienpreisen. \n3. Clustering: Neuronale Netze erkennen Muster in Daten und teilen diese in Gruppen, z.B. durch den Einsatz von Autoencodern zur Merkmalsextraktion."
+    },
+
+    {
+      "question": "Wie ist ein neuronales Netzwerk aufgebaut und welche Bestandteile umfasst es?",
+      "answer": "1. Input-Layer: Die Eingabeschicht, die Daten in das Netzwerk einspeist, wobei jeder Neuron eine Eingangsvariable repräsentiert. \n2. Zwischen-Layer (Hidden Layer): Eine oder mehrere verborgene Schichten, die die komplexe Transformation der Eingabe ermöglichen und Neuronen durch gewichtete Verbindungen miteinander verbinden. \n3. Output-Layer: Die Ausgabeschicht, die das Ergebnis des Netzwerks liefert, mit der Anzahl der Neuronen abhängig von der Aufgabe, z.B. ein Neuron für binäre Klassifikation oder mehrere Neuronen für mehrklassige Klassifikation.\nHinweis: es gibt auch neuronale Netze ohne hidden layer, die Single-Layer Perceptrons haben nur einen Input- und Output-Layer und können nur lineare Probleme lösen."
+    },
+
+    {
+      "question": "Welche grundlegenden Berechnungen bilden die Basis des Trainings eines neuronalen Netzwerks?",
+      "answer": "Das Training basiert auf gewichteter Summierung, Aktivierungsfunktionen und der Loss-Funktion, die den Unterschied zwischen Vorhersagen und tatsächlichen Werten misst."
+    },
+
+    {
+      "question": "Welche Rolle spielt Regularisierung im Training neuronaler Netzwerke und welche Ansätze werden erwähnt?",
+      "answer": "Regularisierung verhindert Overfitting. Erwähnte Ansätze sind L1-Regularisierung \n L2-Regularisierung und Dropout."
+    },
+
+    {
+      "question": "Welche gängigen Verlustfunktionen gibt es und wofür werden sie eingesetzt?",
+      "answer": "Mean Squared Error für Regression \nBinary Cross-Entropy für binäre Klassifikation \nCategorical Cross-Entropy für mehrklassige Klassifikation."
+    },
+    {
+      "question": "Was ist Overfitting und welche Anzeichen deuten darauf hin?",
+      "answer": "Overfitting tritt auf, wenn ein Modell die Trainingsdaten inklusive Rauschen und Ausreißern zu genau erlernt. Anzeichen sind hohe Genauigkeit bei den Trainingsdaten, aber niedrige Genauigkeit bei Validierungs- oder Testdaten sowie ein deutliches Ungleichgewicht zwischen Trainings- und Testfehler."
+    },
+    {
+      "question": "Was ist Underfitting und wie äußert es sich?",
+      "answer": "Underfitting passiert, wenn ein Modell zu einfach ist, um die zugrunde liegenden Muster der Daten zu erfassen. Es zeigt sich in einer geringen Genauigkeit sowohl auf den Trainings- als auch auf den Testdaten, da das Modell die Komplexität der Daten nicht widerspiegelt."
+    },
+    {
+      "question": "Welche Ursachen für Overfitting und Underfitting gibt es?",
+      "answer": "Overfitting: \n- hohe Modellkomplexität \n- zu wenig Trainingsdaten\n- lange Trainingszeiten entstehen \n\nUnderfitting: \n- zu einfache Modelle \n- schlechte Hyperparameter-Einstellungen \n- Unterrepräsentation wichtiger Datenmerkmale"
+    },
+    {
+      "question": "Welche Auswirkungen haben Overfitting und Underfitting auf die Nutzbarkeit eines Modells?",
+      "answer": "Overfitting führt zu unzuverlässigen Ergebnissen in der realen Welt, z.B. bei medizinischen Diagnosen oder Finanzvorhersagen \nUnderfitting vermindert die Nutzbarkeit, da das Modell die Eingaben nicht korrekt verarbeitet oder vorhersagt."
+    },
+    {
+      "question": "Nenne Strategien zur Vermeidung von Overfitting und Underfitting.",
+      "answer": "Gegen Overfitting: \n- Datenaugmentation \n- Regularisierung \n- frühes Stoppen und Dropout. \n\nGegen Underfitting: \n- Erhöhung der Modellkomplexität \n- Hyperparameter-Optimierung \n- Erweiterung des Datensatzes."
+    }
+  ]
+}
