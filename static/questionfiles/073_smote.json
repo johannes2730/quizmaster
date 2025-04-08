@@ -1,0 +1,55 @@
+{
+    "title": "SMOTE",
+    "questions": [
+      {
+        "question": "Wofür steht die Abkürzung SMOTE?",
+        "answer": "Für Synthetic Minority Over-sampling Technique."
+      },
+      {
+        "question": "Was ist das Hauptziel von SMOTE?",
+        "answer": "Die Erzeugung synthetischer Datenpunkte zur Verbesserung unausgeglichener Datensätze."
+      },
+      {
+        "question": "Was unterscheidet SMOTE von einfachem Oversampling?",
+        "answer": "SMOTE erzeugt neue, synthetische Beispiele anstatt vorhandene einfach zu kopieren."
+      },
+      {
+        "question": "Warum ist einfaches Oversampling problematisch?",
+        "answer": "Weil es zu Overfitting führen kann und keine neuen Informationen liefert."
+      },
+      {
+        "question": "Was passiert bei stark unausgeglichenen Datensätzen ohne SMOTE?",
+        "answer": "Das Modell ignoriert häufig die Minderheitsklasse und liefert verzerrte Ergebnisse."
+      },
+      {
+        "question": "Wie funktioniert SMOTE technisch?",
+        "answer": "Durch Interpolation zwischen einem Punkt der Minderheitsklasse und seinen k nächsten Nachbarn."
+      },
+      {
+        "question": "Was verbessert sich typischerweise durch den Einsatz von SMOTE?",
+        "answer": "Der Recall der Minderheitsklasse steigt deutlich, oft um 20–30 %."
+      },
+     
+      {
+        "question": "Nenne ein typisches Anwendungsbeispiel für SMOTE.",
+        "answer": "Kreditkartenbetrugserkennung oder medizinische Diagnostik seltener Krankheiten."
+      },
+      {
+        "question": "Welche Methode verwendet SMOTE zur Bestimmung ähnlicher Punkte?",
+        "answer": "k-Nearest Neighbors mit euklidischer Distanz."
+      },
+      {
+        "question": "Welche statistische Eigenschaft haben die generierten Punkte?",
+        "answer": "Der Erwartungswert liegt auf der Verbindungslinie zweier realer Punkte."
+      },
+      {
+        "question": "Nenne eine theoretische Schwäche von SMOTE.",
+        "answer": "Es ist anfällig für Ausreißer und Rauschen in den Originaldaten."
+      },
+      {
+        "question": "Was passiert bei hochdimensionalen Daten mit SMOTE?",
+        "answer": "Der Fluch der Dimensionalität kann zu ungenauen Interpolationen führen."
+      }
+    ]
+  }
+  

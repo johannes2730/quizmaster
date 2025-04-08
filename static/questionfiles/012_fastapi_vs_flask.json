@@ -1,0 +1,33 @@
+{
+  "title": "fastapi_vs_flask",
+  "questions": [
+    {
+      "question": "Nennen Sie zwei grundlegende Unterschiede in der Unterstützung von Asynchronität zwischen Flask und FastAPI.",
+      "answer": "Flask unterstützt Asynchronität nur mit zusätzlichen Bibliotheken wie flask-async, während FastAPI eingebaute Unterstützung für async und await bietet."
+    },
+    {
+      "question": "Welche Auswirkungen hat die unterschiedliche Architektur von Flask und FastAPI auf die Performance der jeweiligen Frameworks?",
+      "answer": "Flask hat eine moderate Geschwindigkeit, da es keine eingebaute asynchrone Architektur besitzt. FastAPI hingegen erreicht eine hohe Performance durch die integrierte Unterstützung für Asynchronität."
+    },
+    {
+      "question": "Welche Bibliothek wird bei Flask häufig zur Datenvalidierung verwendet?",
+      "answer": "Zur Datenvalidierung in Flask wird häufig die Bibliothek 'marshmallow' verwendet."
+    },
+    {
+      "question": "Wie erfolgt die Datenvalidierung in FastAPI?",
+      "answer": "FastAPI nutzt die Bibliothek Pydantic für eine integrierte Datenvalidierung."
+    },
+    {
+      "question": "Wie unterscheidet sich die Dokumentationserstellung bei Flask und FastAPI?",
+      "answer": "Flask bietet keine automatische Dokumentation. Bei FastAPI wird die Dokumentation automatisch als Swagger UI und Redoc generiert."
+    },
+    {
+      "question": "Für welche Art von Projekten ist FastAPI besonders geeignet? Nennen Sie mindestens zwei Kriterien.",
+      "answer": "FastAPI ist geeignet für Projekte, bei denen hohe Performance und Skalierbarkeit gefordert sind, sowie für APIs mit asynchroner Verarbeitung und komplexen Datenvalidierungsanforderungen."
+    },
+    {
+      "question": "Wann ist der Einsatz von Flask sinnvoller als der von FastAPI? Nennen Sie mindestens zwei Anwendungsfälle.",
+      "answer": "Flask ist sinnvoll bei einfachen Anwendungen oder Prototypen, die nur grundlegende Funktionalitäten benötigen, sowie wenn Asynchronität und Performance keine kritischen Anforderungen sind."
+    }
+  ]
+}

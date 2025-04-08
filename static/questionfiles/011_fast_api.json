@@ -1,0 +1,33 @@
+{
+    "title": "Was ist FastAPI",
+    "questions": [
+        {
+            "question": "Was ist FastAPI und wofür wird es verwendet?",
+            "answer": "FastAPI ist ein modernes Web-Framework für Python, das verwendet wird, um schnell und effizient Web-APIs (RESTful APIs) zu erstellen."
+        },
+        {
+            "question": "Welche Art von Anwendungen kann man mit FastAPI entwickeln?",
+            "answer": "Mit FastAPI entwickelt man vor allem Webschnittstellen (APIs) für Anwendungen, z.B. zur Kommunikation zwischen Frontend und Backend, oder für Machine Learning/AI-Modelle."
+        },
+        {
+            "question": "Wie erleichtert FastAPI die Entwicklung von APIs?",
+            "answer": "FastAPI generiert automatisch eine interaktive Dokumentation (Swagger UI), prüft automatisch Eingabedaten und nutzt Python-Typannotationen, was die Entwicklung schneller und fehlerärmer macht."
+        },
+        {
+            "question": "Für welche Art von Entwicklern ist FastAPI besonders geeignet?",
+            "answer": "FastAPI ist besonders geeignet für Entwickler, die schnell, effizient und mit modernem Python-Code APIs erstellen möchten, insbesondere im Bereich Datenanalyse, KI und Webservices."
+        },
+        {
+            "question": "Wie unterstützt FastAPI die asynchrone Verarbeitung, und warum ist das vorteilhaft?",
+            "answer": "FastAPI unterstützt Python-Schlüsselwörter async und await, sodass asynchrone Funktionen direkt verwendet werden können. Das ermöglicht eine effiziente Verarbeitung vieler gleichzeitiger Anfragen, z.B. bei APIs mit hoher Last oder datenbankintensiven Operationen."
+        },
+        {
+            "question": "Wie sorgt FastAPI mithilfe von Pydantic für eine einfache Datenvalidierung?",
+            "answer": "FastAPI nutzt Pydantic-Modelle, um automatisch Eingabedaten (z.B. JSON) zu validieren und bei Fehlern präzise Fehlermeldungen auszugeben. Dadurch wird die Datenintegrität sichergestellt, ohne dass Entwickler manuell Prüfungen schreiben müssen."
+        },
+        {
+            "question": "Was macht die folgende FastAPI-Funktion und welche HTTP-Methode wird verwendet?\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n@app.get('/')\nasync def root():\n    return {'message': 'Hello, World!'}",
+            "answer": "Die Funktion definiert einen GET-Endpunkt unter der URL '/', der beim Aufruf die JSON-Antwort {'message': 'Hello, World!'} zurückgibt. Die Funktion ist asynchron (durch async) und zeigt ein einfaches Beispiel für eine FastAPI-Route."
+        }
+    ]
+}

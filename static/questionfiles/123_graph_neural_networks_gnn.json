@@ -1,0 +1,109 @@
+{
+  "title": "Graph Neural Network GNN",
+  "questions": [
+    {
+      "question": "Was sind Graph Neural Networks (GNNs)?",
+      "answer": "GNNs sind neuronale Netze, die speziell für die Verarbeitung von Graphdaten entwickelt wurden, in denen Datenpunkte (Knoten) durch Kanten miteinander verbunden sind."
+    },
+    {
+      "question": "Welche strukturellen Elemente bilden die Basis eines Graphen?",
+      "answer": "Knoten (Nodes) und Kanten (Edges)"
+    },
+    {
+      "question": "Was ist der Hauptvorteil von GNNs gegenüber klassischen neuronalen Netzen?",
+      "answer": "Sie können strukturierte Beziehungen und Abhängigkeiten zwischen Datenpunkten modellieren, was klassische Netze nicht leisten."
+    },
+    {
+      "question": "Was versteht man unter 'Message Passing' in GNNs?",
+      "answer": "Die Technik, bei der Informationen von benachbarten Knoten gesammelt und in die eigenen Knotenmerkmale integriert werden."
+    },
+    {
+      "question": "Welche Aussagen über GNNs sind korrekt?\na) Sie verarbeiten Graphstrukturen bestehend aus Knoten und Kanten\nb) Sie sind nur für tabellarische Daten geeignet\nc) Sie nutzen Message Passing zur Aggregation von Nachbarschaftsinformation\nd) Sie ersetzen vollständig alle anderen neuronalen Netztypen",
+      "answer": "a,c"
+    },
+    {
+      "question": "Nenne drei typische Anwendungsbereiche von GNNs.",
+      "answer": "Soziale Netzwerke (z.B. Freundschaftsanalyse), Molekülstrukturvorhersage, Empfehlungssysteme"
+    },
+    {
+      "question": "Wie könnte ein GNN in einem Empfehlungssystem eingesetzt werden?",
+      "answer": "Nutzer und Produkte sind Knoten, Kanten repräsentieren Interaktionen wie Klicks, Käufe, etc. GNNs nutzen die Beziehungen, um Vorhersagen zu treffen."
+    },
+    {
+      "question": "Welche der folgenden Anwendungen sind typische Einsatzfelder von GNNs?\na) Vorhersage chemischer Eigenschaften von Molekülen\nb) Klassisches lineares Regressionsmodell auf CSV-Daten\nc) Bildklassifikation mit Convolutional Neural Networks\nd) Soziale Netzwerkanalyse",
+      "answer": "a,d"
+    },
+    {
+      "question": "Welche Informationen enthalten Knotenmerkmale typischerweise in einem GNN-Modell?",
+      "answer": "Beispielsweise numerische Merkmale wie Aktivität, Interessen, demografische Infos – kodiert als Vektor pro Knoten."
+    },
+    {
+      "question": "Was repräsentieren die Kanten im sozialen Netzwerkbeispiel?",
+      "answer": "Beziehungen zwischen Nutzern, z.B. Freundschaften, Likes, Interaktionen oder Gruppenmitgliedschaften"
+    },
+    {
+      "question": "Was sind Zielwerte bei einem Regressions-GNN?",
+      "answer": "Kontinuierliche Werte, z.B. Klickwahrscheinlichkeit, Produktkaufwahrscheinlichkeit etc."
+    },
+    {
+      "question": "Warum sind GNNs besonders relevant für moderne Machine-Learning-Aufgaben?",
+      "answer": "Weil viele reale Daten (soziale Netze, Moleküle, Wissensgraphen) von Natur aus graphstrukturiert sind und GNNs diese Struktur ausnutzen können."
+    },
+    {
+      "question": "Nenne zwei Vorteile der Verwendung von PyTorch Geometric für GNNs.",
+      "answer": "1) Vereinfachte Handhabung von Graphdaten, 2) Integration mit PyTorch für flexibles Modell-Design"
+    },
+    {
+      "question": "Welche Hauptkomponenten enthält ein typisches Graph Neural Network (GNN)?",
+      "answer": "Meist bestehen GNNs aus mehreren graphbasierten Schichten (z.B. GCNConv, GraphSAGE), Aktivierungsfunktionen, Aggregationsmechanismen und optional einer oder mehreren vollverknüpften Schichten für Klassifikation oder Regression."
+    },
+    {
+      "question": "Welche Aufgabe übernehmen die graphbasierten Schichten in einem GNN?",
+      "answer": "Sie aggregieren Informationen aus den Nachbarknoten eines jeden Knotens, um dessen Repräsentation zu aktualisieren."
+    },
+    {
+      "question": "Welche Rolle spielt eine Aktivierungsfunktion (z.B. ReLU) in GNNs?",
+      "answer": "Sie führt eine nichtlineare Transformation durch, wodurch das Modell komplexere Zusammenhänge lernen kann."
+    },
+    {
+      "question": "Welche Art von Datenstruktur wird benötigt, um einen Graphen in einem GNN zu verarbeiten?",
+      "answer": "Eine strukturierte Repräsentation mit Knotenmerkmalen (Features), einer Kantenliste (Edge-Index) und optional Zielwerten für überwachtes Lernen."
+    },
+    {
+      "question": "Welche Schritte sind notwendig, um ein GNN zu trainieren?",
+      "answer": "Vorwärtsdurchlauf, Berechnung des Fehlers (Loss), Backpropagation der Gradienten, Optimierung der Gewichte"
+    },
+    {
+      "question": "Welche Arten von Verlustfunktionen kommen in GNNs zum Einsatz? Nenne zwei Beispiele.",
+      "answer": "Für Klassifikation z.B. Cross Entropy Loss, für Regression z.B. Mean Squared Error (MSE)"
+    },
+    {
+      "question": "Welche Optimierungsverfahren werden häufig beim GNN-Training verwendet?",
+      "answer": "Adam, SGD oder RMSprop"
+    },
+    {
+      "question": "Warum ist es wichtig, das Modell zwischen Trainings- und Evaluationsmodus umzuschalten?",
+      "answer": "Damit Verhaltensweisen wie Dropout oder Batch-Normalisierung korrekt verwendet werden (z.B. aktiv im Training, inaktiv bei Evaluation)"
+    },
+    {
+      "question": "Welche Aussagen zum Training von GNNs sind korrekt?\na) Der Loss wird aus dem Unterschied zwischen Vorhersage und Zielwert berechnet\nb) Die Backpropagation dient der Gradientenberechnung zur Gewichtsoptimierung\nc) Ein GNN kann ohne Zielwerte trainiert werden (überwachtes Lernen)\nd) GNNs benötigen keinen Optimierer",
+      "answer": "a,b"
+    },
+    {
+      "question": "Wie wird ein GNN-Modell evaluiert?",
+      "answer": "Durch die Anwendung auf Validierungs- oder Testdaten, die nicht für das Training verwendet wurden, unter Verwendung geeigneter Metriken (z. B. Accuracy, MSE, F1-Score)"
+    },
+    {
+      "question": "Was bedeutet es, ein Modell in den 'Evaluierungsmodus' zu versetzen?",
+      "answer": "Das Modell deaktiviert bestimmte Trainingsmechanismen wie Dropout und verwendet gespeicherte Statistikwerte z. B. für Batch-Normalisierung"
+    },
+    {
+      "question": "Welche Kennzahlen sind bei der Evaluierung eines GNN-Modells für Regression besonders wichtig?",
+      "answer": "MSE (Mean Squared Error), MAE (Mean Absolute Error), R² (Bestimmtheitsmaß)"
+    },
+    {
+      "question": "Welche Aussagen zur Evaluation eines GNNs sind korrekt?\na) Das Modell sollte auf unbekannten Daten evaluiert werden\nb) Dropout bleibt während der Evaluation aktiv\nc) ür Regressionsaufgaben eignen sich MSE oder MAE als Bewertungsmaß\nd) Das Modell lernt auch im Evaluierungsmodus weiter",
+      "answer": "a,c"
+    }
+  ]
+}

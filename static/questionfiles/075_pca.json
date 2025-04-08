@@ -1,0 +1,29 @@
+{
+  "title": "PCA",
+  "questions": [
+    {
+      "question": "Was ist das Hauptziel der PCA?",
+      "answer": "Die PCA reduziert die Dimension eines Datensatzes, indem sie neue Achsen (Hauptkomponenten) findet, entlang derer die Daten die größte Varianz aufweisen. Dadurch kann sie redundante Informationen entfernen und Muster in den Daten hervorheben."
+    },
+    {
+      "question": "Warum sollte man die Daten vor der PCA zentrieren und standardisieren?",
+      "answer": "Da PCA auf der Kovarianzmatrix basiert, beeinflussen unterschiedlich skalierte Features das Ergebnis stark. Durch Zentrierung (Mittelwert = 0) und Standardisierung (gleiche Varianz) stellt man sicher, dass kein Feature dominiert."
+    },
+    {
+      "question": "Wie wählt man die optimale Anzahl an Hauptkomponenten aus?",
+      "answer": "Man kann die erklärte Varianz analysieren und so viele Komponenten wählen, dass z. B. 95% der Gesamtvarianz erhalten bleiben. Alternativ helfen die Elbow-Methode (Knickpunkt in der Varianzkurve) oder das Kaiser-Kriterium (nur Komponenten mit Eigenwert >1)."
+    },
+    {
+      "question": "Welche Einschränkungen hat PCA?",
+      "answer": "PCA ist eine lineare Methode und kann nicht gut mit nichtlinearen Zusammenhängen umgehen. Zudem sind die Hauptkomponenten schwer zu interpretieren, da sie Linearkombinationen der ursprünglichen Features sind."
+    },
+    {
+      "question": "Warum kann PCA zur Rauschunterdrückung verwendet werden?",
+      "answer": "Weil Rauschen oft gleichmäßig über alle Richtungen verteilt ist, wird es vor allem in Hauptkomponenten mit kleinen Eigenwerten abgebildet. Durch Entfernen dieser weniger wichtigen Komponenten kann man das Rauschen reduzieren und nur die strukturierte, informative Variation der Daten behalten."
+    },
+    {
+      "question": "Warum gilt die Interpretierbarkeit der Hauptkomponenten als Nachteil der PCA?",
+      "answer": "Die Hauptkomponenten sind Linearkombinationen aller ursprünglichen Features, was bedeutet, dass sie oft keine direkte, intuitive Bedeutung haben. Dadurch ist es schwer nachzuvollziehen, welche konkreten Merkmale hinter einer bestimmten Komponente stehen, was die Interpretation der Ergebnisse erschwert."
+    }
+  ]
+}

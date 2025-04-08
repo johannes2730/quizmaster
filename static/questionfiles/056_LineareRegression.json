@@ -1,0 +1,29 @@
+{
+    "title": "Lineare Regression",
+    "questions": [
+        {
+            "question": "Was ist die lineare Regression?",
+            "answer": "Die lineare Regression ist ein statistisches Modell, das den Zusammenhang zwischen einer abhängigen Variable (Zielvariable) und einer oder mehreren unabhängigen Variablen (Prädiktoren) beschreibt, indem eine lineare Funktion angepasst wird."
+        },
+        {
+            "question": "Wie lautet die allgemeine Gleichung der linearen Regression?",
+            "answer": "Die allgemeine Gleichung lautet: y = β0 + β1x + ε, wobei y die Zielvariable ist, β0 der Achsenabschnitt, β1 der Koeffizient der unabhängigen Variable x, und ε der Fehlerterm."
+        },
+        {
+            "question": "Wann wird die lineare Regression verwendet?",
+            "answer": "Die lineare Regression wird verwendet, wenn ein linearer Zusammenhang zwischen den Variablen besteht, die Zielvariable kontinuierlich ist (z. B. Preis, Umsatz) und das Ziel eine Vorhersage oder Analyse der Beziehung zwischen Variablen ist."
+        },
+        {
+            "question": "Was ist der Unterschied zwischen einfacher und multipler linearer Regression?",
+            "answer": "Die einfache lineare Regression verwendet nur eine unabhängige Variable zur Vorhersage der Zielvariable, während die multiple lineare Regression mehrere unabhängige Variablen nutzt."
+        },
+        {
+            "question": "Was bedeutet das Bestimmtheitsmaß R²?",
+            "answer": "Das Bestimmtheitsmaß R² gibt an, wie gut die unabhängigen Variablen die Zielvariable erklären können. Ein Wert von 1 bedeutet eine perfekte Anpassung, während 0 bedeutet, dass die unabhängigen Variablen keinen Einfluss haben."
+        },
+        {
+            "question": "Welche Annahmen macht die lineare Regression?",
+            "answer": "Die lineare Regression basiert auf folgenden Annahmen: 1) Linearität – die Beziehung zwischen den Variablen ist linear, 2) Homoskedastizität – die Varianz der Fehler ist konstant, 3) Unabhängigkeit der Fehler – Fehler sind nicht voneinander abhängig, 4) Normalverteilung der Fehler – Fehler sind normalverteilt."
+        }
+    ]
+}

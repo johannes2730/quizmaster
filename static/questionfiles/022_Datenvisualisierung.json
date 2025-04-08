@@ -1,0 +1,53 @@
+{
+    "title": "Datenvisualisierung",
+    "questions": [
+      {
+        "question": "Wofür dienen Visualisierungen in der deskriptiven Statistik?",
+        "answer": "Visualisierungen sind ein grundlegendes Werkzeug, um Daten verständlich darzustellen und erste Einsichten zu gewinnen."
+      },
+      {
+        "question": "Was stellt ein Histogramm dar, wofür wird es angewendet und welche alternativen Darstellungen gibt es hierfür?",
+        "answer": "- Histogramm zeigt die Verteilung einer numerischen Variable, indem es die Daten in aufeinanderfolgende Intervalle unterteilt und die Häufigkeit dieser Intervalle als Balken darstellt.\n- Höhe eines Balkens repräsentiert die Anzahl der Datenpunkte in diesem Intervall.\n- Anwendung: Überblick über die Verteilung von Daten, insbesondere deren Form (z.B. Normalverteilung) und Streuung.\n- Alternativen: Boxplot oder Dichteplot, diese stellen Verteilungen allerdings mit anderer Betonung dar."
+      },
+      {
+        "question": "Was stellt ein Boxplot dar, wofür wird es angewendet und welche alternativen Darstellungen gibt es hierfür?",
+        "answer": "- Boxplot veranschaulicht die Verteilung der Daten durch ein Diagramm, das den Median, die oberen und unteren Quartile sowie potenzielle Ausreißer anzeigt.\n- „Box“ repräsentiert den Interquartilsabstand, „Whiskers“ zeigen die Variabilität außerhalb der Quartile.\n- Anwendung: Verteilung und Symmetrie von Daten und Ausreißer können analysiert werden. Ideal für den Vergleich von Kategorien und Gruppen.\n- Alternative: Violinplots, die die Dichte der Verteilung detailliert darstellen."
+      },
+      {
+        "question": "Welche Visualisierungen eignen sich, um Korrelationen zwischen Variablen darzustellen?",
+        "answer": "Scatterplot/Streudiagramm (bei 2 Variablen), Heatmap (Korrelationen zwischen vielen Variablen in großen Datensätzen), Pair Plot/Paarplot (Beziehungen zwischen mehreren Variablen gleichzeitig)."
+      },
+      {
+        "question": "Was stellt ein Violinplot dar, wofür wird es angewendet und welche alternativen Darstellungen gibt es hierfür?",
+        "answer": "- Der Violinplot zeigt die Verteilung der Daten sowie deren Dichte entlang einer Achse. Damit kombiniert er Elemente von Boxplot und Dichteplots.\n- Anwendung: Wenn Verteilung und Dichte einer Variablen gleichzeitig dargestellt und dabei symmetrische oder bimodale Muster aufgezeigt werden sollen.\n- Alternative: Boxplot (aber weniger detaillierte Darstellung der Dichte) oder Dichteplot."
+      },
+      {
+        "question": "Was stellt ein Paarplot dar, wofür wird es angewendet und welche alternativen Darstellungen gibt es hierfür?",
+        "answer": "- Der Paarplot (Pair Plot) visualisiert alle Kombinationen der Variablenpaare in einem Datensatz als Streudiagramme. Dabei können auch direkte Korrelationen mit (linearer) Regression dargestellt werden.\n- Anwendung: Wenn Korrelationen und Beziehungen zwischen mehreren Variablen gleichzeitig analysiert werden sollen.\n- Alternative: Scatterplot-Matrizen oder einzelne Heatmaps."
+      },
+      {
+        "question": "Was stellt ein Flächendiagramm dar, wofür wird es angewendet und welche alternativen Darstellungen gibt es hierfür?",
+        "answer": "- Das Flächendiagramm (Area Chart) ist eine Variation des Liniendiagramms, bei dem der Bereich unter der Linie ausgefüllt ist, um den Wert über eine geordnete Dimension (oft Zeit) zu verdeutlichen.\n- Anwendung: Für die Visualisierung kumulativer Daten oder Zeitreihendaten, bei denen der Bereich unter der Linie eine Bedeutung hat.\n- Alternative: Liniendiagramm (ohne ausgefüllte Fläche) oder Stapeldiagramme, wenn mehrere Kategorien dargestellt werden sollen."
+      },
+      {
+        "question": "Was stellt ein Blasendiagramm dar, wofür wird es angewendet und welche alternativen Darstellungen gibt es hierfür?",
+        "answer": "- Das Blasendiagramm (Bubble Chart) ist ein erweitertes Streudiagramm. Die Größe der Punkte stellt hierbei eine zusätzliche Dimension dar, meist einen numerischen Wert.\n- Anwendung: Wenn 3 Dimensionen (zwei für die Achsen und eine für die Punktgröße) gleichzeitig dargestellt werden sollen.\n- Alternative: einfache Streudiagramme (für 2 Dimensionen) oder Heatmaps für Korrelationen mehrerer Variablen."
+      },
+      {
+        "question": "Was stellt ein gestapeltes Balkendiagramm dar, wofür wird es angewendet und welche alternativen Darstellungen gibt es hierfür?",
+        "answer": "- Das gestapelte Balkendiagramm (Stacked Bar Chart) stellt mehrere Kategorien übereinander in einem Balken dar. Hierdurch wird die Gesamtmenge sowie die Verteilung der Teilkategorien auf einen Blick erkennbar.\n- Anwendung: Eignet sich für Daten, bei denen sowohl die Gesamtwerte als auch die Anteile der Unterkategorien gleichzeitig dargestellt werden sollen.\n- Alternative: das 100% gestapelte Balkendiagramm, bei dem die Balken normalisiert werden, sodass sie immer bis 100% reichen."
+      },
+      {
+        "question": "Welche Diagrammtypen kennst du? Nenne mindestens 5.",
+        "answer": "Histogramm, Boxplot, Streudiagramm, Liniendiagramm, Violinplot, Heatmap, Paarplot, Balkendiagramm, Kreisdiagramm, Flächendiagramm, Blasendiagramm, gestapeltes Balkendiagramm."
+      },
+      {
+        "question": "Was stellt ein Liniendiagramm dar und wofür wird es angewendet?",
+        "answer": "- Das Liniendiagramm (Line Chart) zeigt Datenpunkte, die durch Linien verbunden sind, um Trends über eine kontinuierliche Skala (oft Zeit) darzustellen.\n- Anwendung: Ideal zur Darstellung von Zeitreihendaten und zur Veranschaulichung von Trends und Entwicklungen über einen Zeitraum."
+      },
+      {
+        "question": "Was ist eine Heatmap und wofür wird sie verwendet?",
+        "answer": "- Eine Heatmap ist eine grafische Darstellung von Daten, bei der individuelle Werte in einer Matrix durch Farben dargestellt werden.\n- Anwendung: Häufig verwendet, um die Intensität von Datenpunkten in großen Datensätzen zu visualisieren, insbesondere zur Darstellung von Korrelationen zwischen Variablen."
+      }
+    ]
+  }

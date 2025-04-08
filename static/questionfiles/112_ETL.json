@@ -1,0 +1,45 @@
+{
+    "title": "ETL",
+    "questions": [
+        {
+            "question": "Was bedeutet ETL und welche Schritte umfasst es?",
+            "answer": "ETL steht für Extract, Transform, Load. Es umfasst drei Schritte: 1) Extraktion der Daten aus Quellsystemen, 2) Transformation der Daten in ein passendes Format, 3) Laden der transformierten Daten in ein Zielsystem."
+        },
+        {
+            "question": "Was ist der Unterschied zwischen vollständiger und inkrementeller Extraktion?",
+            "answer": "Bei vollständiger Extraktion werden alle Daten bei jedem Durchlauf abgerufen, was ineffizient sein kann. Bei inkrementeller Extraktion werden nur neue oder geänderte Daten seit dem letzten Lauf extrahiert, was effizienter ist."
+        },
+        {
+            "question": "Was sind typische Transformationen im ETL-Prozess?",
+            "answer": "Typische Transformationen sind Datenbereinigung, Normalisierung/Denormalisierung, Aggregation, Anreicherung und Datenvalidierung."
+        },
+        {
+            "question": "Wie unterscheiden sich die Lade-Strategien bei ETL-Prozessen?",
+            "answer": "1) Vollständiges Ersetzen (Überschreiben aller Zieldaten), 2) Inkrementelles Laden (nur neue/ geänderte Daten), 3) Upsert (Update bestehender und Einfügen neuer Daten), 4) Historisierung (Änderungen mit Zeitstempeln)."
+        },
+        {
+            "question": "Was ist der Unterschied zwischen ETL und ELT?",
+            "answer": "Im ETL-Prozess werden die Daten vor dem Laden transformiert, während im ELT-Prozess die Daten zuerst geladen und anschließend im Zielsystem transformiert werden. ELT eignet sich besser für große Datenmengen und flexible Analysen."
+        },
+        {
+            "question": "Welche Herausforderungen gibt es bei ETL-Prozessen?",
+            "answer": "Herausforderungen umfassen Datenqualitätsprobleme (z.B. Duplikate), Leistungsprobleme (z.B. Skalierbarkeit), Fehlerbehandlung (z.B. bei Systemausfällen) und die Wartung und Skalierbarkeit der Prozesse."
+        },
+        {
+            "question": "Was bedeutet Datenlineage in ETL-Prozessen?",
+            "answer": "Datenlineage bezeichnet die Nachverfolgbarkeit von Daten von der Quelle bis zum Ziel. Es hilft, den Weg jeder Datenquelle zu verstehen und die Qualität zu überwachen."
+        },
+        {
+            "question": "Was sind Best Practices für die Überwachung von ETL-Prozessen?",
+            "answer": "Best Practices sind umfassendes Logging, das Erheben von Leistungsmetriken, proaktive Warnungen bei Fehlern und Dashboards zur Visualisierung des Pipeline-Status."
+        },
+        {
+            "question": "Warum ist Idempotenz wichtig in ETL-Prozessen?",
+            "answer": "Idempotenz stellt sicher, dass eine ETL-Pipeline bei mehrfacher Ausführung mit denselben Eingabedaten immer dasselbe Ergebnis liefert, ohne unerwünschte Nebenwirkungen."
+        },
+        {
+            "question": "Was ist der Vorteil von Azure Data Factory in ETL-Prozessen?",
+            "answer": "Azure Data Factory unterstützt sowohl ETL- als auch ELT-Ansätze, bietet eine cloudbasierte Lösung zur Orchestrierung von Datenpipelines und ermöglicht einfache Integration, Skalierbarkeit und Überwachung."
+        }
+    ]
+}

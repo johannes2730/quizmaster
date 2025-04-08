@@ -1,0 +1,38 @@
+{
+    "title": "spaCy",
+    "questions": [
+      {
+        "question": "Wofür wird spaCy hauptsächlich verwendet?",
+        "answer": "Für die Verarbeitung natürlicher Sprache (NLP) in Python."
+      },
+      {
+        "question": "Was ist spaCy?",
+        "answer": "Eine NLP-Bibliothek für effiziente Textverarbeitung."
+      },
+      {
+        "question": "Welche Funktion hat die Tokenisierung in spaCy?",
+        "answer": "Sie zerlegt einen Text in Wörter und Sätze."
+      },
+      {
+        "question": "Was macht die Lemmatisierung?",
+        "answer": "Sie reduziert Wörter auf ihre Grundform."
+      },
+      {
+        "question": "Welche spaCy-Funktion erkennt Entitäten wie Personen und Orte in einem Text?",
+        "answer": "Named Entity Recognition (NER)."
+      },
+      {
+        "question": "Was analysiert Dependency Parsing?",
+        "answer": "Die grammatikalischen Beziehungen im Satz."
+      },
+      {
+        "question": "Welche Aufgabe kann spaCy nicht direkt übernehmen?",
+        "answer": "Das Trainieren von Sprachmodellen."
+      },
+      {
+        "question": "Wie unterstützt spaCy verschiedene Sprachen?",
+        "answer": "Durch vortrainierte Modelle für mehrere Sprachen."
+      }
+    ]
+  }
+  

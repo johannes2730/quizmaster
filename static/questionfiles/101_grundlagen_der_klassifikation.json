@@ -1,0 +1,25 @@
+{
+  "title": "Grundlagen der Klassifikation",
+  "questions": [
+    {
+      "question": "Was ist Klassifikation im Kontext Machine Learning?",
+      "answer": "Klassifikation ist ein überwachtes Lernverfahren im maschinellen Lernen, bei dem ein Modell trainiert wird, um Daten in verschiedene Klassen oder Kategorien zuzuordnen."
+    },
+    {
+      "question": "Nenne die 5 Schritte der Klassifikation",
+      "answer": "Daten vorbereiten, Modelle auswählen, Modell trainieren, Modell evaluieren, Vorhersagen treffen"
+    },
+    {
+      "question": "Was gehört zur Datenvorbereitung?",
+      "answer": "Datenbereinigung, Normalisierung, Aufteilung in Trainings- und Testdaten"
+    },
+    {
+      "question": "Welcher Befehl wird in Scikit-Learn verwendet, um ein Klassifikationsmodell zu trainieren?",
+      "answer": "model.fit(X_train, y_train)"
+    },
+    {
+      "question": "Nenne mindestens drei Klassifikationsalgorithmen",
+      "answer": "z.B. K-Nearest Neighbors, Decision-Tree, Random Forest, Support Vector Machines, k-Means, ..."
+    }
+  ]
+}

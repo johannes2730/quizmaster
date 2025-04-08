@@ -1,0 +1,45 @@
+{
+    "title": "Transformer-Modelle für Textklassifikation",
+    "questions": [
+        {
+            "question": "Was ist der Hauptvorteil von Transformer-Modellen in der Textklassifikation?",
+            "answer": "Sie können kontextuelle Abhängigkeiten und langfristige Beziehungen in Texten erfassen, unabhängig von der Position der Wörter."
+        },
+        {
+            "question": "Welche Komponente eines Transformators wird typischerweise bei der Textklassifikation verwendet - Encoder oder Decoder?",
+            "answer": "Nur der Encoder, da keine Sequenz generiert werden muss."
+        },
+        {
+            "question": "Welche Aufgabe übernimmt die Dense-Schicht im Klassifikationsmodell?",
+            "answer": "Sie transformiert die abstrakte Repräsentation des Textes in eine Wahrscheinlichkeitsverteilung über die Klassen."
+        },
+        {
+            "question": "Wofür dienen Start- und Endtokens bei Transformern?",
+            "answer": "Sie markieren den Anfang und das Ende der Eingabesequenz, helfen beim Training und signalisieren dem Modell den Kontext der Sequenz."
+        },
+        {
+            "question": "Was bewirkt die Positional Encoding im Transformer-Modell?",
+            "answer": "Sie ergänzt die Embeddings um Positionsinformationen, damit das Modell die Reihenfolge der Wörter erkennt."
+        },
+        {
+            "question": "Welche Aktivierungsfunktion wird typischerweise in der finalen Dense-Schicht zur Klassifikation verwendet?",
+            "answer": "Softmax, um Wahrscheinlichkeiten über Klassen zu berechnen."
+        },
+        {
+            "question": "Welche Vorteile bringt der Einsatz von Dropout und Layer Normalization im Modell?",
+            "answer": "Dropout hilft gegen Overfitting, Layer Normalization stabilisiert das Training."
+        },
+        {
+            "question": "Wie wird der Text für das Modell vorbereitet?",
+            "answer": "Tokenisierung, Umwandlung in Sequenzen, Padding auf gleiche Länge (z.B. 100 Tokens)."
+        },
+        {
+            "question": "Was macht die MultiHeadAttention in einer Encoder-Schicht?",
+            "answer": "Sie ermöglicht dem Modell, gleichzeitig verschiedene Aspekte der Eingabesequenz zu betrachten, indem mehrere Aufmerksamkeitsköpfe parallel arbeiten."
+        },
+        {
+            "question": "Welche Metrik wird neben Accuracy und Confusion Matrix zur Evaluierung verwendet?",
+            "answer": "Der Matthews Correlation Coefficient (MCC), besonders nützlich bei unbalancierten Klassen."
+        }
+    ]
+}

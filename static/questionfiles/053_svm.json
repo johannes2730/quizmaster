@@ -1,0 +1,85 @@
+{
+  "title": "Support Vector Machine",
+  "questions": [
+    {
+      "question": "Was ist die grundlegende Idee hinter Support Vector Machines (SVM)?",
+      "answer": "Eine SVM versucht, eine optimale Trennebene zwischen Klassen zu finden, sodass der Abstand zu den nächstgelegenen Punkten (Support Vektoren) maximiert wird."
+    },
+    {
+      "question": "Für welche Arten von Aufgaben ist die SVM besonders gut geeignet?",
+      "answer": "Für Klassifikation (binär und mehrklassig), auch bei kleinen Datensätzen, hochdimensionalen Daten und nicht-linearen Entscheidungsgrenzen."
+    },
+    {
+      "question": "Was versteht man unter einer 'optimalen Trennebene'?",
+      "answer": "Die Trennebene, die den größtmöglichen Abstand zu den nächsten Punkten beider Klassen (Support Vektoren) hat."
+    },
+    {
+      "question": "Welche der folgenden Eigenschaften treffen auf Support Vector Machines zu?\na) Können nur lineare Daten klassifizieren\nb) Arbeiten robust auch mit kleinen Datenmengen\nc) Modellieren Entscheidungsgrenzen mit maximalem Abstand zu den nächsten Datenpunkten\nd) Sind ausschließlich für Regressionsprobleme gedacht",
+      "answer": "b,c"
+    },
+    {
+      "question": "Nenne mindestens drei konkrete Anwendungsgebiete von SVMs.",
+      "answer": "Textklassifikation (z.B. Spam-Erkennung), Bildklassifikation (z.B. Gesichtserkennung), Anomalie-Erkennung"
+    },
+    {
+      "question": "Warum eignen sich SVMs besonders gut für hochdimensionale Daten?",
+      "answer": "Weil sie mit vielen Merkmalen effektiv umgehen können und nicht so anfällig für den 'Fluch der Dimensionalität' sind."
+    },
+    {
+      "question": "In welchen der folgenden Szenarien ist die Verwendung von SVMs sinnvoll?\na) Bei großen Datenmengen mit wenigen Merkmalen\nb) Bei Textklassifikation wie Spam-Erkennung\nc) Bei linearen Daten ohne erkennbare Trennung\nd) Bei kleinen Datensätzen mit hoher Dimensionalität",
+      "answer": "b,d"
+    },
+    {
+      "question": "Was sind Support Vektoren?",
+      "answer": "Die Datenpunkte, die am nächsten zur Trennebene liegen und sie definieren."
+    },
+    {
+      "question": "Wie erfolgt die Klassifikation in einer linearen SVM?",
+      "answer": "Durch das Vorzeichen von 𝑤^𝑇*𝑥+𝑏"
+    },
+    {
+      "question": "Welche der folgenden Aussagen über die Soft-Margin-SVM sind korrekt?\na) Der Parameter C steuert den Einfluss der Fehler\nb) Ein kleiner C-Wert bedeutet, dass Fehler stärker bestraft werden\nc) Schlupfvariablen erlauben es, fehlerhafte Klassifizierungen im Modell zu berücksichtigen\nd) Bei C = 0 werden keine Fehler toleriert",
+      "answer": "a,c"
+    },
+    {
+      "question": "Was ist der Kernel-Trick und warum wird er verwendet?",
+      "answer": "Er erlaubt es, Daten in eine höhere Dimension zu transformieren, in der sie linear trennbar sind – ohne die Transformation explizit berechnen zu müssen."
+    },
+    {
+      "question": "Welche Kernel-Funktionen gibt es bei der SVM?",
+      "answer": "RBF-Kernel, Linearer Kernel, Polynomialer Kernel, Sigmoid-Kernel"
+    },
+    {
+      "question": "Welche Aussage über den RBF-Kernel ist korrekt?\na) Er wird verwendet, um lineare Trennungen zu ermöglichen\nb) Er projiziert die Daten in eine höhere Dimension\nc) Er ist besonders gut für lineare Daten geeignet\nd) Er verwendet die Sigmoid-Funktion zur Berechnung",
+      "answer": "b"
+    },
+    {
+      "question": "Welche Rolle spielen die Parameter C und Gamma bei der Modellanpassung?",
+      "answer": "C steuert die Strafe für Fehlklassifikationen (Trade-off zwischen Margin und Fehler), Gamma bestimmt den Einfluss einzelner Punkte auf die Entscheidungsgrenze."
+    },
+    {
+      "question": "Was passiert, wenn Gamma zu groß gewählt wird?",
+      "answer": "Das Modell wird sehr empfindlich auf einzelne Punkte, was zu Overfitting führen kann."
+    },
+    {
+      "question": "Welche Auswirkungen hat ein großer Wert für den Parameter C?\na) Es werden mehr Fehler toleriert\nb) Es kommt zu einer stärkeren Bestrafung falsch klassifizierter Punkte\nc) Das Modell wird robuster gegenüber Ausreißern\nd) Das Modell versucht, möglichst alle Punkte korrekt zu klassifizieren",
+      "answer": "b,d"
+    },
+    {
+      "question": "Warum ist die SVM ursprünglich nur für binäre Klassifikation gedacht?",
+      "answer": "Weil sie nur eine Trennung zwischen zwei Klassen durch eine Hyperebene findet."
+    },
+    {
+      "question": "Welche Strategien gibt es, um SVMs für mehr als zwei Klassen einzusetzen?",
+      "answer": "One-vs-One, One-vs-Rest, Hierarchische Klassifikation"
+    },
+    {
+      "question": "Was ist eine GridSearch?",
+      "answer": "Eine systematische Suche über eine Kombination von Parametern (z. B. C und Gamma), um die besten Werte zu finden."
+    },
+    {
+      "question": "Welche Methoden werden häufig zur Parameterauswahl bei der SVM verwendet?\na) Stochastische Gradientenabstiegsverfahren\nb) Kreuzvalidierung\nc) GridSearch\nd) Backpropagation",
+      "answer": "b,c"
+    }
+  ]
+}

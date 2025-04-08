@@ -1,0 +1,34 @@
+{
+    "title": "Normalisierung (Theorie)",
+    "questions": [
+      {
+        "question": "Was versteht man unter der Normalisierung von Daten?",
+        "answer": "Normalisierung bezeichnet die Skalierung von numerischen Daten auf eine einheitliche Skala, um unterschiedliche Wertebereiche vergleichbar zu machen."
+      },
+      {
+        "question": "Warum ist Normalisierung wichtig für maschinelles Lernen?",
+        "answer": "Viele Algorithmen, insbesondere distanzbasierte wie KNN oder SVM, sind empfindlich gegenüber unterschiedlich skalierten Merkmalen und liefern ohne Normalisierung schlechtere Ergebnisse."
+      },
+      {
+        "question": "Wie funktioniert die Min-Max-Normalisierung?",
+        "answer": "Dabei wird ein Wert mithilfe der Formel (x - min) / (max - min) auf einen Wertebereich zwischen 0 und 1 skaliert."
+      },
+      {
+        "question": "Wie funktioniert die Z-Score-Normalisierung (Standardisierung)?",
+        "answer": "Die Werte werden so transformiert, dass sie einen Mittelwert von 0 und eine Standardabweichung von 1 haben: (x - Mittelwert) / Standardabweichung."
+      },
+      {
+        "question": "Wann sollte man lieber Z-Score statt Min-Max verwenden?",
+        "answer": "Z-Score ist robuster bei Ausreißern und wird bevorzugt, wenn die Daten nicht begrenzt sind oder eine Normalverteilung angenommen wird."
+      },
+      {
+        "question": "Was passiert, wenn man auf Normalisierung verzichtet?",
+        "answer": "Einige Features können andere dominieren, das Training kann langsamer oder instabiler sein und das Modell erzielt möglicherweise eine schlechtere Genauigkeit."
+      },
+      {
+        "question": "Welche Datentypen sollten vor der Normalisierung beachtet werden?",
+        "answer": "Nur numerische Features können normalisiert werden – kategorische Merkmale müssen vorher z. B. mit One-Hot-Encoding umgewandelt werden."
+      }
+    ]
+  }
+  

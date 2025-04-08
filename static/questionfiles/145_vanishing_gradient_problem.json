@@ -1,0 +1,85 @@
+{
+  "title": "vanishing_gradient_problem",
+  "questions": [
+    {
+      "question": "Definieren Sie das Vanishing Gradient-Problem in einem Satz.",
+      "answer": "Das Vanishing Gradient-Problem beschreibt die Problematik, dass die Gradienten in tiefen neuronalen Netzwerken beim Rückpropagieren exponentiell kleiner werden und dadurch das Lernen erschwert wird."
+    },
+    {
+      "question": "Nennen Sie zwei Arten von neuronalen Netzwerken, bei denen das Vanishing Gradient-Problem besonders häufig auftritt.",
+      "answer": "Rekurrente neuronale Netzwerke (RNNs) und tiefe Feedforward-Netzwerke."
+    },
+    {
+      "question": "Beschreiben Sie kurz den Unterschied zwischen einer Sequenz und den Eingabedaten eines Feedforward-Netzwerks.",
+      "answer": "In einer Sequenz bauen die Datenpunkte zeitlich oder inhaltlich aufeinander auf, während in einem Feedforward-Netzwerk alle Eingabedaten gleichzeitig als Attribute betrachtet werden."
+    },
+    {
+      "question": "Erläutern Sie die beiden zentralen Schritte der Rückpropagation.",
+      "answer": "Im Vorwärtsdurchlauf wird die Eingabe durch das Netzwerk geleitet, um eine Vorhersage zu erzeugen. Im Rückwärtsdurchlauf werden die Gradienten des Fehlers berechnet, um die Gewichte anzupassen."
+    },
+    {
+      "question": "Warum können Sigmoid-Aktivierungsfunktionen das Vanishing Gradient-Problem begünstigen?",
+      "answer": "Weil sie bei sehr großen oder sehr kleinen Eingabewerten ein Sättigungsverhalten zeigen und der Gradient dann nahezu null wird."
+    },
+    {
+      "question": "Welche Rolle spielt die Kettenregel beim Vanishing Gradient-Problem in tiefen Netzwerken?",
+      "answer": "Die Kettenregel multipliziert die Ableitungen mehrerer Aktivierungsfunktionen. Wenn diese Ableitungen klein sind, wird der Gradient exponentiell kleiner, je tiefer das Netzwerk ist."
+    },
+    {
+      "question": "Nennen Sie drei Auswirkungen des Vanishing Gradient-Problems auf den Lernprozess.",
+      "answer": "Langsame Lernraten / Schwierigkeiten beim Erlernen langfristiger Abhängigkeiten / Eingeschränkte Leistung"
+    },
+    {
+      "question": "Welche langfristige Folge hat das Vanishing Gradient-Problem für die Modellleistung?",
+      "answer": "Das Modell kann langfristige Abhängigkeiten nicht zuverlässig lernen und bleibt in seiner Genauigkeit und Generalisierungsfähigkeit eingeschränkt."
+    },
+    {
+      "question": "Warum führen sehr kleine Gradienten zu einer langsamen Lernrate?",
+      "answer": "Weil die Gewichtsanpassungen minimal ausfallen und das Netzwerk daher nur sehr langsam oder gar nicht lernt."
+    },
+    {
+      "question": "Warum fällt es RNNs schwer, langfristige Abhängigkeiten zu lernen, wenn das Vanishing Gradient-Problem auftritt?",
+      "answer": "Weil frühere Informationen in der Sequenz durch die kleinen Gradienten beim Rückpropagieren verloren gehen und nicht in die Gewichtsanpassung einfließen."
+    },
+    {
+      "question": "Nennen Sie drei Techniken, die helfen können, das Vanishing Gradient-Problem zu vermeiden oder abzuschwächen.",
+      "answer": "Verwendung geeigneter Aktivierungsfunktionen wie ReLU, Einsatz von Gradienten-Clippen, Nutzung von LSTM- und GRU-Zellen."
+    },
+    {
+      "question": "Warum sind ReLU und seine Varianten gut zur Vermeidung des Vanishing Gradient-Problems geeignet?",
+      "answer": "Weil sie im positiven Bereich einen konstanten Gradienten liefern und nicht in die Sättigung gehen."
+    },
+    {
+      "question": "Was bewirkt das sogenannte Gradienten-Clippen?",
+      "answer": "Es begrenzt die Gradientenwerte auf einen definierten Bereich, um extrem kleine oder große Updates zu verhindern und das Lernen zu stabilisieren."
+    },
+    {
+      "question": "Wie wirken LSTM- und GRU-Zellen dem Vanishing Gradient-Problem entgegen?",
+      "answer": "Sie nutzen Gattermechanismen, um den Informationsfluss zu regulieren, was es ermöglicht, relevante Informationen über viele Zeitschritte hinweg beizubehalten."
+    },
+    {
+      "question": "Nennen Sie zwei Mechanismen in Transformer-Modellen, die dazu beitragen, das Vanishing Gradient-Problem zu vermeiden.",
+      "answer": "Selbstaufmerksamkeit (Self-Attention) / Residualverbindungen (Skip Connections) / Layer-Normalisierung / Feedforward-Netzwerke / Positional Encoding."
+    },
+    {
+      "question": "Welche Rolle spielt Selbstaufmerksamkeit (Self-Attention) in Transformern bei der Vermeidung des Vanishing Gradient-Problems?",
+      "answer": "Self-Attention ermöglicht jedem Token, mit allen anderen Tokens zu interagieren, wodurch Informationen effizient über große Distanzen hinweg weitergegeben werden können."
+    },
+    {
+      "question": "Warum helfen Residualverbindungen (Skip Connections) in Transformer-Modellen beim Erhalt der Gradienten?",
+      "answer": "Weil sie den ursprünglichen Input direkt zum Output eines Layers addieren und so den Gradientenfluss über viele Schichten hinweg stabil halten."
+    },
+    {
+      "question": "Wie unterstützt die Layer-Normalisierung in Transformer-Modellen den Lernprozess im Hinblick auf das Vanishing Gradient-Problem?",
+      "answer": "Sie stabilisiert die Verteilung der Eingaben zu jeder Schicht und ermöglicht dadurch einen stabileren Lernprozess."
+    },
+    {
+      "question": "Warum sind Feedforward-Netzwerke in Transformern weniger anfällig für das Vanishing Gradient-Problem?",
+      "answer": "Weil sie keine rekurrenten Verbindungen enthalten und das Gradientensignal dadurch beim Rückpropagieren weniger abgeschwächt wird."
+    },
+    {
+      "question": "Welche Rolle spielen Positionskodierungen (Positional Encoding) in Transformern im Zusammenhang mit Sequenzverarbeitung?",
+      "answer": "Sie liefern Kontext zu den Positionsbeziehungen der Tokens in einer Sequenz und erleichtern das Lernen von Abhängigkeiten über lange Distanzen."
+    }
+  ]
+}

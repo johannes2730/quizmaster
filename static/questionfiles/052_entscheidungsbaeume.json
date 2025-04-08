@@ -1,0 +1,34 @@
+{
+    "title": "Entscheidungsbäume",
+    "questions": [
+      {
+        "question": "Was ist ein Entscheidungsbaum im maschinellen Lernen?",
+        "answer": "Ein Entscheidungsbaum ist ein Modell, das Entscheidungsprozesse in einer baumartigen Struktur abbildet. Es wird für Klassifikation und Regression verwendet."
+      },
+      {
+        "question": "Welche Bestandteile hat ein Entscheidungsbaum?",
+        "answer": "Ein Entscheidungsbaum besteht aus einem Wurzelknoten, internen Knoten (Entscheidungsknoten), Blattknoten (Endknoten) und Zweigen."
+      },
+      {
+        "question": "Wie lernt ein Entscheidungsbaum?",
+        "answer": "Er lernt durch rekursive Aufteilung der Daten nach dem Prinzip 'Teile und herrsche', wobei bei jedem Schritt das Merkmal mit dem besten Split-Kriterium ausgewählt wird."
+      },
+      {
+        "question": "Welche Split-Kriterien können bei Entscheidungsbäumen verwendet werden?",
+        "answer": "Zu den häufig verwendeten Kriterien gehören der Gini-Index, Informationsgewinn (Information Gain) und die Varianzreduktion bei Regressionsaufgaben."
+      },
+      {
+        "question": "Was ist Overfitting bei Entscheidungsbäumen und wie kann es verhindert werden?",
+        "answer": "Overfitting tritt auf, wenn ein Baum zu stark an die Trainingsdaten angepasst ist. Es kann durch Pruning, Begrenzung der Tiefe oder Mindestanzahl von Datenpunkten pro Knoten reduziert werden."
+      },
+      {
+        "question": "Was sind die Vorteile von Entscheidungsbäumen?",
+        "answer": "Sie sind einfach zu verstehen, benötigen wenig Datenvorbereitung und sind flexibel einsetzbar für Klassifikation und Regression."
+      },
+      {
+        "question": "Welche Nachteile haben Entscheidungsbäume?",
+        "answer": "Sie neigen zum Overfitting, reagieren empfindlich auf kleine Datenänderungen und sind oft weniger genau als Ensemble-Methoden wie Random Forest."
+      }
+    ]
+  }
+  
