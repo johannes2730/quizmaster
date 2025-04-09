@@ -1,0 +1,57 @@
+{
+"title": "Feedforward Neural Networks",
+"questions": [
+      {
+        "question": "Was ist TensorFlow und wofür wird es verwendet?",
+        "answer": "TensorFlow ist ein Open-Source-Framework von Google für maschinelles Lernen, besonders für neuronale Netzwerke."
+      },
+      {
+        "question": "Was ist ein Tensor in TensorFlow?",
+        "answer": "Ein Tensor ist die zentrale Datenstruktur – ein mehrdimensionales Array, das Daten darstellt."
+      },
+      {
+        "question": "Was ist ein Feedforward Neuronales Netz (FFNN)?",
+        "answer": "Ein FFNN ist ein neuronales Netz, bei dem Daten nur vorwärts durch die Schichten fließen – ohne Rückkopplungen."
+      },
+      {
+        "question": "Welche Aktivierungsfunktionen werden häufig in FFNNs verwendet?",
+        "answer": "Typisch ist ReLU in den hidden layers. In der Ausgabeschicht verwendet man bei Regression keine Aktivierung (linear) und bei binärer Klassifikation häufig Sigmoid."
+      },
+      {
+        "question": "Was ist die Aufgabe der call-Methode in einem Keras-Modell?",
+        "answer": "Sie definiert den Vorwärtsdurchlauf – also wie Daten durch das Netzwerk fließen."
+      },
+      {
+        "question": "Was ist der Zweck von Backpropagation bei z.B. einem FFNN?",
+        "answer": "Fehler werden rückwärts durch das Netzwerk propagiert, um die Gewichte zu optimieren."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Feedforward- und Rekurrenten Netzwerken (RNN)?",
+        "answer": "RNNs haben Rückkopplungen und sind für sequenzielle Daten geeignet, z.B. Text oder Zeitreihen."
+      },
+      {
+        "question": "Was bedeutet batch_size beim Training eines neuronalen Netzes?",
+        "answer": "Gibt an, wie viele Daten pro Schritt verarbeitet werden. Beeinflusst Geschwindigkeit und Genauigkeit."
+      },
+      {
+        "question": "Was bewirkt verbose beim Modelltraining in Keras?",
+        "answer": "Steuert die Ausführlichkeit der Ausgabe: 0 = still, 1 = Fortschrittsbalken, 2 = eine Zeile pro Epoche."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen der High-Level- und der Low-Level-API in TensorFlow?",
+        "answer": "Die High-Level-API (z.B. Keras) ist einfach zu verwenden und eignet sich für typische ML-Projekte. Die Low-Level-API bietet mehr Kontrolle und Flexibilität, z. B. für eigene Modell- und Trainingslogik."
+      },
+      {
+        "question": "Beschreibe, was in dem folgenden Feedforward-Netzwerk mit der Low-Level-API (eigene Klasse) gemacht wird. Regressions- oder Klassifikationsaufgabe?",
+        "code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Dense\n\nclass FeedForwardNN(tf.keras.Model):\n    def __init__(self, input_dim, hidden_dim):\n        super().__init__()\n        self.hidden = Dense(hidden_dim, activation='relu', input_shape=(input_dim,))\n        self.output_layer = Dense(1) \n\n    def call(self, x):\n        x = self.hidden(x)\n        return self.output_layer(x)",
+        "answer": "`input_dim` gibt die Anzahl der Eingabefeatures an (z.B. 5 Merkmale wie Alter, Einkommen etc.). `hidden_dim` legt fest, wie viele Neuronen in der versteckten Schicht verwendet werden. Im Beispiel besteht das Netzwerk aus einer versteckten Schicht mit ReLU-Aktivierung und einer Ausgabeschicht ohne Aktivierung (linear), was typisch für Regressionsaufgaben ist."
+      },
+      {
+        "question": "Beschreibe, was in dem folgenden Feedforward-Netzwerk mit der High-Level-API (Sequential) gemacht wird. Regressions- oder Klassifikationsaufgabe?",
+        "code": "import tensorflow as tf\nfrom tensorflow.keras.models import Sequential\nfrom tensorflow.keras.layers import Dense\n\nmodel = Sequential([\n    Dense(16, activation='relu', input_shape=(5,)),\n    Dense(1, activation='sigmoid')\n])\n\nmodel.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])\n\nmodel.fit(X_train, y_train, epochs=10, batch_size=32)",
+        "answer": "Das Modell nutzt die High-Level-API `Sequential` für eine binäre Klassifikation. Es besteht aus einer versteckten Schicht mit ReLU-Aktivierung und einer Ausgabeschicht mit Sigmoid-Funktion, die Wahrscheinlichkeiten zwischen 0 und 1 liefert. `binary_crossentropy` ist die passende Verlustfunktion für binäre Klassifikationen. `fit` trainiert das Modell mit den Eingabedaten `X_train` und den Zielwerten `y_train`."
+      }
+      
+  ]
+}
+       

@@ -1,0 +1,30 @@
+{
+  "title": "Feature Engineering",
+  "questions": [
+    {
+      "question": "Warum ist Encoding in der Datenvorverarbeitung wichtig, und was macht der folgende Code genau?",
+      "code": "import pandas as pd\nfrom sklearn.preprocessing import OneHotEncoder\n\nfarben = pd.DataFrame({'Farbe': ['rot', 'blau', 'grün', 'rot']})\n\nencoder = OneHotEncoder(sparse=False)\nencoded = encoder.fit_transform(farben[['Farbe']])\n\nencoded_df = pd.DataFrame(encoded, columns=encoder.get_feature_names_out())",
+      "answer": "Encoding wandelt Kategorien (z.B. Farben) in Zahlen um, da viele Algorithmen nur mit numerischen Daten arbeiten. One-Hot-Encoding erstellt für jede Kategorie eine eigene Spalte und trägt dort eine 1 oder 0 ein – so werden Kategorien ohne Reihenfolge korrekt dargestellt."
+    },
+    {
+      "question": "Warum ist Skalierung wichtig in der Datenvorverarbeitung und was macht der folgende Code genau?",
+      "code": "import pandas as pd\nfrom sklearn.preprocessing import MinMaxScaler\n\ndaten = pd.DataFrame({'Alter': [25, 35, 45, 55], 'Einkommen': [40000, 50000, 60000, 80000]})\n\nscaler = MinMaxScaler()\nskalierte_daten = scaler.fit_transform(daten)\n\nskalierte_df = pd.DataFrame(skalierte_daten, columns=['Alter', 'Einkommen'])",
+      "answer": "Skalierung bringt numerische Werte in einen gemeinsamen Bereich (hier 0–1), was wichtig ist, damit Features mit größeren Zahlen nicht das Modell dominieren. Der Code verwendet Min-Max-Skalierung, um Alter und Einkommen vergleichbar zu machen."
+    },
+    {
+      "question": "Wann ist eine Transformation wie die Log-Transformation sinnvoll und was macht der folgende Code genau?",
+      "code": "import numpy as np\nimport pandas as pd\n\nwerte = pd.DataFrame({'Umsatz': [100, 500, 1000, 5000, 10000]})\n\nwerte['Log-Umsatz'] = np.log(werte['Umsatz'])",
+      "answer": "Transformationen wie der Logarithmus helfen bei schief verteilten Daten, indem sie extreme Werte abschwächen. Das macht Verteilungen symmetrischer und Modelle stabiler. Der Code berechnet den natürlichen Logarithmus des Umsatzes."
+    },
+    {
+      "question": "Was versteht man unter Feature Extraction und was wird im folgenden Code gemacht?",
+      "code": "import pandas as pd\n\ntexte = pd.DataFrame({'Text': ['Hallo Welt', 'Data Science ist spannend', 'Python macht Spaß']})\n\ntexte['Textlänge'] = texte['Text'].apply(len)",
+      "answer": "Feature Extraction bedeutet, aus unstrukturierten Daten (z.B. Text) messbare Merkmale zu gewinnen. Der Code erstellt ein neues numerisches Feature 'Textlänge', das angibt, wie viele Zeichen ein Text enthält – hilfreich z. B. zur Einschätzung von Informationsgehalt."
+    },
+    {
+      "question": "Was ist Feature Engineering und was wird im folgenden Code berechnet?",
+      "code": "import pandas as pd\n\ndaten = pd.DataFrame({'Distanz_km': [100, 200, 150], 'Zeit_h': [2, 4, 3]})\n\ndaten['Geschwindigkeit_kmh'] = daten['Distanz_km'] / daten['Zeit_h']",
+      "answer": "Feature Engineering bedeutet, neue aussagekräftige Merkmale aus vorhandenen Daten zu berechnen. Der Code berechnet z.B. Geschwindigkeit (km/h) aus Distanz und Zeit – das neue Feature kann für Modelle informativer sein als die Einzelwerte."
+    }
+  ]
+}
