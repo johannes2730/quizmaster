@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }} | Quiz Master</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="icon" href="{{ url_for('static', filename='icon/quiz_icon.png') }}" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='icon/quiz_icon.png') }}" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>{{ title.replace('_', ' ')}}</h1>
-        </div>
-    </header>
-    
-    <div class="container">
-        <div class="nav-links">
-            <a href="{{ url_for('main_route') }}">Back to Topics</a>
-        </div>
-        
-        {% for i, item in items %}
-        <div class="question-card">
-            <div class="question-title">
-                {{ item["question"] }}
-            </div>
-            
-            {% if item.get('code') %}
-            <pre><code class="python">{{ item['code'] }}</code></pre>
-            {% endif %}
-            
-            <div class="answer-section">
-                <textarea 
-                    placeholder="Write your answer here..." 
-                    rows="4"
-                ></textarea>
-                
-                <button 
-                    onclick="toggleAnswer('answer-{{ i }}')"
-                >Show Answer</button>
-                
-                <div id="answer-{{ i }}" class="answer-content" style="display:none">
-                    <pre><code class="python">{{ item["answer"] }}</code></pre>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-        
-        <div class="nav-links bottom-nav">
-            <a href="{{ url_for('main_route') }}">Back to Topics</a>
-        </div>
-    </div>
-    
-    <footer>
-        <div class="container">
-            <p>Quiz Master - Your Learning Companion</p>
-        </div>
-    </footer>
-    
     <script>
-        function toggleAnswer(id) {
-            const answer = document.getElementById(id);
-            if (answer.style.display === 'none') {
-                answer.style.display = 'block';
-            } else {
-                answer.style.display = 'none';
-            }
-        }
+      hljs.initHighlightingOnLoad();
     </script>
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>{{ title.replace('_', ' ')}}</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="nav-links">
+        <a href="{{ url_for('main_route') }}">Back to Topics</a>
+      </div>
+
+      {% for i, item in items %}
+      <div class="question-card">
+        {% if kapitel %}
+        <div class="question-title">{{kapitel[i]}}</div>
+        {% endif %}
+        <div class="question-title">{{ item["question"] }}</div>
+
+        {% if item.get('code') %}
+        <pre><code class="python">{{ item['code'] }}</code></pre>
+        {% endif %}
+
+        <div class="answer-section">
+          <textarea placeholder="Write your answer here..." rows="4"></textarea>
+
+          <button onclick="toggleAnswer('answer-{{ i }}')">Show Answer</button>
+
+          <div id="answer-{{ i }}" class="answer-content" style="display: none">
+            <pre><code class="python">{{ item["answer"] }}</code></pre>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      <div class="nav-links bottom-nav">
+        <a href="{{ url_for('main_route') }}">Back to Topics</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Quiz Master - Your Learning Companion</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleAnswer(id) {
+        const answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>

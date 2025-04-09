@@ -26,7 +26,7 @@ def get_title(file):
 
 
 def get_random(size: int):
-    all_questions = [question for kapitel in all_kapitel()
+    all_questions = [(question, kapitel) for kapitel in all_kapitel()
                      for question in questions(kapitel)]
     return random.sample(all_questions, k=size)
 
@@ -47,7 +47,10 @@ def random_questions_route():
     size=15
     if request.args.get("size") is not None and request.args.get("size").isnumeric():
         size = int(request.args.get("size"))
-    return render_template('questions.html', items=list(enumerate(get_random(size))), title="random_questions")
+    x = get_random(size)
+    questions = [q for q, _ in x]
+    kapitel = [k.replace('.json', '') for _, k in x]
+    return render_template('questions.html', items=list(enumerate(questions)), title="random_questions", kapitel=kapitel)
 
 
 @app.route('/style.css')
@@ -64,4 +67,4 @@ def icon_quiz():
 
 if __name__ == "__main__":
     port = int(environ.get("PORT", 8000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, debug=True)
