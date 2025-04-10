@@ -1,0 +1,42 @@
+{
+    "title": "Einführung in die Anomalieerkennung",
+    "questions": [
+      {
+        "question": "Was versteht man unter Anomalien in der Datenanalyse?",
+        "answer": "Anomalien sind Datenpunkte oder Muster, die deutlich vom normalen Verhalten abweichen. \nSie werden auch als Ausreißer, Abnormalitäten oder seltene Ereignisse bezeichnet. \nBeispiele sind ein plötzlicher Temperaturanstieg, eine ungewöhnliche Banktransaktion oder ein unregelmäßiger Herzschlag im EKG."
+      },
+      {
+        "question": "Warum ist Anomalieerkennung wichtig?",
+        "answer": "Die Anomalieerkennung ist wichtig, weil sie kritische Ereignisse oder Fehler frühzeitig erkennt. \nSie wird z.B. in der Netzwerksicherheit, Medizin, Finanzwelt, Fertigung und vorausschauender Wartung eingesetzt. \nSie kann Kosten, Zeit und im Extremfall sogar Leben retten."
+      },
+      {
+        "question": "Welche drei grundlegenden Ansätze zur Anomalieerkennung gibt es?",
+        "answer": "1. Überwachtes Lernen: Nutzt markierte Daten mit normalen und anomalen Beispielen. \n2. Unüberwachtes Lernen: Arbeitet mit unmarkierten Daten und erkennt Ausreißer basierend auf Mustern. \n3. Semi-überwachtes Lernen: Verwendet viele normale Daten und wenige markierte Anomalien – häufigster Ansatz in der Praxis."
+      },
+      {
+        "question": "Was sind die beiden Stufen der meisten modernen Anomalieerkennungssysteme?",
+        "answer": "Moderne Anomalieerkennung erfolgt meist in zwei Schritten: \n1. Zuerst wird gelernt, was „normal“ ist. \n2. Danach werden Abweichungen von diesem Normalverhalten identifiziert."
+      },
+      {
+        "question": "Welche (vier) Deep-Learning-Methoden werden für die Anomalieerkennung verwendet?",
+        "answer": "Wichtige Methoden sind:\n- Autoencoder: Lernen, Daten zu komprimieren und zu rekonstruieren. Hohe Rekonstruktionsfehler deuten auf Anomalien hin.\n- Variational Autoencoder (VAE): Fügen Unsicherheitsmaße hinzu.\n- GANs: Lernen durch Konkurrenz von Generator und Diskriminator.\n- Sequence-to-Sequence-Modelle: Besonders für zeitabhängige Daten.\n- OCSVM: Kein Deep Learning, aber gängiger Vergleichsmaßstab."
+      },
+      {
+        "question": "Welche Vorteile bietet Deep Learning für die Anomalieerkennung?",
+        "answer": "Deep Learning kann:\n- hochdimensionale Daten verarbeiten (z.B. Bilder oder Sensordaten)\n- komplexe, nichtlineare Zusammenhänge modellieren\n- mit wachsenden Datenmengen skalieren\n- gute Ergebnisse mit wenig manueller Anpassung erzielen"
+      },
+      {
+        "question": "Welche Herausforderungen gibt es bei der Anomalieerkennung?",
+        "answer": "Herausforderungen sind:\n- Wahl des richtigen Schwellenwerts zur Erkennung\n- hoher Datenbedarf bei Deep Learning\n- erhöhter Rechenaufwand\n- Notwendigkeit regelmäßiger Aktualisierung, da sich 'normal' verändern kann"
+      },
+      {
+        "question": "Was ist bei der Anomalieerkennung aus ethischer Sicht zu beachten?",
+        "answer": "Nicht jede Abweichung ist negativ. \nBesonders bei menschlichem Verhalten kann voreilige Klassifikation zu Diskriminierung führen. \nDaher sind vielfältige Trainingsdaten und menschliche Überprüfung entscheidend für einen verantwortungsvollen Einsatz."
+      },
+      {
+        "question": "Nenne praktische Anwendungsbeispiele für Anomalieerkennung.",
+        "answer": "Beispiele sind:\n- Erkennung von Netzwerkangriffen\n- Analyse ungewöhnlicher EKG-Muster\n- Aufspüren verdächtiger Finanztransaktionen\n- Entdeckung von Fertigungsfehlern in Produktionslinien"
+      }
+    ]
+  }
+  

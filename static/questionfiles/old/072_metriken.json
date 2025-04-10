@@ -2,19 +2,19 @@
   "title": "Metriken",
   "questions": [
     {
-      "question": "Was misst die Accuracy und wie wird sie berechnet?",
+      "question": "Was misst die Accuracy?",
       "answer": "Die Accuracy misst den Anteil der korrekten Vorhersagen. (TP + TN) / (TP + TN + FP + FN)"
     },
     {
-      "question": "Was misst die Precision und wie wird sie berechnet?",
+      "question": "Was misst die Precision?",
       "answer": "Die Precision misst den Anteil der korrekt vorhergesagten positiven Ereignisse an allen als positiv vorhergesagten Ereignissen. TP / (TP + FP)"
     },
     {
-      "question": "Was misst der Recall und wie wird er berechnet?",
+      "question": "Was misst der Recall?",
       "answer": "Der Recall misst den Anteil der korrekt vorhergesagten positiven Ereignisse an allen tatsächlichen positiven Ereignissen. TP / (TP + FN)"
     },
     {
-      "question": "Was misst der F1-Score und wie wird er berechnet?",
+      "question": "Was misst der F1-Score?",
       "answer": "Der F1-Score ist das harmonische Mittel von Precision und Recall und gibt eine ausgewogene Leistung des Modells an, besonders wenn die Klassen unausgewogen sind. Er berücksichtigt sowohl falsche Positive als auch falsche Negative und ist besonders nützlich, wenn ein Gleichgewicht zwischen Präzision und Erfassungsrate wichtig ist. 2 * (P * R) / (P + R)"
     },
     {
@@ -22,19 +22,19 @@
       "answer": "Die ROC-AUC (Area Under the Receiver Operating Characteristic Curve) misst, wie gut ein Modell zwischen den Klassen unterscheiden kann. Sie ist nur für binäre Klassifikation geeignet"
     },
     {
-      "question": "Was ist der MSE und wie wird er berechnet?",
+      "question": "Was ist MSE?",
       "answer": "Der Mean Squared Error ist die grundlegendste Regressionsmetrik. Er bestraft große Fehler überproportional stark durch die Quadrierung der Differenzen. Σ(y_true - y_pred)² / n"
     },
     {
-      "question": "Was ist der RMSE und wie wird er berechnet?",
+      "question": "Was ist RMSE?",
       "answer": "Der Root Mean Squared Error ist die Wurzel des MSE. Er hat den Vorteil, dass er in der gleichen Einheit wie die Zieldaten gemessen wird. √(MSE)"
     },
     {
-      "question": "Was ist der MAE und wie wird er berechnet?",
+      "question": "Was ist MAE?",
       "answer": "Der Mean Absolute Error gibt den durchschnittlichen absoluten Fehler an. Er bestraft Fehler linear und nicht quadratisch, wodurch er robuster gegenüber Ausreißern ist. Σ(|y_true - y_pred|) / n"
     },
     {
-      "question": "Was ist der R²-Score und wie wird er berechnet?",
+      "question": "Was ist der R²-Score?",
       "answer": "Der R²-Score (Bestimmtheitsmaß) misst, wie gut ein Regressionsmodell die Variation der Zielvariable erklärt. Ein Wert von 1 bedeutet perfekte Vorhersage, 0 entspricht der Leistung eines Mittelwertmodells, und negative Werte deuten auf ein schlechteres Modell hin. 1 - (MSE / Var(y))"
     }
   ]

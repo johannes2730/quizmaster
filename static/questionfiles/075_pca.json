@@ -10,7 +10,7 @@
       "answer": "Da PCA auf der Kovarianzmatrix basiert, beeinflussen unterschiedlich skalierte Features das Ergebnis stark. Durch Zentrierung (Mittelwert = 0) und Standardisierung (gleiche Varianz) stellt man sicher, dass kein Feature dominiert."
     },
     {
-      "question": "Wie wählt man die optimale Anzahl an Hauptkomponenten aus?",
+      "question": "Wie wählt man bei der PCA die optimale Anzahl an Hauptkomponenten aus?",
       "answer": "Man kann die erklärte Varianz analysieren und so viele Komponenten wählen, dass z. B. 95% der Gesamtvarianz erhalten bleiben. Alternativ helfen die Elbow-Methode (Knickpunkt in der Varianzkurve) oder das Kaiser-Kriterium (nur Komponenten mit Eigenwert >1)."
     },
     {

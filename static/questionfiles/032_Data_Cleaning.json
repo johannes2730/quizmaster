@@ -1,0 +1,82 @@
+{
+    "title": "Datenvorverarbeitung",
+    "questions": [
+      {
+        "question": "Was ist der wichtigste Schritt in der Data Science?",
+        "answer": "Der wichtigste Schritt in der Data Science ist die Datenvorverarbeitung, da die Qualität der Daten die Leistung der Modelle maßgeblich beeinflusst."
+      },
+      {
+        "question": "Nenne drei Untergebiete der Datenvorverarbeitung?",
+        "answer": "Die Datenvorverarbeitung umfasst verschiedene Untergebiete, darunter Data Cleaning, Preprocessing und Feature Engineering."
+      },
+      {
+        "question": "Was ist Data Cleaning?",
+        "answer": "Data Cleaning ist der Prozess der Bereinigung von Daten, um deren Qualität und Konsistenz zu verbessern. Dazu gehört unter anderem der Umgang mit fehlenden Werten, die Entfernung von Duplikaten und die Korrektur von Inkonsistenzen."
+      },
+      {
+        "question": "Was sind vier gängige Methoden zum Umgang mit fehlenden Werten?",
+        "answer": "Gängige Methoden zum Umgang mit fehlenden Werten sind: 1. Entfernen der fehlenden Werte, 2. Imputation durch den Mittelwert oder Median, 3. Vorhersagemodelle zur Imputation, 4. Kategorisierung der fehlenden Werte."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Data Cleaning und Preprocessing?",
+        "answer": "Data Cleaning konzentriert sich auf die Bereinigung der Daten, während Preprocessing darauf abzielt, die Daten in ein Format zu bringen, das für die Modellierung geeignet ist. Preprocessing umfasst Schritte wie Skalierung und Normalisierung."
+      },
+
+      {
+        "question": "Was ist das Ziel von Feature Engineering?",
+        "answer": "Das Ziel von Feature Engineering ist es, neue, relevante Features aus den vorhandenen Daten zu erstellen, um die Leistungsfähigkeit von Modellen zu steigern."
+      },
+      {
+        "question": "Nenne vier Methoden des Feature Engineering.",
+        "answer": "Methoden des Feature Engineering umfassen: 1. Transformation bestehender Daten (z. B. Logarithmieren, Skalieren), 2. Kombination von Variablen (z. B. Verhältnisse), 3. Ableitung von Zeit- oder Ortsbezug (z. B. Wochentage), 4. Kodierung kategorialer Daten (z. B. One-Hot-Encoding)."
+      },
+      {
+        "question": "Warum ist Feature Engineering wichtig?",
+        "answer": "Feature Engineering ist wichtig, weil es die Modellleistung verbessert, Domänenwissen einbindet und die Komplexität reduziert, indem irrelevante Informationen entfernt werden."
+      },
+
+      {
+        "question": "Nenne zwei Methoden zum Erkennen von Ausreissern.",
+        "answer": "Visuell (Außerhalb von Whiskern im Boxplot oder im Scatterplot weg vom Cluster). Statistisch: IQR-Methode / Z-Score"
+      },
+      {
+        "question": "Was ist der Z-Score und wie wird er zur Identifizierung von Ausreißern verwendet?",
+        "answer": "Der Z-Score ist ein statistisches Maß, das angibt, wie viele Standardabweichungen ein Wert vom Mittelwert entfernt ist. Werte mit einem Z-Score größer als 3 gelten oft als Ausreißer."
+      },
+      {
+        "question": "Was ist die IQR-Methode zur Erkennung von Ausreißern?",
+        "answer": "Die IQR-Methode basiert auf dem Interquartilsabstand und identifiziert Ausreißer als Werte, die außerhalb des Bereichs [Q1 - 1,5 * IQR, Q3 + 1,5 * IQR] liegen."
+      },
+      {
+        "question": "Wie sollten Ausreißer behandelt werden?",
+        "answer": "Ausreißer sollten entweder entfernt oder transformiert werden, je nach ihrer Relevanz für die Analyse."
+      },
+
+      {
+        "question": "Was ist der Zweck des Umgangs mit Duplikaten in einem Datensatz?",
+        "answer": "Duplikate in einem Datensatz können zu Verzerrungen und falschen Ergebnissen führen. Sie sollten daher identifiziert und entfernt werden, um die Qualität der Analyse und die Leistung von Modellen zu verbessern. \nEin Beispiel ist die doppelte Erfassung von Personen in einem Umfragedatensatz, was zu verzerrten Durchschnittswerten führen kann."
+      },
+      {
+        "question": "Wie können Duplikate im Datensatz entfernt werden?",
+        "answer": "Duplikate können auf verschiedene Weisen entfernt werden: \n1. Entfernen von doppelten Zeilen, die identisch sind. \n2. Entfernen von Zeilen, die in bestimmten Spalten dieselben Werte aufweisen. \nIn Python kann dies mit der Methode `drop_duplicates()` erfolgen."
+      },
+      
+      {
+        "question": "Was ist der Zweck der Typumwandlung in der Datenvorverarbeitung?",
+        "answer": "Die Typumwandlung ist notwendig, um sicherzustellen, dass alle Daten im richtigen Format vorliegen, das von den Modellen oder Algorithmen verarbeitet werden kann. \nBeispielsweise können Zahlen, die als Strings gespeichert sind, in numerische Typen umgewandelt werden, damit mathematische Operationen korrekt ausgeführt werden können."
+      },
+      {
+        "question": "Wie kann man sicherstellen, dass numerische Werte in einem Datensatz den richtigen Datentyp haben?",
+        "answer": "Um sicherzustellen, dass numerische Werte den richtigen Datentyp haben, können sie mit der Methode `astype()` in den gewünschten Typ umgewandelt werden. \nEin Beispiel ist die Umwandlung von Strings in Ganzzahlen oder Gleitkommazahlen, z. B. `df['Preis'] = df['Preis'].astype(float)`."
+      },
+      {
+        "question": "Warum ist es wichtig, Datentypen in einem Datensatz zu überprüfen?",
+        "answer": "Es ist wichtig, die Datentypen zu überprüfen, um sicherzustellen, dass die Daten korrekt interpretiert werden. Falsche Datentypen können zu Fehlern bei Berechnungen und Modellanalysen führen. \nBeispielsweise kann das Berechnen des Mittelwerts eines Datensatzes, der als String interpretiert wird, nicht korrekt durchgeführt werden."
+      },
+      {
+        "question": "Wie geht man mit der Umwandlung von Datumswerten in einem Datensatz um?",
+        "answer": "Die Umwandlung von Datumswerten in das richtige Format ist entscheidend für zeitbasierte Analysen. \nIn Python kann dies durch `pd.to_datetime()` erfolgen, um sicherzustellen, dass Datumsangaben als `datetime`-Objekte interpretiert werden. \nDies ermöglicht es, mit Zeitstempeln zu arbeiten, Zeitdifferenzen zu berechnen oder Daten nach Datum zu filtern."
+      }
+    ]
+  }
+  
