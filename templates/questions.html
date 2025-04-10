@@ -39,12 +39,13 @@
         {% endif %}
 
         <div class="answer-section">
-          <textarea placeholder="Write your answer here..." rows="4"></textarea>
-
           <button onclick="toggleAnswer('answer-{{ i }}')">Show Answer</button>
 
           <div id="answer-{{ i }}" class="answer-content" style="display: none">
             <pre><code class="python">{{ item["answer"] }}</code></pre>
+            {%if item.get('picture')%}
+            <img src="{{item.get('picture')}}" class="answer-image"></img>
+            {% endif %}
           </div>
         </div>
       </div>

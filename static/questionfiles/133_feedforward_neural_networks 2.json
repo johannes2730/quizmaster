@@ -15,7 +15,7 @@
       },
       {
         "question": "Welche Aktivierungsfunktionen werden häufig in FFNNs verwendet?",
-        "answer": "Typisch ist ReLU in den hidden layers. In der Ausgabeschicht verwendet man bei Regression keine Aktivierung (linear) und bei binärer Klassifikation häufig Sigmoid."
+        "answer": "Typisch ist ReLU in den Hidden Layers. In der Ausgabeschicht verwendet man bei Regression keine Aktivierung (linear) und bei binärer Klassifikation häufig Sigmoid (eine Ausgabe mit Wert zwischen 0 und 1). Bei Multiklass-Klassifikation (mehrere Klassen, exklusiv) verwendet man stattdessen Softmax, da es Wahrscheinlichkeiten für alle Klassen liefert, die sich zu 1 summieren."
       },
       {
         "question": "Was ist die Aufgabe der call-Methode in einem Keras-Modell?",
