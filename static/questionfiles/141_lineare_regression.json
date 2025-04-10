@@ -1,43 +1,43 @@
 {
-    "title": "EDA Schritte",
-    "questions": [
-        {
-          "F": "Wozu dienen Regressionsmodelle?",
-          "A": "Regressionsmodelle helfen, Trends zu identifizieren, Muster zu erkennen und Vorhersagen über zukünftige Werte zu treffen."
-        },
-        {
-          "F": "Warum sind Regressionsmodelle auch ohne Vorhersage-Ziel interessant?",
-          "A": "Regressionsmodelle sind nicht nur zur Vorhersage nützlich, sondern auch zur Interpretation und zum Verständnis von Zusammenhängen zwischen Variablen."
-        },
-        {
-          "F":  ["Welche Methoden zur Evaluierung von Regressionsmodellen sind korrekt? (mehrere Antworten möglich)",
-            "Trainings- und Testdaten: Ein Modell wird trainiert und anschließend auf einem separaten Testdatensatz evaluiert. Diese Trennung sieht vor, dass das Modell auf Daten getestet wird, die es während des Trainings nicht gesehen hat. Dies gewährleistet, dass das Modell nicht überangepasst wird und verallgemeinerbare Ergebnisse liefert.",
-            "Zufällige Auswahl der besten Vorhersagen: Diese Methode basiert auf der Annahme, dass zufällige Auswahl eine gute Modellgüte sicherstellt.",
-            "Kreuzvalidierung: Diese Technik hilft, die Stabilität und Verlässlichkeit der Ergebnisse zu bewerten, indem der Datensatz in mehrere Teilmengen (Folds) unterteilt wird. Das Modell wird wiederholt mit verschiedenen Kombinationen von Trainings- und Testdaten evaluiert. Diese Methode minimiert das Risiko von Überanpassung und bietet eine robustere Schätzung der Modellleistung.",
-            "Visualisierung: Das Erstellen von Graphen ermöglicht es, Muster und Abweichungen in den Vorhersagen zu identifizieren. Eine gute Modellanpassung zeigt in der Regel keine erkennbaren Muster in den Residuen.",
-            "Verwendung aller Daten nur zum Training: Dadurch kann das Modell besonders viel lernen."
-          ],
-          "A": [
-            "Trainings- und Testdaten: Ein Modell wird trainiert und anschließend auf einem separaten Testdatensatz evaluiert. Diese Trennung sieht vor, dass das Modell auf Daten getestet wird, die es während des Trainings nicht gesehen hat. Dies gewährleistet, dass das Modell nicht überangepasst wird und verallgemeinerbare Ergebnisse liefert.",
-            "Kreuzvalidierung: Diese Technik hilft, die Stabilität und Verlässlichkeit der Ergebnisse zu bewerten, indem der Datensatz in mehrere Teilmengen (Folds) unterteilt wird. Das Modell wird wiederholt mit verschiedenen Kombinationen von Trainings- und Testdaten evaluiert. Diese Methode minimiert das Risiko von Überanpassung und bietet eine robustere Schätzung der Modellleistung.",
-            "Visualisierung: Das Erstellen von Graphen ermöglicht es, Muster und Abweichungen in den Vorhersagen zu identifizieren. Eine gute Modellanpassung zeigt in der Regel keine erkennbaren Muster in den Residuen.",
-            "Zufällige Auswahl der besten Vorhersagen: Diese Methode basiert auf der Annahme, dass zufällige Auswahl eine gute Modellgüte sicherstellt. (Falsch)",
-            "Verwendung aller Daten nur zum Training: Dadurch kann das Modell besonders viel lernen. (Falsch)"
-          ]
-        },
-        {
-          "F": "Zur Bewertung von Regressionsmodellen werden außerdem Metriken verwendet. Welche Metriken sind populär und was sagen sie aus?",
-          "A": {
-            "R2": "Misst, wie viel der Varianz der Zielvariable durch das Modell erklärt wird (Erklärte Varianz).",
-            "MAE": "Gibt den durchschnittlichen absoluten Fehler an – also wie stark die Vorhersagen im Schnitt abweichen.",
-            "MSE": "Ist der mittlere quadratische Fehler – große Fehler werden stärker bestraft als kleine.",
-            "RMSE": "Ist die Quadratwurzel des MSE – besser interpretierbar, da die Einheit wieder der Zielgröße entspricht."
-          }
-        },
-        {
-          "F": "Worin unterscheiden sich MAE, R2, MSE, RMSE und was haben sie gemeinsam?",
-          "A": "Alle Metriken messen auf unterschiedliche Weise die Genauigkeit von Vorhersagen. MAE misst den durchschnittlichen absoluten Fehler, MSE und RMSE bestrafen größere Fehler stärker, während R2 angibt, wie gut das Modell die Zielvariable erklärt. Gemeinsam ist ihnen, dass sie alle quantitative Aussagen über die Modellgüte machen."
-        }
+  "title": "EDA Schritte",
+  "questions": [
+    {
+      "question": "Wozu dienen Regressionsmodelle?",
+      "answer": "Regressionsmodelle helfen, Trends zu identifizieren, Muster zu erkennen und Vorhersagen über zukünftige Werte zu treffen."
+    },
+    {
+      "question": "Warum sind Regressionsmodelle auch ohne Vorhersage-Ziel interessant?",
+      "answer": "Regressionsmodelle sind nicht nur zur Vorhersage nützlich, sondern auch zur Interpretation und zum Verständnis von Zusammenhängen zwischen Variablen."
+    },
+    {
+      "question": [
+        "Welche Methoden zur Evaluierung von Regressionsmodellen sind korrekt? (mehrere Antworten möglich)",
+        "Trainings- und Testdaten: Ein Modell wird trainiert und anschließend auf einem separaten Testdatensatz evaluiert. Diese Trennung sieht vor, dass das Modell auf Daten getestet wird, die es während des Trainings nicht gesehen hat. Dies gewährleistet, dass das Modell nicht überangepasst wird und verallgemeinerbare Ergebnisse liefert.",
+        "Zufällige Auswahl der besten Vorhersagen: Diese Methode basiert auf der Annahme, dass zufällige Auswahl eine gute Modellgüte sicherstellt.",
+        "Kreuzvalidierung: Diese Technik hilft, die Stabilität und Verlässlichkeit der Ergebnisse zu bewerten, indem der Datensatz in mehrere Teilmengen (Folds) unterteilt wird. Das Modell wird wiederholt mit verschiedenen Kombinationen von Trainings- und Testdaten evaluiert. Diese Methode minimiert das Risiko von Überanpassung und bietet eine robustere Schätzung der Modellleistung.",
+        "Visualisierung: Das Erstellen von Graphen ermöglicht es, Muster und Abweichungen in den Vorhersagen zu identifizieren. Eine gute Modellanpassung zeigt in der Regel keine erkennbaren Muster in den Residuen.",
+        "Verwendung aller Daten nur zum Training: Dadurch kann das Modell besonders viel lernen."
+      ],
+      "answer": [
+        "Trainings- und Testdaten: Ein Modell wird trainiert und anschließend auf einem separaten Testdatensatz evaluiert. Diese Trennung sieht vor, dass das Modell auf Daten getestet wird, die es während des Trainings nicht gesehen hat. Dies gewährleistet, dass das Modell nicht überangepasst wird und verallgemeinerbare Ergebnisse liefert.",
+        "Kreuzvalidierung: Diese Technik hilft, die Stabilität und Verlässlichkeit der Ergebnisse zu bewerten, indem der Datensatz in mehrere Teilmengen (Folds) unterteilt wird. Das Modell wird wiederholt mit verschiedenen Kombinationen von Trainings- und Testdaten evaluiert. Diese Methode minimiert das Risiko von Überanpassung und bietet eine robustere Schätzung der Modellleistung.",
+        "Visualisierung: Das Erstellen von Graphen ermöglicht es, Muster und Abweichungen in den Vorhersagen zu identifizieren. Eine gute Modellanpassung zeigt in der Regel keine erkennbaren Muster in den Residuen.",
+        "Zufällige Auswahl der besten Vorhersagen: Diese Methode basiert auf der Annahme, dass zufällige Auswahl eine gute Modellgüte sicherstellt. (Falsch)",
+        "Verwendung aller Daten nur zum Training: Dadurch kann das Modell besonders viel lernen. (Falsch)"
       ]
-      
+    },
+    {
+      "question": "Zur Bewertung von Regressionsmodellen werden außerdem Metriken verwendet. Welche Metriken sind populär und was sagen sie aus?",
+      "answer": {
+        "R2": "Misst, wie viel der Varianz der Zielvariable durch das Modell erklärt wird (Erklärte Varianz).",
+        "MAE": "Gibt den durchschnittlichen absoluten Fehler an – also wie stark die Vorhersagen im Schnitt abweichen.",
+        "MSE": "Ist der mittlere quadratische Fehler – große Fehler werden stärker bestraft als kleine.",
+        "RMSE": "Ist die Quadratwurzel des MSE – besser interpretierbar, da die Einheit wieder der Zielgröße entspricht."
+      }
+    },
+    {
+      "question": "Regressionsmodelle bewerten: Worin unterscheiden sich MAE, R2, MSE, RMSE und was haben sie gemeinsam?",
+      "answer": "Alle Metriken messen auf unterschiedliche Weise die Genauigkeit von Vorhersagen. MAE misst den durchschnittlichen absoluten Fehler, MSE und RMSE bestrafen größere Fehler stärker, während R2 angibt, wie gut das Modell die Zielvariable erklärt. Gemeinsam ist ihnen, dass sie alle quantitative Aussagen über die Modellgüte machen."
+    }
+  ]
 }

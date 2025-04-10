@@ -1,0 +1,30 @@
+{
+    "title": "Column-Transformer & Pipelines",
+    "questions": [
+        {
+            "question": "Was sind die Vorteile des ColumnTransformers ?",
+            "answer": "- Effizienz\n- Übersichtlichkeit\n- Flexibilität"
+        },
+        {
+            "question": "Nenne mindestens 2 Scaler (nicht Encoder)",
+            "answer": "- StandardScaler()\n- MinMaxScaler()\n- MaxAbsScaler()\n- RobustScaler()"
+        },
+        {
+            "question": "Warum muss man nach dem StandardScaler() i.d.R. zuerst fit_transform() statt transform() aufrufen ?",
+            "answer": "Der StandardScaler() benötigt einen Mittelwert und eine Standardabweichung.\nDiese werden nur bei fit_transform(), nicht aber bei transform() generiert."
+        },
+        {
+            "question": "Was ist der Unterschied zwischen einem ColumnTransformer und einer Pipeline ?",
+            "answer": "Der ColumnTransformer kann nur zur Datenvorverarbeitung verwendet werden.\nEine Pipeline allerdings kann nicht nur alles was ein ColumnTransformer kann,\nsondern auch Modelle trainieren, Regressionen durchführen usw."
+        },
+        {
+            "question": "Was sind die Vorteile einer Pipeline ?",
+            "answer": "- Übersichtlichkeit\n- Wiederverwendbarkeit\n- Automatisierte Cross-Validation\n- Vermeidung von Datenlecks bzw. Bewahrung der Datenintegrität"
+        },
+        {
+            "question": "Erkläre kurz, was folgende Pipeline macht:",
+            "code": "from sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.ensemble import RandomForestRegressor\n\npipeline = Pipeline(steps=[\n    ('scaler', StandardScaler()),\n    ('model', RandomForestRegressor(random_state=0))\n])",
+            "answer": "Wenn diese Pipeline auf einen Datensatz angewandt wird,\nwerden alle numerischen Felder standartisiert\nund danach dann von einem Random Forest Regressor verarbeitet."
+        }
+    ]
+}

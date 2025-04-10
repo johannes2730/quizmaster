@@ -1,0 +1,53 @@
+{
+    "title": "Datensätze verstehen",
+    "questions": [
+        {
+            "question": "Dir wurde ein unbekannter Datensatz zur Analyse gegeben.\nWie lauten die 6 Schritte um einen Überblick über den Datensatz zu bilden?",
+            "answer": "1. Datenquellen & Kontext prüfen\n2. Überblick über die Struktur des Datensatzes gewinnen\n3. Zentrale Kennzahlen berechnen\n4. Datenqualität beurteilen\n5. Erste Zusammenhänge & Muster erkennen\n6. Erste Visualisierungen nutzen"
+        },
+        {
+            "question": "Beschreibe, was im Schritt 'Datenquellen & Kontext prüfen' gemacht wird.",
+            "answer": "Datenquelle & Kontext verstehen:\n- Woher kommen die Daten?\n- Stammt der Datensatz aus einer verlässlichen Quelle?\n- Was ist das Ziel oder der Anwendungsfall der Daten?\n\nDatenfelder und Bedeutung:\n- Was bedeuten die einzelnen Felder der Daten?\n- Gibt es Metadaten oder eine Dokumentation zum Datensatz?"
+        },
+        {
+            "question": "Beschreibe, was im Schritt 'Überblick über die Struktur des Datensatzes gewinnen' gemacht wird.",
+            "answer": "Spalten und Datentypen inspizieren, z.B. über df.info()\n\nErste Einblicke in die Werte des Datensatzes, z.B. über df.head() oder df.tail()"
+        },
+        {
+            "question": "Beschreibe, was im Schritt 'Zentrale Kennzahlen berechnen' gemacht wird.",
+            "answer": "Deskriptive Statistik:\n- Ausgabe von arith. Mittelwert, Modus, Median, Standardabweichung, Minimal- & Maximalwerte (z.B. über df.describe() )\n- Berechnung der Quartile"
+        },
+        {
+            "question": "Beschreibe, was im Schritt 'Datenqualität beurteilen' gemacht wird.",
+            "answer": "- Fehlende Werte analysieren ( z.B. über df.isnull().sum() )\n- Duplikate finden und bewerten, wo keine Duplikaten erwartet werden ( z.B. über df.duplicated().sum() )"
+        },
+        {
+            "question": "Beschreibe, was im Schritt 'Erste Zusammenhänge & Muster erkennen' gemacht wird.",
+            "answer": "- (Lineare) Korrelationen untersuchen ( z.B. mit df.corr() )\n- Kategorien der Daten erkennen und analysieren (eventuell mit Verwendung von df.groupby() )"
+        },
+        {
+            "question": "Beschreibe, was im Schritt 'Erste Visualisierungen nutzen' gemacht wird.",
+            "answer": "Visualisierung der wichtigsten Felder eines Datensatzes, z.B. über Balkendiagramme, Histogramme, Boxplots oder ähnliches.\nVor allem bei Histogrammen und Balkendiagrammen lässt sich so das Verteilungsmuster der Daten erkennen,\nz.B. ob die Daten einer Normalverteilung, einer uniformen Verteilung oder einer anderen Verteilung folgen."
+        },
+        {
+            "question": "Nenne mindestens 5 Kennzahlen, die zur Datenanalyse verwendet werden.",
+            "answer": "- Arithmetisches Mittel\n- Median\n- Modus\n- Maximalwert\n- Minimalwert\n- Standardabweichung\n- Varianz\n- Oberes Quartil\n- Unteres Quartil"
+        },
+        {
+            "question": "Zu welchem Schritt gehört das Berechnen einer Korrelation?",
+            "answer": "Erste Zusammenhänge & Muster erkennen"
+        },
+        {
+            "question": "In welchen Schritt spielt die deskriptive Statistik eine zentrale Rolle?",
+            "answer": "Zentrale Kennzahlen berechnen"
+        },
+        {
+            "question": "In welchen Schritt wird nach fehlenden Werten und Duplikaten gesucht?",
+            "answer": "Datenqualität beurteilen"
+        },
+        {
+            "question": "Du hast soeben ein Histogramm erstellt, welches Benzinkosten normalverteilt darstellt.\nZu welchen Schritten kann dies hinzugezählt werden?",
+            "answer": "- Zentrale Kennzahlen berechnen\n- Erste Zusammenhänge und Muster erkennen\n- Erste Visualisierungen nutzen"
+        }
+    ]
+}
