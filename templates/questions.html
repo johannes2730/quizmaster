@@ -38,6 +38,10 @@
         <pre><code class="python">{{ item['code'] }}</code></pre>
         {% endif %}
 
+        {% if item.get('q_picture') %}
+        <img src="{{item.get('q_picture')}}" class="answer-image"></img>
+        {% endif %}
+
         <div class="answer-section">
           <button onclick="toggleAnswer('answer-{{ i }}')">Show Answer</button>
 

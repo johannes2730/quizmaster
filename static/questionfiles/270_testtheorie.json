@@ -1,0 +1,37 @@
+{
+    "title": "Datensätze verstehen",
+    "questions": [
+        {
+            "question":"Was versteht man unter der 'Beschreibung des Sachverhalts' beim statistischen Testen?",
+            "answer": "Dabei wird der Hintergrund der Untersuchung beschrieben: Was soll getestet werden, welche Daten liegen vor, und welches Ziel verfolgt die Analyse"
+        },
+        {
+            "question":"Was versteht man unter der Nullhypothese (H₀) und der Alternativhypothese (H₁) in einem statistischen Test?",
+            "answer": "Die Nullhypothese (H₀) ist die Annahme, sie beschreibt den Ausgangszustand. Die Alternativhypothese (H₁) ist die gegenteilige Annahme, die man nachweisen möchte."
+        },
+        {
+            "question":"Warum wird im Hypothesentest eine Teststatistik berechnet?",
+            "answer": "Die Teststatistik fasst die Informationen der Stichprobe in einer Kennzahl zusammen, mit der man entscheiden kann, ob die beobachteten Daten zur Nullhypothese passen oder nicht."
+        },
+        {
+            "question":"Woran erkennt man, ob ein Test einseitig oder zweiseitig ist?",
+            "answer": "Bei einem einseitigen Test wird geprüft, ob ein Wert größer oder kleiner als erwartet ist (gerichtete Hypothese). Bei einem zweiseitigen Test wird geprüft, ob ein Wert abweicht/unabhängig von der Richtung ist.(ungerichtete Hypothese)"
+        },
+        {
+            "question":"Was bedeutet das Testniveau (α) und wie wirkt es sich auf die Entscheidung aus?",
+            "answer": "Das Testniveau α gibt die maximale Wahrscheinlichkeit an, mit der man bereit ist, die Nullhypothese fälschlich abzulehnen (Fehler 1. Art). Typischer Wert: 5 % (0,05). Ein kleineres α macht den Test „strenger“."
+        },
+        {
+            "question":"Wann wird die Nullhypothese abgelehnt?",
+            "answer": "Wenn die berechnete Teststatistik in den Ablehnungsbereich fällt oder der p-Wert kleiner als α ist, wird die Nullhypothese verworfen – sonst wird sie beibehalten."
+        },
+        {
+            "question":"Nenne die sechs Schritte eines statistischen Tests.",
+            "answer": "1. Beschreibung des Sachverhalts\n 2. Formulierung der Null- und Alternativhypothese\n 3. Berechnung der Teststatistik\n 4. Auswahl der Testverteilung (links-, rechts-, zweiseitig)\n 5. Festlegung des Testniveaus\n 6. Statistisches Urteil fällen"
+        },
+        {
+            "question":"Ein Unternehmen plant, für ein Produkt eine neue Verpackungsform einzuführen, um Produktionskosten zu senken. Das Marketing befürchtet, dass dadurch mindestens 30 % der Kunden abspringen. Beschreibe, wie du in diesem Fall einen statistischen Test planen würdest, ohne konkrete Berechnungen durchzuführen. Gehe dabei die sechs Schritte eines Hypothesentests durch.\n 1. Beschreibung des Sachverhalts\n 2. Formulierung der Null- und Alternativhypothese\n 3. Berechnung der Teststatistik\n 4. Auswahl der Testverteilung (links-, rechts-, zweiseitig)\n 5. Festlegung des Testniveaus\n 6. Statistisches Urteil fällen",
+            "answer": "1. Neue Verpackungsform aufgrund geringerer Produktionskosten, jedoch glaubt das Marketing durch die Veränderung wandern mind. 30% ab.\n 2. H0 -> Es wandern 30% oder mehr ab H1 -> Es wandern weniger als 30% ab\n 3. Kunden des Produkts befragen ob sie wechseln würden (Ja oder Nein)\n 4. Binomialverteilung\n 5. Testniveau ist auslegungssache, grundsätzlich 5%, Linksseitig\n 6. Statistik auswerten und schauen ob sich der Wert im Annahme- oder Verwerfbereich befindet, H0 behalten oder verwerfen"
+        }
+    ]
+}

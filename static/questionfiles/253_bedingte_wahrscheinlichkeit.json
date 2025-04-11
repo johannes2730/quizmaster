@@ -1,0 +1,26 @@
+{
+  "title": "Bedingte Wahrscheinlichkeiten",
+  "questions": [
+    {
+      "question": "Was versteht man unter einer bedingten Wahrscheinlichkeit?",
+      "answer": "Eine bedingte Wahrscheinlichkeit beschreibt, wie wahrscheinlich ein Ereignis A ist, wenn bekannt ist, dass ein anderes Ereignis B bereits eingetreten ist. Formel: P(A|B) = P(A ∩ B) / P(B) für P(B) > 0"
+    },
+    {
+      "question": "Wozu dient eine Vierfeldertafel bei der Analyse von Wahrscheinlichkeiten?",
+      "answer": "Eine Vierfeldertafel hilft, die Zusammenhänge zwischen zwei Ereignissen und deren Komplementen übersichtlich darzustellen – sowohl mit relativen als auch mit absoluten Häufigkeiten.",
+      "picture": "../images/Vierfeldertafel.jpg"
+    },
+    {
+      "question": "Was bedeutet es, wenn zwei Ereignisse stochastisch unabhängig sind?",
+      "answer": "Zwei Ereignisse sind stochastisch unabhängig, wenn das Eintreten des einen Ereignisses keinen Einfluss auf die Wahrscheinlichkeit des anderen hat. P(A|B) = P(A). Nur bei stochastisch unabhängigen Ereignissen gilt: P(A ∩ B) = P(A) * P(B)"
+    },
+    {
+      "question": "Was sagt die Bayes-Formel über den Zusammenhang zwischen zwei Ereignissen aus?",
+      "answer": "Die Bayes-Formel zeigt, wie man aus der bedingten Wahrscheinlichkeit eines Ereignisses auf die umgekehrte bedingte Wahrscheinlichkeit schließen kann – also z.B. von P(A|B) auf P(B|A). Formel: P(A|B) = P(B|A) * P(A) / P(B)"
+    },
+    {
+      "question": "Warum sind bedingte Wahrscheinlichkeiten wichtig für Vorhersagen?",
+      "answer": "Weil sie zeigen, wie sich die Wahrscheinlichkeit eines Ereignisses verändert, wenn man zusätzliche Informationen hat. So kann man bessere Vorhersagen treffen – zum Beispiel, ob jemand mit Hochschulabschluss mit höherer Wahrscheinlichkeit seinen Traumjob hat."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "title": "Zufall",
+    "questions": [
+        {
+            "question": "Wann spricht man in der Wahrscheinlichkeitsrechnung bei einem Vorgang von Zufall?",
+            "answer": "1. Der Ausgang ist nicht die Folge des Zusammenwirkens einer oder mehrerer Sachverhalte\n2.Man hat nicht die Zeit und Informationen um den Sachverhalt richtig zu erfassen"
+        },
+        {
+            "question": "Wie definiert sich ein Zufallsexperiment?",
+            "answer": "1. Es endet in einem von mehreren möglichen Ergebnissen\n2.Das Ergebnis ist nicht mit Sicherheit vorhersehbar\n3.Es lässt sich unter gleichen Randbedingungen wiederholen"
+        },
+        {
+            "question": "Ordne zu",
+            "answer": "",
+            "q_picture":"../images/q_picture_mengen.png",
+            "picture":"../images/picture_mengen.png"
+        }
+    ]
+}
