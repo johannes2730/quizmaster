@@ -3,7 +3,7 @@
   "questions": [
     {
       "question": "Wie ist ein Autoencoder aufgebaut?",
-      "answer": "1. Decoder: Lernt die Eingabedaten auf eine niedrige Dimension abzubilden. \n2. Decoder: Lernt die niedrigdimensinale Darstellung der Daten in ihre urpsrüngliche Form zu rekonstruieren."
+      "answer": "1. Encoder: Lernt die Eingabedaten auf eine niedrige Dimension abzubilden. \n2. Decoder: Lernt die niedrigdimensinale Darstellung der Daten in ihre urpsrüngliche Form zu rekonstruieren."
     },
     {
       "question": "Wie eignet sich ein Autoencoder für die Erkennung von Anomalien in Daten?",
