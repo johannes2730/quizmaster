@@ -1,0 +1,100 @@
+{
+  "title": "Wahrscheinlichkeitsmodelle",
+  "questions": [
+    {
+      "question": "Vervollständige die folgende Übersicht zu den Verteilungen:",
+      "q_picture": "../images/506_q_uebersicht.png",
+      "answer": "...",
+      "picture": "../images/506_a_uebersicht.png"
+    },
+    {
+      "question": "Diskret oder Stetig? Welche der folgenden Verteilungen können für diskrete oder stetige Sachverhalte modelliert werden? (Bernoulli, Binomial, Gleich, Geometrisch, Poisson, Exponential)",
+      "answer": "...",
+      "picture": "../images/506_a_diskret_stetig.png"
+    },
+    {
+      "question": "Anwendungsaufgabe: Welches Modell und mit welchen Parameter(n) wählst du folgenden Sachverhalt:\n\n'Ein 12-seitiger-Würfel wird 10-mal geworfen. Wie wahrscheinlich ist es, 4-mal eine 6 zu bekommen?'",
+      "answer": "Verteilung: Binomial, Parameter: n=10, p=1/12"
+    },
+    {
+      "question": "Anwendungsaufgabe: Welches Modell und mit welchen Parameter(n) wählst du folgenden Sachverhalt:\n\n 'Wie viele Münzwürfe sind nötig, bis zum ersten Mal 'Kopf' erscheint?'",
+      "answer": "Verteilung: Geometrisch, Parameter: p = 0.5"
+    },
+    {
+      "question": "Anwendungsaufgabe: Welches Modell und mit welchen Parameter(n) wählst du folgenden Sachverhalt:\n\n 'Aus einer Urne mit 20 Kugeln (10 rot, 10 blau) werden 5 ohne Zurücklegen gezogen. Wkt, 3 rote?'",
+      "answer": "Verteilung: Hypergeometrisch(N,K,n), Parameter: N = 20, K = 10, n = 5"
+    },
+    {
+      "question": "Anwendungsaufgabe: Welches Modell und mit welchen Parameter(n) wählst du folgenden Sachverhalt:\n\n'Autos kommen im Schnitt alle 2 Minuten an. Wie viele kommen in 10 Minuten?'",
+      "answer": "Verteilung: Poisson, Parameter: λ = 5 (da 10/2 = 5)"
+    },
+    {
+      "question": "Anwendungsaufgabe: Welches Modell und mit welchen Parameter(n) wählst du folgenden Sachverhalt:\n\n'Wie lange dauert es im Schnitt bis zur nächsten Kundenanfrage, wenn im Schnitt 3 Anfragen pro Stunde eintreffen?'",
+      "answer": "Verteilung: Exponential, Parameter: λ = 3"
+    },
+    {
+      "question": "Anwendungsaufgabe: Welches Modell und mit welchen Parameter(n) wählst du folgenden Sachverhalt? \n\n 'Eine Zufallszahl wird aus {1,2,3,4,5} gezogen und jede Zahl hat die gleiche Wahrscheinlichkeit.'",
+      "answer": "Verteilung:  Gleich(n) (diskret), Parameter:  n=5"
+    },
+    {
+      "question": "Wahrscheinlichkeitsverteilungen erkennen und skizzieren: Ein Computerprogramm liefert bei jedem Start entweder Fehler (1) oder kein Fehler (0) mit einer Wahrscheinlichkeit von 0.3 für einen Fehler.\n\nAufgaben:\na) Skizziere die Verteilung.\nb) Welche Balkenhöhen zeichnest du bei \\( X = 0 \\) und \\( X = 1 \\)?\nc) Ist diese Verteilung diskret oder stetig?",
+      "answer": "a) Zwei Balken bei 0 und 1\nb) P(0) = 0.7, P(1) = 0.3\nc) Diskret",
+      "picture": "../images/506_a_bernoulli.png"
+    },
+    {
+      "question": "Wahrscheinlichkeitsverteilungen erkennen und skizzieren: Ein Schüler hat bei jeder Multiple-Choice-Frage eine Wahrscheinlichkeit von 0.5, die richtige Antwort zu raten. Es werden 4 Fragen gestellt.\n\nAufgaben:\na) Welche Werte kann \\( X \\) annehmen?\nb) Wo liegt der Erwartungswert? (Nur abschätzen)\nc) Skizziere die Verteilung (Balkendiagramm).",
+      "answer": "a) 0–4\nb) Erwartungswert ca. 2\nc) Glockenähnlich, höchster Balken bei 2",
+      "picture": "../images/506_a_binomial.png"
+    },
+    {
+      "question": "Wahrscheinlichkeitsverteilungen erkennen und skizzieren: Ein Angler hat pro Wurf eine Erfolgswahrscheinlichkeit von 0.25, einen Fisch zu fangen.\n\nAufgabe:\na) Wie sieht der typische Verlauf der Wahrscheinlichkeiten aus?\nb) Wie groß ist die Wahrscheinlichkeit, den ersten Fisch beim 2. Versuch zu fangen?\nc) Skizziere den typischen Verlauf der Wahrscheinlichkeiten.",
+      "answer": "a) Abfallend, höchster Balken bei 1\nb) (1-0.25)^1 * 0.25 = 0.1875\nc) Exponentiell fallend",
+      "picture": "../images/506_a_geometrisch.png"
+    },
+    {
+      "question": "Wahrscheinlichkeitsverteilungen erkennen und skizzieren: In einem Beutel befinden sich 5 rote und 5 blaue Kugeln. Du ziehst 3 Kugeln ohne Zurücklegen.\n\nAufgaben:\na) Welche Werte kann \\( X \\) (Anzahl roter Kugeln) annehmen?\nb) Schätze ab, bei welchem Wert von \\( X \\) die Wahrscheinlichkeit am höchsten ist.\nc) Ist dies ein diskretes oder stetiges Modell?",
+      "answer": "a) 0, 1, 2, 3\nb) Bei 1 oder 2\nc) Diskret",
+      "picture": "../images/506_a_hypergeometrisch.png"
+    },
+    {
+      "question": "Wahrscheinlichkeitsverteilungen erkennen und skizzieren: In einer Bibliothek treten im Schnitt 3 Druckerprobleme pro Woche auf.\n\nAufgaben:\na) Wie groß ist ungefähr die Wahrscheinlichkeit für genau 0 Fehler in einer Woche?\nb) Skizziere die Form der Verteilung (x = 0 bis 6).\nc) Welche Form nimmt die Verteilung an, wenn der Mittelwert auf 6 steigt?",
+      "answer": "a) e^{-3} ≈ 0.05\nb) Höchste Balken bei 2–3\nc) Verschiebt sich nach rechts, wird glockenartiger",
+      "picture": "../images/506_a_poisson.png"
+    },
+    {
+      "question": "Wahrscheinlichkeitsverteilungen erkennen und skizzieren: Die Wartezeit bis zum nächsten Kunden beträgt im Mittel 10 Minuten.\n\nAufgaben:\na) Wie sieht die Wahrscheinlichkeitsdichte aus?\nb) Zeichne den Verlauf der Dichtefunktion.\nc) Ist die Verteilung diskret oder stetig?",
+      "answer": "a) Exponentiell fallend\nb) Start bei f(0) = 0.1, fällt danach\nc) Stetig",
+      "picture": "../images/506_a_exponential.png"
+    },
+    {
+      "question": "Wahrscheinlichkeitsverteilungen erkennen und skizzieren: Eine Zufallszahl wird gleichverteilt zwischen 0 und 4 gewählt.\n\nAufgaben:\na) Zeichne die Dichtefunktion.\nb) Wie hoch ist die Dichte?\nc) Welche Wahrscheinlichkeit hat ein Wert zwischen 1 und 2?",
+      "answer": "a) Rechteck zwischen 0 und 4\nb) 1 / (4 - 0) = 0.25\nc) 1 von 4 Einheiten → Wahrscheinlichkeit = 0.25",
+      "picture": "../images/506_a_gleichverteilung.png"
+    },
+    {
+      "question": "Parameter Änderungen: Bestimme die Parameter der Verteilungen und berechne den Erwartungswert (ggf. Varianz)",
+      "q_picture": "../images/506_q_bernoulli_params.png",
+      "picture": "../images/506_a_bernoulli_params.png"
+    },
+    {
+      "question": "Parameter Änderungen: Ordne die Parameter (λ=2, λ=8, λ=15) den Wahrscheinlichkeitsverteilungen zu",
+      "q_picture": "../images/506_q_poisson_params.png",
+      "picture": "../images/506_a_poisson_params.png"
+    },
+    {
+      "question": "Parameter Änderungen: Ordne die Parameter (λ=2, λ=8, λ=15) den Verteilungsfunktionen zu",
+      "q_picture": "../images/506_q_poisson_params_cum.png",
+      "picture": "../images/506_a_poisson_params_cum.png"
+    },
+    {
+      "question": "Parameter Änderungen: Bestimme die Parameter der Geometrischen-Verteilungen ",
+      "q_picture": "../images/506_q_geometric_params.png",
+      "picture": "../images/506_a_geometric_params.png"
+    },
+    {
+      "question": "Parameter Änderungen:  Ordne die Parameter (N, K, n) in {  (50, 20, 10), (50, 10, 10), (50, 30, 10), (50, 20, 20) } den Verteilungsfunktionen zu ",
+      "q_picture": "../images/506_q_hypergeometric_params.png",
+      "picture": "../images/506_a_hypergeometric_params.png"
+    }
+  ]
+}

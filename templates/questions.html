@@ -32,7 +32,7 @@
         {% if kapitel %}
         <div class="question-title">{{kapitel[i]}}</div>
         {% endif %}
-        <div class="question-title">{{ item["question"] }}</div>
+        <div class="question-title">{{ item["question"].replace('\n', '<br>') | safe }}</div>
 
         {% if item.get('code') %}
         <pre><code class="python">{{ item['code'] }}</code></pre>
