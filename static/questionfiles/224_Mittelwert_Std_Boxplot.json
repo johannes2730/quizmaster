@@ -8,17 +8,17 @@
         {
             "question": "Was bedeutet die Formel? Und zu welchem Mittelwert gehört sie?",
             "answer": "- fh(xi) ist die absolute empirische Häufigkeit des x-ten Messwertes\n- fh(xMod) ist die Häufigkeit des Modalwertes xMod und es muss gelten, dass kein anderer Messwert häufiger vorkommt",
-            "q_picture": "../images/xmod.png"
+            "q_picture": "../images/x_mod.png"
         },
         {
             "question": "Wozu gehört diese Formel? Was gibt dieser Wert an und welche Vorteile bietet er?",
             "answer": "Die Formel gehört zum Median. Der Median (oder Zentralwert) ist der Wert, der genau in der Mitte des nach der Größe geordneten Datensatzes liegt. Damit gilt, dass 50% der Messwerte kleiner oder gleich und 50% der Messwerte größer oder gleich dem Median sind. Vorteil ist, dass der Median im Vergleich zum arithmetischen Mittel robust gegenüber Ausreißern (untypisch hohe oder niedrige Werte) ist.",
-            "q_picture": "../images/xmed.png"
+            "q_picture": "../images/x_med.png"
         },
         {
             "question": "Was ist das arithmetische Mittel? Gib auch die Formel hierfür an.",
             "answer": "Das arithmetische Mittel (oder Durchschnitt) ist der am häufigsten verwendete Mittelwert. Er addiert alle Messwerte und teilt das Ergebnis durch die Anzahl aller Messwerte.",
-            "picture": "../images/xquer.png"
+            "picture": "../images/x_quer.png"
         },
         {
             "question": "Was ist das gewichtete arithmetische Mittel? Gib auch die Formel hierfür an.",
@@ -29,11 +29,6 @@
             "question": "Wie kann man das arithmetische Mittel bei klassierten Daten näherungsweise berechnen? Gib auch die Formel an.",
             "answer": "Das arithmetische Mittel lässt sich in diesem Fall näherungsweise berechnen, wenn man die Klassenmitten mit den jeweiligen Klassenhäufigkeiten gewichtet und summiert. Das Ergebnis muss dann noch durch die Anzahl aller Messwerte geteilt werden.",
             "picture": "../images/xquerklas.png"
-        },
-        {
-            "question": "Wofür ist diese Formel und wozu wird dieser Mittelwert verwendet? Wofür sollte es nicht verwendet werden?",
-            "answer": "Es handelt sich um die Formel für das geometrische Mittel. Dieses wird verwendet, wenn man einen Mittelwert über eine Reihe relativer, aufeinander aufbauender Veränderungen berechnen möchte (z.B. Wachstumsraten, Verzinsungen, Inflation etc.). Nicht verwendet werden sollte es dagegen, wenn voneinander unabhängige Wachstumswerte vorliegen.",
-            "q_picture": "../images/xgeo.png"
         },
         {
             "question": "Wie berechnet man bei gruppierten oder klassierten Daten das geometrische Mittel?",
@@ -86,7 +81,7 @@
             "question": "Beschrifte den Boxplot!",
             "answer": "s. Grafik\n\nweitere Hinweise zum Zeichnen eines Boxplots:\n- oberes Quantil normal bei 75%-Quantil\n- Whisker typischerweise bei 1,5-IQR addiert bzw. subtrahiert von oberer/unterer Grenze\n- alternativ sind Whisker bei 2,5 bzw. 97,5%-Quantil",
             "q_picture": "../images/box.png",
-            "picture": "../images/boxlsg.png"
+            "picture": "../images/box_lsg.png"
         },
         {
             "question": "Wofür sind Boxplots sinnvoll?",

@@ -56,8 +56,8 @@
     {
       "question": "Benenne die Punkte A, B, C und D",
       "answer": "A = Merkmal / B = Merkmalsausprägung / C = Grundgesamtheit",
-      "q_picture": "../images/zusammenfassung_grundbegriffe_frage.png",
-      "picture": "../images/zusammenfassung_grundbegriffe_loesung.png"
+      "q_picture": "../images/210_b_zusammenfassung_grundbegriffe_frage.png",
+      "picture": "../images/210_b_zusammenfassung_grundbegriffe_loesung.png"
     },
     {
       "question": "Welche Arten von Skalenniveaus gibt es ?",
