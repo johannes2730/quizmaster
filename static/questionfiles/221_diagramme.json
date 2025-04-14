@@ -3,27 +3,27 @@
   "questions": [
     {
       "question": "Welches Diagramm wird hier dargestellt? Wofür wird dieser Diagrammtyp verwendet?.",
-      "q_picture": "../images/kreisdiagramm",
+      "q_picture": "../images/kreisdiagramm.png",
       "answer": "Kreisdiagramm: Kreisdiagramme (auch Tortendiagramme oder Pie-Charts genannt) werden verwendet, um Häufigkeiten bei wenigen verschiedenen Messwerten übersichtlich darzustellen.\nDabei entspricht jeder Kreisabschnitt einem Datenwert, und seine Fläche bzw. Winkelgröße ist proportional zur Häufigkeit.\nBesonders geeignet sind Kreisdiagramme für nominale Daten, zum Beispiel zur Darstellung der Anteile verschiedener Lieblingsfarben in einer Umfrage."
     },
     {
       "question": "Welches Diagramm wird hier dargestellt? Wofür wird dieser Diagrammtyp verwendet?.",
-      "q_picture": "../images/histogramm",
+      "q_picture": "../images/histogramm.png",
       "answer": "Histogramm: Histogramme veranschaulichen die Häufigkeitsverteilung klassierter Daten in Form einer Säulengrafik.\nAuf der x-Achse werden die Klassen (Intervalle) dargestellt, auf der y-Achse die Häufigkeit.\nÜber jede Klasse wird ein Rechteck gezeichnet, dessen Fläche proportional zur Klassenhäufigkeit ist – da Menschen Häufigkeit intuitiv über die Fläche wahrnehmen.\nFür nominale Daten sind Histogramme ungeeignet, da diese keine Intervalle oder natürliche Ordnung besitzen."
     },
     {
       "question": "Welches Diagramm wird hier dargestellt? Wofür wird dieser Diagrammtyp verwendet?.",
-      "q_picture": "../images/treppendiagramme",
+      "q_picture": "../images/treppendiagramme.png",
       "answer": "Treppendiagramm: Treppendiagramme werden verwendet, um kumulative Häufigkeiten darzustellen, also die Anzahl oder den Anteil der Werte, die einen bestimmten Grenzwert nicht überschreiten.\nDabei wird jeder Merkmalsausprägung die aufsummierte Häufigkeit bis zu diesem Punkt zugeordnet, wodurch eine stufenartige Darstellung entsteht.\nEin typisches Beispiel wäre die Frage: „Wie viele Flugbuchungen lagen bei höchstens 250 €?“ – das Treppendiagramm zeigt, wie groß der kumulierte Anteil dieser preisgünstigen Flüge ist."
     },
     {
       "question": "Worauf muss man bei einem Histogramm achten, wenn man unterschiedlich breite Klassen vorliegen hat",
       "answer": "Sind die Klassen unterschiedlich breit, muss man die Höhe der Rechtecke anpassen, damit die Fläche proportional zu den Häufigkeiten ist.\nHierfür legt man eine sogenannte Normklassenbreite fest (die Häufigste Klassenbreite) und dividiert die Normklassenbreite durch die Breite der jeweiligen Klasse und erhählt damit einen Dehnungsfaktor.\nNun multipliziert man jede Klassenhäufigkeit mit dem entsprechendem Dehnungfaktor. So erhält man die sogenannte empirische Häufigkeitsdichtefunktion,\n welche angibt, wie das Histogramm zu zeichnen ist.",
-      "picture": "../images/korrekte_darstellung"
+      "picture": "../images/korrekte_darstellung.png"
     },
     {
       "question": "Was ist das Problem in dieser Darstellung?",
-      "q_picture": "../images/faehlerhafte_darstellung",
+      "q_picture": "../images/faehlerhafte_darstellung.png",
       "answer": "Der Dehnungsfaktor bei den Klassen 100-150 Mrd. EUR und 150-225 Mrd. EUR wurde bei der Abbildung nicht berücksichtigt.\nDas könnte zu der Interprettation führen, dass mehr Unternehmen in diese Klasse gehören, als es tatsächlich tun."
     }
   ]
