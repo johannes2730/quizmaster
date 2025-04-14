@@ -1,0 +1,96 @@
+{
+    "title": "Statistische Kennzahlen",
+    "questions": [
+        {
+            "question": "Was ist der Modalwert (Modus) und wie wird er ermittelt?",
+            "answer": "Der Modalwert ist der in einem Datensatz am häufigsten auftauchende Wert."
+        },
+        {
+            "question": "Was bedeutet die Formel? Und zu welchem Mittelwert gehört sie?",
+            "answer": "- fh(xi) ist die absolute empirische Häufigkeit des x-ten Messwertes\n- fh(xMod) ist die Häufigkeit des Modalwertes xMod und es muss gelten, dass kein anderer Messwert häufiger vorkommt",
+            "q_picture": "../images/xmod.png"
+        },
+        {
+            "question": "Wozu gehört diese Formel? Was gibt dieser Wert an und welche Vorteile bietet er?",
+            "answer": "Die Formel gehört zum Median. Der Median (oder Zentralwert) ist der Wert, der genau in der Mitte des nach der Größe geordneten Datensatzes liegt. Damit gilt, dass 50% der Messwerte kleiner oder gleich und 50% der Messwerte größer oder gleich dem Median sind. Vorteil ist, dass der Median im Vergleich zum arithmetischen Mittel robust gegenüber Ausreißern (untypisch hohe oder niedrige Werte) ist.",
+            "q_picture": "../images/xmed.png"
+        },
+        {
+            "question": "Was ist das arithmetische Mittel? Gib auch die Formel hierfür an.",
+            "answer": "Das arithmetische Mittel (oder Durchschnitt) ist der am häufigsten verwendete Mittelwert. Er addiert alle Messwerte und teilt das Ergebnis durch die Anzahl aller Messwerte.",
+            "picture": "../images/xquer.png"
+        },
+        {
+            "question": "Was ist das gewichtete arithmetische Mittel? Gib auch die Formel hierfür an.",
+            "answer": "Liegen gruppierte Daten vor, so multipliziert man die vorkommenden Messwerte mit ihrer Häufigkeit. Das Ergebnis teilt man dann durch die Gesamtzahl aller Messwerte. Dies bezeichnet man als gewogenes oder gewichtetes arithmetisches Mittel.",
+            "picture": "../images/xquergew.png"
+        },
+        {
+            "question": "Wie kann man das arithmetische Mittel bei klassierten Daten näherungsweise berechnen? Gib auch die Formel an.",
+            "answer": "Das arithmetische Mittel lässt sich in diesem Fall näherungsweise berechnen, wenn man die Klassenmitten mit den jeweiligen Klassenhäufigkeiten gewichtet und summiert. Das Ergebnis muss dann noch durch die Anzahl aller Messwerte geteilt werden.",
+            "picture": "../images/xquerklas.png"
+        },
+        {
+            "question": "Wofür ist diese Formel und wozu wird dieser Mittelwert verwendet? Wofür sollte es nicht verwendet werden?",
+            "answer": "Es handelt sich um die Formel für das geometrische Mittel. Dieses wird verwendet, wenn man einen Mittelwert über eine Reihe relativer, aufeinander aufbauender Veränderungen berechnen möchte (z.B. Wachstumsraten, Verzinsungen, Inflation etc.). Nicht verwendet werden sollte es dagegen, wenn voneinander unabhängige Wachstumswerte vorliegen.",
+            "q_picture": "../images/xgeo.png"
+        },
+        {
+            "question": "Wie berechnet man bei gruppierten oder klassierten Daten das geometrische Mittel?",
+            "answer": "Man gewichtet bei gruppiert oder klassiert vorliegenden Daten die Messwerte bzw. Klassenmitten, indem man sie mit ihren jeweiligen Häufigkeiten potenziert. In der Praxis könnte die Notwendigkeit zu einer solchen Gewichtung dadurch entstehen, dass die Zeiträume des Wachstums nicht gleich lang sind, man aber einen durchschnittlichen Wert für eine „Einheitsperiode“ ermitteln will.",
+            "picture": "../images/xgeogrupklas.png"
+        },
+        {
+            "question": "Wie lautet die Formel für das harmonische Mittel und wann sollte es verwendet werden?",
+            "answer": "Das harmonische Mittel ist dann der richtige Mittelwert, wenn ein Durchschnitt aus Verhältniszahlen (z.B. Kilometer pro Stunde, Erwerbstätige pro Haushalt, Einwohner je km², Eigenkapitalquote, Verhältnis der in einer bestimmten Region abgesetzten Menge eines Produkts zum Gesamtabsatz desselben Produkts o.ä.) ermittelt werden soll, als Gewicht aber zählerbezogene Größen vorliegen. Liegen als Gewichte nennerbezogene Größen vor, ist das gewogene arithmetische Mittel ebenfalls der richtige Mittelwert.",
+            "picture": "../images/xharm.png"
+        },
+        {
+            "question": "Wofür ist diese Formel?",
+            "answer": "Die Formel dient dafür, das harmonische Mittel bei gruppierten Daten zu berechnen.",
+            "q_picture": "../images/xharmgrup.png"
+        },
+        {
+            "question": "Was versteht man unter der Streuung eines Datensatzes?",
+            "answer": "Mit der Streuung ist gemeint, ob der Datensatz aus etwas gleichen oder sehr unterschiedlichen Werten besteht."
+        },
+        {
+            "question": "Erkläre die Spannweite!",
+            "answer": "Die Spannweite bezeichnet den Abstand zwischen dem größten und dem kleinsten Wert aus einer Beobachtungsreihe."
+        },
+        {
+            "question": "Was wird mit dieser Formel berechnet und was gibt sie an?",
+            "answer": "Es handelt sich um die Formel für die empirische Varianz. Sie ist das am häufigsten verwendete Streuungsmaß.",
+            "q_picture": "../images/var.png"
+        },
+        {
+            "question": "Wie berechnet sich die Standardabweichung? Gib auch die Formel an.",
+            "answer": "Die Standardabweichung ist die Quadratwurzel der Varianz.",
+            "picture": "../images/std.png"
+        },
+        {
+            "question": "Wofür ist diese Formel? Erkläre auch die Idee.",
+            "answer": "Es handelt sich um den Varianzkoeffizienten. Durch die Division durch das arithmetische Mittel bekommt man eine Art prozentuale Streuung, die unter Umständen aussagekräftiger sein kann als die Standardabweichung.",
+            "q_picture": "../images/varkoef.png"
+        },
+        {
+            "question": "Was sind Quantile und wie werden p-Quantile berechnet?",
+            "answer": "Quantile sind eher Lageparameter als Streumaße. Berechnet man jedoch mehrere verschiedene Quantile für denselben Datensatz, so kann man dessen Streuung gut erkennen und grafisch im Boxplot veranschaulichen. Als p-Quantil bezeichnet man den Wert, für den gilt, dass p*100% der Werte des Datensatzes kleiner oder gleich und gleichzeitig (1-p)*100% der Werte des Datensatzes größer oder gleich sind. Wichtig für die Formel: Bei nicht natürlichen Zahlen muss n*p aufgerundet werden. Das ist durch die Klammern beschrieben.",
+            "picture": "../images/pquan.png"
+        },
+        {
+            "question": "Was ist der Median als Quantil ausgedrückt?",
+            "answer": "Das 50%-Quantil, denn 50% der Werte des Datensatzes sind kleiner oder gleich, 50% der Werte sind größer oder gleich."
+        },
+        {
+            "question": "Beschrifte den Boxplot!",
+            "answer": "s. Grafik\n\nweitere Hinweise zum Zeichnen eines Boxplots:\n- oberes Quantil normal bei 75%-Quantil\n- Whisker typischerweise bei 1,5-IQR addiert bzw. subtrahiert von oberer/unterer Grenze\n- alternativ sind Whisker bei 2,5 bzw. 97,5%-Quantil",
+            "q_picture": "../images/box.png",
+            "picture": "../images/boxlsg.png"
+        },
+        {
+            "question": "Wofür sind Boxplots sinnvoll?",
+            "answer": "1. Vergleich von Datensätzen: Boxplots ermöglichen den Vergleich mehrerer Datensätze nebeneinander, was besonders hilfreich ist, um Unterschiede in der Verteilung zu erkennen.\n\n2. Erkennung von Ausreißern: Sie zeigen Ausreißer klar an, die außerhalb der \"Whiskers\" liegen, und helfen dabei, ungewöhnliche Datenpunkte zu identifizieren.\n\n3. Zusammenfassung von Daten: Boxplots bieten eine kompakte Zusammenfassung der wichtigsten statistischen Kennzahlen wie Median, Quartile und Extremwerte.\n\n4. Visualisierung der Datenverteilung: Sie geben einen schnellen Überblick über die Verteilung der Daten, einschließlich der Symmetrie und der Breite der Verteilung."
+        }
+    ]
+}

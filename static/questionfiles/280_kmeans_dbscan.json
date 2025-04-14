@@ -1,0 +1,34 @@
+{
+    "title": "K_Means & DBScan",
+    "questions": [
+      {
+        "question": "Was gibt der Hyperparameter k im K_Means-Algorithmus an ? ",
+        "answer": "Die Anzahl der Clustermittelpunkte (Centroide)."
+      },
+      {
+        "question": "Was gibt der Hyperparameter Epsilon (ε) im DBSCAN-Algorithmus an?",
+        "answer": "Den maximalen Abstand, in dem ein Punkt als direkter Nachbar eines anderen Punktes betrachtet wird."
+      },
+      {
+        "question": "Was gibt der Hyperparameter n im DBSCAN-Algorithmus an?",
+        "answer": "Die minimale Anzahl an Nachbarn innerhalb der Epsilon-Umgebung, die ein Punkt haben muss, um als Kernpunkt zu gelten."
+      },
+      {
+        "question": "Wie reagiert K-Means auf Ausreißer in den Daten?",
+        "answer": "K-Means ist empfindlich gegenüber Ausreißern, da sie die Lage der Clusterzentren stark beeinflussen können."
+      },
+      {
+        "question": "Wie geht DBSCAN mit Rauschen oder Ausreißern um?",
+        "answer": "Punkte, die keiner dichten Region zugeordnet werden können, werden als Rauschen markiert und nicht geclustert."
+      },
+      {
+        "question": "Welches Clustering-Verfahren(K_Means, DBScan) benötigt keine Angabe der Clusteranzahl im Voraus?",
+        "answer": "DBSCAN, da es auf Dichte basiert und Cluster automatisch erkennt."
+      },
+      {
+        "question": "Ordne zu",
+        "answer": "DBScan, K_Means, K_Means, DBScan, DBScan, K_Means, K_Means, DBScan",
+        "q_picture":"../images/kmeans_or_dbscan.png"
+    
+    }
+]}

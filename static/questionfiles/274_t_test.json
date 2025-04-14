@@ -1,0 +1,21 @@
+{
+  "title": "t-Test",
+  "questions": [
+    {
+      "question": "Welche drei prinzipiell verschiedenen Testsituationen gibt es bei t-Tests?",
+      "answer": "Einstichprobentest, Zweistichprobentest, Paardifferenztest"
+    },
+    {
+      "question": "Was soll beim Einstichproben-t-Test getestet werden?",
+      "answer": "Es soll getestet werden, ob der Mittelwert einer Gesamtheit einem angenommenen Mittelwert entspricht."
+    },
+    {
+      "question": "Was soll beim Zweistichproben-t-Test getestet werden?",
+      "answer": "Es soll getestet werden, ob die Mittelwerte aus zwei verschiedenen, unabhängigen Gesamtheiten um einen bestimmten Betrag voneinander abweichen."
+    },
+    {
+      "question": "Was soll beim Paardifferenz-t-Test getestet werden?",
+      "answer": "Es soll getestet werden, ob die Mittelwerte aus zwei verbundenen Gesamtheiten um einen bestimmten Betrag voneinander abweichen."
+    }
+  ]
+}

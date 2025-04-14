@@ -1,0 +1,21 @@
+{
+  "title": "200_wozu_statistik",
+  "questions": [
+    {
+      "question": "Was sind die drei Hauptbereiche der Statistik und was machen sie?",
+      "answer": "Deskriptive Statistik (beschreibend) → Daten übersichtlich machen (Kennzahlen, Diagramme) / Induktive Statistik (auch Inferenzstatistik genannt) → Aus Stichproben auf Grundgesamtheit schließen, Fehler kontrollieren / Explorative Statistik → Zusammenhänge und Muster entdecken, neue Hypothesen entwickeln"
+    },
+    {
+      "question": "Was ist der Unterschied zwischen deskriptiver und induktiver Statistik?",
+      "answer": "Deskriptive Statistik beschreibt nur die vorliegenden Daten, induktive Statistik schließt von Stichproben auf eine Grundgesamtheit und kontrolliert den Fehler dabei."
+    },
+    {
+      "question": "In welchem Bereich der Statistik entstehen Hypothesen?",
+      "answer": "In der explorativen Statistik. Hier werden neue Zusammenhänge und Muster entdeckt, die zu Hypothesen führen können."
+    },
+    {
+      "question": "Welche Statistikform nutzt man zur grafischen Darstellung von Daten?",
+      "answer": "Deskriptive Statistik – z.B. durch Histogramme, Boxplots oder Balkendiagramme."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Die vier arten der Datenanalyse",
+  "questions": [
+    {
+      "question": "Wie lautet die Formel für die absolute empirische Häufigkeitsfunktion",
+      "answer": "siehe Bild",
+      "picture": "../images/absolute_empirische_haeufigkeitsfunktion"
+    
+    },
+    {
+      "question": "Bitte erkläre die Formel für die absolute empirische Häufigkeitsfunktion",
+      "answer": "f_h(x) ist die absolute Häufigkeitsfunktion: Sie gibt an, wie oft ein bestimmter Wert x in den Daten vorkommt.\nk steht für die Gruppe bzw. den Skalenpunkt (z.B. k = 1 = schlecht, k = 2 = mittel, k = 3 = gut).\nn_k ist die Anzahl der Beobachtungen in Gruppe k (z.B. n_1 = 24, wenn „schlecht“ 24-mal gezählt wurde).\nx_k ist der konkrete Skalenwert der Gruppe k (z.B. x_1 = schlecht).\n'0 sonst' bedeutet: Für alle x-Werte, die nicht vorkommen, gilt f_h(x) = 0." ,
+      "picture": "../images/absolute_empirische_haeufigkeitsfunktion"
+    },
+    {
+      "question": "Wie lautet die Formel für die absolute empirische Häufigkeitsfunktion",
+      "answer": "siehe Bild",
+      "picture": "../images/relative_empirische_haeufigkeitsfunktion"
+    },
+    {
+      "question": "Bitte beschreibe die absolute und relative empirische Häufigkeitsfunktion für die abgebildete Tabelle",
+      "q_picture": "../images/tabelle_haeufigkeit",
+      "answer": "siehe Bild",
+      "picture": "../images/tabelle_haeufigkeit_loesung"
+    }
+  ]
+}

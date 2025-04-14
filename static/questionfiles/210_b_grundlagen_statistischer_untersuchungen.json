@@ -1,0 +1,147 @@
+{
+  "title": "210_grundlagen_statistischer_untersuchung",
+  "questions": [
+    {
+      "question": "Was sind statistische Einheiten ?",
+      "answer": "Statistische Einheiten (auch Merkmalsträger genannt) sind die einzelnen Elemente eines Untersuchungsobjekts. Sie müssen definiert werden, da nicht automatisch klar ist, was genau betrachtet wird. Wichtig: Statistische Einheiten sind Dinge gleichen Typs mit mindestens einer gemeinsamen Eigenschaft (z.B. alle sind Unternehmen)."
+    },
+    {
+      "question": "Wie ist die Darstellung statistischer Einheiten ?",
+      "answer": "Symbol \\( e \\) mit Index \\( i \\): \\( e_1, e_2, ..., e_i \\)"
+    },
+    {
+      "question": "Nenne drei Beispiele für statistische Einheiten.",
+      "answer": "Personen, Haushalte, Unternehmen, Produkte, Jahre, Ereignisse (z.B. Verkaufsfälle, Maschinenfehler), Kombinationen wie 'Konto im Jahr X'."
+    },
+    {
+      "question": "Was ist eine Grundgesamtheit, wie wird sie dargestellt ?",
+      "answer": "Die Grundgesamtheit (auch Population, Symbol: \\( \\mathbb{G} \\)) umfasst alle statistischen Einheiten \\( e_i \\). Anzahl der Einheiten: \\( n \\)- Darstellung als Menge: \\( G = \\{ e_1, e_2, ..., e_i, ..., e_n \\} \\)"
+    },
+    {
+      "question": "Wie bezeichnet man eine Teilmenge der Grundgesamtheit ?",
+      "answer": "Teilgesamtheit"
+    },
+    {
+      "question": "Welche Erhebungsarten gibt es und wann werden diese erhoben ?",
+      "answer": "Vollerhebung: Wenn alle Einheiten untersucht werden. Teilerhebung: Wenn nur eine Teilmenge untersucht wird."
+    },
+    {
+      "question": "Warum ist die Definition der Grundgesamtheit nicht selbstverständlich und wie muss sie abgegrenzt werden?",
+      "answer": "Studien können schnell ausufern und chaotisch werden, wenn die Definition nicht gezielt und sinvoll erfolgt. Abgrenzung: sachlich(Was?), räumlich(Wo?), zeitlich(Wann?)"
+    },
+    {
+      "question": "Was sind Merkmale und wie ist die Symbolische bezeichnung? Nenne zwei Beispiele",
+      "answer": "Merkmale (Symbol: \\( \\alpha \\), z.B. ( \\( \\alpha^{(1)}; \\alpha^{(2)}; \\dots; \\alpha^{(v)}; \\dots \\) ) sind Eigenschaften die an statistischen Einheiten erhoben werden. Beispiele: Farbe, Gweicht, Material, ..."
+    },
+    {
+      "question": "Wann spricht man von statistischen Variablen und wie lautet das Symbol ?",
+      "answer": "Wenn Merkmalsausprägungen reelle Zahlen sind. Symbol: \\( X^{(j)} \\) für das Merkmal, \\( x_i^{(j)} \\) für die Ausprägung / Hinweis: Auch bei nicht-numerischen Daten wird in der Praxis oft der Begriff „Variable“ verwendet."
+    },
+    {
+      "question": "Nenne ein Beispiel für eine Merkmalsausprägung.",
+      "answer": "Beispiel: \\( e_3 \\) hat zum Merkmal „Farbe“ die Ausprägung „Blau“."
+    },
+    {
+      "question": "Wobei handelt es sich bei der sogenannten Datenerhebung ?",
+      "answer": "Die Datenerhebung ist der Prozess des Messens und Dokumentierens von Merkmalen."
+    },
+    {
+      "question": "Wie nennt man das Ergebnis der Datenerhebung ?",
+      "answer": "Originaldatensatz (auch Urliste, Beobachtungsreihe oder Datensatz genannt)"
+    },
+    {
+      "question": "Was ist der Unterschied zwischen einem Merkmal und einer Merkmalsausprägung?",
+      "answer": "Ein Merkmal ist eine Eigenschaft, die untersucht wird (z.B. Farbe). Die Merkmalsausprägung ist der konkrete Wert, den diese Eigenschaft bei einer Einheit annimmt (z.B. Blau)."
+    },
+    {
+      "question": "Benenne die Punkte A, B, C und D",
+      "answer": "A = Merkmal / B = Merkmalsausprägung / C = Grundgesamtheit",
+      "q_picture": "../path/zusammenfassung_grundbegriffe_frage.png",
+      "picture": "../path/zusammenfassung_grundbegriffe_loesung.png"
+    },
+    {
+      "question": "Welche Arten von Skalenniveaus gibt es ?",
+      "answer": "Nominalskala / Ordinalskala / Intervallskala / Verhältnisskala"
+    },
+    {
+      "question": "Was sagt das Skalenniveau eines Merkmals aus ?",
+      "answer": "Welche Rechnung man für das Merkmal verwenden kann."
+    },
+    {
+      "question": "Warum sind Skalenniveaus wichtig für die Analyse ?",
+      "answer": "Wendet man ein statistischen Verfahren an, dessen mathematische Operationen nicht zum Merkmal passen, ergibt das Ergebnis keinen Sinn"
+    },
+    {
+      "question": "Wie lautet der Überbegriff für Intervall- und Verhältnisskalen ?",
+      "answer": "Metrische Skalen (auch: Kardinalskalen)"
+    },
+    {
+      "question": "Welche mathematischen Operationen hat eine Nominalskala und nenne 2 Beispiele mit inklusive denkbarer Ausprägungen.",
+      "answer": " =|!=    Beispiel: Geschlecht {männlich, weiblich}, Farbe(blau, rot, grün, ...)"
+    },
+    {
+      "question": "Welche mathematischen Operationen hat eine Ordinalskala und nenne 2 Beispiele mit inklusive denkbarer Ausprägungen.",
+      "answer": " =|!= ; <|>    Beispiel: Schulnoten {sehr gut, gut, ...}, Zufriedenheit {sehr unzufrieden, unzufrieden, ...}"
+    },
+    {
+      "question": "Welche mathematischen Operationen hat eine Intervallskala und nenne 2 Beispiele mit inklusive denkbarer Ausprägungen.",
+      "answer": " =|!= ; <|> ; +|-    Beispiel: Temperatur {..., -1, 0, 1, ...}, Geburtsjahr {..., 2001, 2002, ...}"
+    },
+    {
+      "question": "Welche mathematischen Operationen hat eine Verhältnisskala und nenne 2 Beispiele mit inklusive denkbarer Ausprägungen.",
+      "answer": " =|!= ; <|> ; +|- ; *|/    Beispiel: Monatseinkommen [0;∞) EUR, Alter [0,∞) Jahre, Kinderzahl {0,1,2,...}  |  Merksatz: Je höher das Skalenniveau, desto mehr mathemische Operationen sind erlaubt."
+    },
+    {
+      "question": "Wie erkennt man das Skalenniveau eines Merkmals?",
+      "answer": "Man prüft, ob die Ausprägungen nur benennbar sind (Nominal), eine Rangfolge haben (Ordinal), feste Abstände existieren (Intervall) oder zusätzlich ein natürlicher Nullpunkt existiert (Verhältnis)."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Intervall- und Verhältnisskala?",
+      "answer": "Bei der Verhältnisskala gibt es einen natürlichen Nullpunkt (z. B. 0 € = kein Geld), bei der Intervallskala nicht (z. B. 0 °C bedeutet nicht 'keine Temperatur')."
+    },
+    {
+      "question": "Nenne die Eigenschaften diskreter Merkmale.",
+      "answer": "Sie bestehen aus endlich vielen Skalenpunkten. Es gibt keine zwischenwerte."
+    },
+    {
+      "question": "Nenne die Eigenschaften stetiger Merkmale.",
+      "answer": "Es gibt unendlich viele mögliche Ausprägungen. Zwischen beliebigen Werten existieren weitere Werte."
+    },
+    {
+      "question": "Nenne die Eigenschaften quasi-stetiger Merkmale.",
+      "answer": "Eigentlich diskret, aber mit sehr vielen ausprägungen. Werden wie stetige Merkmale behandelt."
+    },
+    {
+      "question": "Nenne jeweils ein Beispiel für diskrete, stetige und quasi-stetige Merkmale.",
+      "answer": "Diskrete Merkmale: Anzahl Personen in einem Haushalt (1,2,3,...) | Stetige Merkmale: Länge; Zeit | Quasi-stetige Merkmale: Umsatz eines Unternehmens in Euro/Cent"
+    },
+    {
+      "question": "Was bedeutet Gruppierung in der Statistik und wozu dient sie ?",
+      "answer": "Gruppierung tritt auf, wenn bei diskreten Merkmalen mit wenigen Ausprägungen mehrfach gleiche Werte im Datensatz vorkommen. Das Zählen dieser Wiederholungen sorgt für Übersichtlichkeit. Man fasst den Datensatz nach Häufigkeit der Merkmalsausprägungen zusammen (auch Verdichtung genannt). Beispiel: Datensatz = (Mo, Di, Di, Mi, Do, Mi, Mo, ...) → Gruppierung ergibt z.B.: Mo: 2, Di: 2, Mi: 2, Do: 1"
+    },
+    {
+      "question": "Was ist Klassierung und warum wird sie angewendet ?",
+      "answer": "Klassierung wird bei stetigen oder quasi-stetigen Merkmalen angewendet, um Übersicht zu schaffen. Die Skala wird in Teilintervalle (Klassen) zerlegt → z.B. \\( K_1 = [0; 30) \\), \\( K_2 = [30; 60) \\). Ziel: Verdichtung des Datensatzes durch Zählung der Häufigkeiten in den Klassen."
+    },
+    {
+      "question": "Worauf sollte man bei der Wahl der Klassenbreite achten ?",
+      "answer": "Die Klassenbreite kann variieren, sollte aber möglichst gleich gewählt werden (bessere Übersicht und Darstellung)."
+    },
+    {
+      "question": "Wann sollte eine Klassierung angewendet werden ?",
+      "answer": "Wenn fast jeder Wert einzigartig ist, z.B. bei Entfernungen in km"
+    },
+    {
+      "question": "Ein Datensatz liegt in klassierter Form vor. Die Klasse K2 ist definiert als [30;60). Wie berechnet man die Klassenmitte \\( \\bar{x}_j \\) und welchen Wert hat sie?",
+      "answer": "(Klassenuntergrenze + Klassenobergrenze) / 2 → \\( \\bar{x}_j \\)= (30+60)/2 = 45"
+    },
+    {
+      "question": "Wie lautet die Faustregel zu Klassenanzahl ?",
+      "answer": "\\( m \\approx \\sqrt{n} \\) bei \\( n \\leq 100 \\) | Ca. 10 Klassen bei 100 Werten, 13 bei 1000, 16 bei 10000"
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Gruppierung und Klassierung?",
+      "answer": "Gruppierung erfolgt bei diskreten Merkmalen mit wenigen Ausprägungen durch Zählen der Wiederholungen. Klassierung wird bei (quasi-)stetigen Merkmalen durchgeführt, indem man Werte in Klassen (Intervalle) zusammenfasst."
+    }
+  ]
+}

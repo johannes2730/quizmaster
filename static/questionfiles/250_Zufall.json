@@ -14,6 +14,10 @@
             "answer": "",
             "q_picture":"../images/q_picture_mengen.png",
             "picture":"../images/picture_mengen.png"
+        },
+        {
+            "question": "Was ist der Ereignisraum bei einem 2-fachen Münzwurf?",
+            "answer": "{(Kopf, Kopf), (Kopf, Zahl), (Zahl, Kopf), (Zahl, Zahl)}"
         }
     ]
 }

@@ -1,0 +1,29 @@
+{
+    "title": "Schätzen von Parametern",
+    "questions": [
+        {
+            "question": "Warum wird in der Statistik oft ein Konfidenzintervall statt eines Punktschätzwerts angegeben?",
+            "answer": "Weil eine Punktschätzung den tatsächlichen Wert der Grundgesamtheit selten exakt trifft. Ein Konfidenzintervall enthält mit einer bestimmten Wahrscheinlichkeit den wahren Parameterwert."
+        },
+        {
+            "question": "Schätzwerte aus Stichproben sind bei großen Stichproben annähernd normalverteilt. Wahr oder Falsch ?",
+            "answer": "Wahr"
+        },
+        {
+            "question": "Was beschreibt das Konfidenzniveau? (Schätzen von Parametern)",
+            "answer": "Das Konfidenzniveau gibt an, in wie viel Prozent der Fälle ein mit dieser Methode berechnetes Intervall den wahren Parameter enthält – wenn man viele Stichproben ziehen würde."
+        },
+        {
+            "question": "Was ist ein Konfidenzintervall? (Schätzen von Parametern)",
+            "answer": "Ein Bereich, in dem mit großer Wahrscheinlichkeit der wahre Wert liegt."
+        },
+        {
+            "question": "Was bedeutet Erwartungstreue bei einer Schätzung?",
+            "answer": "Der Erwartungswert aller möglichen Schätzwerte entspricht dem wahren Parameterwert."
+        },
+        {
+            "question": "Was sagt die Formel der Standardabweichung für Schätzwerte aus ?",
+            "answer": "Sie zeigt, wie stark die Schätzwerte um den Erwartungswert streuen – je größer die Stichprobe, desto kleiner die Streuung."
+        }
+    ]
+}

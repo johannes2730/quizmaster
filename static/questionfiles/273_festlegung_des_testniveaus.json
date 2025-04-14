@@ -1,0 +1,21 @@
+{
+  "title": "Festlegung des Testniveaus",
+  "questions": [
+    {
+      "question": "Nenne ein typisches Testniveau für Hypothesentests",
+      "answer": "0.001 (0.1%), 0.01 (1%), 0.05 (5%), 0.1 (10%)"
+    },
+    {
+      "question": "Was gilt bei Hypothesentests für den beta-Fehler, wenn der alpha-Fehler kleiner wird?",
+      "answer": "Er wird größer"
+    },
+    {
+      "question": "Wie kann man bei Hypothesentests den beta-Fehler bei konstantem alpha verringern?",
+      "answer": "Man erhöht den Stichprobenumfang"
+    },
+    {
+      "question": "Wie wirkt sich der Stichprobenumfang auf die Überlegungen zum Testniveau eines Hypothesentests aus?",
+      "answer": "Bei kleinem Stichprobenumfang sind sehr kleine Testniveaus (0.001 oder 0.01) schwer realisierbar, man sollte sich also für größere entscheiden. Andersherum sollte man bei sehr großen Stichprobenumfängen das Testniveau klein halten."
+    }
+  ]
+}
