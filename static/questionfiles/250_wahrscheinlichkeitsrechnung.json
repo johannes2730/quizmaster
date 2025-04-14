@@ -1,0 +1,30 @@
+{
+    "title": "F.1 Kombinatorik – Grundlagen ohne Formeln",
+    "questions": [
+      {
+        "question": "Welche Frage ist typisch für die Kombinatorik?\na) Wie groß ist der Mittelwert der Messreihe?\nb) Wie wahrscheinlich ist ein Ergebnis bei unendlich vielen Versuchen?\nc) Auf wie viele Arten kann ich eine Auswahl treffen?\nd) Wie viele Datenpunkte sind erforderlich für eine Regression?",
+        "answer": "c"
+      },
+      {
+        "question": "Was bedeuten die Größen n und k im Binomialkoeffizienten \"n über k\"?",
+        "answer": "n steht für die Gesamtanzahl der verfügbaren Elemente, aus denen gewählt wird. k steht für die Anzahl der Elemente, die ausgewählt werden. Der Binomialkoeffizient gibt an, wie viele mögliche Kombinationen dieser k Elemente es aus den n gibt – ohne Berücksichtigung der Reihenfolge."
+      },
+      {
+        "question": "Erkläre, was ein Binomialkoeffizient bedeutet und in welcher Art von Aufgabe er eingesetzt wird.",
+        "answer": "Ein Binomialkoeffizient (gesprochen: 'n über k') gibt an, auf wie viele Arten man k Objekte aus einer Menge von n Objekten auswählen kann – unabhängig von der Reihenfolge. Er wird z. B. verwendet, wenn man Kombinationen zählt, etwa wie viele verschiedene 3er-Teams man aus 10 Personen bilden kann."
+      },
+      {
+        "question": "Welcher dieser vier Fälle lässt sich korrekt als Kombination (ohne Zurücklegen, ohne Beachtung der Reihenfolge) einordnen?\na) Auswahl eines Zahlencodes aus 4 Ziffern\nb) Besetzung von Plätzen 1 bis 3 in einem Rennen mit 10 Läufern\nc) Ziehung von 6 Lottozahlen aus 49\nd) Vergabe von Sitzplätzen in einem Theater nach Reihenfolge",
+        "answer": "c"
+      },
+      {
+        "question": "Ordnen zu: Welches Merkmal unterscheidet Kombinationen von Permutationen?",
+        "answer": "Bei Permutationen spielt die Reihenfolge der ausgewählten Elemente eine Rolle, bei Kombinationen nicht."
+      },
+      {
+        "question": "Ein Lehrer möchte aus 20 Schülern eine 2er-Gruppe für eine Präsentation zusammenstellen. Wie nennt man diese Auswahlart?\na) Kombination ohne Zurücklegen, ohne Reihenfolge\nb) Permutation ohne Zurücklegen, mit Reihenfolge\nc) Kombination mit Zurücklegen, ohne Reihenfolge\nd) Permutation mit Zurücklegen, mit Reihenfolge",
+        "answer": "a"
+      }
+    ]
+  }
+  

@@ -1,0 +1,42 @@
+{
+  "title": "Wahrscheinlichkeitsrechnung_Verteilugnen",
+  "questions": [
+    {
+      "question": "Erkläre kurz die Standardnormalverteilung und skizziere ihre Dichte- und Verteilungsfunktion",
+      "answer": "Standardnormalverteilung:\nEine Normalverteilung mit Mittelwert 0 und Varianz 1. Ihre Glockenkurve ist symmetrisch um 0, und sie dient als Referenz, um andere Normalverteilungen standardisieren zu können.",
+      "picture": "../images/Standardnormalverteilung.png"
+    },
+    {
+      "question": "Erkläre kurz die Allgemeine Normalverteilung und skizziere ihre Dichte- und Verteilungsfunktion",
+      "answer": "Eine Normalverteilung, bei der der Mittelwert (μ) und die Varianz (σ²) beliebig festgelegt werden können. Ihre Form ist ebenfalls symmetrisch und glockenförmig, und sie tritt häufig in natürlicher Varianz von Messungen auf.",
+      "picture": "../images/Allgemeine Normalverteilung.png"
+    },
+    {
+      "question": "Erkläre kurz die Chi-Quadrat-Verteilung und skizziere ihre Verteilungsfunktion",
+      "answer": "Eine Verteilung, die entsteht, wenn man die Summe der Quadrate unabhängiger standardnormalverteilter Zufallsvariablen bildet. Sie ist rechtsschief und wird vor allem in Hypothesentests, z.B. im Test auf Varianzhomogenität, verwendet.",
+      "picture": "../images/Chi-quadrat-Verteilung.png"
+    },
+    {
+      "question": "Erkläre kurz die t-Verteilung und skizziere ihre Verteilungsfunktion",
+      "answer": "Eine Verteilung, die ähnlich wie die Normalverteilung geformt ist, jedoch dickere ('fetter verteilte') Tails aufweist, was zu ihrer Anwendung bei kleinen Stichproben führt. Sie spielt eine zentrale Rolle im t-Test zur Schätzung von Mittelwertunterschieden, wobei die Form abhängig von den Freiheitsgraden ist.",
+      "picture": "../images/T-Verteilung.png"
+    },
+    {
+      "question": "Was ist der unterschied zwischen Standardnormalverteilung und Normalverteilung?",
+      "answer": "Die Normalverteilung ist eine Verteilung mit beliebigem Mittelwert (μ) und Standardabweichung (σ)\nDie Standardnormalverteilung ist ein Spezialfall davon, bei dem der Mittelwert 0 und die Standardabweichung 1 ist. Sie wird genutzt, um beliebige Normalverteilungen durch Standardisierung vergleichbar zu machen."
+    },
+    {
+      "question": "Was gibt der z-Wert bei der Normalverteilung an?",
+      "answer": "Der z-Wert (auch Standardwert genannt) gibt an, wie viele Standardabweichungen ein Wert vom Mittelwert der Verteilung entfernt liegt. Er wird berechnet als z = (x – μ) / σ und ermöglicht so den Vergleich von Werten aus unterschiedlichen Normalverteilungen."
+    },
+    {
+      "question": "Wie lautet die Dichtefunktion der allgemeinen Normalverteilung und was bedeuten die Bestandteile?",
+      "answer": "Dabei ist μ der Mittelwert (Zentrum der Verteilung) und σ die Standardabweichung (Streuung der Werte um μ). Der Vorfaktor sorgt dafür, dass die Fläche unter der Kurve 1 ergibt. Der Exponentialterm bestimmt, wie schnell die Wahrscheinlichkeitsdichte vom Mittelwert abnimmt.",
+      "picture": "../images/Formel_Normalverteilung.png"
+    },
+    {
+      "question": "Nenne jeweils ein Beispiel für den Einsatz der folgenden Verteilungen: 1. Standardnormalverteilung, 2. Allgemeine Normalverteilung, 3. Chi-Quadrat-Verteilung, 4. t-Verteilung",
+      "answer": "1. Standardnormalverteilung:\nWird verwendet, wenn man Werte standardisiert und mit z‑Tabellen arbeitet. Beispiel: Bei der Bewertung von Testergebnissen kann man den z-Wert nutzen, um herauszufinden, wie gut ein Schüler im Vergleich zur Durchschnittsleistung abgeschnitten hat.\n\n2Allgemeine Normalverteilung:\nDient der Modellierung natürlicher Phänomene. Beispiel: Die Körpergröße einer Bevölkerung, die sich oft normalverteilt um einen bestimmten Mittelwert (z.B. 170cm) mit einer bestimmten Streuung darstellt.\n\n3.Chi‑Quadrat-Verteilung:\nWird häufig in Hypothesentests eingesetzt, die Varianzen oder Häufigkeiten untersuchen. Beispiel: In der Qualitätskontrolle, um zu prüfen, ob die beobachtete Häufigkeit von Fehlern von der erwarteten Häufigkeit abweicht.\n\n4.t-Verteilung:\nKommt zum Einsatz, wenn Stichprobengrößen klein sind und die Varianz der Grundgesamtheit unbekannt ist. Beispiel: Bei einem medizinischen Versuch mit wenigen Probanden verwendet man den t-Test, um zu ermitteln, ob ein Unterschied zwischen zwei Behandlungsgruppen statistisch signifikant ist."
+    }
+  ]
+}

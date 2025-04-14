@@ -1,0 +1,34 @@
+{
+    "title": "Bernoullis Gesetz der großen Zahlen, Hauptsatz der Statistik und Grenzwertsatz von Moivre und Laplace",
+    "questions": [
+      {
+        "question": "Was ist der Unterschied zwischen dem allgemeinen Gesetz der großen Zahlen und Bernoullis Gesetz der großen Zahlen?",
+        "answer": "Das allgemeine Gesetz der großen Zahlen bezieht sich auf arithmetische Mittel, während Bernoullis Gesetz sich auf Anteilswerte bezieht."
+      },
+      {
+        "question": "Worum geht es bei Bernoullis Gesetz der großen Zahlen?",
+        "answer": "Um die Frage, wie gut man den Anteilswert in der Grundgesamtheit durch eine Stichprobe schätzen kann."
+      },
+      {
+        "question": "Was besagt der Hauptsatz der mathematischen Statistik?",
+        "answer": "Das die geschätzte Verteilungsfunktion auf Basis einer Zufallsstichprobe der Verteilungsfunktion der Grundgesamtheit mit wachsendem Stichprobenumfang immer ähnlicher wird."
+      },
+      {
+        "question": "Wie lautet die Formel des Hauptsatzes der mathematischen Statistik?",
+        "answer": "P(lim n→∞ Pₙ(x) = Fₙ*(x)) = 1"
+      },
+      {
+        "question": "Was bedeutet die Aussage des Hauptsatzes der mathematischen Statistik in Worten?",
+        "answer": "Je größer die Stichprobe, desto höher die Wahrscheinlichkeit, dass die geschätzte Verteilungsfunktion der tatsächlichen Verteilung entspricht."
+      },
+      {
+        "question": "Was besagt der Moivre-Laplace Satz?",
+        "answer": "Das die Verteilungsfunktion einer binomialverteilten Zufallsvariablen bei wachsendem n gegen eine Normalverteilung konvergiert."
+      },
+      {
+        "question": "Welchem allgemeineren Satz ist der Moivre-Laplace Satz untergeordnet?",
+        "answer": "Dem zentralen Grenzwertsatz."
+      }
+    ]
+  }
+  

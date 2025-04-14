@@ -1,0 +1,68 @@
+{
+  "title": "Erwartungswert von Zufallsvariablen, Varianz von Zufallsvariablen, Rechnen mit Zufallsvariablen und Standardisierung",
+  "questions": [
+    {
+      "question": "Was beschreibt der Erwartungswert in der Statistik?",
+      "answer": "Den durchschnittlichen Wert, den man bei sehr vielen Wiederholungen eines Zufallsexperiments erwarten kann."
+    },
+    {
+      "question": "Warum ist der Erwartungswert bei Zufallsvariablen wichtig?",
+      "answer": "Er hilft dabei, Vorhersagen über das durchschnittliche Ergebnis eines Zufallsprozesses zu treffen."
+    },
+    {
+      "question": "Der Erwartungswert ist eng verwandt mit dem gewogenen empirischen arithmetischen Mittel doch was ist der Unterschied?",
+      "answer": "Beim empirischen arithmetischen Mittel werden tatsächlich aufgetretene Messwerte mit ihrer relativen Häufigkeit gewichtet und aufaddiert, beim Erwartungswert hingegen werden die theoretisch möglichen Werte einer Zufallsvariable mit ihren Wahrscheinlichkeiten gewichtet und aufaddiert."
+    },
+    {
+      "question": "Was gibt die Varianz über eine Zufallsvariable an?",
+      "answer": "Sie zeigt, wie stark die möglichen Werte um den Erwartungswert streuen."
+    },
+    {
+      "question": "Warum ist eine große Varianz bei Daten problematisch für Vorhersagen?",
+      "answer": "Weil die Ergebnisse stark schwanken können und dadurch unzuverlässiger sind."
+    },
+    {
+      "question": "Was sagt eine kleine Varianz über die Daten aus?",
+      "answer": "Dass die Werte nah beieinander und nahe beim Erwartungswert liegen und eine relativ präzie Vorhersage erfolgen kann."
+    },
+    {
+      "question": "Die Varianz von Zufallsvariablen ist eng verwandt mit der empirischen Varianz bei gruppiert bzw. klassiert vorliegenden Daten doch was ist der Unterschied?",
+      "answer": "Bei der empirischen Varianz wird die Streuung mit den tatsächlich aufgetretenen Messwerten berechnet, während die Varianz von Zufallsvariablen ein Maß für die Streuung der theoretisch möglichen Werte ist."
+    },
+    {
+      "question": "Was bedeutet eine Transformation einer Zufallsvariable?",
+      "answer": "Eine Veränderung der Zufallsvariablen, z.B. durch Rechenoperationen wie Addition oder Multiplikation."
+    },
+    {
+      "question": "Wie lautet die Formel für die Standardisierung?",
+      "answer": "siehe Bild",
+      "picture": "../images/Formel_Standardisierung.png"
+    },
+    {
+      "question": "Was versteht man unter der Standardisierung einer Zufallsvariable?",
+      "answer": "Man verändert die Variable so, dass sie einen Erwartungswert von 0 und eine Varianz von 1 hat."
+    },
+    {
+      "question": "Wie lautet die Formel für den Erwartungswert?",
+      "answer": "siehe Bild",
+      "picture": "../images/Formel_Erwartungswert.png"
+    },
+    {
+      "question": "Was stellt E(X) dar?",
+      "answer": "Den durchschnittlichen Wert, den man bei vielen Wiederholungen erwarten kann."
+    },
+    {
+      "question": "Was bedeutet 𝑥𝑖 in der Formel?",
+      "answer": "xi ist ein möglicher Wert der Zufallsvariablen."
+    },
+    {
+      "question": "Wofür steht f(xi)?",
+      "answer": "Für die Wahrscheinlichkeit, dass X = xi eintritt."
+    },
+    {
+      "question": "Wie lautet die Formel für die Varianz?",
+      "answer": "siehe Bild",
+      "picture":"../images/Formel_Varianz.png"
+    }
+  ]
+}

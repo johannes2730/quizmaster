@@ -1,0 +1,38 @@
+{
+    "title": "Grundlagen der Zeitreihenanalyse",
+    "questions": [
+      {
+        "question": "Was ist ein wesentliches Merkmal einer Zeitreihe im Vergleich zu einer einfachen Messreihe?\na) Es gibt eine natürliche Rangordnung der Beobachtungen\nb) Die Beobachtungen sind unabhängig voneinander\nc) Die Beobachtungen sind zeitlich geordnet und potenziell voneinander abhängig\nd) Jede Beobachtung ist einmalig und zufällig gezogen",
+        "answer": "c"
+      },
+      {
+        "question": "Erkläre was man unter „zeitlicher Abhängigkeit“ in einer Zeitreihe versteht.",
+        "answer": "Zeitliche Abhängigkeit bedeutet, dass der Wert einer Beobachtung nicht unabhängig von den vorherigen Werten ist. Frühere Beobachtungen beeinflussen spätere – es besteht potenziell ein Zusammenhang über die Zeit hinweg."
+      },
+      {
+        "question": "Welche der folgenden Aussagen beschreibt den Nutzen eines gleitenden Durchschnitts am zutreffendsten?\na) Er ersetzt Rohdaten vollständig durch deren Gesamtmittelwert\nb) Er hebt kurzfristige Ausreißer gezielt hervor\nc) Er identifiziert zyklische Strukturen in unregelmäßigen Daten\nd) Er glättet Schwankungen, um langfristige Trends sichtbar zu machen",
+        "answer": "d"
+      },
+      {
+        "question": "Wozu wird ein gleitender Durchschnitt in der Zeitreihenanalyse eingesetzt? Nenne min zwei typische Anwendungsziele.",
+        "answer": "Ein gleitender Durchschnitt wird eingesetzt, um kurzfristige Schwankungen zu glätten und langfristige Trends sichtbar zu machen. Außerdem kann er zur Identifikation saisonaler Muster oder zur Prognosevorbereitung verwendet werden."
+      },
+      {
+        "question": "Was ist ein gewichteter gleitender Durchschnitt?\na) Ein Durchschnitt, bei dem jeder Wert gleich stark gewichtet wird\nb) Eine Methode, bei der frühere Werte mehr Einfluss haben als spätere\nc) Eine Methode, bei der aktuellen Werten ein höheres Gewicht zugewiesen wird\nd) Eine Methode, die alle Ausreißer ignoriert",
+        "answer": "c"
+      },
+      {
+        "question": "Beschreibe den Unterschied zwischen einem einfachen und einem gewichteten gleitenden Durchschnitt.",
+        "answer": "Beim einfachen gleitenden Durchschnitt werden alle Werte im Fenster gleich gewichtet. Beim gewichteten gleitenden Durchschnitt hingegen erhalten neuere Werte ein höheres Gewicht, sodass sie stärker in die Berechnung eingehen und das Ergebnis stärker beeinflussen."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen einem vorlaufenden, einem nachlaufenden und einem zentrischen gleitenden Durchschnitt? Erklären jeweils, wie das Zeitfenster liegt und in welcher Situation welcher Typ sinnvoll ist.",
+        "answer": "Beim vorlaufenden gleitenden Durchschnitt liegt das Zeitfenster vollständig in der Zukunft (z. B. für Prognosen). Beim nachlaufenden liegt es vollständig in der Vergangenheit und ist in der Praxis am häufigsten. Der zentrische gleitende Durchschnitt mittelt symmetrisch um einen Zeitpunkt und ist vor allem bei saisonalen Glättungen oder bei Analyse historischer Daten sinnvoll."
+      },
+      {
+        "question": "Wann ist es sinnvoll, anstelle eines einfachen gleitenden Durchschnitts einen gewichteten zu verwenden?",
+        "answer": "Ein gewichteter Durchschnitt ist sinnvoll, wenn neuere Beobachtungen stärker berücksichtigt werden sollen als ältere – z. B. bei stark wandelnden Prozessen oder in der Wirtschaft bei aktuellen Marktbewegungen."
+      }
+    ]
+  }
+  
