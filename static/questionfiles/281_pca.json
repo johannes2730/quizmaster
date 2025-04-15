@@ -1,0 +1,33 @@
+{
+    "title": "Principal Component Analysis (PCA)",
+    "questions": [
+        {
+            "question": "Was ist PCA und was ist das Ziel?",
+            "answer": "PCA (Principal Component Analysis) ist ein Verfahren zur Dimensionsreduktion, das die wichtigsten Muster in den Daten extrahiert. Ziel ist es, die Dimensionen zu reduzieren und die größte Datenvarianz über Hauptkomponenten zu erfassen, um die Analyse und Visualisierung zu vereinfachen."
+        },
+        {
+            "question": "Wie funktioniert PCA?",
+            "answer": "PCA nutzt die Kovarianzmatrix, Eigenvektoren und Eigenwerte, um die Hauptkomponenten zu bestimmen, die die größte Datenvarianz enthalten."
+        },
+        {
+            "question": "Welche Schritte hat PCA?",
+            "answer": "1. Zentrieren der Daten \n2. (Optional) Skalieren \n3. Kovarianzmatrix berechnen \n4. Eigenwerte & -vektoren berechnen \n5. Wichtigste Komponenten auswählen \n6. Daten transformieren"
+        },
+        {
+            "question": "Was ist die Kovarianzmatrix?",
+            "answer": "Eine quadratische Matrix, die die paarweisen Zusammenhänge (Kovarianz) zwischen Variablen zeigt. Die Diagonale enthält die Varianzen jeder Variable."
+        },
+        {
+            "question": "Wie projiziert man Punkte auf einen Vektor?",
+            "answer": "Die Projektion eines Punktes auf einen Vektor erfolgt durch das Skalarprodukt und misst die Position des Punktes entlang des Vektors."
+        },
+        {
+            "question": "Was sind Eigenvektoren und warum sind sie wichtig?",
+            "answer": "Eigenvektoren sind Richtungen im Datenraum, die bei Transformationen unverändert bleiben. In PCA maximieren sie die Varianz und definieren die Hauptkomponenten, die Dateninformationen komprimieren."
+        },
+        {
+            "question": "Nenn Vor- und Nachteile von PCA",
+            "answer": "Vorteile: \n- PCA reduziert die Dimensionen eines Datensatzes, \n- vereinfacht die Analyse und Visualisierung, \n- filtert redundante Informationen und \n- verbessert die Effizienz von maschinellen Lernmodellen. \nNachteile: \n- PCA funktioniert nur bei linearen Zusammenhängen, \n- Hauptkomponenten sind schwer zu interpretieren, \n- es kann zu Informationsverlust kommen und \n- die Daten müssen vorab standardisiert werden."
+        }
+    ]
+}
