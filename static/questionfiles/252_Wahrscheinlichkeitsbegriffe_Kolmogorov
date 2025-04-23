@@ -1,0 +1,97 @@
+{
+  "title": "Wahrscheinlichkeitsbegriffe / Kolmogorov",
+  "questions": [
+    {
+      "question": "Welche drei Wahrscheinlichkeitsbegriffe unterscheidet man?",
+      "answer": [
+        "klassischer Wahrscheinlichkeitsbegriff (Laplace)",
+        "statistischer (frequentistischer/empirischer) Wahrscheinlichkeitsbegriff",
+        "subjektivistischer Wahrscheinlichkeitsbegriff"
+      ]
+    },
+    {
+      "question": "Wie wird die Wahrscheinlichkeit im klassischen Sinn berechnet?",
+      "answer": [
+        "P(A) = Anzahl der günstigen Ergebnisse / Anzahl aller möglichen Ergebnisse",
+        "Voraussetzung: alle Ergebnisse sind gleichwahrscheinlich"
+      ]
+    },
+    {
+      "question": "Was ist die zentrale Annahme beim klassischen Wahrscheinlichkeitsbegriff?",
+      "answer": [
+        "Gleichwahrscheinlichkeit aller Elementarereignisse",
+        "Kein Grund zur Bevorzugung einzelner Ergebnisse"
+      ]
+    },
+    {
+      "question": "Beispiel: 6 Frauen, 4 Männer. Wie groß ist die Laplace-Wahrscheinlichkeit, dass eine Frau gewinnt?",
+      "answer": [
+        "P(Frau gewinnt) = 6 / 10 = 0,6"
+      ]
+    },
+    {
+      "question": "Wann nutzt man den statistischen Wahrscheinlichkeitsbegriff?",
+      "answer": [
+        "Wenn Zweifel an Gleichwahrscheinlichkeit bestehen",
+        "Wenn Vergangenheitsdaten vorhanden sind"
+      ]
+    },
+    {
+      "question": "Wie wird die statistische Wahrscheinlichkeit berechnet?",
+      "answer": [
+        "P(A) = Häufigkeit von A / Gesamtanzahl der Durchführungen"
+      ]
+    },
+    {
+      "question": "Was bedeutet: P(Frau gewinnt) = 9 / 24 = 0,375 im Beispiel mit Gewinnhistorie?",
+      "answer": [
+        "Frauen haben insgesamt 9 von 24 Gewinnen erzielt",
+        "Statistische Wahrscheinlichkeit = 0,375"
+      ]
+    },
+    {
+      "question": "Was behauptete Richard von Mises zur Wahrscheinlichkeit?",
+      "answer": [
+        "Wahrscheinlichkeit ist Grenzwert der relativen Häufigkeit",
+        "Nur sinnvoll bei unendlichen (oder sehr vielen) Wiederholungen",
+        "Zufallsfolge muss 'kollektiv' sein: stabil, kein Manipulationsmuster"
+      ]
+    },
+    {
+      "question": "Was ist der subjektivistische Wahrscheinlichkeitsbegriff?",
+      "answer": [
+        "Wahrscheinlichkeit = Maß für den persönlichen Grad an Überzeugung",
+        "Kommt zum Einsatz, wenn keine Häufigkeiten oder Gleichwahrscheinlichkeit bekannt sind",
+        "Subjektive Einschätzung kann durch Expertenwissen oder Informationen gestützt sein"
+      ]
+    },
+    {
+      "question": "Beispiel für subjektive Wahrscheinlichkeit?",
+      "answer": [
+        "Ein Fußballfan schätzt die Gewinnwahrscheinlichkeit seines Lieblingsteams auf 70 %",
+        "Diese Einschätzung basiert auf Bauchgefühl, Erfahrung, Expertenmeinungen etc."
+      ]
+    },
+    {
+      "question": "Was sind die Axiome von Kolmogorov?",
+      "answer": [
+        "1. Nichtnegativität: Für jedes Ereignis A gilt: P(A) ≥ 0",
+        "2. Normierung: Die Wahrscheinlichkeit des sicheren Ereignisses ist 1, also P(Ω) = 1",
+        "3. Additivität: Für zwei unvereinbare Ereignisse A und B gilt: P(A ∪ B) = P(A) + P(B)"
+      ]
+    },
+    {
+      "question": "Was bedeutet Normierung im Sinne von Kolmogorov?",
+      "answer": [
+        "Die Wahrscheinlichkeit des sicheren Ereignisses (Ω) beträgt 1",
+        "Das heißt: irgendetwas wird auf jeden Fall passieren"
+      ]
+    },
+    {
+      "question": "Was bedeutet Additivität im Sinne von Kolmogorov?",
+      "answer": [
+        "Wenn A und B nicht gleichzeitig eintreten können (disjunkt), ist die Wahrscheinlichkeit ihres Eintretens gleich der Summe ihrer Einzelwahrscheinlichkeiten"
+      ]
+    }
+  ]
+}
