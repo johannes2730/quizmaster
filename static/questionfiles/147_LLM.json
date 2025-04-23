@@ -1,0 +1,65 @@
+{
+    "title": "Large Language Modell (LLM) & Retrieval Augmented Generation (RAG)",
+    "questions": [
+        {
+            "question": "Was versteht man unter einem Large Language Modell (LLM)?",
+            "answer": "Ein LLM ist ein KI-Modell mit einer sehr großen Anzahl an Parametern (oft Millionen oder Milliarden), das darauf trainiert ist, natürliche Sprache zu verstehen, zu verarbeiten und zu generieren."
+        },
+        {
+            "question": "Auf welcher Architektur basieren LLMs typischerweise?",
+            "answer": "LLMs basieren in der Regel auf der Transformer-Architektur, die 2017 vorgestellt wurde."
+        },
+        {
+            "question": "Welche Fähigkeiten zeichnen LLMs besonders aus?",
+            "answer": "LLMs sind vielseitig, können Kontexte erfassen (Kontextualisierung) und menschenähnliche Texte generieren (Generativität)."
+        },
+        {
+            "question": "In welchen Anwendungsbereichen kommen LLMs häufig zum Einsatz?",
+            "answer": "Sie werden z.B. in der automatisierten Textgenerierung, maschinellen Übersetzung, Inhaltszusammenfassung, in Frage-Antwort-Systemen und Chatbots verwendet."
+        },
+        {
+            "question": "Wie läuft das Training eines LLMs typischerweise ab?",
+            "answer": "Es erfolgt in zwei Schritten: Zuerst das Pre-Training auf großen Textmengen, danach ein Fine-Tuning, das auf spezifische Aufgaben oder Domänen zugeschnitten ist."
+        },
+        {
+            "question": "Warum sind LLMs so erfolgreich in der Verarbeitung natürlicher Sprache?",
+            "answer": "Weil sie aus großen Textmengen lernen und durch Mechanismen wie Selbstaufmerksamkeit den Kontext und die Struktur von Sprache sehr gut erfassen können."
+        },
+        {
+            "question": "Was bedeutet der Begriff \"Selbstaufmerksamkeit\" (Self-Attention) im Zusammenhang mit LLMs?",
+            "answer": "Selbstaufmerksamkeit ist ein Mechanismus innerhalb der Transformer-Architektur, der es dem Modell ermöglicht, Beziehungen zwischen Wörtern in einem Satz unabhängig von deren Position zu erkennen."
+        },
+        {
+            "question": "Was unterscheidet ein LLM von klassischen Sprachverarbeitungsmodellen?",
+            "answer": "LLMs arbeiten mit deutlich mehr Parametern, nutzen die Transformer-Architektur und sind in der Lage, generative Aufgaben zu bewältigen, anstatt nur auf fest programmierte Regeln zurückzugreifen."
+        },
+        {
+            "question": "Was ist der Unterschied zwischen Pre-Training und Fine-Tuning bei LLMs?",
+            "answer": "Beim Pre-Training wird das Modell auf großen, allgemeinen Textkorpora trainiert. Beim Fine-Tuning wird es anschließend auf spezifische Aufgaben oder Daten angepasst."
+        },
+        {
+            "question": "Wie tragen LLMs zur Mensch-Maschine-Interaktion bei?",
+            "answer": "Sie ermöglichen natürliche, dialogorientierte Kommunikation in Anwendungen wie Chatbots, indem sie menschenähnlich auf Spracheingaben reagieren können."
+        },
+        {
+            "question": "Was ist Retrieval Augmented Generation (RAG)?",
+            "answer": "RAG ist ein Ansatz, der Large Language Modelle (LLMs) mit externen Informationsabrufsystemen kombiniert, um genauere und kontextbezogene Antworten zu erzeugen."
+        },
+        {
+            "question": "Welches Ziel verfolgt RAG?",
+            "answer": "Das Ziel von RAG ist es, die Genauigkeit und Relevanz der von LLMs generierten Antworten durch Zugriff auf externe Informationen zu verbessern."
+        },
+        {
+            "question": "Wie unterscheidet sich RAG von klassischen LLMs?",
+            "answer": "Klassische LLMs greifen ausschließlich auf ihr Trainingswissen zurück, während RAG zusätzlich aktuelle oder externe Informationen aus Datenbanken oder Suchsystemen abrufen kann."
+        },
+        {
+            "question": "Wie funktioniert der RAG-Ansatz technisch gesehen?",
+            "answer": "Vor der Antwortgenerierung sucht RAG nach relevanten Dokumenten oder Textpassagen aus externen Quellen, die anschließend in die Antworterstellung durch das LLM einfließen."
+        },
+        {
+            "question": "Welchen Vorteil bietet RAG im Vergleich zu rein generativen Modellen?",
+            "answer": "RAG kann aktuelle, faktenbasierte und auf externe Quellen gestützte Antworten liefern, was die Zuverlässigkeit gegenüber rein generativen Modellen erhöht."
+        }
+    ]
+}

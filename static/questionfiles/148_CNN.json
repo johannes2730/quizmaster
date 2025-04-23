@@ -1,0 +1,45 @@
+{
+    "title": "Convolutional Neural Networks (CNNs)",
+    "questions": [
+        {
+            "question": "Was ist ein Convolutional Neural Network (CNN)?",
+            "answer": "Ein CNN ist ein künstliches neuronales Netzwerk, das speziell für die Verarbeitung von Bilddaten entwickelt wurde. Es nutzt Faltungen (Convolutions), um visuelle Merkmale hierarchisch zu extrahieren."
+        },
+        {
+            "question": "Wofür werden CNNs typischerweise eingesetzt?",
+            "answer": "CNNs werden hauptsächlich in der Bildverarbeitung verwendet, z.B. für Bilderkennung, Bildklassifizierung und Objekterkennung."
+        },
+        {
+            "question": "Was ist die Aufgabe der Eingabeschicht in einem CNN?",
+            "answer": "Die Eingabeschicht nimmt das Bild entgegen und formatiert es in die richtige Dimension (z.B. Höhe x Breite x Farbkanäle), damit es weiterverarbeitet werden kann."
+        },
+        {
+            "question": "Was passiert in der Faltungsschicht (Convolutional Layer)?",
+            "answer": "In der Faltungsschicht werden Filter (Kernels) über das Bild geschoben, um lokale Muster wie Kanten oder Texturen zu erkennen. Dabei entstehen neue Merkmalskarten."
+        },
+        {
+            "question": "Was ist ein Filter (Kernel) in einem CNN?",
+            "answer": "Ein Filter ist eine kleine Matrix, die trainiert wird, um bestimmte Merkmale wie Kanten oder Formen im Bild zu erkennen."
+        },
+        {
+            "question": "Welche Funktion hat die Aktivierungsschicht im CNN?",
+            "answer": "Die Aktivierungsschicht wendet eine nichtlineare Funktion wie ReLU an, um komplexere Muster zu erkennen und das Modell leistungsfähiger zu machen."
+        },
+        {
+            "question": "Was ist Max-Pooling und warum wird es verwendet?",
+            "answer": "Max-Pooling reduziert die Dimensionen einer Merkmalskarte, indem es nur den höchsten Wert in einem Bereich (z.B. 2x2) übernimmt. Es erhöht die Rechenleistung und macht das Modell robuster gegenüber Verschiebungen im Bild."
+        },
+        {
+            "question": "Was passiert in der voll verbundenen Schicht eines CNNs?",
+            "answer": "Die voll verbundenen Schichten verarbeiten die extrahierten Merkmale und treffen auf ihrer Basis Klassifikationsentscheidungen. Hier sind alle Neuronen miteinander verbunden."
+        },
+        {
+            "question": "Welche Rolle spielt die Softmax-Funktion in der Ausgabeschicht?",
+            "answer": "Die Softmax-Funktion wandelt die Ausgaben in Wahrscheinlichkeiten um, sodass das Modell entscheiden kann, zu welcher Klasse ein Bild mit der höchsten Wahrscheinlichkeit gehört."
+        },
+        {
+            "question": "Warum sind Faltungs- und Pooling-Schichten wichtig für CNNs?",
+            "answer": "Faltungs- und Pooling-Schichten extrahieren wichtige visuelle Merkmale und reduzieren gleichzeitig die Datenmenge, was zu effizienterem Lernen und besserer Generalisierung führt."
+        }
+    ]
+}

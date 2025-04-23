@@ -1,0 +1,56 @@
+{
+    "title": "Fragen und Antworten zu Reinforcement Learning (RL)",
+    "questions": [
+        {
+            "question": "Was ist Reinforcement Learning?",
+            "answer": "Reinforcement Learning ist ein Teilbereich des maschinellen Lernens, bei dem ein Agent durch Interaktion mit einer Umgebung lernt, optimale Entscheidungen zu treffen, um Belohnungen zu maximieren."
+        },
+        {
+            "question": "Wie lernt ein Agent im Reinforcement Learning?",
+            "answer": "Der Agent lernt durch Trial-and-Error, indem er Aktionen in einer Umgebung ausführt, Belohnungen erhält und daraus schrittweise bessere Strategien ableitet."
+        },
+        {
+            "question": "Was versteht man unter einer Policy im RL?",
+            "answer": "Eine Policy ist die Strategie, die der Agent verwendet, um in jedem Zustand eine Aktion auszuwählen."
+        },
+        {
+            "question": "Was ist der Unterschied zwischen modellbasiertem und modelfreiem RL?",
+            "answer": "Modellbasiertes RL verwendet eine interne Repräsentation der Umgebung zur Planung von Aktionen, während modelfreies RL direkt durch Erfahrung ohne ein solches Modell lernt."
+        },
+        {
+            "question": "Was ist ein Zustand im Kontext von RL?",
+            "answer": "Ein Zustand beschreibt die aktuelle Situation oder Konfiguration der Umgebung, in der sich der Agent befindet."
+        },
+        {
+            "question": "Was ist eine Belohnung im Reinforcement Learning?",
+            "answer": "Eine Belohnung ist die Rückmeldung, die der Agent für seine Aktionen in der Umgebung erhält – sie dient als Signal für gutes oder schlechtes Verhalten."
+        },
+        {
+            "question": "Was ist Value-based Reinforcement Learning?",
+            "answer": "Value-based RL basiert auf einer Wertefunktion, die angibt, wie gut bestimmte Aktionen in bestimmten Zuständen sind, basierend auf dem erwarteten zukünftigen Nutzen."
+        },
+        {
+            "question": "Was ist Policy-based Reinforcement Learning?",
+            "answer": "Policy-based RL lernt direkt eine Strategie (Policy), die in jedem Zustand die beste Aktion auswählt, ohne explizit eine Wertefunktion zu berechnen."
+        },
+        {
+            "question": "Was ist der Actor-Critic-Ansatz?",
+            "answer": "Actor-Critic kombiniert Value-based und Policy-based RL: Der 'Actor' trifft Entscheidungen, während der 'Critic' sie bewertet und Feedback gibt."
+        },
+        {
+            "question": "Was ist ein Beispiel für modellfreies RL?",
+            "answer": "Ein Beispiel ist ein Roboter, der durch Ausprobieren lernt, sich in einer unbekannten Umgebung zu bewegen, ohne ein Modell dieser Umgebung zu verwenden."
+        },
+        {
+            "question": "Erkläre die einzelnen Methoden im Bild",
+            "answer": "Unsupervised Learning: Das Modell entdeckt Strukturen oder Muster in ungelabelten Daten.\nSupervised Learning: Das Modell lernt aus Eingaben mit bekannten Ausgaben, um Vorhersagen zu treffen.\nReinforcement Learning: Ein Agent lernt durch Belohnung und Bestrafung, wie er in einer Umgebung optimal handelt.",
+            "q_picture": "../images/reinforcement_learning_01.png",
+            "picture": "../images/reinforcement_learning_01_answer.png"
+        },
+        {
+            "question": "Erkläre das folgende Bild",
+            "answer": "- Agent: Das RL-Modell, das in der Umgebung agiert.\n- Umgebung: Der Bereich, in dem der Agent agiert und in dem er Belohnungen erhält.\n- Aktion: Eine Handlung, die der Agent in der Umgebung ausführen kann.\n- Beobachtung: Die Informationen, die der Agent über die Umgebung erhält.\n- Belohnung/Reward: Die Rückmeldung, die der Agent für seine Aktionen erhält.\n- Zustand/State: Der aktuelle Zustand der Umgebung, in dem sich der Agent befindet.\n- Policy: Die Strategie, die der Agent verwendet, um Aktionen zu wählen.",
+            "q_picture": "../images/reinforcement_learning_02.png"
+        }
+    ]
+}
