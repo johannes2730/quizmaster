@@ -4,12 +4,10 @@
     {
       "question": "Vervollständige die folgende Übersicht zu den Verteilungen:",
       "q_picture": "../images/506_q_uebersicht.png",
-      "answer": "...",
       "picture": "../images/506_a_uebersicht.png"
     },
     {
       "question": "Diskret oder Stetig? Welche der folgenden Verteilungen können für diskrete oder stetige Sachverhalte modelliert werden? (Bernoulli, Binomial, Gleich, Geometrisch, Poisson, Exponential)",
-      "answer": "...",
       "picture": "../images/506_a_diskret_stetig.png"
     },
     {
