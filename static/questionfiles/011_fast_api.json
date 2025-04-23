@@ -26,7 +26,8 @@
             "answer": "FastAPI nutzt Pydantic-Modelle, um automatisch Eingabedaten (z.B. JSON) zu validieren und bei Fehlern präzise Fehlermeldungen auszugeben. Dadurch wird die Datenintegrität sichergestellt, ohne dass Entwickler manuell Prüfungen schreiben müssen."
         },
         {
-            "question": "Was macht die folgende FastAPI-Funktion und welche HTTP-Methode wird verwendet?\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n@app.get('/')\nasync def root():\n    return {'message': 'Hello, World!'}",
+            "question": "Was macht die folgende FastAPI-Funktion und welche HTTP-Methode wird verwendet?",
+            "code": "from fastapi import FastAPI\n\napp = FastAPI()\n\n@app.get('/')\nasync def root():\n    return {'message': 'Hello, World!'}",
             "answer": "Die Funktion definiert einen GET-Endpunkt unter der URL '/', der beim Aufruf die JSON-Antwort {'message': 'Hello, World!'} zurückgibt. Die Funktion ist asynchron (durch async) und zeigt ein einfaches Beispiel für eine FastAPI-Route."
         }
     ]
