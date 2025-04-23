@@ -1,0 +1,41 @@
+{
+  "title": "Zufallsvariablen, Wahrscheinlichkeits- und Verteilungsfunktionen (F.4 bis F.4.4)",
+  "questions": [
+    {
+      "question": "Was ist eine Zufallsvariable?",
+      "answer": "Eine Zufallsvariable ordnet jedem Ergebnis eines Zufallsexperiments eine reelle Zahl zu. Sie ist die Grundlage für statistische Auswertungen."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen diskreten und stetigen Zufallsvariablen?",
+      "answer": "Diskrete Zufallsvariablen haben abzählbare Werte, z. B. Wurf mit einem Würfel. Stetige Zufallsvariablen nehmen unendlich viele Werte in einem Intervall an, z. B. Körpergröße."
+    },
+    {
+      "question": "Was ist eine Wahrscheinlichkeitsfunktion?",
+      "answer": "Sie weist jedem möglichen Wert einer diskreten Zufallsvariablen eine Wahrscheinlichkeit zu.",
+      "picture": "../images/wahrscheinlichkeitsfunktion_formel.png"
+    },
+    {
+      "question": "Was ist eine Verteilungsfunktion?",
+      "answer": "Die Verteilungsfunktion F(x) gibt die Wahrscheinlichkeit an, dass X kleiner oder gleich x ist.",
+      "picture": "../images/verteilungsfunktion_formel.png"
+    },
+    {
+      "question": "Welche Eigenschaften hat eine Verteilungsfunktion?",
+      "answer": "Sie ist monoton steigend, rechtsstetig und liegt zwischen 0 und 1."
+    },
+    {
+      "question": "Wie sieht die Verteilungsfunktion einer diskreten Zufallsvariablen aus?",
+      "answer": "Als Treppenfunktion: Die Wahrscheinlichkeiten werden an bestimmten Punkten sprunghaft aufsummiert.",
+      "picture": "../images/treppenfunktion_diskret.png"
+    },
+    {
+      "question": "Wie sieht die Verteilungsfunktion einer stetigen Zufallsvariablen aus?",
+      "answer": "Als glatte, stetige Kurve. Wahrscheinlichkeiten beziehen sich hier auf Intervalle, nicht auf einzelne Werte.",
+      "picture": "../images/verteilungsfunktion_stetig.png"
+    },
+    {
+      "question": "Warum ist P(X = x) bei einer stetigen Zufallsvariablen immer 0?",
+      "answer": "Weil die Wahrscheinlichkeit für genau einen Wert bei stetigen Variablen verschwindet. Nur Intervalle haben eine Wahrscheinlichkeit größer als 0."
+    }
+  ]
+}
