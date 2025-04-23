@@ -55,7 +55,7 @@
     },
     {
       "question": "Benenne die Punkte A, B, C und D",
-      "answer": "A = Merkmal / B = Merkmalsausprägung / C = Grundgesamtheit",
+      "answer": "A = Statistische Einheit / B = Merkmal / C = Merkmalsausprägung / D = Grundgesamtheit",
       "q_picture": "../images/210_b_zusammenfassung_grundbegriffe_frage.png",
       "picture": "../images/210_b_zusammenfassung_grundbegriffe_loesung.png"
     },
