@@ -36,7 +36,7 @@
       {% for i, item in items %}
       <div class="question-card">
         {% if kapitel %}
-        <div class="question-title">{{kapitel[i]}}</div>
+        <div class="question-title">{{kapitel[i].replace('_', ' ').replace('0', '').replace('1', '').replace('2', '').replace('3', '').replace('4', '').replace('5', '').replace('6', '').replace('7', '').replace('8', '').replace('9', '')}}</div>
         {% endif %}
         <div class="question-title">{{ item["question"].replace('\n', '<br>') | safe }}</div>
 
